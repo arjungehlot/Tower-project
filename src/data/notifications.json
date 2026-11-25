@@ -1,0 +1,366 @@
+[
+ {
+  "id": "nt-001",
+  "userId": "u-admin",
+  "roles": [
+   "ADMIN",
+   "SUPER_ADMIN"
+  ],
+  "category": "Visitor",
+  "title": "Visitor waiting at Gate 1",
+  "body": "Karan Nair is waiting to meet you.",
+  "createdAt": "2026-11-25T07:56:11.044Z",
+  "read": false,
+  "link": "/visitors/vs-001"
+ },
+ {
+  "id": "nt-002",
+  "userId": "",
+  "roles": [
+   "ADMIN",
+   "SUPER_ADMIN"
+  ],
+  "category": "Ticket",
+  "title": "New ticket raised",
+  "body": "TK-1002 has been raised by an office.",
+  "createdAt": "2026-11-25T07:19:11.044Z",
+  "read": false,
+  "link": "/tickets/tkt-002"
+ },
+ {
+  "id": "nt-003",
+  "userId": "",
+  "roles": [
+   "ADMIN",
+   "SUPER_ADMIN"
+  ],
+  "category": "Task",
+  "title": "Task update",
+  "body": "status changed.",
+  "createdAt": "2026-11-25T06:42:11.044Z",
+  "read": false,
+  "link": ""
+ },
+ {
+  "id": "nt-004",
+  "userId": "u-admin",
+  "roles": [
+   "ADMIN",
+   "SUPER_ADMIN"
+  ],
+  "category": "Approval",
+  "title": "Approval pending",
+  "body": "requires your action.",
+  "createdAt": "2026-11-25T06:05:11.044Z",
+  "read": false,
+  "link": ""
+ },
+ {
+  "id": "nt-005",
+  "userId": "",
+  "roles": [
+   "ADMIN",
+   "SUPER_ADMIN"
+  ],
+  "category": "System",
+  "title": "Daily backup completed",
+  "body": "All data synced.",
+  "createdAt": "2026-11-25T05:28:11.044Z",
+  "read": false,
+  "link": ""
+ },
+ {
+  "id": "nt-006",
+  "userId": "",
+  "roles": [
+   "ADMIN",
+   "SUPER_ADMIN"
+  ],
+  "category": "Payment",
+  "title": "Rent received",
+  "body": "Rent payment received for this month.",
+  "createdAt": "2026-11-25T04:51:11.044Z",
+  "read": false,
+  "link": ""
+ },
+ {
+  "id": "nt-007",
+  "userId": "u-admin",
+  "roles": [
+   "ADMIN",
+   "SUPER_ADMIN"
+  ],
+  "category": "Security",
+  "title": "After-hours access",
+  "body": "Access card used after 9 PM.",
+  "createdAt": "2026-11-25T04:14:11.044Z",
+  "read": true,
+  "link": ""
+ },
+ {
+  "id": "nt-008",
+  "userId": "",
+  "roles": [
+   "ADMIN",
+   "SUPER_ADMIN"
+  ],
+  "category": "Visitor",
+  "title": "Visitor waiting at Gate 1",
+  "body": "Aarti Agarwal is waiting to meet you.",
+  "createdAt": "2026-11-25T03:37:11.044Z",
+  "read": true,
+  "link": "/visitors/vs-008"
+ },
+ {
+  "id": "nt-009",
+  "userId": "",
+  "roles": [
+   "ADMIN",
+   "SUPER_ADMIN"
+  ],
+  "category": "Ticket",
+  "title": "New ticket raised",
+  "body": "TK-1009 has been raised by an office.",
+  "createdAt": "2026-11-25T03:00:11.044Z",
+  "read": true,
+  "link": "/tickets/tkt-009"
+ },
+ {
+  "id": "nt-010",
+  "userId": "u-admin",
+  "roles": [
+   "ADMIN",
+   "SUPER_ADMIN"
+  ],
+  "category": "Task",
+  "title": "Task update",
+  "body": "status changed.",
+  "createdAt": "2026-11-25T02:23:11.044Z",
+  "read": true,
+  "link": ""
+ },
+ {
+  "id": "nt-011",
+  "userId": "",
+  "roles": [
+   "ADMIN",
+   "SUPER_ADMIN"
+  ],
+  "category": "Approval",
+  "title": "Approval pending",
+  "body": "requires your action.",
+  "createdAt": "2026-11-25T01:46:11.044Z",
+  "read": true,
+  "link": ""
+ },
+ {
+  "id": "nt-012",
+  "userId": "",
+  "roles": [
+   "ADMIN",
+   "SUPER_ADMIN"
+  ],
+  "category": "System",
+  "title": "Daily backup completed",
+  "body": "All data synced.",
+  "createdAt": "2026-11-25T01:09:11.044Z",
+  "read": true,
+  "link": ""
+ },
+ {
+  "id": "nt-013",
+  "userId": "u-admin",
+  "roles": [
+   "ADMIN",
+   "SUPER_ADMIN"
+  ],
+  "category": "Payment",
+  "title": "Rent received",
+  "body": "Rent payment received for this month.",
+  "createdAt": "2026-11-25T00:32:11.044Z",
+  "read": true,
+  "link": ""
+ },
+ {
+  "id": "nt-014",
+  "userId": "",
+  "roles": [
+   "ADMIN",
+   "SUPER_ADMIN"
+  ],
+  "category": "Security",
+  "title": "After-hours access",
+  "body": "Access card used after 9 PM.",
+  "createdAt": "2026-11-24T23:55:11.044Z",
+  "read": true,
+  "link": ""
+ },
+ {
+  "id": "nt-015",
+  "userId": "",
+  "roles": [
+   "ADMIN",
+   "SUPER_ADMIN"
+  ],
+  "category": "Visitor",
+  "title": "Visitor waiting at Gate 1",
+  "body": "Sunita Nair is waiting to meet you.",
+  "createdAt": "2026-11-24T23:18:11.044Z",
+  "read": true,
+  "link": "/visitors/vs-015"
+ },
+ {
+  "id": "nt-016",
+  "userId": "u-admin",
+  "roles": [
+   "ADMIN",
+   "SUPER_ADMIN"
+  ],
+  "category": "Ticket",
+  "title": "New ticket raised",
+  "body": "TK-1016 has been raised by an office.",
+  "createdAt": "2026-11-24T22:41:11.044Z",
+  "read": true,
+  "link": "/tickets/tkt-016"
+ },
+ {
+  "id": "nt-017",
+  "userId": "",
+  "roles": [
+   "ADMIN",
+   "SUPER_ADMIN"
+  ],
+  "category": "Task",
+  "title": "Task update",
+  "body": "status changed.",
+  "createdAt": "2026-11-24T22:04:11.044Z",
+  "read": true,
+  "link": ""
+ },
+ {
+  "id": "nt-018",
+  "userId": "",
+  "roles": [
+   "ADMIN",
+   "SUPER_ADMIN"
+  ],
+  "category": "Approval",
+  "title": "Approval pending",
+  "body": "requires your action.",
+  "createdAt": "2026-11-24T21:27:11.044Z",
+  "read": true,
+  "link": ""
+ },
+ {
+  "id": "nt-019",
+  "userId": "u-admin",
+  "roles": [
+   "ADMIN",
+   "SUPER_ADMIN"
+  ],
+  "category": "System",
+  "title": "Daily backup completed",
+  "body": "All data synced.",
+  "createdAt": "2026-11-24T20:50:11.044Z",
+  "read": true,
+  "link": ""
+ },
+ {
+  "id": "nt-020",
+  "userId": "",
+  "roles": [
+   "ADMIN",
+   "SUPER_ADMIN"
+  ],
+  "category": "Payment",
+  "title": "Rent received",
+  "body": "Rent payment received for this month.",
+  "createdAt": "2026-11-24T20:13:11.044Z",
+  "read": true,
+  "link": ""
+ },
+ {
+  "id": "nt-021",
+  "userId": "",
+  "roles": [
+   "ADMIN",
+   "SUPER_ADMIN"
+  ],
+  "category": "Security",
+  "title": "After-hours access",
+  "body": "Access card used after 9 PM.",
+  "createdAt": "2026-11-24T19:36:11.044Z",
+  "read": true,
+  "link": ""
+ },
+ {
+  "id": "nt-022",
+  "userId": "u-admin",
+  "roles": [
+   "ADMIN",
+   "SUPER_ADMIN"
+  ],
+  "category": "Visitor",
+  "title": "Visitor waiting at Gate 1",
+  "body": "Priya Iyer is waiting to meet you.",
+  "createdAt": "2026-11-24T18:59:11.044Z",
+  "read": true,
+  "link": "/visitors/vs-022"
+ },
+ {
+  "id": "nt-023",
+  "userId": "",
+  "roles": [
+   "ADMIN",
+   "SUPER_ADMIN"
+  ],
+  "category": "Ticket",
+  "title": "New ticket raised",
+  "body": "TK-1023 has been raised by an office.",
+  "createdAt": "2026-11-24T18:22:11.044Z",
+  "read": true,
+  "link": "/tickets/tkt-023"
+ },
+ {
+  "id": "nt-024",
+  "userId": "",
+  "roles": [
+   "ADMIN",
+   "SUPER_ADMIN"
+  ],
+  "category": "Task",
+  "title": "Task update",
+  "body": "status changed.",
+  "createdAt": "2026-11-24T17:45:11.044Z",
+  "read": true,
+  "link": ""
+ },
+ {
+  "id": "nt-025",
+  "userId": "u-admin",
+  "roles": [
+   "ADMIN",
+   "SUPER_ADMIN"
+  ],
+  "category": "Approval",
+  "title": "Approval pending",
+  "body": "requires your action.",
+  "createdAt": "2026-11-24T17:08:11.044Z",
+  "read": true,
+  "link": ""
+ },
+ {
+  "id": "nt-026",
+  "userId": "",
+  "roles": [
+   "ADMIN",
+   "SUPER_ADMIN"
+  ],
+  "category": "System",
+  "title": "Daily backup completed",
+  "body": "All data synced.",
+  "createdAt": "2026-11-24T16:31:11.044Z",
+  "read": true,
+  "link": ""
+ }
+]

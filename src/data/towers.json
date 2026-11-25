@@ -1,0 +1,24 @@
+[
+ {
+  "id": "tw-a",
+  "name": "Tower A",
+  "code": "TA",
+  "address": "Plot 12, Sector 62, Noida, Uttar Pradesh 201301",
+  "floors": 10,
+  "totalOffices": 60,
+  "managementContact": "+91 98100 11001",
+  "securityDesk": "+91 120 4001 100",
+  "emergencyContact": "+91 98100 11999"
+ },
+ {
+  "id": "tw-b",
+  "name": "Tower B",
+  "code": "TB",
+  "address": "Plot 14, Sector 62, Noida, Uttar Pradesh 201301",
+  "floors": 8,
+  "totalOffices": 48,
+  "managementContact": "+91 98100 22002",
+  "securityDesk": "+91 120 4001 200",
+  "emergencyContact": "+91 98100 22999"
+ }
+]

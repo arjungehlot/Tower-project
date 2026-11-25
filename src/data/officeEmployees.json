@@ -1,0 +1,1714 @@
+[
+ {
+  "id": "oe-001",
+  "name": "Anjali Das",
+  "officeId": "of-ta-103",
+  "designation": "Office Admin",
+  "phone": "9908632389",
+  "email": "anjali.das@abc.in"
+ },
+ {
+  "id": "oe-002",
+  "name": "Nisha Yadav",
+  "officeId": "of-ta-103",
+  "designation": "Accountant",
+  "phone": "9725867564",
+  "email": "nisha.yadav@abc.in"
+ },
+ {
+  "id": "oe-003",
+  "name": "Pooja Patel",
+  "officeId": "of-ta-105",
+  "designation": "Office Admin",
+  "phone": "9470743764",
+  "email": "pooja.patel@infosphere.in"
+ },
+ {
+  "id": "oe-004",
+  "name": "Pooja Khanna",
+  "officeId": "of-ta-105",
+  "designation": "Director",
+  "phone": "9606166125",
+  "email": "pooja.khanna@infosphere.in"
+ },
+ {
+  "id": "oe-005",
+  "name": "Tanvi Mehta",
+  "officeId": "of-ta-105",
+  "designation": "Receptionist",
+  "phone": "9952228413",
+  "email": "tanvi.mehta@infosphere.in"
+ },
+ {
+  "id": "oe-006",
+  "name": "Anjali Gupta",
+  "officeId": "of-ta-106",
+  "designation": "Office Admin",
+  "phone": "9557236650",
+  "email": "anjali.gupta@zenith.in"
+ },
+ {
+  "id": "oe-007",
+  "name": "Shweta Reddy",
+  "officeId": "of-ta-106",
+  "designation": "Accountant",
+  "phone": "9157348575",
+  "email": "shweta.reddy@zenith.in"
+ },
+ {
+  "id": "oe-008",
+  "name": "Rahul Chopra",
+  "officeId": "of-ta-106",
+  "designation": "Admin Executive",
+  "phone": "9217237693",
+  "email": "rahul.chopra@zenith.in"
+ },
+ {
+  "id": "oe-009",
+  "name": "Shweta Kumar",
+  "officeId": "of-ta-201",
+  "designation": "Office Admin",
+  "phone": "9168804176",
+  "email": "shweta.kumar@blueoak.in"
+ },
+ {
+  "id": "oe-010",
+  "name": "Rahul Gupta",
+  "officeId": "of-ta-201",
+  "designation": "Director",
+  "phone": "9944647909",
+  "email": "rahul.gupta@blueoak.in"
+ },
+ {
+  "id": "oe-011",
+  "name": "Rajesh Joshi",
+  "officeId": "of-ta-201",
+  "designation": "Admin Executive",
+  "phone": "9399641620",
+  "email": "rajesh.joshi@blueoak.in"
+ },
+ {
+  "id": "oe-012",
+  "name": "Pooja Patel",
+  "officeId": "of-ta-202",
+  "designation": "Office Admin",
+  "phone": "9719527916",
+  "email": "pooja.patel@nexa.in"
+ },
+ {
+  "id": "oe-013",
+  "name": "Divya Nair",
+  "officeId": "of-ta-202",
+  "designation": "Receptionist",
+  "phone": "9581788989",
+  "email": "divya.nair@nexa.in"
+ },
+ {
+  "id": "oe-014",
+  "name": "Priya Mishra",
+  "officeId": "of-ta-202",
+  "designation": "Engineer",
+  "phone": "9686545445",
+  "email": "priya.mishra@nexa.in"
+ },
+ {
+  "id": "oe-015",
+  "name": "Suresh Iyer",
+  "officeId": "of-ta-203",
+  "designation": "Office Admin",
+  "phone": "9978733056",
+  "email": "suresh.iyer@orbit.in"
+ },
+ {
+  "id": "oe-016",
+  "name": "Manish Kumar",
+  "officeId": "of-ta-203",
+  "designation": "Director",
+  "phone": "9532780019",
+  "email": "manish.kumar@orbit.in"
+ },
+ {
+  "id": "oe-017",
+  "name": "Deepak Iyer",
+  "officeId": "of-ta-204",
+  "designation": "Office Admin",
+  "phone": "9503028683",
+  "email": "deepak.iyer@pinnacle.in"
+ },
+ {
+  "id": "oe-018",
+  "name": "Priya Nair",
+  "officeId": "of-ta-204",
+  "designation": "Analyst",
+  "phone": "9219947127",
+  "email": "priya.nair@pinnacle.in"
+ },
+ {
+  "id": "oe-019",
+  "name": "Kavita Kumar",
+  "officeId": "of-ta-205",
+  "designation": "Office Admin",
+  "phone": "9490522979",
+  "email": "kavita.kumar@vertex.in"
+ },
+ {
+  "id": "oe-020",
+  "name": "Sunita Mishra",
+  "officeId": "of-ta-205",
+  "designation": "Analyst",
+  "phone": "9474908173",
+  "email": "sunita.mishra@vertex.in"
+ },
+ {
+  "id": "oe-021",
+  "name": "Rohit Kapoor",
+  "officeId": "of-ta-206",
+  "designation": "Office Admin",
+  "phone": "9278853028",
+  "email": "rohit.kapoor@lotus.in"
+ },
+ {
+  "id": "oe-022",
+  "name": "Nisha Yadav",
+  "officeId": "of-ta-206",
+  "designation": "Engineer",
+  "phone": "9651643931",
+  "email": "nisha.yadav@lotus.in"
+ },
+ {
+  "id": "oe-023",
+  "name": "Deepak Malhotra",
+  "officeId": "of-ta-206",
+  "designation": "Engineer",
+  "phone": "9328187433",
+  "email": "deepak.malhotra@lotus.in"
+ },
+ {
+  "id": "oe-024",
+  "name": "Pooja Joshi",
+  "officeId": "of-ta-301",
+  "designation": "Office Admin",
+  "phone": "9514481908",
+  "email": "pooja.joshi@mantra.in"
+ },
+ {
+  "id": "oe-025",
+  "name": "Vikash Nair",
+  "officeId": "of-ta-301",
+  "designation": "HR Executive",
+  "phone": "9315055544",
+  "email": "vikash.nair@mantra.in"
+ },
+ {
+  "id": "oe-026",
+  "name": "Manish Kumar",
+  "officeId": "of-ta-304",
+  "designation": "Office Admin",
+  "phone": "9803038721",
+  "email": "manish.kumar@apex.in"
+ },
+ {
+  "id": "oe-027",
+  "name": "Rahul Reddy",
+  "officeId": "of-ta-304",
+  "designation": "Accountant",
+  "phone": "9695796065",
+  "email": "rahul.reddy@apex.in"
+ },
+ {
+  "id": "oe-028",
+  "name": "Neha Das",
+  "officeId": "of-ta-305",
+  "designation": "Office Admin",
+  "phone": "9213797226",
+  "email": "neha.das@greenleaf.in"
+ },
+ {
+  "id": "oe-029",
+  "name": "Anjali Yadav",
+  "officeId": "of-ta-305",
+  "designation": "Director",
+  "phone": "9605007959",
+  "email": "anjali.yadav@greenleaf.in"
+ },
+ {
+  "id": "oe-030",
+  "name": "Komal Das",
+  "officeId": "of-ta-306",
+  "designation": "Office Admin",
+  "phone": "9544770860",
+  "email": "komal.das@cloudnine.in"
+ },
+ {
+  "id": "oe-031",
+  "name": "Tanvi Chopra",
+  "officeId": "of-ta-306",
+  "designation": "Admin Executive",
+  "phone": "9314457591",
+  "email": "tanvi.chopra@cloudnine.in"
+ },
+ {
+  "id": "oe-032",
+  "name": "Sunita Kapoor",
+  "officeId": "of-ta-401",
+  "designation": "Office Admin",
+  "phone": "9792417657",
+  "email": "sunita.kapoor@sapphire.in"
+ },
+ {
+  "id": "oe-033",
+  "name": "Yash Chopra",
+  "officeId": "of-ta-401",
+  "designation": "Director",
+  "phone": "9265744956",
+  "email": "yash.chopra@sapphire.in"
+ },
+ {
+  "id": "oe-034",
+  "name": "Vikash Kapoor",
+  "officeId": "of-ta-401",
+  "designation": "Analyst",
+  "phone": "9535413329",
+  "email": "vikash.kapoor@sapphire.in"
+ },
+ {
+  "id": "oe-035",
+  "name": "Kavita Chopra",
+  "officeId": "of-ta-402",
+  "designation": "Office Admin",
+  "phone": "9886353930",
+  "email": "kavita.chopra@kaveri.in"
+ },
+ {
+  "id": "oe-036",
+  "name": "Manish Reddy",
+  "officeId": "of-ta-402",
+  "designation": "Receptionist",
+  "phone": "9888025159",
+  "email": "manish.reddy@kaveri.in"
+ },
+ {
+  "id": "oe-037",
+  "name": "Harsh Sharma",
+  "officeId": "of-ta-402",
+  "designation": "Engineer",
+  "phone": "9927098958",
+  "email": "harsh.sharma@kaveri.in"
+ },
+ {
+  "id": "oe-038",
+  "name": "Neha Verma",
+  "officeId": "of-ta-403",
+  "designation": "Office Admin",
+  "phone": "9483482759",
+  "email": "neha.verma@helix.in"
+ },
+ {
+  "id": "oe-039",
+  "name": "Kavita Yadav",
+  "officeId": "of-ta-403",
+  "designation": "Accountant",
+  "phone": "9644083095",
+  "email": "kavita.yadav@helix.in"
+ },
+ {
+  "id": "oe-040",
+  "name": "Sunita Mehta",
+  "officeId": "of-ta-404",
+  "designation": "Office Admin",
+  "phone": "9648493587",
+  "email": "sunita.mehta@quantum.in"
+ },
+ {
+  "id": "oe-041",
+  "name": "Manish Nair",
+  "officeId": "of-ta-404",
+  "designation": "Accountant",
+  "phone": "9758492704",
+  "email": "manish.nair@quantum.in"
+ },
+ {
+  "id": "oe-042",
+  "name": "Manish Gupta",
+  "officeId": "of-ta-406",
+  "designation": "Office Admin",
+  "phone": "9192107759",
+  "email": "manish.gupta@trident.in"
+ },
+ {
+  "id": "oe-043",
+  "name": "Divya Kumar",
+  "officeId": "of-ta-406",
+  "designation": "Accountant",
+  "phone": "9598148264",
+  "email": "divya.kumar@trident.in"
+ },
+ {
+  "id": "oe-044",
+  "name": "Swati Kapoor",
+  "officeId": "of-ta-406",
+  "designation": "Analyst",
+  "phone": "9765374154",
+  "email": "swati.kapoor@trident.in"
+ },
+ {
+  "id": "oe-045",
+  "name": "Suresh Verma",
+  "officeId": "of-ta-501",
+  "designation": "Office Admin",
+  "phone": "9118545329",
+  "email": "suresh.verma@sunrise.in"
+ },
+ {
+  "id": "oe-046",
+  "name": "Komal Verma",
+  "officeId": "of-ta-501",
+  "designation": "Manager",
+  "phone": "9169527721",
+  "email": "komal.verma@sunrise.in"
+ },
+ {
+  "id": "oe-047",
+  "name": "Divya Nair",
+  "officeId": "of-ta-502",
+  "designation": "Office Admin",
+  "phone": "9187344260",
+  "email": "divya.nair@metro.in"
+ },
+ {
+  "id": "oe-048",
+  "name": "Harsh Khanna",
+  "officeId": "of-ta-502",
+  "designation": "Admin Executive",
+  "phone": "9524626254",
+  "email": "harsh.khanna@metro.in"
+ },
+ {
+  "id": "oe-049",
+  "name": "Neha Khanna",
+  "officeId": "of-ta-503",
+  "designation": "Office Admin",
+  "phone": "9617876811",
+  "email": "neha.khanna@aarav.in"
+ },
+ {
+  "id": "oe-050",
+  "name": "Neha Gupta",
+  "officeId": "of-ta-503",
+  "designation": "Manager",
+  "phone": "9131221629",
+  "email": "neha.gupta@aarav.in"
+ },
+ {
+  "id": "oe-051",
+  "name": "Harsh Bansal",
+  "officeId": "of-ta-504",
+  "designation": "Office Admin",
+  "phone": "9444743910",
+  "email": "harsh.bansal@digital.in"
+ },
+ {
+  "id": "oe-052",
+  "name": "Rohit Reddy",
+  "officeId": "of-ta-504",
+  "designation": "Accountant",
+  "phone": "9204964037",
+  "email": "rohit.reddy@digital.in"
+ },
+ {
+  "id": "oe-053",
+  "name": "Meera Kapoor",
+  "officeId": "of-ta-506",
+  "designation": "Office Admin",
+  "phone": "9464026905",
+  "email": "meera.kapoor@rapid.in"
+ },
+ {
+  "id": "oe-054",
+  "name": "Priya Singh",
+  "officeId": "of-ta-506",
+  "designation": "Receptionist",
+  "phone": "9624513606",
+  "email": "priya.singh@rapid.in"
+ },
+ {
+  "id": "oe-055",
+  "name": "Karan Reddy",
+  "officeId": "of-ta-601",
+  "designation": "Office Admin",
+  "phone": "9472291467",
+  "email": "karan.reddy@silverline.in"
+ },
+ {
+  "id": "oe-056",
+  "name": "Neha Agarwal",
+  "officeId": "of-ta-601",
+  "designation": "Analyst",
+  "phone": "9261711861",
+  "email": "neha.agarwal@silverline.in"
+ },
+ {
+  "id": "oe-057",
+  "name": "Rajesh Kapoor",
+  "officeId": "of-ta-601",
+  "designation": "Engineer",
+  "phone": "9486227045",
+  "email": "rajesh.kapoor@silverline.in"
+ },
+ {
+  "id": "oe-058",
+  "name": "Nisha Kumar",
+  "officeId": "of-ta-603",
+  "designation": "Office Admin",
+  "phone": "9266693804",
+  "email": "nisha.kumar@everest.in"
+ },
+ {
+  "id": "oe-059",
+  "name": "Isha Kapoor",
+  "officeId": "of-ta-603",
+  "designation": "Admin Executive",
+  "phone": "9945588929",
+  "email": "isha.kapoor@everest.in"
+ },
+ {
+  "id": "oe-060",
+  "name": "Rajesh Joshi",
+  "officeId": "of-ta-605",
+  "designation": "Office Admin",
+  "phone": "9458986161",
+  "email": "rajesh.joshi@ganga.in"
+ },
+ {
+  "id": "oe-061",
+  "name": "Arjun Joshi",
+  "officeId": "of-ta-605",
+  "designation": "Engineer",
+  "phone": "9976524357",
+  "email": "arjun.joshi@ganga.in"
+ },
+ {
+  "id": "oe-062",
+  "name": "Karan Sharma",
+  "officeId": "of-ta-606",
+  "designation": "Office Admin",
+  "phone": "9236115355",
+  "email": "karan.sharma@prime.in"
+ },
+ {
+  "id": "oe-063",
+  "name": "Neha Yadav",
+  "officeId": "of-ta-606",
+  "designation": "Engineer",
+  "phone": "9126446551",
+  "email": "neha.yadav@prime.in"
+ },
+ {
+  "id": "oe-064",
+  "name": "Komal Bansal",
+  "officeId": "of-ta-606",
+  "designation": "Analyst",
+  "phone": "9522482286",
+  "email": "komal.bansal@prime.in"
+ },
+ {
+  "id": "oe-065",
+  "name": "Harsh Mishra",
+  "officeId": "of-ta-701",
+  "designation": "Office Admin",
+  "phone": "9255691641",
+  "email": "harsh.mishra@skyline.in"
+ },
+ {
+  "id": "oe-066",
+  "name": "Yash Reddy",
+  "officeId": "of-ta-701",
+  "designation": "Engineer",
+  "phone": "9971766698",
+  "email": "yash.reddy@skyline.in"
+ },
+ {
+  "id": "oe-067",
+  "name": "Yash Das",
+  "officeId": "of-ta-701",
+  "designation": "Director",
+  "phone": "9506034012",
+  "email": "yash.das@skyline.in"
+ },
+ {
+  "id": "oe-068",
+  "name": "Shweta Khanna",
+  "officeId": "of-ta-702",
+  "designation": "Office Admin",
+  "phone": "9611524523",
+  "email": "shweta.khanna@abc.in"
+ },
+ {
+  "id": "oe-069",
+  "name": "Pankaj Patel",
+  "officeId": "of-ta-702",
+  "designation": "Director",
+  "phone": "9750314951",
+  "email": "pankaj.patel@abc.in"
+ },
+ {
+  "id": "oe-070",
+  "name": "Neha Gupta",
+  "officeId": "of-ta-703",
+  "designation": "Office Admin",
+  "phone": "9584362134",
+  "email": "neha.gupta@taurus.in"
+ },
+ {
+  "id": "oe-071",
+  "name": "Suresh Khanna",
+  "officeId": "of-ta-703",
+  "designation": "Receptionist",
+  "phone": "9580413699",
+  "email": "suresh.khanna@taurus.in"
+ },
+ {
+  "id": "oe-072",
+  "name": "Kavita Nair",
+  "officeId": "of-ta-703",
+  "designation": "Admin Executive",
+  "phone": "9325600470",
+  "email": "kavita.nair@taurus.in"
+ },
+ {
+  "id": "oe-073",
+  "name": "Kavita Singh",
+  "officeId": "of-ta-705",
+  "designation": "Office Admin",
+  "phone": "9990094537",
+  "email": "kavita.singh@bharat.in"
+ },
+ {
+  "id": "oe-074",
+  "name": "Vikash Nair",
+  "officeId": "of-ta-705",
+  "designation": "Manager",
+  "phone": "9251052481",
+  "email": "vikash.nair@bharat.in"
+ },
+ {
+  "id": "oe-075",
+  "name": "Meera Iyer",
+  "officeId": "of-ta-706",
+  "designation": "Office Admin",
+  "phone": "9695029016",
+  "email": "meera.iyer@crescent.in"
+ },
+ {
+  "id": "oe-076",
+  "name": "Sunita Reddy",
+  "officeId": "of-ta-706",
+  "designation": "Analyst",
+  "phone": "9594066851",
+  "email": "sunita.reddy@crescent.in"
+ },
+ {
+  "id": "oe-077",
+  "name": "Meera Sharma",
+  "officeId": "of-ta-706",
+  "designation": "HR Executive",
+  "phone": "9206006348",
+  "email": "meera.sharma@crescent.in"
+ },
+ {
+  "id": "oe-078",
+  "name": "Yash Agarwal",
+  "officeId": "of-ta-801",
+  "designation": "Office Admin",
+  "phone": "9556995705",
+  "email": "yash.agarwal@nova.in"
+ },
+ {
+  "id": "oe-079",
+  "name": "Sanjay Mehta",
+  "officeId": "of-ta-801",
+  "designation": "Engineer",
+  "phone": "9774501834",
+  "email": "sanjay.mehta@nova.in"
+ },
+ {
+  "id": "oe-080",
+  "name": "Anjali Kapoor",
+  "officeId": "of-ta-801",
+  "designation": "Receptionist",
+  "phone": "9141882493",
+  "email": "anjali.kapoor@nova.in"
+ },
+ {
+  "id": "oe-081",
+  "name": "Shweta Iyer",
+  "officeId": "of-ta-802",
+  "designation": "Office Admin",
+  "phone": "9304630825",
+  "email": "shweta.iyer@abc.in"
+ },
+ {
+  "id": "oe-082",
+  "name": "Rahul Yadav",
+  "officeId": "of-ta-802",
+  "designation": "Receptionist",
+  "phone": "9784659283",
+  "email": "rahul.yadav@abc.in"
+ },
+ {
+  "id": "oe-083",
+  "name": "Kavita Mehta",
+  "officeId": "of-ta-803",
+  "designation": "Office Admin",
+  "phone": "9288479169",
+  "email": "kavita.mehta@infosphere.in"
+ },
+ {
+  "id": "oe-084",
+  "name": "Sanjay Khanna",
+  "officeId": "of-ta-803",
+  "designation": "Manager",
+  "phone": "9429940753",
+  "email": "sanjay.khanna@infosphere.in"
+ },
+ {
+  "id": "oe-085",
+  "name": "Anjali Gupta",
+  "officeId": "of-ta-805",
+  "designation": "Office Admin",
+  "phone": "9314113626",
+  "email": "anjali.gupta@zenith.in"
+ },
+ {
+  "id": "oe-086",
+  "name": "Pankaj Patel",
+  "officeId": "of-ta-805",
+  "designation": "HR Executive",
+  "phone": "9754335958",
+  "email": "pankaj.patel@zenith.in"
+ },
+ {
+  "id": "oe-087",
+  "name": "Rajesh Iyer",
+  "officeId": "of-ta-806",
+  "designation": "Office Admin",
+  "phone": "9727238092",
+  "email": "rajesh.iyer@blueoak.in"
+ },
+ {
+  "id": "oe-088",
+  "name": "Vikash Mishra",
+  "officeId": "of-ta-806",
+  "designation": "Engineer",
+  "phone": "9237883166",
+  "email": "vikash.mishra@blueoak.in"
+ },
+ {
+  "id": "oe-089",
+  "name": "Isha Verma",
+  "officeId": "of-ta-901",
+  "designation": "Office Admin",
+  "phone": "9176759613",
+  "email": "isha.verma@nexa.in"
+ },
+ {
+  "id": "oe-090",
+  "name": "Neha Khanna",
+  "officeId": "of-ta-901",
+  "designation": "Analyst",
+  "phone": "9434517216",
+  "email": "neha.khanna@nexa.in"
+ },
+ {
+  "id": "oe-091",
+  "name": "Harsh Gupta",
+  "officeId": "of-ta-901",
+  "designation": "HR Executive",
+  "phone": "9206075771",
+  "email": "harsh.gupta@nexa.in"
+ },
+ {
+  "id": "oe-092",
+  "name": "Manish Mehta",
+  "officeId": "of-ta-903",
+  "designation": "Office Admin",
+  "phone": "9726744670",
+  "email": "manish.mehta@orbit.in"
+ },
+ {
+  "id": "oe-093",
+  "name": "Karan Mehta",
+  "officeId": "of-ta-903",
+  "designation": "Director",
+  "phone": "9660043100",
+  "email": "karan.mehta@orbit.in"
+ },
+ {
+  "id": "oe-094",
+  "name": "Swati Bansal",
+  "officeId": "of-ta-903",
+  "designation": "Analyst",
+  "phone": "9119744543",
+  "email": "swati.bansal@orbit.in"
+ },
+ {
+  "id": "oe-095",
+  "name": "Divya Malhotra",
+  "officeId": "of-ta-904",
+  "designation": "Office Admin",
+  "phone": "9182993901",
+  "email": "divya.malhotra@pinnacle.in"
+ },
+ {
+  "id": "oe-096",
+  "name": "Shweta Chopra",
+  "officeId": "of-ta-904",
+  "designation": "Accountant",
+  "phone": "9635837670",
+  "email": "shweta.chopra@pinnacle.in"
+ },
+ {
+  "id": "oe-097",
+  "name": "Sunita Gupta",
+  "officeId": "of-ta-905",
+  "designation": "Office Admin",
+  "phone": "9106019790",
+  "email": "sunita.gupta@vertex.in"
+ },
+ {
+  "id": "oe-098",
+  "name": "Harsh Singh",
+  "officeId": "of-ta-905",
+  "designation": "Receptionist",
+  "phone": "9873163752",
+  "email": "harsh.singh@vertex.in"
+ },
+ {
+  "id": "oe-099",
+  "name": "Nikhil Sharma",
+  "officeId": "of-ta-905",
+  "designation": "Receptionist",
+  "phone": "9871247560",
+  "email": "nikhil.sharma@vertex.in"
+ },
+ {
+  "id": "oe-100",
+  "name": "Priya Kapoor",
+  "officeId": "of-ta-1001",
+  "designation": "Office Admin",
+  "phone": "9472634524",
+  "email": "priya.kapoor@lotus.in"
+ },
+ {
+  "id": "oe-101",
+  "name": "Suresh Malhotra",
+  "officeId": "of-ta-1001",
+  "designation": "Admin Executive",
+  "phone": "9403533416",
+  "email": "suresh.malhotra@lotus.in"
+ },
+ {
+  "id": "oe-102",
+  "name": "Sunita Mishra",
+  "officeId": "of-ta-1002",
+  "designation": "Office Admin",
+  "phone": "9131148771",
+  "email": "sunita.mishra@mantra.in"
+ },
+ {
+  "id": "oe-103",
+  "name": "Shweta Mehta",
+  "officeId": "of-ta-1002",
+  "designation": "HR Executive",
+  "phone": "9781394021",
+  "email": "shweta.mehta@mantra.in"
+ },
+ {
+  "id": "oe-104",
+  "name": "Nikhil Kapoor",
+  "officeId": "of-ta-1003",
+  "designation": "Office Admin",
+  "phone": "9258003119",
+  "email": "nikhil.kapoor@apex.in"
+ },
+ {
+  "id": "oe-105",
+  "name": "Mohit Khanna",
+  "officeId": "of-ta-1003",
+  "designation": "Analyst",
+  "phone": "9311864209",
+  "email": "mohit.khanna@apex.in"
+ },
+ {
+  "id": "oe-106",
+  "name": "Tanvi Mishra",
+  "officeId": "of-ta-1003",
+  "designation": "Engineer",
+  "phone": "9601010645",
+  "email": "tanvi.mishra@apex.in"
+ },
+ {
+  "id": "oe-107",
+  "name": "Neha Yadav",
+  "officeId": "of-ta-1004",
+  "designation": "Office Admin",
+  "phone": "9967844695",
+  "email": "neha.yadav@greenleaf.in"
+ },
+ {
+  "id": "oe-108",
+  "name": "Rahul Bansal",
+  "officeId": "of-ta-1004",
+  "designation": "Engineer",
+  "phone": "9563416251",
+  "email": "rahul.bansal@greenleaf.in"
+ },
+ {
+  "id": "oe-109",
+  "name": "Suresh Malhotra",
+  "officeId": "of-ta-1005",
+  "designation": "Office Admin",
+  "phone": "9425177176",
+  "email": "suresh.malhotra@cloudnine.in"
+ },
+ {
+  "id": "oe-110",
+  "name": "Varun Gupta",
+  "officeId": "of-ta-1005",
+  "designation": "Manager",
+  "phone": "9176555352",
+  "email": "varun.gupta@cloudnine.in"
+ },
+ {
+  "id": "oe-111",
+  "name": "Karan Singh",
+  "officeId": "of-ta-1005",
+  "designation": "HR Executive",
+  "phone": "9828939724",
+  "email": "karan.singh@cloudnine.in"
+ },
+ {
+  "id": "oe-112",
+  "name": "Varun Sharma",
+  "officeId": "of-ta-1006",
+  "designation": "Office Admin",
+  "phone": "9199772706",
+  "email": "varun.sharma@sapphire.in"
+ },
+ {
+  "id": "oe-113",
+  "name": "Sunita Sharma",
+  "officeId": "of-ta-1006",
+  "designation": "Accountant",
+  "phone": "9316193233",
+  "email": "sunita.sharma@sapphire.in"
+ },
+ {
+  "id": "oe-114",
+  "name": "Sanjay Das",
+  "officeId": "of-tb-101",
+  "designation": "Office Admin",
+  "phone": "9594610697",
+  "email": "sanjay.das@kaveri.in"
+ },
+ {
+  "id": "oe-115",
+  "name": "Aarti Malhotra",
+  "officeId": "of-tb-101",
+  "designation": "Analyst",
+  "phone": "9445221213",
+  "email": "aarti.malhotra@kaveri.in"
+ },
+ {
+  "id": "oe-116",
+  "name": "Karan Verma",
+  "officeId": "of-tb-102",
+  "designation": "Office Admin",
+  "phone": "9667435669",
+  "email": "karan.verma@helix.in"
+ },
+ {
+  "id": "oe-117",
+  "name": "Pankaj Gupta",
+  "officeId": "of-tb-102",
+  "designation": "Manager",
+  "phone": "9927474979",
+  "email": "pankaj.gupta@helix.in"
+ },
+ {
+  "id": "oe-118",
+  "name": "Tanvi Kumar",
+  "officeId": "of-tb-102",
+  "designation": "Manager",
+  "phone": "9596457682",
+  "email": "tanvi.kumar@helix.in"
+ },
+ {
+  "id": "oe-119",
+  "name": "Divya Agarwal",
+  "officeId": "of-tb-103",
+  "designation": "Office Admin",
+  "phone": "9161299552",
+  "email": "divya.agarwal@quantum.in"
+ },
+ {
+  "id": "oe-120",
+  "name": "Tanvi Reddy",
+  "officeId": "of-tb-103",
+  "designation": "Director",
+  "phone": "9949132631",
+  "email": "tanvi.reddy@quantum.in"
+ },
+ {
+  "id": "oe-121",
+  "name": "Aarti Malhotra",
+  "officeId": "of-tb-103",
+  "designation": "Analyst",
+  "phone": "9667356310",
+  "email": "aarti.malhotra@quantum.in"
+ },
+ {
+  "id": "oe-122",
+  "name": "Amit Patel",
+  "officeId": "of-tb-104",
+  "designation": "Office Admin",
+  "phone": "9830344208",
+  "email": "amit.patel@trident.in"
+ },
+ {
+  "id": "oe-123",
+  "name": "Pooja Malhotra",
+  "officeId": "of-tb-104",
+  "designation": "Analyst",
+  "phone": "9697802274",
+  "email": "pooja.malhotra@trident.in"
+ },
+ {
+  "id": "oe-124",
+  "name": "Rajesh Iyer",
+  "officeId": "of-tb-105",
+  "designation": "Office Admin",
+  "phone": "9833329450",
+  "email": "rajesh.iyer@sunrise.in"
+ },
+ {
+  "id": "oe-125",
+  "name": "Komal Kumar",
+  "officeId": "of-tb-105",
+  "designation": "Accountant",
+  "phone": "9621507350",
+  "email": "komal.kumar@sunrise.in"
+ },
+ {
+  "id": "oe-126",
+  "name": "Anjali Chopra",
+  "officeId": "of-tb-106",
+  "designation": "Office Admin",
+  "phone": "9909548447",
+  "email": "anjali.chopra@metro.in"
+ },
+ {
+  "id": "oe-127",
+  "name": "Sanjay Das",
+  "officeId": "of-tb-106",
+  "designation": "HR Executive",
+  "phone": "9664691130",
+  "email": "sanjay.das@metro.in"
+ },
+ {
+  "id": "oe-128",
+  "name": "Kavita Iyer",
+  "officeId": "of-tb-201",
+  "designation": "Office Admin",
+  "phone": "9187120529",
+  "email": "kavita.iyer@aarav.in"
+ },
+ {
+  "id": "oe-129",
+  "name": "Vikash Gupta",
+  "officeId": "of-tb-201",
+  "designation": "Accountant",
+  "phone": "9242582795",
+  "email": "vikash.gupta@aarav.in"
+ },
+ {
+  "id": "oe-130",
+  "name": "Harsh Reddy",
+  "officeId": "of-tb-202",
+  "designation": "Office Admin",
+  "phone": "9387284635",
+  "email": "harsh.reddy@digital.in"
+ },
+ {
+  "id": "oe-131",
+  "name": "Priya Chopra",
+  "officeId": "of-tb-202",
+  "designation": "Analyst",
+  "phone": "9749750038",
+  "email": "priya.chopra@digital.in"
+ },
+ {
+  "id": "oe-132",
+  "name": "Varun Yadav",
+  "officeId": "of-tb-203",
+  "designation": "Office Admin",
+  "phone": "9220290099",
+  "email": "varun.yadav@rapid.in"
+ },
+ {
+  "id": "oe-133",
+  "name": "Yash Sharma",
+  "officeId": "of-tb-203",
+  "designation": "Admin Executive",
+  "phone": "9428744148",
+  "email": "yash.sharma@rapid.in"
+ },
+ {
+  "id": "oe-134",
+  "name": "Manish Verma",
+  "officeId": "of-tb-204",
+  "designation": "Office Admin",
+  "phone": "9535210684",
+  "email": "manish.verma@silverline.in"
+ },
+ {
+  "id": "oe-135",
+  "name": "Arjun Bansal",
+  "officeId": "of-tb-204",
+  "designation": "Admin Executive",
+  "phone": "9987490926",
+  "email": "arjun.bansal@silverline.in"
+ },
+ {
+  "id": "oe-136",
+  "name": "Swati Agarwal",
+  "officeId": "of-tb-204",
+  "designation": "Engineer",
+  "phone": "9934717632",
+  "email": "swati.agarwal@silverline.in"
+ },
+ {
+  "id": "oe-137",
+  "name": "Suresh Mishra",
+  "officeId": "of-tb-205",
+  "designation": "Office Admin",
+  "phone": "9913254239",
+  "email": "suresh.mishra@everest.in"
+ },
+ {
+  "id": "oe-138",
+  "name": "Rahul Joshi",
+  "officeId": "of-tb-205",
+  "designation": "Receptionist",
+  "phone": "9494633572",
+  "email": "rahul.joshi@everest.in"
+ },
+ {
+  "id": "oe-139",
+  "name": "Ritu Nair",
+  "officeId": "of-tb-205",
+  "designation": "HR Executive",
+  "phone": "9560387919",
+  "email": "ritu.nair@everest.in"
+ },
+ {
+  "id": "oe-140",
+  "name": "Rajesh Patel",
+  "officeId": "of-tb-206",
+  "designation": "Office Admin",
+  "phone": "9337568282",
+  "email": "rajesh.patel@ganga.in"
+ },
+ {
+  "id": "oe-141",
+  "name": "Tanvi Iyer",
+  "officeId": "of-tb-206",
+  "designation": "Director",
+  "phone": "9742868059",
+  "email": "tanvi.iyer@ganga.in"
+ },
+ {
+  "id": "oe-142",
+  "name": "Gaurav Chopra",
+  "officeId": "of-tb-301",
+  "designation": "Office Admin",
+  "phone": "9930894793",
+  "email": "gaurav.chopra@prime.in"
+ },
+ {
+  "id": "oe-143",
+  "name": "Arjun Kumar",
+  "officeId": "of-tb-301",
+  "designation": "HR Executive",
+  "phone": "9386821981",
+  "email": "arjun.kumar@prime.in"
+ },
+ {
+  "id": "oe-144",
+  "name": "Yash Nair",
+  "officeId": "of-tb-303",
+  "designation": "Office Admin",
+  "phone": "9889823632",
+  "email": "yash.nair@skyline.in"
+ },
+ {
+  "id": "oe-145",
+  "name": "Sanjay Sharma",
+  "officeId": "of-tb-303",
+  "designation": "Engineer",
+  "phone": "9911388226",
+  "email": "sanjay.sharma@skyline.in"
+ },
+ {
+  "id": "oe-146",
+  "name": "Nikhil Malhotra",
+  "officeId": "of-tb-303",
+  "designation": "Accountant",
+  "phone": "9687175590",
+  "email": "nikhil.malhotra@skyline.in"
+ },
+ {
+  "id": "oe-147",
+  "name": "Karan Joshi",
+  "officeId": "of-tb-305",
+  "designation": "Office Admin",
+  "phone": "9341701408",
+  "email": "karan.joshi@taurus.in"
+ },
+ {
+  "id": "oe-148",
+  "name": "Shweta Singh",
+  "officeId": "of-tb-305",
+  "designation": "Admin Executive",
+  "phone": "9753666028",
+  "email": "shweta.singh@taurus.in"
+ },
+ {
+  "id": "oe-149",
+  "name": "Rahul Agarwal",
+  "officeId": "of-tb-305",
+  "designation": "Analyst",
+  "phone": "9465133590",
+  "email": "rahul.agarwal@taurus.in"
+ },
+ {
+  "id": "oe-150",
+  "name": "Vikash Joshi",
+  "officeId": "of-tb-306",
+  "designation": "Office Admin",
+  "phone": "9392144963",
+  "email": "vikash.joshi@bharat.in"
+ },
+ {
+  "id": "oe-151",
+  "name": "Sunita Khanna",
+  "officeId": "of-tb-306",
+  "designation": "HR Executive",
+  "phone": "9835321128",
+  "email": "sunita.khanna@bharat.in"
+ },
+ {
+  "id": "oe-152",
+  "name": "Rajesh Bansal",
+  "officeId": "of-tb-401",
+  "designation": "Office Admin",
+  "phone": "9680430265",
+  "email": "rajesh.bansal@crescent.in"
+ },
+ {
+  "id": "oe-153",
+  "name": "Amit Khanna",
+  "officeId": "of-tb-401",
+  "designation": "Director",
+  "phone": "9153899520",
+  "email": "amit.khanna@crescent.in"
+ },
+ {
+  "id": "oe-154",
+  "name": "Rohit Khanna",
+  "officeId": "of-tb-402",
+  "designation": "Office Admin",
+  "phone": "9868814284",
+  "email": "rohit.khanna@nova.in"
+ },
+ {
+  "id": "oe-155",
+  "name": "Sanjay Sharma",
+  "officeId": "of-tb-402",
+  "designation": "Manager",
+  "phone": "9992320809",
+  "email": "sanjay.sharma@nova.in"
+ },
+ {
+  "id": "oe-156",
+  "name": "Shweta Kapoor",
+  "officeId": "of-tb-403",
+  "designation": "Office Admin",
+  "phone": "9443430490",
+  "email": "shweta.kapoor@abc.in"
+ },
+ {
+  "id": "oe-157",
+  "name": "Shweta Khanna",
+  "officeId": "of-tb-403",
+  "designation": "Analyst",
+  "phone": "9265349897",
+  "email": "shweta.khanna@abc.in"
+ },
+ {
+  "id": "oe-158",
+  "name": "Yash Verma",
+  "officeId": "of-tb-403",
+  "designation": "Engineer",
+  "phone": "9597737136",
+  "email": "yash.verma@abc.in"
+ },
+ {
+  "id": "oe-159",
+  "name": "Ritu Patel",
+  "officeId": "of-tb-404",
+  "designation": "Office Admin",
+  "phone": "9470266453",
+  "email": "ritu.patel@infosphere.in"
+ },
+ {
+  "id": "oe-160",
+  "name": "Anjali Bansal",
+  "officeId": "of-tb-404",
+  "designation": "Accountant",
+  "phone": "9702854726",
+  "email": "anjali.bansal@infosphere.in"
+ },
+ {
+  "id": "oe-161",
+  "name": "Nikhil Chopra",
+  "officeId": "of-tb-405",
+  "designation": "Office Admin",
+  "phone": "9599725546",
+  "email": "nikhil.chopra@zenith.in"
+ },
+ {
+  "id": "oe-162",
+  "name": "Ritu Verma",
+  "officeId": "of-tb-405",
+  "designation": "Director",
+  "phone": "9211502999",
+  "email": "ritu.verma@zenith.in"
+ },
+ {
+  "id": "oe-163",
+  "name": "Manish Gupta",
+  "officeId": "of-tb-405",
+  "designation": "Director",
+  "phone": "9196718259",
+  "email": "manish.gupta@zenith.in"
+ },
+ {
+  "id": "oe-164",
+  "name": "Arjun Malhotra",
+  "officeId": "of-tb-406",
+  "designation": "Office Admin",
+  "phone": "9724551991",
+  "email": "arjun.malhotra@blueoak.in"
+ },
+ {
+  "id": "oe-165",
+  "name": "Karan Yadav",
+  "officeId": "of-tb-406",
+  "designation": "Accountant",
+  "phone": "9202641604",
+  "email": "karan.yadav@blueoak.in"
+ },
+ {
+  "id": "oe-166",
+  "name": "Sunita Kapoor",
+  "officeId": "of-tb-406",
+  "designation": "Accountant",
+  "phone": "9275608640",
+  "email": "sunita.kapoor@blueoak.in"
+ },
+ {
+  "id": "oe-167",
+  "name": "Manish Nair",
+  "officeId": "of-tb-501",
+  "designation": "Office Admin",
+  "phone": "9700042422",
+  "email": "manish.nair@nexa.in"
+ },
+ {
+  "id": "oe-168",
+  "name": "Nikhil Patel",
+  "officeId": "of-tb-501",
+  "designation": "Analyst",
+  "phone": "9448393114",
+  "email": "nikhil.patel@nexa.in"
+ },
+ {
+  "id": "oe-169",
+  "name": "Vikash Verma",
+  "officeId": "of-tb-502",
+  "designation": "Office Admin",
+  "phone": "9272299297",
+  "email": "vikash.verma@orbit.in"
+ },
+ {
+  "id": "oe-170",
+  "name": "Meera Singh",
+  "officeId": "of-tb-502",
+  "designation": "Receptionist",
+  "phone": "9395178784",
+  "email": "meera.singh@orbit.in"
+ },
+ {
+  "id": "oe-171",
+  "name": "Ajay Sharma",
+  "officeId": "of-tb-503",
+  "designation": "Office Admin",
+  "phone": "9700579070",
+  "email": "ajay.sharma@pinnacle.in"
+ },
+ {
+  "id": "oe-172",
+  "name": "Suresh Singh",
+  "officeId": "of-tb-503",
+  "designation": "HR Executive",
+  "phone": "9749426855",
+  "email": "suresh.singh@pinnacle.in"
+ },
+ {
+  "id": "oe-173",
+  "name": "Aarti Joshi",
+  "officeId": "of-tb-504",
+  "designation": "Office Admin",
+  "phone": "9423445623",
+  "email": "aarti.joshi@vertex.in"
+ },
+ {
+  "id": "oe-174",
+  "name": "Divya Singh",
+  "officeId": "of-tb-504",
+  "designation": "Accountant",
+  "phone": "9306631192",
+  "email": "divya.singh@vertex.in"
+ },
+ {
+  "id": "oe-175",
+  "name": "Neha Singh",
+  "officeId": "of-tb-504",
+  "designation": "HR Executive",
+  "phone": "9365420753",
+  "email": "neha.singh@vertex.in"
+ },
+ {
+  "id": "oe-176",
+  "name": "Nisha Kumar",
+  "officeId": "of-tb-505",
+  "designation": "Office Admin",
+  "phone": "9302847991",
+  "email": "nisha.kumar@lotus.in"
+ },
+ {
+  "id": "oe-177",
+  "name": "Deepak Patel",
+  "officeId": "of-tb-505",
+  "designation": "Receptionist",
+  "phone": "9431091679",
+  "email": "deepak.patel@lotus.in"
+ },
+ {
+  "id": "oe-178",
+  "name": "Anjali Gupta",
+  "officeId": "of-tb-505",
+  "designation": "Director",
+  "phone": "9778531519",
+  "email": "anjali.gupta@lotus.in"
+ },
+ {
+  "id": "oe-179",
+  "name": "Aarti Gupta",
+  "officeId": "of-tb-506",
+  "designation": "Office Admin",
+  "phone": "9496234340",
+  "email": "aarti.gupta@mantra.in"
+ },
+ {
+  "id": "oe-180",
+  "name": "Mohit Malhotra",
+  "officeId": "of-tb-506",
+  "designation": "Analyst",
+  "phone": "9485703807",
+  "email": "mohit.malhotra@mantra.in"
+ },
+ {
+  "id": "oe-181",
+  "name": "Rahul Chopra",
+  "officeId": "of-tb-601",
+  "designation": "Office Admin",
+  "phone": "9649371554",
+  "email": "rahul.chopra@apex.in"
+ },
+ {
+  "id": "oe-182",
+  "name": "Gaurav Khanna",
+  "officeId": "of-tb-601",
+  "designation": "Receptionist",
+  "phone": "9913648925",
+  "email": "gaurav.khanna@apex.in"
+ },
+ {
+  "id": "oe-183",
+  "name": "Pooja Khanna",
+  "officeId": "of-tb-601",
+  "designation": "HR Executive",
+  "phone": "9351113341",
+  "email": "pooja.khanna@apex.in"
+ },
+ {
+  "id": "oe-184",
+  "name": "Priya Khanna",
+  "officeId": "of-tb-602",
+  "designation": "Office Admin",
+  "phone": "9529418773",
+  "email": "priya.khanna@greenleaf.in"
+ },
+ {
+  "id": "oe-185",
+  "name": "Vikash Malhotra",
+  "officeId": "of-tb-602",
+  "designation": "Admin Executive",
+  "phone": "9282909698",
+  "email": "vikash.malhotra@greenleaf.in"
+ },
+ {
+  "id": "oe-186",
+  "name": "Swati Gupta",
+  "officeId": "of-tb-603",
+  "designation": "Office Admin",
+  "phone": "9841479767",
+  "email": "swati.gupta@cloudnine.in"
+ },
+ {
+  "id": "oe-187",
+  "name": "Shweta Nair",
+  "officeId": "of-tb-603",
+  "designation": "Engineer",
+  "phone": "9489654087",
+  "email": "shweta.nair@cloudnine.in"
+ },
+ {
+  "id": "oe-188",
+  "name": "Suresh Gupta",
+  "officeId": "of-tb-603",
+  "designation": "Admin Executive",
+  "phone": "9176752259",
+  "email": "suresh.gupta@cloudnine.in"
+ },
+ {
+  "id": "oe-189",
+  "name": "Ajay Sharma",
+  "officeId": "of-tb-604",
+  "designation": "Office Admin",
+  "phone": "9714599256",
+  "email": "ajay.sharma@sapphire.in"
+ },
+ {
+  "id": "oe-190",
+  "name": "Manish Singh",
+  "officeId": "of-tb-604",
+  "designation": "Receptionist",
+  "phone": "9223215641",
+  "email": "manish.singh@sapphire.in"
+ },
+ {
+  "id": "oe-191",
+  "name": "Pooja Singh",
+  "officeId": "of-tb-604",
+  "designation": "HR Executive",
+  "phone": "9796555134",
+  "email": "pooja.singh@sapphire.in"
+ },
+ {
+  "id": "oe-192",
+  "name": "Isha Kapoor",
+  "officeId": "of-tb-605",
+  "designation": "Office Admin",
+  "phone": "9957627518",
+  "email": "isha.kapoor@kaveri.in"
+ },
+ {
+  "id": "oe-193",
+  "name": "Ajay Kumar",
+  "officeId": "of-tb-605",
+  "designation": "Engineer",
+  "phone": "9313179827",
+  "email": "ajay.kumar@kaveri.in"
+ },
+ {
+  "id": "oe-194",
+  "name": "Amit Kumar",
+  "officeId": "of-tb-606",
+  "designation": "Office Admin",
+  "phone": "9462177049",
+  "email": "amit.kumar@helix.in"
+ },
+ {
+  "id": "oe-195",
+  "name": "Harsh Khanna",
+  "officeId": "of-tb-606",
+  "designation": "Manager",
+  "phone": "9664521408",
+  "email": "harsh.khanna@helix.in"
+ },
+ {
+  "id": "oe-196",
+  "name": "Suresh Verma",
+  "officeId": "of-tb-606",
+  "designation": "Analyst",
+  "phone": "9192390584",
+  "email": "suresh.verma@helix.in"
+ },
+ {
+  "id": "oe-197",
+  "name": "Amit Bansal",
+  "officeId": "of-tb-701",
+  "designation": "Office Admin",
+  "phone": "9515264593",
+  "email": "amit.bansal@quantum.in"
+ },
+ {
+  "id": "oe-198",
+  "name": "Divya Khanna",
+  "officeId": "of-tb-701",
+  "designation": "Receptionist",
+  "phone": "9781785093",
+  "email": "divya.khanna@quantum.in"
+ },
+ {
+  "id": "oe-199",
+  "name": "Ajay Gupta",
+  "officeId": "of-tb-701",
+  "designation": "Receptionist",
+  "phone": "9821418325",
+  "email": "ajay.gupta@quantum.in"
+ },
+ {
+  "id": "oe-200",
+  "name": "Gaurav Das",
+  "officeId": "of-tb-702",
+  "designation": "Office Admin",
+  "phone": "9386180351",
+  "email": "gaurav.das@trident.in"
+ },
+ {
+  "id": "oe-201",
+  "name": "Sanjay Nair",
+  "officeId": "of-tb-702",
+  "designation": "Receptionist",
+  "phone": "9983862416",
+  "email": "sanjay.nair@trident.in"
+ },
+ {
+  "id": "oe-202",
+  "name": "Ritu Bansal",
+  "officeId": "of-tb-705",
+  "designation": "Office Admin",
+  "phone": "9104835663",
+  "email": "ritu.bansal@sunrise.in"
+ },
+ {
+  "id": "oe-203",
+  "name": "Neha Sharma",
+  "officeId": "of-tb-705",
+  "designation": "Director",
+  "phone": "9888441082",
+  "email": "neha.sharma@sunrise.in"
+ },
+ {
+  "id": "oe-204",
+  "name": "Rajesh Joshi",
+  "officeId": "of-tb-706",
+  "designation": "Office Admin",
+  "phone": "9305267844",
+  "email": "rajesh.joshi@metro.in"
+ },
+ {
+  "id": "oe-205",
+  "name": "Komal Sharma",
+  "officeId": "of-tb-706",
+  "designation": "Admin Executive",
+  "phone": "9361904301",
+  "email": "komal.sharma@metro.in"
+ },
+ {
+  "id": "oe-206",
+  "name": "Tanvi Nair",
+  "officeId": "of-tb-706",
+  "designation": "Manager",
+  "phone": "9667992687",
+  "email": "tanvi.nair@metro.in"
+ },
+ {
+  "id": "oe-207",
+  "name": "Sanjay Singh",
+  "officeId": "of-tb-801",
+  "designation": "Office Admin",
+  "phone": "9831396279",
+  "email": "sanjay.singh@aarav.in"
+ },
+ {
+  "id": "oe-208",
+  "name": "Nikhil Malhotra",
+  "officeId": "of-tb-801",
+  "designation": "Receptionist",
+  "phone": "9417283300",
+  "email": "nikhil.malhotra@aarav.in"
+ },
+ {
+  "id": "oe-209",
+  "name": "Amit Bansal",
+  "officeId": "of-tb-802",
+  "designation": "Office Admin",
+  "phone": "9159097069",
+  "email": "amit.bansal@digital.in"
+ },
+ {
+  "id": "oe-210",
+  "name": "Sunita Patel",
+  "officeId": "of-tb-802",
+  "designation": "Director",
+  "phone": "9786765463",
+  "email": "sunita.patel@digital.in"
+ },
+ {
+  "id": "oe-211",
+  "name": "Ritu Mehta",
+  "officeId": "of-tb-802",
+  "designation": "Receptionist",
+  "phone": "9937422304",
+  "email": "ritu.mehta@digital.in"
+ },
+ {
+  "id": "oe-212",
+  "name": "Yash Iyer",
+  "officeId": "of-tb-804",
+  "designation": "Office Admin",
+  "phone": "9669042927",
+  "email": "yash.iyer@rapid.in"
+ },
+ {
+  "id": "oe-213",
+  "name": "Swati Gupta",
+  "officeId": "of-tb-804",
+  "designation": "Admin Executive",
+  "phone": "9383437265",
+  "email": "swati.gupta@rapid.in"
+ },
+ {
+  "id": "oe-214",
+  "name": "Priya Malhotra",
+  "officeId": "of-tb-804",
+  "designation": "Receptionist",
+  "phone": "9101963368",
+  "email": "priya.malhotra@rapid.in"
+ }
+]

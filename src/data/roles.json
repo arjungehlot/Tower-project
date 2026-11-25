@@ -1,0 +1,30 @@
+[
+ {
+  "id": "SUPER_ADMIN",
+  "name": "SUPER ADMIN"
+ },
+ {
+  "id": "ADMIN",
+  "name": "ADMIN"
+ },
+ {
+  "id": "SUPERVISOR",
+  "name": "SUPERVISOR"
+ },
+ {
+  "id": "SECURITY_GUARD",
+  "name": "SECURITY GUARD"
+ },
+ {
+  "id": "OFFICE_ADMIN",
+  "name": "OFFICE ADMIN"
+ },
+ {
+  "id": "OFFICE_EMPLOYEE",
+  "name": "OFFICE EMPLOYEE"
+ },
+ {
+  "id": "STAFF",
+  "name": "STAFF"
+ }
+]

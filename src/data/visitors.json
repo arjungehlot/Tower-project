@@ -1,0 +1,6096 @@
+[
+ {
+  "id": "vs-001",
+  "name": "Karan Nair",
+  "mobile": "9470885044",
+  "email": "karan.nair@gmail.com",
+  "photo": "",
+  "idType": "Driving License",
+  "idNumber": "563430XXXX",
+  "purpose": "Meeting",
+  "towerId": "tw-a",
+  "floorId": "fl-ta-1",
+  "officeId": "of-ta-103",
+  "hostId": "oe-001",
+  "expectedDuration": "2 hours",
+  "count": 1,
+  "status": "PENDING",
+  "guardId": "u-guard2",
+  "gate": "Gate 1",
+  "requestedAt": "2026-11-25T07:52:11.044Z",
+  "approvedAt": "",
+  "entryAt": "",
+  "exitAt": "",
+  "remark": "",
+  "timeline": [
+   {
+    "at": "2026-11-25T07:52:11.044Z",
+    "label": "Visitor registered"
+   },
+   {
+    "at": "2026-11-25T07:53:11.044Z",
+    "label": "Approval request sent"
+   }
+  ]
+ },
+ {
+  "id": "vs-002",
+  "name": "Pooja Malhotra",
+  "mobile": "9175992830",
+  "email": "pooja.malhotra@gmail.com",
+  "photo": "",
+  "idType": "Driving License",
+  "idNumber": "982885XXXX",
+  "purpose": "Meeting",
+  "towerId": "tw-a",
+  "floorId": "fl-ta-1",
+  "officeId": "of-ta-103",
+  "hostId": "oe-001",
+  "expectedDuration": "30 min",
+  "count": 1,
+  "status": "PENDING",
+  "guardId": "u-guard2",
+  "gate": "Gate 1",
+  "requestedAt": "2026-11-25T07:53:11.044Z",
+  "approvedAt": "",
+  "entryAt": "",
+  "exitAt": "",
+  "remark": "",
+  "timeline": [
+   {
+    "at": "2026-11-25T07:53:11.044Z",
+    "label": "Visitor registered"
+   },
+   {
+    "at": "2026-11-25T07:54:11.044Z",
+    "label": "Approval request sent"
+   }
+  ]
+ },
+ {
+  "id": "vs-003",
+  "name": "Mohit Iyer",
+  "mobile": "9155003723",
+  "email": "mohit.iyer@gmail.com",
+  "photo": "",
+  "idType": "Aadhaar",
+  "idNumber": "443016XXXX",
+  "purpose": "Meeting",
+  "towerId": "tw-b",
+  "floorId": "fl-tb-6",
+  "officeId": "of-tb-605",
+  "hostId": "oe-192",
+  "expectedDuration": "2 hours",
+  "count": 1,
+  "status": "PENDING",
+  "guardId": "u-guard2",
+  "gate": "Gate 1",
+  "requestedAt": "2026-11-25T07:51:11.044Z",
+  "approvedAt": "",
+  "entryAt": "",
+  "exitAt": "",
+  "remark": "",
+  "timeline": [
+   {
+    "at": "2026-11-25T07:51:11.044Z",
+    "label": "Visitor registered"
+   },
+   {
+    "at": "2026-11-25T07:52:11.044Z",
+    "label": "Approval request sent"
+   }
+  ]
+ },
+ {
+  "id": "vs-004",
+  "name": "Anjali Gupta",
+  "mobile": "9470887861",
+  "email": "anjali.gupta@gmail.com",
+  "photo": "",
+  "idType": "Driving License",
+  "idNumber": "988647XXXX",
+  "purpose": "Meeting",
+  "towerId": "tw-a",
+  "floorId": "fl-ta-1",
+  "officeId": "of-ta-103",
+  "hostId": "oe-001",
+  "expectedDuration": "30 min",
+  "count": 1,
+  "status": "APPROVED",
+  "guardId": "u-guard2",
+  "gate": "Gate 2",
+  "requestedAt": "2026-11-25T07:46:11.044Z",
+  "approvedAt": "2026-11-25T07:49:11.044Z",
+  "entryAt": "",
+  "exitAt": "",
+  "remark": "",
+  "timeline": [
+   {
+    "at": "2026-11-25T07:46:11.044Z",
+    "label": "Visitor registered"
+   },
+   {
+    "at": "2026-11-25T07:47:11.044Z",
+    "label": "Approval request sent"
+   },
+   {
+    "at": "2026-11-25T07:49:11.044Z",
+    "label": "Host approved"
+   },
+   {
+    "at": "2026-11-25T07:50:11.044Z",
+    "label": "Guard notified"
+   }
+  ]
+ },
+ {
+  "id": "vs-005",
+  "name": "Amit Verma",
+  "mobile": "9852425552",
+  "email": "amit.verma@gmail.com",
+  "photo": "",
+  "idType": "Passport",
+  "idNumber": "197902XXXX",
+  "purpose": "Interview",
+  "towerId": "tw-a",
+  "floorId": "fl-ta-1",
+  "officeId": "of-ta-103",
+  "hostId": "oe-001",
+  "expectedDuration": "2 hours",
+  "count": 1,
+  "status": "APPROVED",
+  "guardId": "u-guard2",
+  "gate": "Gate 1",
+  "requestedAt": "2026-11-25T07:41:11.044Z",
+  "approvedAt": "2026-11-25T07:44:11.044Z",
+  "entryAt": "",
+  "exitAt": "",
+  "remark": "",
+  "timeline": [
+   {
+    "at": "2026-11-25T07:41:11.044Z",
+    "label": "Visitor registered"
+   },
+   {
+    "at": "2026-11-25T07:42:11.044Z",
+    "label": "Approval request sent"
+   },
+   {
+    "at": "2026-11-25T07:44:11.044Z",
+    "label": "Host approved"
+   },
+   {
+    "at": "2026-11-25T07:45:11.044Z",
+    "label": "Guard notified"
+   }
+  ]
+ },
+ {
+  "id": "vs-006",
+  "name": "Pooja Malhotra",
+  "mobile": "9890273496",
+  "email": "pooja.malhotra@gmail.com",
+  "photo": "",
+  "idType": "Aadhaar",
+  "idNumber": "401285XXXX",
+  "purpose": "Other",
+  "towerId": "tw-a",
+  "floorId": "fl-ta-1",
+  "officeId": "of-ta-103",
+  "hostId": "oe-001",
+  "expectedDuration": "1 hour",
+  "count": 1,
+  "status": "INSIDE",
+  "guardId": "u-guard",
+  "gate": "Gate 2",
+  "requestedAt": "2026-11-25T07:22:11.044Z",
+  "approvedAt": "2026-11-25T07:25:11.044Z",
+  "entryAt": "2026-11-25T07:28:11.044Z",
+  "exitAt": "",
+  "remark": "",
+  "timeline": [
+   {
+    "at": "2026-11-25T07:22:11.044Z",
+    "label": "Visitor registered"
+   },
+   {
+    "at": "2026-11-25T07:23:11.044Z",
+    "label": "Approval request sent"
+   },
+   {
+    "at": "2026-11-25T07:25:11.044Z",
+    "label": "Host approved"
+   },
+   {
+    "at": "2026-11-25T07:26:11.044Z",
+    "label": "Guard notified"
+   },
+   {
+    "at": "2026-11-25T07:28:11.044Z",
+    "label": "Visitor entered building"
+   }
+  ]
+ },
+ {
+  "id": "vs-007",
+  "name": "Suresh Chopra",
+  "mobile": "9811071590",
+  "email": "suresh.chopra@gmail.com",
+  "photo": "",
+  "idType": "Passport",
+  "idNumber": "317261XXXX",
+  "purpose": "Interview",
+  "towerId": "tw-a",
+  "floorId": "fl-ta-1",
+  "officeId": "of-ta-103",
+  "hostId": "oe-001",
+  "expectedDuration": "2 hours",
+  "count": 1,
+  "status": "INSIDE",
+  "guardId": "u-guard",
+  "gate": "Gate 2",
+  "requestedAt": "2026-11-25T04:50:11.044Z",
+  "approvedAt": "2026-11-25T04:53:11.044Z",
+  "entryAt": "2026-11-25T04:56:11.044Z",
+  "exitAt": "",
+  "remark": "",
+  "timeline": [
+   {
+    "at": "2026-11-25T04:50:11.044Z",
+    "label": "Visitor registered"
+   },
+   {
+    "at": "2026-11-25T04:51:11.044Z",
+    "label": "Approval request sent"
+   },
+   {
+    "at": "2026-11-25T04:53:11.044Z",
+    "label": "Host approved"
+   },
+   {
+    "at": "2026-11-25T04:54:11.044Z",
+    "label": "Guard notified"
+   },
+   {
+    "at": "2026-11-25T04:56:11.044Z",
+    "label": "Visitor entered building"
+   }
+  ]
+ },
+ {
+  "id": "vs-008",
+  "name": "Aarti Agarwal",
+  "mobile": "9364426499",
+  "email": "aarti.agarwal@gmail.com",
+  "photo": "",
+  "idType": "Aadhaar",
+  "idNumber": "184058XXXX",
+  "purpose": "Meeting",
+  "towerId": "tw-a",
+  "floorId": "fl-ta-5",
+  "officeId": "of-ta-504",
+  "hostId": "oe-051",
+  "expectedDuration": "30 min",
+  "count": 1,
+  "status": "INSIDE",
+  "guardId": "u-guard",
+  "gate": "Gate 1",
+  "requestedAt": "2026-11-25T04:24:11.044Z",
+  "approvedAt": "2026-11-25T04:27:11.044Z",
+  "entryAt": "2026-11-25T04:30:11.044Z",
+  "exitAt": "",
+  "remark": "",
+  "timeline": [
+   {
+    "at": "2026-11-25T04:24:11.044Z",
+    "label": "Visitor registered"
+   },
+   {
+    "at": "2026-11-25T04:25:11.044Z",
+    "label": "Approval request sent"
+   },
+   {
+    "at": "2026-11-25T04:27:11.044Z",
+    "label": "Host approved"
+   },
+   {
+    "at": "2026-11-25T04:28:11.044Z",
+    "label": "Guard notified"
+   },
+   {
+    "at": "2026-11-25T04:30:11.044Z",
+    "label": "Visitor entered building"
+   }
+  ]
+ },
+ {
+  "id": "vs-009",
+  "name": "Sunita Iyer",
+  "mobile": "9686240967",
+  "email": "sunita.iyer@gmail.com",
+  "photo": "",
+  "idType": "PAN",
+  "idNumber": "906478XXXX",
+  "purpose": "Delivery",
+  "towerId": "tw-b",
+  "floorId": "fl-tb-4",
+  "officeId": "of-tb-406",
+  "hostId": "oe-164",
+  "expectedDuration": "1 hour",
+  "count": 1,
+  "status": "INSIDE",
+  "guardId": "u-guard",
+  "gate": "Gate 1",
+  "requestedAt": "2026-11-25T04:43:11.044Z",
+  "approvedAt": "2026-11-25T04:46:11.044Z",
+  "entryAt": "2026-11-25T04:49:11.044Z",
+  "exitAt": "",
+  "remark": "",
+  "timeline": [
+   {
+    "at": "2026-11-25T04:43:11.044Z",
+    "label": "Visitor registered"
+   },
+   {
+    "at": "2026-11-25T04:44:11.044Z",
+    "label": "Approval request sent"
+   },
+   {
+    "at": "2026-11-25T04:46:11.044Z",
+    "label": "Host approved"
+   },
+   {
+    "at": "2026-11-25T04:47:11.044Z",
+    "label": "Guard notified"
+   },
+   {
+    "at": "2026-11-25T04:49:11.044Z",
+    "label": "Visitor entered building"
+   }
+  ]
+ },
+ {
+  "id": "vs-010",
+  "name": "Nisha Joshi",
+  "mobile": "9872711046",
+  "email": "nisha.joshi@gmail.com",
+  "photo": "",
+  "idType": "Aadhaar",
+  "idNumber": "973076XXXX",
+  "purpose": "Meeting",
+  "towerId": "tw-a",
+  "floorId": "fl-ta-7",
+  "officeId": "of-ta-702",
+  "hostId": "oe-068",
+  "expectedDuration": "1 hour",
+  "count": 1,
+  "status": "INSIDE",
+  "guardId": "u-guard",
+  "gate": "Gate 1",
+  "requestedAt": "2026-11-25T07:14:11.044Z",
+  "approvedAt": "2026-11-25T07:17:11.044Z",
+  "entryAt": "2026-11-25T07:20:11.044Z",
+  "exitAt": "",
+  "remark": "",
+  "timeline": [
+   {
+    "at": "2026-11-25T07:14:11.044Z",
+    "label": "Visitor registered"
+   },
+   {
+    "at": "2026-11-25T07:15:11.044Z",
+    "label": "Approval request sent"
+   },
+   {
+    "at": "2026-11-25T07:17:11.044Z",
+    "label": "Host approved"
+   },
+   {
+    "at": "2026-11-25T07:18:11.044Z",
+    "label": "Guard notified"
+   },
+   {
+    "at": "2026-11-25T07:20:11.044Z",
+    "label": "Visitor entered building"
+   }
+  ]
+ },
+ {
+  "id": "vs-011",
+  "name": "Kavita Sharma",
+  "mobile": "9761353048",
+  "email": "kavita.sharma@gmail.com",
+  "photo": "",
+  "idType": "PAN",
+  "idNumber": "696994XXXX",
+  "purpose": "Maintenance",
+  "towerId": "tw-b",
+  "floorId": "fl-tb-5",
+  "officeId": "of-tb-502",
+  "hostId": "oe-169",
+  "expectedDuration": "30 min",
+  "count": 1,
+  "status": "INSIDE",
+  "guardId": "u-guard2",
+  "gate": "Gate 1",
+  "requestedAt": "2026-11-25T07:29:11.044Z",
+  "approvedAt": "2026-11-25T07:32:11.044Z",
+  "entryAt": "2026-11-25T07:35:11.044Z",
+  "exitAt": "",
+  "remark": "",
+  "timeline": [
+   {
+    "at": "2026-11-25T07:29:11.044Z",
+    "label": "Visitor registered"
+   },
+   {
+    "at": "2026-11-25T07:30:11.044Z",
+    "label": "Approval request sent"
+   },
+   {
+    "at": "2026-11-25T07:32:11.044Z",
+    "label": "Host approved"
+   },
+   {
+    "at": "2026-11-25T07:33:11.044Z",
+    "label": "Guard notified"
+   },
+   {
+    "at": "2026-11-25T07:35:11.044Z",
+    "label": "Visitor entered building"
+   }
+  ]
+ },
+ {
+  "id": "vs-012",
+  "name": "Pankaj Khanna",
+  "mobile": "9294281106",
+  "email": "pankaj.khanna@gmail.com",
+  "photo": "",
+  "idType": "PAN",
+  "idNumber": "564128XXXX",
+  "purpose": "Maintenance",
+  "towerId": "tw-b",
+  "floorId": "fl-tb-5",
+  "officeId": "of-tb-504",
+  "hostId": "oe-173",
+  "expectedDuration": "1 hour",
+  "count": 2,
+  "status": "INSIDE",
+  "guardId": "u-guard",
+  "gate": "Gate 1",
+  "requestedAt": "2026-11-25T05:32:11.044Z",
+  "approvedAt": "2026-11-25T05:35:11.044Z",
+  "entryAt": "2026-11-25T05:38:11.044Z",
+  "exitAt": "",
+  "remark": "",
+  "timeline": [
+   {
+    "at": "2026-11-25T05:32:11.044Z",
+    "label": "Visitor registered"
+   },
+   {
+    "at": "2026-11-25T05:33:11.044Z",
+    "label": "Approval request sent"
+   },
+   {
+    "at": "2026-11-25T05:35:11.044Z",
+    "label": "Host approved"
+   },
+   {
+    "at": "2026-11-25T05:36:11.044Z",
+    "label": "Guard notified"
+   },
+   {
+    "at": "2026-11-25T05:38:11.044Z",
+    "label": "Visitor entered building"
+   }
+  ]
+ },
+ {
+  "id": "vs-013",
+  "name": "Aarti Joshi",
+  "mobile": "9785585245",
+  "email": "aarti.joshi@gmail.com",
+  "photo": "",
+  "idType": "Aadhaar",
+  "idNumber": "127540XXXX",
+  "purpose": "Meeting",
+  "towerId": "tw-b",
+  "floorId": "fl-tb-2",
+  "officeId": "of-tb-202",
+  "hostId": "oe-130",
+  "expectedDuration": "30 min",
+  "count": 1,
+  "status": "INSIDE",
+  "guardId": "u-guard",
+  "gate": "Gate 1",
+  "requestedAt": "2026-11-25T07:08:11.044Z",
+  "approvedAt": "2026-11-25T07:11:11.044Z",
+  "entryAt": "2026-11-25T07:14:11.044Z",
+  "exitAt": "",
+  "remark": "",
+  "timeline": [
+   {
+    "at": "2026-11-25T07:08:11.044Z",
+    "label": "Visitor registered"
+   },
+   {
+    "at": "2026-11-25T07:09:11.044Z",
+    "label": "Approval request sent"
+   },
+   {
+    "at": "2026-11-25T07:11:11.044Z",
+    "label": "Host approved"
+   },
+   {
+    "at": "2026-11-25T07:12:11.044Z",
+    "label": "Guard notified"
+   },
+   {
+    "at": "2026-11-25T07:14:11.044Z",
+    "label": "Visitor entered building"
+   }
+  ]
+ },
+ {
+  "id": "vs-014",
+  "name": "Harsh Reddy",
+  "mobile": "9979794360",
+  "email": "harsh.reddy@gmail.com",
+  "photo": "",
+  "idType": "Driving License",
+  "idNumber": "785478XXXX",
+  "purpose": "Delivery",
+  "towerId": "tw-a",
+  "floorId": "fl-ta-1",
+  "officeId": "of-ta-103",
+  "hostId": "oe-001",
+  "expectedDuration": "1 hour",
+  "count": 1,
+  "status": "EXITED",
+  "guardId": "u-guard2",
+  "gate": "Gate 1",
+  "requestedAt": "2026-11-25T02:29:11.044Z",
+  "approvedAt": "2026-11-25T02:32:11.044Z",
+  "entryAt": "2026-11-25T02:35:11.044Z",
+  "exitAt": "2026-11-25T04:01:11.044Z",
+  "remark": "",
+  "timeline": [
+   {
+    "at": "2026-11-25T02:29:11.044Z",
+    "label": "Visitor registered"
+   },
+   {
+    "at": "2026-11-25T02:30:11.044Z",
+    "label": "Approval request sent"
+   },
+   {
+    "at": "2026-11-25T02:32:11.044Z",
+    "label": "Host approved"
+   },
+   {
+    "at": "2026-11-25T02:33:11.044Z",
+    "label": "Guard notified"
+   },
+   {
+    "at": "2026-11-25T02:35:11.044Z",
+    "label": "Visitor entered building"
+   },
+   {
+    "at": "2026-11-25T04:01:11.044Z",
+    "label": "Visitor exited building"
+   }
+  ]
+ },
+ {
+  "id": "vs-015",
+  "name": "Sunita Nair",
+  "mobile": "9808135932",
+  "email": "sunita.nair@gmail.com",
+  "photo": "",
+  "idType": "Passport",
+  "idNumber": "400821XXXX",
+  "purpose": "Interview",
+  "towerId": "tw-b",
+  "floorId": "fl-tb-4",
+  "officeId": "of-tb-401",
+  "hostId": "oe-152",
+  "expectedDuration": "2 hours",
+  "count": 1,
+  "status": "EXITED",
+  "guardId": "u-guard2",
+  "gate": "Gate 2",
+  "requestedAt": "2026-11-25T01:22:11.044Z",
+  "approvedAt": "2026-11-25T01:25:11.044Z",
+  "entryAt": "2026-11-25T01:28:11.044Z",
+  "exitAt": "2026-11-25T02:18:11.044Z",
+  "remark": "",
+  "timeline": [
+   {
+    "at": "2026-11-25T01:22:11.044Z",
+    "label": "Visitor registered"
+   },
+   {
+    "at": "2026-11-25T01:23:11.044Z",
+    "label": "Approval request sent"
+   },
+   {
+    "at": "2026-11-25T01:25:11.044Z",
+    "label": "Host approved"
+   },
+   {
+    "at": "2026-11-25T01:26:11.044Z",
+    "label": "Guard notified"
+   },
+   {
+    "at": "2026-11-25T01:28:11.044Z",
+    "label": "Visitor entered building"
+   },
+   {
+    "at": "2026-11-25T02:18:11.044Z",
+    "label": "Visitor exited building"
+   }
+  ]
+ },
+ {
+  "id": "vs-016",
+  "name": "Varun Bansal",
+  "mobile": "9592020472",
+  "email": "varun.bansal@gmail.com",
+  "photo": "",
+  "idType": "Aadhaar",
+  "idNumber": "436337XXXX",
+  "purpose": "Meeting",
+  "towerId": "tw-b",
+  "floorId": "fl-tb-7",
+  "officeId": "of-tb-705",
+  "hostId": "oe-202",
+  "expectedDuration": "30 min",
+  "count": 1,
+  "status": "EXITED",
+  "guardId": "u-guard2",
+  "gate": "Gate 2",
+  "requestedAt": "2026-11-25T01:50:11.044Z",
+  "approvedAt": "2026-11-25T01:53:11.044Z",
+  "entryAt": "2026-11-25T01:56:11.044Z",
+  "exitAt": "2026-11-25T02:46:11.044Z",
+  "remark": "",
+  "timeline": [
+   {
+    "at": "2026-11-25T01:50:11.044Z",
+    "label": "Visitor registered"
+   },
+   {
+    "at": "2026-11-25T01:51:11.044Z",
+    "label": "Approval request sent"
+   },
+   {
+    "at": "2026-11-25T01:53:11.044Z",
+    "label": "Host approved"
+   },
+   {
+    "at": "2026-11-25T01:54:11.044Z",
+    "label": "Guard notified"
+   },
+   {
+    "at": "2026-11-25T01:56:11.044Z",
+    "label": "Visitor entered building"
+   },
+   {
+    "at": "2026-11-25T02:46:11.044Z",
+    "label": "Visitor exited building"
+   }
+  ]
+ },
+ {
+  "id": "vs-017",
+  "name": "Mohit Mishra",
+  "mobile": "9322072925",
+  "email": "mohit.mishra@gmail.com",
+  "photo": "",
+  "idType": "Passport",
+  "idNumber": "420990XXXX",
+  "purpose": "Delivery",
+  "towerId": "tw-b",
+  "floorId": "fl-tb-4",
+  "officeId": "of-tb-404",
+  "hostId": "oe-159",
+  "expectedDuration": "30 min",
+  "count": 2,
+  "status": "EXITED",
+  "guardId": "u-guard",
+  "gate": "Gate 1",
+  "requestedAt": "2026-11-25T02:42:11.044Z",
+  "approvedAt": "2026-11-25T02:45:11.044Z",
+  "entryAt": "2026-11-25T02:48:11.044Z",
+  "exitAt": "2026-11-25T03:32:11.044Z",
+  "remark": "",
+  "timeline": [
+   {
+    "at": "2026-11-25T02:42:11.044Z",
+    "label": "Visitor registered"
+   },
+   {
+    "at": "2026-11-25T02:43:11.044Z",
+    "label": "Approval request sent"
+   },
+   {
+    "at": "2026-11-25T02:45:11.044Z",
+    "label": "Host approved"
+   },
+   {
+    "at": "2026-11-25T02:46:11.044Z",
+    "label": "Guard notified"
+   },
+   {
+    "at": "2026-11-25T02:48:11.044Z",
+    "label": "Visitor entered building"
+   },
+   {
+    "at": "2026-11-25T03:32:11.044Z",
+    "label": "Visitor exited building"
+   }
+  ]
+ },
+ {
+  "id": "vs-018",
+  "name": "Divya Das",
+  "mobile": "9100985002",
+  "email": "divya.das@gmail.com",
+  "photo": "",
+  "idType": "Aadhaar",
+  "idNumber": "659458XXXX",
+  "purpose": "Interview",
+  "towerId": "tw-a",
+  "floorId": "fl-ta-4",
+  "officeId": "of-ta-406",
+  "hostId": "oe-042",
+  "expectedDuration": "1 hour",
+  "count": 1,
+  "status": "EXITED",
+  "guardId": "u-guard2",
+  "gate": "Gate 1",
+  "requestedAt": "2026-11-25T02:08:11.044Z",
+  "approvedAt": "2026-11-25T02:11:11.044Z",
+  "entryAt": "2026-11-25T02:14:11.044Z",
+  "exitAt": "2026-11-25T03:52:11.044Z",
+  "remark": "",
+  "timeline": [
+   {
+    "at": "2026-11-25T02:08:11.044Z",
+    "label": "Visitor registered"
+   },
+   {
+    "at": "2026-11-25T02:09:11.044Z",
+    "label": "Approval request sent"
+   },
+   {
+    "at": "2026-11-25T02:11:11.044Z",
+    "label": "Host approved"
+   },
+   {
+    "at": "2026-11-25T02:12:11.044Z",
+    "label": "Guard notified"
+   },
+   {
+    "at": "2026-11-25T02:14:11.044Z",
+    "label": "Visitor entered building"
+   },
+   {
+    "at": "2026-11-25T03:52:11.044Z",
+    "label": "Visitor exited building"
+   }
+  ]
+ },
+ {
+  "id": "vs-019",
+  "name": "Deepak Nair",
+  "mobile": "9101173114",
+  "email": "deepak.nair@gmail.com",
+  "photo": "",
+  "idType": "PAN",
+  "idNumber": "371030XXXX",
+  "purpose": "Meeting",
+  "towerId": "tw-a",
+  "floorId": "fl-ta-4",
+  "officeId": "of-ta-406",
+  "hostId": "oe-042",
+  "expectedDuration": "1 hour",
+  "count": 1,
+  "status": "EXITED",
+  "guardId": "u-guard2",
+  "gate": "Gate 2",
+  "requestedAt": "2026-11-25T01:44:11.044Z",
+  "approvedAt": "2026-11-25T01:47:11.044Z",
+  "entryAt": "2026-11-25T01:50:11.044Z",
+  "exitAt": "2026-11-25T02:25:11.044Z",
+  "remark": "",
+  "timeline": [
+   {
+    "at": "2026-11-25T01:44:11.044Z",
+    "label": "Visitor registered"
+   },
+   {
+    "at": "2026-11-25T01:45:11.044Z",
+    "label": "Approval request sent"
+   },
+   {
+    "at": "2026-11-25T01:47:11.044Z",
+    "label": "Host approved"
+   },
+   {
+    "at": "2026-11-25T01:48:11.044Z",
+    "label": "Guard notified"
+   },
+   {
+    "at": "2026-11-25T01:50:11.044Z",
+    "label": "Visitor entered building"
+   },
+   {
+    "at": "2026-11-25T02:25:11.044Z",
+    "label": "Visitor exited building"
+   }
+  ]
+ },
+ {
+  "id": "vs-020",
+  "name": "Priya Patel",
+  "mobile": "9327827616",
+  "email": "priya.patel@gmail.com",
+  "photo": "",
+  "idType": "Passport",
+  "idNumber": "315437XXXX",
+  "purpose": "Interview",
+  "towerId": "tw-a",
+  "floorId": "fl-ta-7",
+  "officeId": "of-ta-703",
+  "hostId": "oe-070",
+  "expectedDuration": "2 hours",
+  "count": 2,
+  "status": "EXITED",
+  "guardId": "u-guard2",
+  "gate": "Gate 1",
+  "requestedAt": "2026-11-25T03:59:11.044Z",
+  "approvedAt": "2026-11-25T04:02:11.044Z",
+  "entryAt": "2026-11-25T04:05:11.044Z",
+  "exitAt": "2026-11-25T05:44:11.044Z",
+  "remark": "",
+  "timeline": [
+   {
+    "at": "2026-11-25T03:59:11.044Z",
+    "label": "Visitor registered"
+   },
+   {
+    "at": "2026-11-25T04:00:11.044Z",
+    "label": "Approval request sent"
+   },
+   {
+    "at": "2026-11-25T04:02:11.044Z",
+    "label": "Host approved"
+   },
+   {
+    "at": "2026-11-25T04:03:11.044Z",
+    "label": "Guard notified"
+   },
+   {
+    "at": "2026-11-25T04:05:11.044Z",
+    "label": "Visitor entered building"
+   },
+   {
+    "at": "2026-11-25T05:44:11.044Z",
+    "label": "Visitor exited building"
+   }
+  ]
+ },
+ {
+  "id": "vs-021",
+  "name": "Sunita Singh",
+  "mobile": "9169183239",
+  "email": "sunita.singh@gmail.com",
+  "photo": "",
+  "idType": "PAN",
+  "idNumber": "771121XXXX",
+  "purpose": "Interview",
+  "towerId": "tw-b",
+  "floorId": "fl-tb-2",
+  "officeId": "of-tb-201",
+  "hostId": "oe-128",
+  "expectedDuration": "2 hours",
+  "count": 1,
+  "status": "EXITED",
+  "guardId": "u-guard",
+  "gate": "Gate 1",
+  "requestedAt": "2026-11-25T02:35:11.044Z",
+  "approvedAt": "2026-11-25T02:38:11.044Z",
+  "entryAt": "2026-11-25T02:41:11.044Z",
+  "exitAt": "2026-11-25T04:16:11.044Z",
+  "remark": "",
+  "timeline": [
+   {
+    "at": "2026-11-25T02:35:11.044Z",
+    "label": "Visitor registered"
+   },
+   {
+    "at": "2026-11-25T02:36:11.044Z",
+    "label": "Approval request sent"
+   },
+   {
+    "at": "2026-11-25T02:38:11.044Z",
+    "label": "Host approved"
+   },
+   {
+    "at": "2026-11-25T02:39:11.044Z",
+    "label": "Guard notified"
+   },
+   {
+    "at": "2026-11-25T02:41:11.044Z",
+    "label": "Visitor entered building"
+   },
+   {
+    "at": "2026-11-25T04:16:11.044Z",
+    "label": "Visitor exited building"
+   }
+  ]
+ },
+ {
+  "id": "vs-022",
+  "name": "Priya Iyer",
+  "mobile": "9862032463",
+  "email": "priya.iyer@gmail.com",
+  "photo": "",
+  "idType": "PAN",
+  "idNumber": "394703XXXX",
+  "purpose": "Interview",
+  "towerId": "tw-a",
+  "floorId": "fl-ta-8",
+  "officeId": "of-ta-801",
+  "hostId": "oe-078",
+  "expectedDuration": "2 hours",
+  "count": 2,
+  "status": "EXITED",
+  "guardId": "u-guard2",
+  "gate": "Gate 2",
+  "requestedAt": "2026-11-25T03:45:11.044Z",
+  "approvedAt": "2026-11-25T03:48:11.044Z",
+  "entryAt": "2026-11-25T03:51:11.044Z",
+  "exitAt": "2026-11-25T04:42:11.044Z",
+  "remark": "",
+  "timeline": [
+   {
+    "at": "2026-11-25T03:45:11.044Z",
+    "label": "Visitor registered"
+   },
+   {
+    "at": "2026-11-25T03:46:11.044Z",
+    "label": "Approval request sent"
+   },
+   {
+    "at": "2026-11-25T03:48:11.044Z",
+    "label": "Host approved"
+   },
+   {
+    "at": "2026-11-25T03:49:11.044Z",
+    "label": "Guard notified"
+   },
+   {
+    "at": "2026-11-25T03:51:11.044Z",
+    "label": "Visitor entered building"
+   },
+   {
+    "at": "2026-11-25T04:42:11.044Z",
+    "label": "Visitor exited building"
+   }
+  ]
+ },
+ {
+  "id": "vs-023",
+  "name": "Sanjay Yadav",
+  "mobile": "9539771825",
+  "email": "sanjay.yadav@gmail.com",
+  "photo": "",
+  "idType": "Passport",
+  "idNumber": "790062XXXX",
+  "purpose": "Delivery",
+  "towerId": "tw-a",
+  "floorId": "fl-ta-10",
+  "officeId": "of-ta-1004",
+  "hostId": "oe-107",
+  "expectedDuration": "2 hours",
+  "count": 1,
+  "status": "EXITED",
+  "guardId": "u-guard2",
+  "gate": "Gate 1",
+  "requestedAt": "2026-11-25T01:47:11.044Z",
+  "approvedAt": "2026-11-25T01:50:11.044Z",
+  "entryAt": "2026-11-25T01:53:11.044Z",
+  "exitAt": "2026-11-25T03:15:11.044Z",
+  "remark": "",
+  "timeline": [
+   {
+    "at": "2026-11-25T01:47:11.044Z",
+    "label": "Visitor registered"
+   },
+   {
+    "at": "2026-11-25T01:48:11.044Z",
+    "label": "Approval request sent"
+   },
+   {
+    "at": "2026-11-25T01:50:11.044Z",
+    "label": "Host approved"
+   },
+   {
+    "at": "2026-11-25T01:51:11.044Z",
+    "label": "Guard notified"
+   },
+   {
+    "at": "2026-11-25T01:53:11.044Z",
+    "label": "Visitor entered building"
+   },
+   {
+    "at": "2026-11-25T03:15:11.044Z",
+    "label": "Visitor exited building"
+   }
+  ]
+ },
+ {
+  "id": "vs-024",
+  "name": "Varun Reddy",
+  "mobile": "9405613637",
+  "email": "varun.reddy@gmail.com",
+  "photo": "",
+  "idType": "Driving License",
+  "idNumber": "446032XXXX",
+  "purpose": "Meeting",
+  "towerId": "tw-b",
+  "floorId": "fl-tb-1",
+  "officeId": "of-tb-106",
+  "hostId": "oe-126",
+  "expectedDuration": "1 hour",
+  "count": 1,
+  "status": "EXITED",
+  "guardId": "u-guard2",
+  "gate": "Gate 1",
+  "requestedAt": "2026-11-25T03:13:11.044Z",
+  "approvedAt": "2026-11-25T03:16:11.044Z",
+  "entryAt": "2026-11-25T03:19:11.044Z",
+  "exitAt": "2026-11-25T04:53:11.044Z",
+  "remark": "",
+  "timeline": [
+   {
+    "at": "2026-11-25T03:13:11.044Z",
+    "label": "Visitor registered"
+   },
+   {
+    "at": "2026-11-25T03:14:11.044Z",
+    "label": "Approval request sent"
+   },
+   {
+    "at": "2026-11-25T03:16:11.044Z",
+    "label": "Host approved"
+   },
+   {
+    "at": "2026-11-25T03:17:11.044Z",
+    "label": "Guard notified"
+   },
+   {
+    "at": "2026-11-25T03:19:11.044Z",
+    "label": "Visitor entered building"
+   },
+   {
+    "at": "2026-11-25T04:53:11.044Z",
+    "label": "Visitor exited building"
+   }
+  ]
+ },
+ {
+  "id": "vs-025",
+  "name": "Divya Malhotra",
+  "mobile": "9794797924",
+  "email": "divya.malhotra@gmail.com",
+  "photo": "",
+  "idType": "Driving License",
+  "idNumber": "866648XXXX",
+  "purpose": "Delivery",
+  "towerId": "tw-a",
+  "floorId": "fl-ta-10",
+  "officeId": "of-ta-1006",
+  "hostId": "oe-112",
+  "expectedDuration": "2 hours",
+  "count": 2,
+  "status": "EXITED",
+  "guardId": "u-guard",
+  "gate": "Gate 1",
+  "requestedAt": "2026-11-25T03:34:11.044Z",
+  "approvedAt": "2026-11-25T03:37:11.044Z",
+  "entryAt": "2026-11-25T03:40:11.044Z",
+  "exitAt": "2026-11-25T05:27:11.044Z",
+  "remark": "",
+  "timeline": [
+   {
+    "at": "2026-11-25T03:34:11.044Z",
+    "label": "Visitor registered"
+   },
+   {
+    "at": "2026-11-25T03:35:11.044Z",
+    "label": "Approval request sent"
+   },
+   {
+    "at": "2026-11-25T03:37:11.044Z",
+    "label": "Host approved"
+   },
+   {
+    "at": "2026-11-25T03:38:11.044Z",
+    "label": "Guard notified"
+   },
+   {
+    "at": "2026-11-25T03:40:11.044Z",
+    "label": "Visitor entered building"
+   },
+   {
+    "at": "2026-11-25T05:27:11.044Z",
+    "label": "Visitor exited building"
+   }
+  ]
+ },
+ {
+  "id": "vs-026",
+  "name": "Swati Mehta",
+  "mobile": "9519902177",
+  "email": "swati.mehta@gmail.com",
+  "photo": "",
+  "idType": "Driving License",
+  "idNumber": "866532XXXX",
+  "purpose": "Other",
+  "towerId": "tw-a",
+  "floorId": "fl-ta-5",
+  "officeId": "of-ta-506",
+  "hostId": "oe-053",
+  "expectedDuration": "30 min",
+  "count": 1,
+  "status": "REJECTED",
+  "guardId": "u-guard",
+  "gate": "Gate 1",
+  "requestedAt": "2026-11-25T06:20:11.044Z",
+  "approvedAt": "",
+  "entryAt": "",
+  "exitAt": "",
+  "remark": "Meeting cancelled",
+  "timeline": [
+   {
+    "at": "2026-11-25T06:20:11.044Z",
+    "label": "Visitor registered"
+   },
+   {
+    "at": "2026-11-25T06:21:11.044Z",
+    "label": "Approval request sent"
+   },
+   {
+    "at": "2026-11-25T06:23:11.044Z",
+    "label": "Host rejected the request"
+   }
+  ]
+ },
+ {
+  "id": "vs-027",
+  "name": "Gaurav Nair",
+  "mobile": "9325690080",
+  "email": "gaurav.nair@gmail.com",
+  "photo": "",
+  "idType": "Passport",
+  "idNumber": "260233XXXX",
+  "purpose": "Delivery",
+  "towerId": "tw-a",
+  "floorId": "fl-ta-10",
+  "officeId": "of-ta-1006",
+  "hostId": "oe-112",
+  "expectedDuration": "1 hour",
+  "count": 1,
+  "status": "EXITED",
+  "guardId": "u-guard2",
+  "gate": "Gate 1",
+  "requestedAt": "2026-11-24T14:53:11.044Z",
+  "approvedAt": "2026-11-24T14:56:11.044Z",
+  "entryAt": "2026-11-24T14:59:11.044Z",
+  "exitAt": "2026-11-24T16:41:11.044Z",
+  "remark": "",
+  "timeline": [
+   {
+    "at": "2026-11-24T14:53:11.044Z",
+    "label": "Visitor registered"
+   },
+   {
+    "at": "2026-11-24T14:54:11.044Z",
+    "label": "Approval request sent"
+   },
+   {
+    "at": "2026-11-24T14:56:11.044Z",
+    "label": "Host approved"
+   },
+   {
+    "at": "2026-11-24T14:57:11.044Z",
+    "label": "Guard notified"
+   },
+   {
+    "at": "2026-11-24T14:59:11.044Z",
+    "label": "Visitor entered building"
+   },
+   {
+    "at": "2026-11-24T16:41:11.044Z",
+    "label": "Visitor exited building"
+   }
+  ]
+ },
+ {
+  "id": "vs-028",
+  "name": "Kavita Agarwal",
+  "mobile": "9265538455",
+  "email": "kavita.agarwal@gmail.com",
+  "photo": "",
+  "idType": "PAN",
+  "idNumber": "276073XXXX",
+  "purpose": "Interview",
+  "towerId": "tw-a",
+  "floorId": "fl-ta-4",
+  "officeId": "of-ta-404",
+  "hostId": "oe-040",
+  "expectedDuration": "1 hour",
+  "count": 1,
+  "status": "EXITED",
+  "guardId": "u-guard",
+  "gate": "Gate 1",
+  "requestedAt": "2026-11-24T12:14:11.044Z",
+  "approvedAt": "2026-11-24T12:17:11.044Z",
+  "entryAt": "2026-11-24T12:20:11.044Z",
+  "exitAt": "2026-11-24T14:19:11.044Z",
+  "remark": "",
+  "timeline": [
+   {
+    "at": "2026-11-24T12:14:11.044Z",
+    "label": "Visitor registered"
+   },
+   {
+    "at": "2026-11-24T12:15:11.044Z",
+    "label": "Approval request sent"
+   },
+   {
+    "at": "2026-11-24T12:17:11.044Z",
+    "label": "Host approved"
+   },
+   {
+    "at": "2026-11-24T12:18:11.044Z",
+    "label": "Guard notified"
+   },
+   {
+    "at": "2026-11-24T12:20:11.044Z",
+    "label": "Visitor entered building"
+   },
+   {
+    "at": "2026-11-24T14:19:11.044Z",
+    "label": "Visitor exited building"
+   }
+  ]
+ },
+ {
+  "id": "vs-029",
+  "name": "Suresh Das",
+  "mobile": "9957751118",
+  "email": "suresh.das@gmail.com",
+  "photo": "",
+  "idType": "PAN",
+  "idNumber": "942939XXXX",
+  "purpose": "Personal",
+  "towerId": "tw-b",
+  "floorId": "fl-tb-8",
+  "officeId": "of-tb-801",
+  "hostId": "oe-207",
+  "expectedDuration": "2 hours",
+  "count": 1,
+  "status": "REJECTED",
+  "guardId": "u-guard2",
+  "gate": "Gate 2",
+  "requestedAt": "2026-11-24T08:22:11.044Z",
+  "approvedAt": "",
+  "entryAt": "",
+  "exitAt": "",
+  "remark": "Not expecting any visitor",
+  "timeline": [
+   {
+    "at": "2026-11-24T08:22:11.044Z",
+    "label": "Visitor registered"
+   },
+   {
+    "at": "2026-11-24T08:23:11.044Z",
+    "label": "Approval request sent"
+   },
+   {
+    "at": "2026-11-24T08:25:11.044Z",
+    "label": "Host rejected the request"
+   }
+  ]
+ },
+ {
+  "id": "vs-030",
+  "name": "Nisha Verma",
+  "mobile": "9661396632",
+  "email": "nisha.verma@gmail.com",
+  "photo": "",
+  "idType": "Passport",
+  "idNumber": "865558XXXX",
+  "purpose": "Meeting",
+  "towerId": "tw-b",
+  "floorId": "fl-tb-8",
+  "officeId": "of-tb-804",
+  "hostId": "oe-212",
+  "expectedDuration": "1 hour",
+  "count": 1,
+  "status": "EXITED",
+  "guardId": "u-guard",
+  "gate": "Gate 2",
+  "requestedAt": "2026-11-24T06:18:11.044Z",
+  "approvedAt": "2026-11-24T06:21:11.044Z",
+  "entryAt": "2026-11-24T06:24:11.044Z",
+  "exitAt": "2026-11-24T07:28:11.044Z",
+  "remark": "",
+  "timeline": [
+   {
+    "at": "2026-11-24T06:18:11.044Z",
+    "label": "Visitor registered"
+   },
+   {
+    "at": "2026-11-24T06:19:11.044Z",
+    "label": "Approval request sent"
+   },
+   {
+    "at": "2026-11-24T06:21:11.044Z",
+    "label": "Host approved"
+   },
+   {
+    "at": "2026-11-24T06:22:11.044Z",
+    "label": "Guard notified"
+   },
+   {
+    "at": "2026-11-24T06:24:11.044Z",
+    "label": "Visitor entered building"
+   },
+   {
+    "at": "2026-11-24T07:28:11.044Z",
+    "label": "Visitor exited building"
+   }
+  ]
+ },
+ {
+  "id": "vs-031",
+  "name": "Sanjay Bansal",
+  "mobile": "9710106756",
+  "email": "sanjay.bansal@gmail.com",
+  "photo": "",
+  "idType": "Driving License",
+  "idNumber": "454410XXXX",
+  "purpose": "Interview",
+  "towerId": "tw-b",
+  "floorId": "fl-tb-4",
+  "officeId": "of-tb-405",
+  "hostId": "oe-161",
+  "expectedDuration": "30 min",
+  "count": 1,
+  "status": "EXITED",
+  "guardId": "u-guard2",
+  "gate": "Gate 1",
+  "requestedAt": "2026-11-24T10:37:11.044Z",
+  "approvedAt": "2026-11-24T10:40:11.044Z",
+  "entryAt": "2026-11-24T10:43:11.044Z",
+  "exitAt": "2026-11-24T11:12:11.044Z",
+  "remark": "",
+  "timeline": [
+   {
+    "at": "2026-11-24T10:37:11.044Z",
+    "label": "Visitor registered"
+   },
+   {
+    "at": "2026-11-24T10:38:11.044Z",
+    "label": "Approval request sent"
+   },
+   {
+    "at": "2026-11-24T10:40:11.044Z",
+    "label": "Host approved"
+   },
+   {
+    "at": "2026-11-24T10:41:11.044Z",
+    "label": "Guard notified"
+   },
+   {
+    "at": "2026-11-24T10:43:11.044Z",
+    "label": "Visitor entered building"
+   },
+   {
+    "at": "2026-11-24T11:12:11.044Z",
+    "label": "Visitor exited building"
+   }
+  ]
+ },
+ {
+  "id": "vs-032",
+  "name": "Nikhil Kapoor",
+  "mobile": "9340374060",
+  "email": "nikhil.kapoor@gmail.com",
+  "photo": "",
+  "idType": "Passport",
+  "idNumber": "927586XXXX",
+  "purpose": "Meeting",
+  "towerId": "tw-b",
+  "floorId": "fl-tb-2",
+  "officeId": "of-tb-204",
+  "hostId": "oe-134",
+  "expectedDuration": "30 min",
+  "count": 1,
+  "status": "EXITED",
+  "guardId": "u-guard",
+  "gate": "Gate 2",
+  "requestedAt": "2026-11-24T13:00:11.044Z",
+  "approvedAt": "2026-11-24T13:03:11.044Z",
+  "entryAt": "2026-11-24T13:06:11.044Z",
+  "exitAt": "2026-11-24T13:54:11.044Z",
+  "remark": "",
+  "timeline": [
+   {
+    "at": "2026-11-24T13:00:11.044Z",
+    "label": "Visitor registered"
+   },
+   {
+    "at": "2026-11-24T13:01:11.044Z",
+    "label": "Approval request sent"
+   },
+   {
+    "at": "2026-11-24T13:03:11.044Z",
+    "label": "Host approved"
+   },
+   {
+    "at": "2026-11-24T13:04:11.044Z",
+    "label": "Guard notified"
+   },
+   {
+    "at": "2026-11-24T13:06:11.044Z",
+    "label": "Visitor entered building"
+   },
+   {
+    "at": "2026-11-24T13:54:11.044Z",
+    "label": "Visitor exited building"
+   }
+  ]
+ },
+ {
+  "id": "vs-033",
+  "name": "Deepak Mehta",
+  "mobile": "9957014918",
+  "email": "deepak.mehta@gmail.com",
+  "photo": "",
+  "idType": "Aadhaar",
+  "idNumber": "789033XXXX",
+  "purpose": "Interview",
+  "towerId": "tw-a",
+  "floorId": "fl-ta-8",
+  "officeId": "of-ta-805",
+  "hostId": "oe-085",
+  "expectedDuration": "1 hour",
+  "count": 1,
+  "status": "EXITED",
+  "guardId": "u-guard2",
+  "gate": "Gate 1",
+  "requestedAt": "2026-11-24T10:06:11.044Z",
+  "approvedAt": "2026-11-24T10:09:11.044Z",
+  "entryAt": "2026-11-24T10:12:11.044Z",
+  "exitAt": "2026-11-24T11:13:11.044Z",
+  "remark": "",
+  "timeline": [
+   {
+    "at": "2026-11-24T10:06:11.044Z",
+    "label": "Visitor registered"
+   },
+   {
+    "at": "2026-11-24T10:07:11.044Z",
+    "label": "Approval request sent"
+   },
+   {
+    "at": "2026-11-24T10:09:11.044Z",
+    "label": "Host approved"
+   },
+   {
+    "at": "2026-11-24T10:10:11.044Z",
+    "label": "Guard notified"
+   },
+   {
+    "at": "2026-11-24T10:12:11.044Z",
+    "label": "Visitor entered building"
+   },
+   {
+    "at": "2026-11-24T11:13:11.044Z",
+    "label": "Visitor exited building"
+   }
+  ]
+ },
+ {
+  "id": "vs-034",
+  "name": "Mohit Reddy",
+  "mobile": "9777416230",
+  "email": "mohit.reddy@gmail.com",
+  "photo": "",
+  "idType": "Passport",
+  "idNumber": "676843XXXX",
+  "purpose": "Interview",
+  "towerId": "tw-b",
+  "floorId": "fl-tb-7",
+  "officeId": "of-tb-701",
+  "hostId": "oe-197",
+  "expectedDuration": "1 hour",
+  "count": 1,
+  "status": "EXITED",
+  "guardId": "u-guard",
+  "gate": "Gate 1",
+  "requestedAt": "2026-11-24T07:35:11.044Z",
+  "approvedAt": "2026-11-24T07:38:11.044Z",
+  "entryAt": "2026-11-24T07:41:11.044Z",
+  "exitAt": "2026-11-24T09:16:11.044Z",
+  "remark": "",
+  "timeline": [
+   {
+    "at": "2026-11-24T07:35:11.044Z",
+    "label": "Visitor registered"
+   },
+   {
+    "at": "2026-11-24T07:36:11.044Z",
+    "label": "Approval request sent"
+   },
+   {
+    "at": "2026-11-24T07:38:11.044Z",
+    "label": "Host approved"
+   },
+   {
+    "at": "2026-11-24T07:39:11.044Z",
+    "label": "Guard notified"
+   },
+   {
+    "at": "2026-11-24T07:41:11.044Z",
+    "label": "Visitor entered building"
+   },
+   {
+    "at": "2026-11-24T09:16:11.044Z",
+    "label": "Visitor exited building"
+   }
+  ]
+ },
+ {
+  "id": "vs-035",
+  "name": "Kavita Agarwal",
+  "mobile": "9373012763",
+  "email": "kavita.agarwal@gmail.com",
+  "photo": "",
+  "idType": "Aadhaar",
+  "idNumber": "288999XXXX",
+  "purpose": "Meeting",
+  "towerId": "tw-a",
+  "floorId": "fl-ta-8",
+  "officeId": "of-ta-805",
+  "hostId": "oe-085",
+  "expectedDuration": "2 hours",
+  "count": 1,
+  "status": "EXITED",
+  "guardId": "u-guard",
+  "gate": "Gate 2",
+  "requestedAt": "2026-11-24T09:57:11.044Z",
+  "approvedAt": "2026-11-24T10:00:11.044Z",
+  "entryAt": "2026-11-24T10:03:11.044Z",
+  "exitAt": "2026-11-24T11:15:11.044Z",
+  "remark": "",
+  "timeline": [
+   {
+    "at": "2026-11-24T09:57:11.044Z",
+    "label": "Visitor registered"
+   },
+   {
+    "at": "2026-11-24T09:58:11.044Z",
+    "label": "Approval request sent"
+   },
+   {
+    "at": "2026-11-24T10:00:11.044Z",
+    "label": "Host approved"
+   },
+   {
+    "at": "2026-11-24T10:01:11.044Z",
+    "label": "Guard notified"
+   },
+   {
+    "at": "2026-11-24T10:03:11.044Z",
+    "label": "Visitor entered building"
+   },
+   {
+    "at": "2026-11-24T11:15:11.044Z",
+    "label": "Visitor exited building"
+   }
+  ]
+ },
+ {
+  "id": "vs-036",
+  "name": "Manish Reddy",
+  "mobile": "9811802506",
+  "email": "manish.reddy@gmail.com",
+  "photo": "",
+  "idType": "Driving License",
+  "idNumber": "837803XXXX",
+  "purpose": "Meeting",
+  "towerId": "tw-a",
+  "floorId": "fl-ta-7",
+  "officeId": "of-ta-702",
+  "hostId": "oe-068",
+  "expectedDuration": "30 min",
+  "count": 1,
+  "status": "EXITED",
+  "guardId": "u-guard",
+  "gate": "Gate 1",
+  "requestedAt": "2026-11-24T08:30:11.044Z",
+  "approvedAt": "2026-11-24T08:33:11.044Z",
+  "entryAt": "2026-11-24T08:36:11.044Z",
+  "exitAt": "2026-11-24T11:00:11.044Z",
+  "remark": "",
+  "timeline": [
+   {
+    "at": "2026-11-24T08:30:11.044Z",
+    "label": "Visitor registered"
+   },
+   {
+    "at": "2026-11-24T08:31:11.044Z",
+    "label": "Approval request sent"
+   },
+   {
+    "at": "2026-11-24T08:33:11.044Z",
+    "label": "Host approved"
+   },
+   {
+    "at": "2026-11-24T08:34:11.044Z",
+    "label": "Guard notified"
+   },
+   {
+    "at": "2026-11-24T08:36:11.044Z",
+    "label": "Visitor entered building"
+   },
+   {
+    "at": "2026-11-24T11:00:11.044Z",
+    "label": "Visitor exited building"
+   }
+  ]
+ },
+ {
+  "id": "vs-037",
+  "name": "Varun Mehta",
+  "mobile": "9251309787",
+  "email": "varun.mehta@gmail.com",
+  "photo": "",
+  "idType": "Driving License",
+  "idNumber": "147080XXXX",
+  "purpose": "Meeting",
+  "towerId": "tw-a",
+  "floorId": "fl-ta-10",
+  "officeId": "of-ta-1003",
+  "hostId": "oe-104",
+  "expectedDuration": "2 hours",
+  "count": 1,
+  "status": "EXITED",
+  "guardId": "u-guard2",
+  "gate": "Gate 2",
+  "requestedAt": "2026-11-24T06:36:11.044Z",
+  "approvedAt": "2026-11-24T06:39:11.044Z",
+  "entryAt": "2026-11-24T06:42:11.044Z",
+  "exitAt": "2026-11-24T08:26:11.044Z",
+  "remark": "",
+  "timeline": [
+   {
+    "at": "2026-11-24T06:36:11.044Z",
+    "label": "Visitor registered"
+   },
+   {
+    "at": "2026-11-24T06:37:11.044Z",
+    "label": "Approval request sent"
+   },
+   {
+    "at": "2026-11-24T06:39:11.044Z",
+    "label": "Host approved"
+   },
+   {
+    "at": "2026-11-24T06:40:11.044Z",
+    "label": "Guard notified"
+   },
+   {
+    "at": "2026-11-24T06:42:11.044Z",
+    "label": "Visitor entered building"
+   },
+   {
+    "at": "2026-11-24T08:26:11.044Z",
+    "label": "Visitor exited building"
+   }
+  ]
+ },
+ {
+  "id": "vs-038",
+  "name": "Isha Khanna",
+  "mobile": "9689603291",
+  "email": "isha.khanna@gmail.com",
+  "photo": "",
+  "idType": "Passport",
+  "idNumber": "586302XXXX",
+  "purpose": "Personal",
+  "towerId": "tw-a",
+  "floorId": "fl-ta-2",
+  "officeId": "of-ta-204",
+  "hostId": "oe-017",
+  "expectedDuration": "1 hour",
+  "count": 1,
+  "status": "EXITED",
+  "guardId": "u-guard",
+  "gate": "Gate 1",
+  "requestedAt": "2026-11-23T07:43:11.044Z",
+  "approvedAt": "2026-11-23T07:46:11.044Z",
+  "entryAt": "2026-11-23T07:49:11.044Z",
+  "exitAt": "2026-11-23T10:02:11.044Z",
+  "remark": "",
+  "timeline": [
+   {
+    "at": "2026-11-23T07:43:11.044Z",
+    "label": "Visitor registered"
+   },
+   {
+    "at": "2026-11-23T07:44:11.044Z",
+    "label": "Approval request sent"
+   },
+   {
+    "at": "2026-11-23T07:46:11.044Z",
+    "label": "Host approved"
+   },
+   {
+    "at": "2026-11-23T07:47:11.044Z",
+    "label": "Guard notified"
+   },
+   {
+    "at": "2026-11-23T07:49:11.044Z",
+    "label": "Visitor entered building"
+   },
+   {
+    "at": "2026-11-23T10:02:11.044Z",
+    "label": "Visitor exited building"
+   }
+  ]
+ },
+ {
+  "id": "vs-039",
+  "name": "Rajesh Joshi",
+  "mobile": "9406976302",
+  "email": "rajesh.joshi@gmail.com",
+  "photo": "",
+  "idType": "Passport",
+  "idNumber": "370447XXXX",
+  "purpose": "Maintenance",
+  "towerId": "tw-a",
+  "floorId": "fl-ta-1",
+  "officeId": "of-ta-106",
+  "hostId": "oe-006",
+  "expectedDuration": "30 min",
+  "count": 1,
+  "status": "EXITED",
+  "guardId": "u-guard",
+  "gate": "Gate 1",
+  "requestedAt": "2026-11-23T12:37:11.044Z",
+  "approvedAt": "2026-11-23T12:40:11.044Z",
+  "entryAt": "2026-11-23T12:43:11.044Z",
+  "exitAt": "2026-11-23T14:47:11.044Z",
+  "remark": "",
+  "timeline": [
+   {
+    "at": "2026-11-23T12:37:11.044Z",
+    "label": "Visitor registered"
+   },
+   {
+    "at": "2026-11-23T12:38:11.044Z",
+    "label": "Approval request sent"
+   },
+   {
+    "at": "2026-11-23T12:40:11.044Z",
+    "label": "Host approved"
+   },
+   {
+    "at": "2026-11-23T12:41:11.044Z",
+    "label": "Guard notified"
+   },
+   {
+    "at": "2026-11-23T12:43:11.044Z",
+    "label": "Visitor entered building"
+   },
+   {
+    "at": "2026-11-23T14:47:11.044Z",
+    "label": "Visitor exited building"
+   }
+  ]
+ },
+ {
+  "id": "vs-040",
+  "name": "Rahul Singh",
+  "mobile": "9196220043",
+  "email": "rahul.singh@gmail.com",
+  "photo": "",
+  "idType": "PAN",
+  "idNumber": "829886XXXX",
+  "purpose": "Delivery",
+  "towerId": "tw-a",
+  "floorId": "fl-ta-3",
+  "officeId": "of-ta-306",
+  "hostId": "oe-030",
+  "expectedDuration": "1 hour",
+  "count": 2,
+  "status": "EXITED",
+  "guardId": "u-guard",
+  "gate": "Gate 1",
+  "requestedAt": "2026-11-23T13:08:11.044Z",
+  "approvedAt": "2026-11-23T13:11:11.044Z",
+  "entryAt": "2026-11-23T13:14:11.044Z",
+  "exitAt": "2026-11-23T14:13:11.044Z",
+  "remark": "",
+  "timeline": [
+   {
+    "at": "2026-11-23T13:08:11.044Z",
+    "label": "Visitor registered"
+   },
+   {
+    "at": "2026-11-23T13:09:11.044Z",
+    "label": "Approval request sent"
+   },
+   {
+    "at": "2026-11-23T13:11:11.044Z",
+    "label": "Host approved"
+   },
+   {
+    "at": "2026-11-23T13:12:11.044Z",
+    "label": "Guard notified"
+   },
+   {
+    "at": "2026-11-23T13:14:11.044Z",
+    "label": "Visitor entered building"
+   },
+   {
+    "at": "2026-11-23T14:13:11.044Z",
+    "label": "Visitor exited building"
+   }
+  ]
+ },
+ {
+  "id": "vs-041",
+  "name": "Varun Reddy",
+  "mobile": "9174048721",
+  "email": "varun.reddy@gmail.com",
+  "photo": "",
+  "idType": "PAN",
+  "idNumber": "323458XXXX",
+  "purpose": "Meeting",
+  "towerId": "tw-a",
+  "floorId": "fl-ta-9",
+  "officeId": "of-ta-904",
+  "hostId": "oe-095",
+  "expectedDuration": "2 hours",
+  "count": 1,
+  "status": "EXITED",
+  "guardId": "u-guard2",
+  "gate": "Gate 2",
+  "requestedAt": "2026-11-23T12:42:11.044Z",
+  "approvedAt": "2026-11-23T12:45:11.044Z",
+  "entryAt": "2026-11-23T12:48:11.044Z",
+  "exitAt": "2026-11-23T13:23:11.044Z",
+  "remark": "",
+  "timeline": [
+   {
+    "at": "2026-11-23T12:42:11.044Z",
+    "label": "Visitor registered"
+   },
+   {
+    "at": "2026-11-23T12:43:11.044Z",
+    "label": "Approval request sent"
+   },
+   {
+    "at": "2026-11-23T12:45:11.044Z",
+    "label": "Host approved"
+   },
+   {
+    "at": "2026-11-23T12:46:11.044Z",
+    "label": "Guard notified"
+   },
+   {
+    "at": "2026-11-23T12:48:11.044Z",
+    "label": "Visitor entered building"
+   },
+   {
+    "at": "2026-11-23T13:23:11.044Z",
+    "label": "Visitor exited building"
+   }
+  ]
+ },
+ {
+  "id": "vs-042",
+  "name": "Meera Malhotra",
+  "mobile": "9417472855",
+  "email": "meera.malhotra@gmail.com",
+  "photo": "",
+  "idType": "PAN",
+  "idNumber": "780237XXXX",
+  "purpose": "Meeting",
+  "towerId": "tw-a",
+  "floorId": "fl-ta-5",
+  "officeId": "of-ta-503",
+  "hostId": "oe-049",
+  "expectedDuration": "30 min",
+  "count": 2,
+  "status": "EXITED",
+  "guardId": "u-guard2",
+  "gate": "Gate 1",
+  "requestedAt": "2026-11-23T14:20:11.044Z",
+  "approvedAt": "2026-11-23T14:23:11.044Z",
+  "entryAt": "2026-11-23T14:26:11.044Z",
+  "exitAt": "2026-11-23T16:42:11.044Z",
+  "remark": "",
+  "timeline": [
+   {
+    "at": "2026-11-23T14:20:11.044Z",
+    "label": "Visitor registered"
+   },
+   {
+    "at": "2026-11-23T14:21:11.044Z",
+    "label": "Approval request sent"
+   },
+   {
+    "at": "2026-11-23T14:23:11.044Z",
+    "label": "Host approved"
+   },
+   {
+    "at": "2026-11-23T14:24:11.044Z",
+    "label": "Guard notified"
+   },
+   {
+    "at": "2026-11-23T14:26:11.044Z",
+    "label": "Visitor entered building"
+   },
+   {
+    "at": "2026-11-23T16:42:11.044Z",
+    "label": "Visitor exited building"
+   }
+  ]
+ },
+ {
+  "id": "vs-043",
+  "name": "Sneha Reddy",
+  "mobile": "9562429300",
+  "email": "sneha.reddy@gmail.com",
+  "photo": "",
+  "idType": "Driving License",
+  "idNumber": "163838XXXX",
+  "purpose": "Maintenance",
+  "towerId": "tw-a",
+  "floorId": "fl-ta-7",
+  "officeId": "of-ta-702",
+  "hostId": "oe-068",
+  "expectedDuration": "1 hour",
+  "count": 1,
+  "status": "EXITED",
+  "guardId": "u-guard2",
+  "gate": "Gate 2",
+  "requestedAt": "2026-11-23T09:20:11.044Z",
+  "approvedAt": "2026-11-23T09:23:11.044Z",
+  "entryAt": "2026-11-23T09:26:11.044Z",
+  "exitAt": "2026-11-23T11:05:11.044Z",
+  "remark": "",
+  "timeline": [
+   {
+    "at": "2026-11-23T09:20:11.044Z",
+    "label": "Visitor registered"
+   },
+   {
+    "at": "2026-11-23T09:21:11.044Z",
+    "label": "Approval request sent"
+   },
+   {
+    "at": "2026-11-23T09:23:11.044Z",
+    "label": "Host approved"
+   },
+   {
+    "at": "2026-11-23T09:24:11.044Z",
+    "label": "Guard notified"
+   },
+   {
+    "at": "2026-11-23T09:26:11.044Z",
+    "label": "Visitor entered building"
+   },
+   {
+    "at": "2026-11-23T11:05:11.044Z",
+    "label": "Visitor exited building"
+   }
+  ]
+ },
+ {
+  "id": "vs-044",
+  "name": "Priya Verma",
+  "mobile": "9944240872",
+  "email": "priya.verma@gmail.com",
+  "photo": "",
+  "idType": "Driving License",
+  "idNumber": "921912XXXX",
+  "purpose": "Meeting",
+  "towerId": "tw-b",
+  "floorId": "fl-tb-4",
+  "officeId": "of-tb-401",
+  "hostId": "oe-152",
+  "expectedDuration": "30 min",
+  "count": 1,
+  "status": "EXITED",
+  "guardId": "u-guard2",
+  "gate": "Gate 1",
+  "requestedAt": "2026-11-23T13:07:11.044Z",
+  "approvedAt": "2026-11-23T13:10:11.044Z",
+  "entryAt": "2026-11-23T13:13:11.044Z",
+  "exitAt": "2026-11-23T13:35:11.044Z",
+  "remark": "",
+  "timeline": [
+   {
+    "at": "2026-11-23T13:07:11.044Z",
+    "label": "Visitor registered"
+   },
+   {
+    "at": "2026-11-23T13:08:11.044Z",
+    "label": "Approval request sent"
+   },
+   {
+    "at": "2026-11-23T13:10:11.044Z",
+    "label": "Host approved"
+   },
+   {
+    "at": "2026-11-23T13:11:11.044Z",
+    "label": "Guard notified"
+   },
+   {
+    "at": "2026-11-23T13:13:11.044Z",
+    "label": "Visitor entered building"
+   },
+   {
+    "at": "2026-11-23T13:35:11.044Z",
+    "label": "Visitor exited building"
+   }
+  ]
+ },
+ {
+  "id": "vs-045",
+  "name": "Deepak Verma",
+  "mobile": "9496307299",
+  "email": "deepak.verma@gmail.com",
+  "photo": "",
+  "idType": "Aadhaar",
+  "idNumber": "968627XXXX",
+  "purpose": "Meeting",
+  "towerId": "tw-b",
+  "floorId": "fl-tb-3",
+  "officeId": "of-tb-306",
+  "hostId": "oe-150",
+  "expectedDuration": "30 min",
+  "count": 2,
+  "status": "EXITED",
+  "guardId": "u-guard2",
+  "gate": "Gate 1",
+  "requestedAt": "2026-11-23T10:10:11.044Z",
+  "approvedAt": "2026-11-23T10:13:11.044Z",
+  "entryAt": "2026-11-23T10:16:11.044Z",
+  "exitAt": "2026-11-23T12:30:11.044Z",
+  "remark": "",
+  "timeline": [
+   {
+    "at": "2026-11-23T10:10:11.044Z",
+    "label": "Visitor registered"
+   },
+   {
+    "at": "2026-11-23T10:11:11.044Z",
+    "label": "Approval request sent"
+   },
+   {
+    "at": "2026-11-23T10:13:11.044Z",
+    "label": "Host approved"
+   },
+   {
+    "at": "2026-11-23T10:14:11.044Z",
+    "label": "Guard notified"
+   },
+   {
+    "at": "2026-11-23T10:16:11.044Z",
+    "label": "Visitor entered building"
+   },
+   {
+    "at": "2026-11-23T12:30:11.044Z",
+    "label": "Visitor exited building"
+   }
+  ]
+ },
+ {
+  "id": "vs-046",
+  "name": "Arjun Sharma",
+  "mobile": "9485947523",
+  "email": "arjun.sharma@gmail.com",
+  "photo": "",
+  "idType": "PAN",
+  "idNumber": "189838XXXX",
+  "purpose": "Delivery",
+  "towerId": "tw-b",
+  "floorId": "fl-tb-2",
+  "officeId": "of-tb-203",
+  "hostId": "oe-132",
+  "expectedDuration": "30 min",
+  "count": 1,
+  "status": "EXITED",
+  "guardId": "u-guard2",
+  "gate": "Gate 1",
+  "requestedAt": "2026-11-23T07:33:11.044Z",
+  "approvedAt": "2026-11-23T07:36:11.044Z",
+  "entryAt": "2026-11-23T07:39:11.044Z",
+  "exitAt": "2026-11-23T09:22:11.044Z",
+  "remark": "",
+  "timeline": [
+   {
+    "at": "2026-11-23T07:33:11.044Z",
+    "label": "Visitor registered"
+   },
+   {
+    "at": "2026-11-23T07:34:11.044Z",
+    "label": "Approval request sent"
+   },
+   {
+    "at": "2026-11-23T07:36:11.044Z",
+    "label": "Host approved"
+   },
+   {
+    "at": "2026-11-23T07:37:11.044Z",
+    "label": "Guard notified"
+   },
+   {
+    "at": "2026-11-23T07:39:11.044Z",
+    "label": "Visitor entered building"
+   },
+   {
+    "at": "2026-11-23T09:22:11.044Z",
+    "label": "Visitor exited building"
+   }
+  ]
+ },
+ {
+  "id": "vs-047",
+  "name": "Vikash Khanna",
+  "mobile": "9770259296",
+  "email": "vikash.khanna@gmail.com",
+  "photo": "",
+  "idType": "PAN",
+  "idNumber": "468273XXXX",
+  "purpose": "Meeting",
+  "towerId": "tw-a",
+  "floorId": "fl-ta-8",
+  "officeId": "of-ta-803",
+  "hostId": "oe-083",
+  "expectedDuration": "1 hour",
+  "count": 2,
+  "status": "EXITED",
+  "guardId": "u-guard2",
+  "gate": "Gate 1",
+  "requestedAt": "2026-11-23T10:08:11.044Z",
+  "approvedAt": "2026-11-23T10:11:11.044Z",
+  "entryAt": "2026-11-23T10:14:11.044Z",
+  "exitAt": "2026-11-23T12:17:11.044Z",
+  "remark": "",
+  "timeline": [
+   {
+    "at": "2026-11-23T10:08:11.044Z",
+    "label": "Visitor registered"
+   },
+   {
+    "at": "2026-11-23T10:09:11.044Z",
+    "label": "Approval request sent"
+   },
+   {
+    "at": "2026-11-23T10:11:11.044Z",
+    "label": "Host approved"
+   },
+   {
+    "at": "2026-11-23T10:12:11.044Z",
+    "label": "Guard notified"
+   },
+   {
+    "at": "2026-11-23T10:14:11.044Z",
+    "label": "Visitor entered building"
+   },
+   {
+    "at": "2026-11-23T12:17:11.044Z",
+    "label": "Visitor exited building"
+   }
+  ]
+ },
+ {
+  "id": "vs-048",
+  "name": "Harsh Kapoor",
+  "mobile": "9166542544",
+  "email": "harsh.kapoor@gmail.com",
+  "photo": "",
+  "idType": "Driving License",
+  "idNumber": "478096XXXX",
+  "purpose": "Meeting",
+  "towerId": "tw-b",
+  "floorId": "fl-tb-5",
+  "officeId": "of-tb-505",
+  "hostId": "oe-176",
+  "expectedDuration": "2 hours",
+  "count": 1,
+  "status": "EXITED",
+  "guardId": "u-guard2",
+  "gate": "Gate 1",
+  "requestedAt": "2026-11-23T07:35:11.044Z",
+  "approvedAt": "2026-11-23T07:38:11.044Z",
+  "entryAt": "2026-11-23T07:41:11.044Z",
+  "exitAt": "2026-11-23T09:28:11.044Z",
+  "remark": "",
+  "timeline": [
+   {
+    "at": "2026-11-23T07:35:11.044Z",
+    "label": "Visitor registered"
+   },
+   {
+    "at": "2026-11-23T07:36:11.044Z",
+    "label": "Approval request sent"
+   },
+   {
+    "at": "2026-11-23T07:38:11.044Z",
+    "label": "Host approved"
+   },
+   {
+    "at": "2026-11-23T07:39:11.044Z",
+    "label": "Guard notified"
+   },
+   {
+    "at": "2026-11-23T07:41:11.044Z",
+    "label": "Visitor entered building"
+   },
+   {
+    "at": "2026-11-23T09:28:11.044Z",
+    "label": "Visitor exited building"
+   }
+  ]
+ },
+ {
+  "id": "vs-049",
+  "name": "Gaurav Verma",
+  "mobile": "9968709636",
+  "email": "gaurav.verma@gmail.com",
+  "photo": "",
+  "idType": "Driving License",
+  "idNumber": "194289XXXX",
+  "purpose": "Interview",
+  "towerId": "tw-b",
+  "floorId": "fl-tb-2",
+  "officeId": "of-tb-206",
+  "hostId": "oe-140",
+  "expectedDuration": "1 hour",
+  "count": 1,
+  "status": "EXITED",
+  "guardId": "u-guard",
+  "gate": "Gate 2",
+  "requestedAt": "2026-11-22T12:03:11.044Z",
+  "approvedAt": "2026-11-22T12:06:11.044Z",
+  "entryAt": "2026-11-22T12:09:11.044Z",
+  "exitAt": "2026-11-22T13:46:11.044Z",
+  "remark": "",
+  "timeline": [
+   {
+    "at": "2026-11-22T12:03:11.044Z",
+    "label": "Visitor registered"
+   },
+   {
+    "at": "2026-11-22T12:04:11.044Z",
+    "label": "Approval request sent"
+   },
+   {
+    "at": "2026-11-22T12:06:11.044Z",
+    "label": "Host approved"
+   },
+   {
+    "at": "2026-11-22T12:07:11.044Z",
+    "label": "Guard notified"
+   },
+   {
+    "at": "2026-11-22T12:09:11.044Z",
+    "label": "Visitor entered building"
+   },
+   {
+    "at": "2026-11-22T13:46:11.044Z",
+    "label": "Visitor exited building"
+   }
+  ]
+ },
+ {
+  "id": "vs-050",
+  "name": "Deepak Mishra",
+  "mobile": "9696900526",
+  "email": "deepak.mishra@gmail.com",
+  "photo": "",
+  "idType": "PAN",
+  "idNumber": "502108XXXX",
+  "purpose": "Interview",
+  "towerId": "tw-a",
+  "floorId": "fl-ta-6",
+  "officeId": "of-ta-601",
+  "hostId": "oe-055",
+  "expectedDuration": "30 min",
+  "count": 1,
+  "status": "EXITED",
+  "guardId": "u-guard",
+  "gate": "Gate 1",
+  "requestedAt": "2026-11-22T09:12:11.044Z",
+  "approvedAt": "2026-11-22T09:15:11.044Z",
+  "entryAt": "2026-11-22T09:18:11.044Z",
+  "exitAt": "2026-11-22T11:04:11.044Z",
+  "remark": "",
+  "timeline": [
+   {
+    "at": "2026-11-22T09:12:11.044Z",
+    "label": "Visitor registered"
+   },
+   {
+    "at": "2026-11-22T09:13:11.044Z",
+    "label": "Approval request sent"
+   },
+   {
+    "at": "2026-11-22T09:15:11.044Z",
+    "label": "Host approved"
+   },
+   {
+    "at": "2026-11-22T09:16:11.044Z",
+    "label": "Guard notified"
+   },
+   {
+    "at": "2026-11-22T09:18:11.044Z",
+    "label": "Visitor entered building"
+   },
+   {
+    "at": "2026-11-22T11:04:11.044Z",
+    "label": "Visitor exited building"
+   }
+  ]
+ },
+ {
+  "id": "vs-051",
+  "name": "Anjali Khanna",
+  "mobile": "9263784722",
+  "email": "anjali.khanna@gmail.com",
+  "photo": "",
+  "idType": "Driving License",
+  "idNumber": "954751XXXX",
+  "purpose": "Other",
+  "towerId": "tw-b",
+  "floorId": "fl-tb-1",
+  "officeId": "of-tb-102",
+  "hostId": "oe-116",
+  "expectedDuration": "1 hour",
+  "count": 1,
+  "status": "EXITED",
+  "guardId": "u-guard",
+  "gate": "Gate 1",
+  "requestedAt": "2026-11-22T09:50:11.044Z",
+  "approvedAt": "2026-11-22T09:53:11.044Z",
+  "entryAt": "2026-11-22T09:56:11.044Z",
+  "exitAt": "2026-11-22T11:27:11.044Z",
+  "remark": "",
+  "timeline": [
+   {
+    "at": "2026-11-22T09:50:11.044Z",
+    "label": "Visitor registered"
+   },
+   {
+    "at": "2026-11-22T09:51:11.044Z",
+    "label": "Approval request sent"
+   },
+   {
+    "at": "2026-11-22T09:53:11.044Z",
+    "label": "Host approved"
+   },
+   {
+    "at": "2026-11-22T09:54:11.044Z",
+    "label": "Guard notified"
+   },
+   {
+    "at": "2026-11-22T09:56:11.044Z",
+    "label": "Visitor entered building"
+   },
+   {
+    "at": "2026-11-22T11:27:11.044Z",
+    "label": "Visitor exited building"
+   }
+  ]
+ },
+ {
+  "id": "vs-052",
+  "name": "Deepak Kumar",
+  "mobile": "9647297214",
+  "email": "deepak.kumar@gmail.com",
+  "photo": "",
+  "idType": "PAN",
+  "idNumber": "500990XXXX",
+  "purpose": "Delivery",
+  "towerId": "tw-b",
+  "floorId": "fl-tb-5",
+  "officeId": "of-tb-502",
+  "hostId": "oe-169",
+  "expectedDuration": "1 hour",
+  "count": 1,
+  "status": "EXITED",
+  "guardId": "u-guard",
+  "gate": "Gate 1",
+  "requestedAt": "2026-11-22T11:25:11.044Z",
+  "approvedAt": "2026-11-22T11:28:11.044Z",
+  "entryAt": "2026-11-22T11:31:11.044Z",
+  "exitAt": "2026-11-22T12:55:11.044Z",
+  "remark": "",
+  "timeline": [
+   {
+    "at": "2026-11-22T11:25:11.044Z",
+    "label": "Visitor registered"
+   },
+   {
+    "at": "2026-11-22T11:26:11.044Z",
+    "label": "Approval request sent"
+   },
+   {
+    "at": "2026-11-22T11:28:11.044Z",
+    "label": "Host approved"
+   },
+   {
+    "at": "2026-11-22T11:29:11.044Z",
+    "label": "Guard notified"
+   },
+   {
+    "at": "2026-11-22T11:31:11.044Z",
+    "label": "Visitor entered building"
+   },
+   {
+    "at": "2026-11-22T12:55:11.044Z",
+    "label": "Visitor exited building"
+   }
+  ]
+ },
+ {
+  "id": "vs-053",
+  "name": "Meera Verma",
+  "mobile": "9710143066",
+  "email": "meera.verma@gmail.com",
+  "photo": "",
+  "idType": "PAN",
+  "idNumber": "745220XXXX",
+  "purpose": "Meeting",
+  "towerId": "tw-a",
+  "floorId": "fl-ta-7",
+  "officeId": "of-ta-705",
+  "hostId": "oe-073",
+  "expectedDuration": "1 hour",
+  "count": 1,
+  "status": "EXITED",
+  "guardId": "u-guard",
+  "gate": "Gate 2",
+  "requestedAt": "2026-11-22T14:38:11.044Z",
+  "approvedAt": "2026-11-22T14:41:11.044Z",
+  "entryAt": "2026-11-22T14:44:11.044Z",
+  "exitAt": "2026-11-22T15:43:11.044Z",
+  "remark": "",
+  "timeline": [
+   {
+    "at": "2026-11-22T14:38:11.044Z",
+    "label": "Visitor registered"
+   },
+   {
+    "at": "2026-11-22T14:39:11.044Z",
+    "label": "Approval request sent"
+   },
+   {
+    "at": "2026-11-22T14:41:11.044Z",
+    "label": "Host approved"
+   },
+   {
+    "at": "2026-11-22T14:42:11.044Z",
+    "label": "Guard notified"
+   },
+   {
+    "at": "2026-11-22T14:44:11.044Z",
+    "label": "Visitor entered building"
+   },
+   {
+    "at": "2026-11-22T15:43:11.044Z",
+    "label": "Visitor exited building"
+   }
+  ]
+ },
+ {
+  "id": "vs-054",
+  "name": "Komal Mishra",
+  "mobile": "9301043782",
+  "email": "komal.mishra@gmail.com",
+  "photo": "",
+  "idType": "Passport",
+  "idNumber": "638998XXXX",
+  "purpose": "Meeting",
+  "towerId": "tw-a",
+  "floorId": "fl-ta-8",
+  "officeId": "of-ta-802",
+  "hostId": "oe-081",
+  "expectedDuration": "2 hours",
+  "count": 1,
+  "status": "EXITED",
+  "guardId": "u-guard2",
+  "gate": "Gate 2",
+  "requestedAt": "2026-11-22T06:28:11.044Z",
+  "approvedAt": "2026-11-22T06:31:11.044Z",
+  "entryAt": "2026-11-22T06:34:11.044Z",
+  "exitAt": "2026-11-22T08:57:11.044Z",
+  "remark": "",
+  "timeline": [
+   {
+    "at": "2026-11-22T06:28:11.044Z",
+    "label": "Visitor registered"
+   },
+   {
+    "at": "2026-11-22T06:29:11.044Z",
+    "label": "Approval request sent"
+   },
+   {
+    "at": "2026-11-22T06:31:11.044Z",
+    "label": "Host approved"
+   },
+   {
+    "at": "2026-11-22T06:32:11.044Z",
+    "label": "Guard notified"
+   },
+   {
+    "at": "2026-11-22T06:34:11.044Z",
+    "label": "Visitor entered building"
+   },
+   {
+    "at": "2026-11-22T08:57:11.044Z",
+    "label": "Visitor exited building"
+   }
+  ]
+ },
+ {
+  "id": "vs-055",
+  "name": "Arjun Patel",
+  "mobile": "9266100545",
+  "email": "arjun.patel@gmail.com",
+  "photo": "",
+  "idType": "Driving License",
+  "idNumber": "108293XXXX",
+  "purpose": "Maintenance",
+  "towerId": "tw-a",
+  "floorId": "fl-ta-1",
+  "officeId": "of-ta-105",
+  "hostId": "oe-003",
+  "expectedDuration": "2 hours",
+  "count": 1,
+  "status": "REJECTED",
+  "guardId": "u-guard2",
+  "gate": "Gate 2",
+  "requestedAt": "2026-11-22T11:58:11.044Z",
+  "approvedAt": "",
+  "entryAt": "",
+  "exitAt": "",
+  "remark": "Meeting cancelled",
+  "timeline": [
+   {
+    "at": "2026-11-22T11:58:11.044Z",
+    "label": "Visitor registered"
+   },
+   {
+    "at": "2026-11-22T11:59:11.044Z",
+    "label": "Approval request sent"
+   },
+   {
+    "at": "2026-11-22T12:01:11.044Z",
+    "label": "Host rejected the request"
+   }
+  ]
+ },
+ {
+  "id": "vs-056",
+  "name": "Ajay Patel",
+  "mobile": "9815901563",
+  "email": "ajay.patel@gmail.com",
+  "photo": "",
+  "idType": "Driving License",
+  "idNumber": "567684XXXX",
+  "purpose": "Personal",
+  "towerId": "tw-a",
+  "floorId": "fl-ta-7",
+  "officeId": "of-ta-701",
+  "hostId": "oe-065",
+  "expectedDuration": "2 hours",
+  "count": 1,
+  "status": "EXITED",
+  "guardId": "u-guard",
+  "gate": "Gate 2",
+  "requestedAt": "2026-11-22T06:56:11.044Z",
+  "approvedAt": "2026-11-22T06:59:11.044Z",
+  "entryAt": "2026-11-22T07:02:11.044Z",
+  "exitAt": "2026-11-22T08:00:11.044Z",
+  "remark": "",
+  "timeline": [
+   {
+    "at": "2026-11-22T06:56:11.044Z",
+    "label": "Visitor registered"
+   },
+   {
+    "at": "2026-11-22T06:57:11.044Z",
+    "label": "Approval request sent"
+   },
+   {
+    "at": "2026-11-22T06:59:11.044Z",
+    "label": "Host approved"
+   },
+   {
+    "at": "2026-11-22T07:00:11.044Z",
+    "label": "Guard notified"
+   },
+   {
+    "at": "2026-11-22T07:02:11.044Z",
+    "label": "Visitor entered building"
+   },
+   {
+    "at": "2026-11-22T08:00:11.044Z",
+    "label": "Visitor exited building"
+   }
+  ]
+ },
+ {
+  "id": "vs-057",
+  "name": "Rahul Chopra",
+  "mobile": "9918819413",
+  "email": "rahul.chopra@gmail.com",
+  "photo": "",
+  "idType": "PAN",
+  "idNumber": "183434XXXX",
+  "purpose": "Delivery",
+  "towerId": "tw-a",
+  "floorId": "fl-ta-10",
+  "officeId": "of-ta-1004",
+  "hostId": "oe-107",
+  "expectedDuration": "2 hours",
+  "count": 1,
+  "status": "EXITED",
+  "guardId": "u-guard",
+  "gate": "Gate 2",
+  "requestedAt": "2026-11-22T11:58:11.044Z",
+  "approvedAt": "2026-11-22T12:01:11.044Z",
+  "entryAt": "2026-11-22T12:04:11.044Z",
+  "exitAt": "2026-11-22T13:41:11.044Z",
+  "remark": "",
+  "timeline": [
+   {
+    "at": "2026-11-22T11:58:11.044Z",
+    "label": "Visitor registered"
+   },
+   {
+    "at": "2026-11-22T11:59:11.044Z",
+    "label": "Approval request sent"
+   },
+   {
+    "at": "2026-11-22T12:01:11.044Z",
+    "label": "Host approved"
+   },
+   {
+    "at": "2026-11-22T12:02:11.044Z",
+    "label": "Guard notified"
+   },
+   {
+    "at": "2026-11-22T12:04:11.044Z",
+    "label": "Visitor entered building"
+   },
+   {
+    "at": "2026-11-22T13:41:11.044Z",
+    "label": "Visitor exited building"
+   }
+  ]
+ },
+ {
+  "id": "vs-058",
+  "name": "Gaurav Verma",
+  "mobile": "9285840694",
+  "email": "gaurav.verma@gmail.com",
+  "photo": "",
+  "idType": "Passport",
+  "idNumber": "387608XXXX",
+  "purpose": "Personal",
+  "towerId": "tw-b",
+  "floorId": "fl-tb-3",
+  "officeId": "of-tb-303",
+  "hostId": "oe-144",
+  "expectedDuration": "2 hours",
+  "count": 1,
+  "status": "EXITED",
+  "guardId": "u-guard",
+  "gate": "Gate 1",
+  "requestedAt": "2026-11-22T12:53:11.044Z",
+  "approvedAt": "2026-11-22T12:56:11.044Z",
+  "entryAt": "2026-11-22T12:59:11.044Z",
+  "exitAt": "2026-11-22T13:39:11.044Z",
+  "remark": "",
+  "timeline": [
+   {
+    "at": "2026-11-22T12:53:11.044Z",
+    "label": "Visitor registered"
+   },
+   {
+    "at": "2026-11-22T12:54:11.044Z",
+    "label": "Approval request sent"
+   },
+   {
+    "at": "2026-11-22T12:56:11.044Z",
+    "label": "Host approved"
+   },
+   {
+    "at": "2026-11-22T12:57:11.044Z",
+    "label": "Guard notified"
+   },
+   {
+    "at": "2026-11-22T12:59:11.044Z",
+    "label": "Visitor entered building"
+   },
+   {
+    "at": "2026-11-22T13:39:11.044Z",
+    "label": "Visitor exited building"
+   }
+  ]
+ },
+ {
+  "id": "vs-059",
+  "name": "Pooja Iyer",
+  "mobile": "9837840663",
+  "email": "pooja.iyer@gmail.com",
+  "photo": "",
+  "idType": "Aadhaar",
+  "idNumber": "136019XXXX",
+  "purpose": "Maintenance",
+  "towerId": "tw-a",
+  "floorId": "fl-ta-6",
+  "officeId": "of-ta-606",
+  "hostId": "oe-062",
+  "expectedDuration": "1 hour",
+  "count": 1,
+  "status": "EXITED",
+  "guardId": "u-guard2",
+  "gate": "Gate 1",
+  "requestedAt": "2026-11-22T11:52:11.044Z",
+  "approvedAt": "2026-11-22T11:55:11.044Z",
+  "entryAt": "2026-11-22T11:58:11.044Z",
+  "exitAt": "2026-11-22T13:36:11.044Z",
+  "remark": "",
+  "timeline": [
+   {
+    "at": "2026-11-22T11:52:11.044Z",
+    "label": "Visitor registered"
+   },
+   {
+    "at": "2026-11-22T11:53:11.044Z",
+    "label": "Approval request sent"
+   },
+   {
+    "at": "2026-11-22T11:55:11.044Z",
+    "label": "Host approved"
+   },
+   {
+    "at": "2026-11-22T11:56:11.044Z",
+    "label": "Guard notified"
+   },
+   {
+    "at": "2026-11-22T11:58:11.044Z",
+    "label": "Visitor entered building"
+   },
+   {
+    "at": "2026-11-22T13:36:11.044Z",
+    "label": "Visitor exited building"
+   }
+  ]
+ },
+ {
+  "id": "vs-060",
+  "name": "Ritu Agarwal",
+  "mobile": "9598767620",
+  "email": "ritu.agarwal@gmail.com",
+  "photo": "",
+  "idType": "Passport",
+  "idNumber": "316901XXXX",
+  "purpose": "Interview",
+  "towerId": "tw-b",
+  "floorId": "fl-tb-2",
+  "officeId": "of-tb-201",
+  "hostId": "oe-128",
+  "expectedDuration": "30 min",
+  "count": 1,
+  "status": "EXITED",
+  "guardId": "u-guard",
+  "gate": "Gate 1",
+  "requestedAt": "2026-11-21T09:31:11.044Z",
+  "approvedAt": "2026-11-21T09:34:11.044Z",
+  "entryAt": "2026-11-21T09:37:11.044Z",
+  "exitAt": "2026-11-21T11:44:11.044Z",
+  "remark": "",
+  "timeline": [
+   {
+    "at": "2026-11-21T09:31:11.044Z",
+    "label": "Visitor registered"
+   },
+   {
+    "at": "2026-11-21T09:32:11.044Z",
+    "label": "Approval request sent"
+   },
+   {
+    "at": "2026-11-21T09:34:11.044Z",
+    "label": "Host approved"
+   },
+   {
+    "at": "2026-11-21T09:35:11.044Z",
+    "label": "Guard notified"
+   },
+   {
+    "at": "2026-11-21T09:37:11.044Z",
+    "label": "Visitor entered building"
+   },
+   {
+    "at": "2026-11-21T11:44:11.044Z",
+    "label": "Visitor exited building"
+   }
+  ]
+ },
+ {
+  "id": "vs-061",
+  "name": "Isha Singh",
+  "mobile": "9427370945",
+  "email": "isha.singh@gmail.com",
+  "photo": "",
+  "idType": "Passport",
+  "idNumber": "772106XXXX",
+  "purpose": "Delivery",
+  "towerId": "tw-b",
+  "floorId": "fl-tb-6",
+  "officeId": "of-tb-606",
+  "hostId": "oe-194",
+  "expectedDuration": "2 hours",
+  "count": 1,
+  "status": "EXITED",
+  "guardId": "u-guard2",
+  "gate": "Gate 1",
+  "requestedAt": "2026-11-21T12:27:11.044Z",
+  "approvedAt": "2026-11-21T12:30:11.044Z",
+  "entryAt": "2026-11-21T12:33:11.044Z",
+  "exitAt": "2026-11-21T13:21:11.044Z",
+  "remark": "",
+  "timeline": [
+   {
+    "at": "2026-11-21T12:27:11.044Z",
+    "label": "Visitor registered"
+   },
+   {
+    "at": "2026-11-21T12:28:11.044Z",
+    "label": "Approval request sent"
+   },
+   {
+    "at": "2026-11-21T12:30:11.044Z",
+    "label": "Host approved"
+   },
+   {
+    "at": "2026-11-21T12:31:11.044Z",
+    "label": "Guard notified"
+   },
+   {
+    "at": "2026-11-21T12:33:11.044Z",
+    "label": "Visitor entered building"
+   },
+   {
+    "at": "2026-11-21T13:21:11.044Z",
+    "label": "Visitor exited building"
+   }
+  ]
+ },
+ {
+  "id": "vs-062",
+  "name": "Priya Yadav",
+  "mobile": "9164482611",
+  "email": "priya.yadav@gmail.com",
+  "photo": "",
+  "idType": "Aadhaar",
+  "idNumber": "407773XXXX",
+  "purpose": "Delivery",
+  "towerId": "tw-a",
+  "floorId": "fl-ta-9",
+  "officeId": "of-ta-905",
+  "hostId": "oe-097",
+  "expectedDuration": "30 min",
+  "count": 2,
+  "status": "EXITED",
+  "guardId": "u-guard",
+  "gate": "Gate 1",
+  "requestedAt": "2026-11-21T08:51:11.044Z",
+  "approvedAt": "2026-11-21T08:54:11.044Z",
+  "entryAt": "2026-11-21T08:57:11.044Z",
+  "exitAt": "2026-11-21T10:47:11.044Z",
+  "remark": "",
+  "timeline": [
+   {
+    "at": "2026-11-21T08:51:11.044Z",
+    "label": "Visitor registered"
+   },
+   {
+    "at": "2026-11-21T08:52:11.044Z",
+    "label": "Approval request sent"
+   },
+   {
+    "at": "2026-11-21T08:54:11.044Z",
+    "label": "Host approved"
+   },
+   {
+    "at": "2026-11-21T08:55:11.044Z",
+    "label": "Guard notified"
+   },
+   {
+    "at": "2026-11-21T08:57:11.044Z",
+    "label": "Visitor entered building"
+   },
+   {
+    "at": "2026-11-21T10:47:11.044Z",
+    "label": "Visitor exited building"
+   }
+  ]
+ },
+ {
+  "id": "vs-063",
+  "name": "Isha Kapoor",
+  "mobile": "9228630930",
+  "email": "isha.kapoor@gmail.com",
+  "photo": "",
+  "idType": "Passport",
+  "idNumber": "919907XXXX",
+  "purpose": "Meeting",
+  "towerId": "tw-a",
+  "floorId": "fl-ta-2",
+  "officeId": "of-ta-201",
+  "hostId": "oe-009",
+  "expectedDuration": "30 min",
+  "count": 1,
+  "status": "EXITED",
+  "guardId": "u-guard2",
+  "gate": "Gate 1",
+  "requestedAt": "2026-11-21T13:09:11.044Z",
+  "approvedAt": "2026-11-21T13:12:11.044Z",
+  "entryAt": "2026-11-21T13:15:11.044Z",
+  "exitAt": "2026-11-21T13:53:11.044Z",
+  "remark": "",
+  "timeline": [
+   {
+    "at": "2026-11-21T13:09:11.044Z",
+    "label": "Visitor registered"
+   },
+   {
+    "at": "2026-11-21T13:10:11.044Z",
+    "label": "Approval request sent"
+   },
+   {
+    "at": "2026-11-21T13:12:11.044Z",
+    "label": "Host approved"
+   },
+   {
+    "at": "2026-11-21T13:13:11.044Z",
+    "label": "Guard notified"
+   },
+   {
+    "at": "2026-11-21T13:15:11.044Z",
+    "label": "Visitor entered building"
+   },
+   {
+    "at": "2026-11-21T13:53:11.044Z",
+    "label": "Visitor exited building"
+   }
+  ]
+ },
+ {
+  "id": "vs-064",
+  "name": "Komal Singh",
+  "mobile": "9360488774",
+  "email": "komal.singh@gmail.com",
+  "photo": "",
+  "idType": "Aadhaar",
+  "idNumber": "180913XXXX",
+  "purpose": "Delivery",
+  "towerId": "tw-a",
+  "floorId": "fl-ta-10",
+  "officeId": "of-ta-1003",
+  "hostId": "oe-104",
+  "expectedDuration": "30 min",
+  "count": 1,
+  "status": "EXITED",
+  "guardId": "u-guard",
+  "gate": "Gate 1",
+  "requestedAt": "2026-11-21T11:00:11.044Z",
+  "approvedAt": "2026-11-21T11:03:11.044Z",
+  "entryAt": "2026-11-21T11:06:11.044Z",
+  "exitAt": "2026-11-21T13:27:11.044Z",
+  "remark": "",
+  "timeline": [
+   {
+    "at": "2026-11-21T11:00:11.044Z",
+    "label": "Visitor registered"
+   },
+   {
+    "at": "2026-11-21T11:01:11.044Z",
+    "label": "Approval request sent"
+   },
+   {
+    "at": "2026-11-21T11:03:11.044Z",
+    "label": "Host approved"
+   },
+   {
+    "at": "2026-11-21T11:04:11.044Z",
+    "label": "Guard notified"
+   },
+   {
+    "at": "2026-11-21T11:06:11.044Z",
+    "label": "Visitor entered building"
+   },
+   {
+    "at": "2026-11-21T13:27:11.044Z",
+    "label": "Visitor exited building"
+   }
+  ]
+ },
+ {
+  "id": "vs-065",
+  "name": "Karan Bansal",
+  "mobile": "9963859849",
+  "email": "karan.bansal@gmail.com",
+  "photo": "",
+  "idType": "PAN",
+  "idNumber": "623334XXXX",
+  "purpose": "Interview",
+  "towerId": "tw-b",
+  "floorId": "fl-tb-6",
+  "officeId": "of-tb-602",
+  "hostId": "oe-184",
+  "expectedDuration": "1 hour",
+  "count": 1,
+  "status": "EXITED",
+  "guardId": "u-guard",
+  "gate": "Gate 2",
+  "requestedAt": "2026-11-21T06:37:11.044Z",
+  "approvedAt": "2026-11-21T06:40:11.044Z",
+  "entryAt": "2026-11-21T06:43:11.044Z",
+  "exitAt": "2026-11-21T08:59:11.044Z",
+  "remark": "",
+  "timeline": [
+   {
+    "at": "2026-11-21T06:37:11.044Z",
+    "label": "Visitor registered"
+   },
+   {
+    "at": "2026-11-21T06:38:11.044Z",
+    "label": "Approval request sent"
+   },
+   {
+    "at": "2026-11-21T06:40:11.044Z",
+    "label": "Host approved"
+   },
+   {
+    "at": "2026-11-21T06:41:11.044Z",
+    "label": "Guard notified"
+   },
+   {
+    "at": "2026-11-21T06:43:11.044Z",
+    "label": "Visitor entered building"
+   },
+   {
+    "at": "2026-11-21T08:59:11.044Z",
+    "label": "Visitor exited building"
+   }
+  ]
+ },
+ {
+  "id": "vs-066",
+  "name": "Priya Mishra",
+  "mobile": "9659106891",
+  "email": "priya.mishra@gmail.com",
+  "photo": "",
+  "idType": "PAN",
+  "idNumber": "880875XXXX",
+  "purpose": "Meeting",
+  "towerId": "tw-a",
+  "floorId": "fl-ta-2",
+  "officeId": "of-ta-201",
+  "hostId": "oe-009",
+  "expectedDuration": "30 min",
+  "count": 1,
+  "status": "EXITED",
+  "guardId": "u-guard2",
+  "gate": "Gate 1",
+  "requestedAt": "2026-11-21T08:04:11.044Z",
+  "approvedAt": "2026-11-21T08:07:11.044Z",
+  "entryAt": "2026-11-21T08:10:11.044Z",
+  "exitAt": "2026-11-21T10:32:11.044Z",
+  "remark": "",
+  "timeline": [
+   {
+    "at": "2026-11-21T08:04:11.044Z",
+    "label": "Visitor registered"
+   },
+   {
+    "at": "2026-11-21T08:05:11.044Z",
+    "label": "Approval request sent"
+   },
+   {
+    "at": "2026-11-21T08:07:11.044Z",
+    "label": "Host approved"
+   },
+   {
+    "at": "2026-11-21T08:08:11.044Z",
+    "label": "Guard notified"
+   },
+   {
+    "at": "2026-11-21T08:10:11.044Z",
+    "label": "Visitor entered building"
+   },
+   {
+    "at": "2026-11-21T10:32:11.044Z",
+    "label": "Visitor exited building"
+   }
+  ]
+ },
+ {
+  "id": "vs-067",
+  "name": "Gaurav Singh",
+  "mobile": "9764767520",
+  "email": "gaurav.singh@gmail.com",
+  "photo": "",
+  "idType": "Passport",
+  "idNumber": "754299XXXX",
+  "purpose": "Interview",
+  "towerId": "tw-b",
+  "floorId": "fl-tb-3",
+  "officeId": "of-tb-303",
+  "hostId": "oe-144",
+  "expectedDuration": "30 min",
+  "count": 1,
+  "status": "EXITED",
+  "guardId": "u-guard2",
+  "gate": "Gate 1",
+  "requestedAt": "2026-11-21T12:50:11.044Z",
+  "approvedAt": "2026-11-21T12:53:11.044Z",
+  "entryAt": "2026-11-21T12:56:11.044Z",
+  "exitAt": "2026-11-21T14:00:11.044Z",
+  "remark": "",
+  "timeline": [
+   {
+    "at": "2026-11-21T12:50:11.044Z",
+    "label": "Visitor registered"
+   },
+   {
+    "at": "2026-11-21T12:51:11.044Z",
+    "label": "Approval request sent"
+   },
+   {
+    "at": "2026-11-21T12:53:11.044Z",
+    "label": "Host approved"
+   },
+   {
+    "at": "2026-11-21T12:54:11.044Z",
+    "label": "Guard notified"
+   },
+   {
+    "at": "2026-11-21T12:56:11.044Z",
+    "label": "Visitor entered building"
+   },
+   {
+    "at": "2026-11-21T14:00:11.044Z",
+    "label": "Visitor exited building"
+   }
+  ]
+ },
+ {
+  "id": "vs-068",
+  "name": "Deepak Khanna",
+  "mobile": "9903910240",
+  "email": "deepak.khanna@gmail.com",
+  "photo": "",
+  "idType": "PAN",
+  "idNumber": "530752XXXX",
+  "purpose": "Delivery",
+  "towerId": "tw-b",
+  "floorId": "fl-tb-1",
+  "officeId": "of-tb-102",
+  "hostId": "oe-116",
+  "expectedDuration": "2 hours",
+  "count": 1,
+  "status": "EXITED",
+  "guardId": "u-guard2",
+  "gate": "Gate 1",
+  "requestedAt": "2026-11-21T12:40:11.044Z",
+  "approvedAt": "2026-11-21T12:43:11.044Z",
+  "entryAt": "2026-11-21T12:46:11.044Z",
+  "exitAt": "2026-11-21T13:40:11.044Z",
+  "remark": "",
+  "timeline": [
+   {
+    "at": "2026-11-21T12:40:11.044Z",
+    "label": "Visitor registered"
+   },
+   {
+    "at": "2026-11-21T12:41:11.044Z",
+    "label": "Approval request sent"
+   },
+   {
+    "at": "2026-11-21T12:43:11.044Z",
+    "label": "Host approved"
+   },
+   {
+    "at": "2026-11-21T12:44:11.044Z",
+    "label": "Guard notified"
+   },
+   {
+    "at": "2026-11-21T12:46:11.044Z",
+    "label": "Visitor entered building"
+   },
+   {
+    "at": "2026-11-21T13:40:11.044Z",
+    "label": "Visitor exited building"
+   }
+  ]
+ },
+ {
+  "id": "vs-069",
+  "name": "Divya Iyer",
+  "mobile": "9807474151",
+  "email": "divya.iyer@gmail.com",
+  "photo": "",
+  "idType": "Driving License",
+  "idNumber": "192238XXXX",
+  "purpose": "Meeting",
+  "towerId": "tw-a",
+  "floorId": "fl-ta-8",
+  "officeId": "of-ta-803",
+  "hostId": "oe-083",
+  "expectedDuration": "1 hour",
+  "count": 1,
+  "status": "EXITED",
+  "guardId": "u-guard",
+  "gate": "Gate 1",
+  "requestedAt": "2026-11-21T06:45:11.044Z",
+  "approvedAt": "2026-11-21T06:48:11.044Z",
+  "entryAt": "2026-11-21T06:51:11.044Z",
+  "exitAt": "2026-11-21T08:45:11.044Z",
+  "remark": "",
+  "timeline": [
+   {
+    "at": "2026-11-21T06:45:11.044Z",
+    "label": "Visitor registered"
+   },
+   {
+    "at": "2026-11-21T06:46:11.044Z",
+    "label": "Approval request sent"
+   },
+   {
+    "at": "2026-11-21T06:48:11.044Z",
+    "label": "Host approved"
+   },
+   {
+    "at": "2026-11-21T06:49:11.044Z",
+    "label": "Guard notified"
+   },
+   {
+    "at": "2026-11-21T06:51:11.044Z",
+    "label": "Visitor entered building"
+   },
+   {
+    "at": "2026-11-21T08:45:11.044Z",
+    "label": "Visitor exited building"
+   }
+  ]
+ },
+ {
+  "id": "vs-070",
+  "name": "Divya Kapoor",
+  "mobile": "9430050398",
+  "email": "divya.kapoor@gmail.com",
+  "photo": "",
+  "idType": "Passport",
+  "idNumber": "961546XXXX",
+  "purpose": "Meeting",
+  "towerId": "tw-b",
+  "floorId": "fl-tb-3",
+  "officeId": "of-tb-306",
+  "hostId": "oe-150",
+  "expectedDuration": "30 min",
+  "count": 1,
+  "status": "EXITED",
+  "guardId": "u-guard2",
+  "gate": "Gate 1",
+  "requestedAt": "2026-11-21T10:36:11.044Z",
+  "approvedAt": "2026-11-21T10:39:11.044Z",
+  "entryAt": "2026-11-21T10:42:11.044Z",
+  "exitAt": "2026-11-21T12:20:11.044Z",
+  "remark": "",
+  "timeline": [
+   {
+    "at": "2026-11-21T10:36:11.044Z",
+    "label": "Visitor registered"
+   },
+   {
+    "at": "2026-11-21T10:37:11.044Z",
+    "label": "Approval request sent"
+   },
+   {
+    "at": "2026-11-21T10:39:11.044Z",
+    "label": "Host approved"
+   },
+   {
+    "at": "2026-11-21T10:40:11.044Z",
+    "label": "Guard notified"
+   },
+   {
+    "at": "2026-11-21T10:42:11.044Z",
+    "label": "Visitor entered building"
+   },
+   {
+    "at": "2026-11-21T12:20:11.044Z",
+    "label": "Visitor exited building"
+   }
+  ]
+ },
+ {
+  "id": "vs-071",
+  "name": "Manish Kapoor",
+  "mobile": "9518374318",
+  "email": "manish.kapoor@gmail.com",
+  "photo": "",
+  "idType": "Aadhaar",
+  "idNumber": "593957XXXX",
+  "purpose": "Maintenance",
+  "towerId": "tw-a",
+  "floorId": "fl-ta-5",
+  "officeId": "of-ta-504",
+  "hostId": "oe-051",
+  "expectedDuration": "30 min",
+  "count": 1,
+  "status": "EXITED",
+  "guardId": "u-guard",
+  "gate": "Gate 1",
+  "requestedAt": "2026-11-20T07:26:11.044Z",
+  "approvedAt": "2026-11-20T07:29:11.044Z",
+  "entryAt": "2026-11-20T07:32:11.044Z",
+  "exitAt": "2026-11-20T08:36:11.044Z",
+  "remark": "",
+  "timeline": [
+   {
+    "at": "2026-11-20T07:26:11.044Z",
+    "label": "Visitor registered"
+   },
+   {
+    "at": "2026-11-20T07:27:11.044Z",
+    "label": "Approval request sent"
+   },
+   {
+    "at": "2026-11-20T07:29:11.044Z",
+    "label": "Host approved"
+   },
+   {
+    "at": "2026-11-20T07:30:11.044Z",
+    "label": "Guard notified"
+   },
+   {
+    "at": "2026-11-20T07:32:11.044Z",
+    "label": "Visitor entered building"
+   },
+   {
+    "at": "2026-11-20T08:36:11.044Z",
+    "label": "Visitor exited building"
+   }
+  ]
+ },
+ {
+  "id": "vs-072",
+  "name": "Amit Chopra",
+  "mobile": "9417873818",
+  "email": "amit.chopra@gmail.com",
+  "photo": "",
+  "idType": "Driving License",
+  "idNumber": "856123XXXX",
+  "purpose": "Meeting",
+  "towerId": "tw-b",
+  "floorId": "fl-tb-3",
+  "officeId": "of-tb-305",
+  "hostId": "oe-147",
+  "expectedDuration": "30 min",
+  "count": 1,
+  "status": "EXITED",
+  "guardId": "u-guard",
+  "gate": "Gate 2",
+  "requestedAt": "2026-11-20T07:41:11.044Z",
+  "approvedAt": "2026-11-20T07:44:11.044Z",
+  "entryAt": "2026-11-20T07:47:11.044Z",
+  "exitAt": "2026-11-20T08:33:11.044Z",
+  "remark": "",
+  "timeline": [
+   {
+    "at": "2026-11-20T07:41:11.044Z",
+    "label": "Visitor registered"
+   },
+   {
+    "at": "2026-11-20T07:42:11.044Z",
+    "label": "Approval request sent"
+   },
+   {
+    "at": "2026-11-20T07:44:11.044Z",
+    "label": "Host approved"
+   },
+   {
+    "at": "2026-11-20T07:45:11.044Z",
+    "label": "Guard notified"
+   },
+   {
+    "at": "2026-11-20T07:47:11.044Z",
+    "label": "Visitor entered building"
+   },
+   {
+    "at": "2026-11-20T08:33:11.044Z",
+    "label": "Visitor exited building"
+   }
+  ]
+ },
+ {
+  "id": "vs-073",
+  "name": "Nisha Mishra",
+  "mobile": "9288031747",
+  "email": "nisha.mishra@gmail.com",
+  "photo": "",
+  "idType": "PAN",
+  "idNumber": "881592XXXX",
+  "purpose": "Delivery",
+  "towerId": "tw-a",
+  "floorId": "fl-ta-2",
+  "officeId": "of-ta-206",
+  "hostId": "oe-021",
+  "expectedDuration": "2 hours",
+  "count": 1,
+  "status": "EXITED",
+  "guardId": "u-guard2",
+  "gate": "Gate 1",
+  "requestedAt": "2026-11-20T14:42:11.044Z",
+  "approvedAt": "2026-11-20T14:45:11.044Z",
+  "entryAt": "2026-11-20T14:48:11.044Z",
+  "exitAt": "2026-11-20T15:44:11.044Z",
+  "remark": "",
+  "timeline": [
+   {
+    "at": "2026-11-20T14:42:11.044Z",
+    "label": "Visitor registered"
+   },
+   {
+    "at": "2026-11-20T14:43:11.044Z",
+    "label": "Approval request sent"
+   },
+   {
+    "at": "2026-11-20T14:45:11.044Z",
+    "label": "Host approved"
+   },
+   {
+    "at": "2026-11-20T14:46:11.044Z",
+    "label": "Guard notified"
+   },
+   {
+    "at": "2026-11-20T14:48:11.044Z",
+    "label": "Visitor entered building"
+   },
+   {
+    "at": "2026-11-20T15:44:11.044Z",
+    "label": "Visitor exited building"
+   }
+  ]
+ },
+ {
+  "id": "vs-074",
+  "name": "Kavita Sharma",
+  "mobile": "9794096247",
+  "email": "kavita.sharma@gmail.com",
+  "photo": "",
+  "idType": "Driving License",
+  "idNumber": "605681XXXX",
+  "purpose": "Interview",
+  "towerId": "tw-b",
+  "floorId": "fl-tb-3",
+  "officeId": "of-tb-303",
+  "hostId": "oe-144",
+  "expectedDuration": "30 min",
+  "count": 1,
+  "status": "EXITED",
+  "guardId": "u-guard",
+  "gate": "Gate 1",
+  "requestedAt": "2026-11-20T14:47:11.044Z",
+  "approvedAt": "2026-11-20T14:50:11.044Z",
+  "entryAt": "2026-11-20T14:53:11.044Z",
+  "exitAt": "2026-11-20T16:28:11.044Z",
+  "remark": "",
+  "timeline": [
+   {
+    "at": "2026-11-20T14:47:11.044Z",
+    "label": "Visitor registered"
+   },
+   {
+    "at": "2026-11-20T14:48:11.044Z",
+    "label": "Approval request sent"
+   },
+   {
+    "at": "2026-11-20T14:50:11.044Z",
+    "label": "Host approved"
+   },
+   {
+    "at": "2026-11-20T14:51:11.044Z",
+    "label": "Guard notified"
+   },
+   {
+    "at": "2026-11-20T14:53:11.044Z",
+    "label": "Visitor entered building"
+   },
+   {
+    "at": "2026-11-20T16:28:11.044Z",
+    "label": "Visitor exited building"
+   }
+  ]
+ },
+ {
+  "id": "vs-075",
+  "name": "Yash Gupta",
+  "mobile": "9525076516",
+  "email": "yash.gupta@gmail.com",
+  "photo": "",
+  "idType": "Aadhaar",
+  "idNumber": "831779XXXX",
+  "purpose": "Delivery",
+  "towerId": "tw-b",
+  "floorId": "fl-tb-7",
+  "officeId": "of-tb-705",
+  "hostId": "oe-202",
+  "expectedDuration": "2 hours",
+  "count": 1,
+  "status": "EXITED",
+  "guardId": "u-guard",
+  "gate": "Gate 2",
+  "requestedAt": "2026-11-20T08:31:11.044Z",
+  "approvedAt": "2026-11-20T08:34:11.044Z",
+  "entryAt": "2026-11-20T08:37:11.044Z",
+  "exitAt": "2026-11-20T11:01:11.044Z",
+  "remark": "",
+  "timeline": [
+   {
+    "at": "2026-11-20T08:31:11.044Z",
+    "label": "Visitor registered"
+   },
+   {
+    "at": "2026-11-20T08:32:11.044Z",
+    "label": "Approval request sent"
+   },
+   {
+    "at": "2026-11-20T08:34:11.044Z",
+    "label": "Host approved"
+   },
+   {
+    "at": "2026-11-20T08:35:11.044Z",
+    "label": "Guard notified"
+   },
+   {
+    "at": "2026-11-20T08:37:11.044Z",
+    "label": "Visitor entered building"
+   },
+   {
+    "at": "2026-11-20T11:01:11.044Z",
+    "label": "Visitor exited building"
+   }
+  ]
+ },
+ {
+  "id": "vs-076",
+  "name": "Gaurav Singh",
+  "mobile": "9819582482",
+  "email": "gaurav.singh@gmail.com",
+  "photo": "",
+  "idType": "Driving License",
+  "idNumber": "230316XXXX",
+  "purpose": "Delivery",
+  "towerId": "tw-b",
+  "floorId": "fl-tb-6",
+  "officeId": "of-tb-602",
+  "hostId": "oe-184",
+  "expectedDuration": "1 hour",
+  "count": 2,
+  "status": "EXITED",
+  "guardId": "u-guard2",
+  "gate": "Gate 2",
+  "requestedAt": "2026-11-20T10:04:11.044Z",
+  "approvedAt": "2026-11-20T10:07:11.044Z",
+  "entryAt": "2026-11-20T10:10:11.044Z",
+  "exitAt": "2026-11-20T12:28:11.044Z",
+  "remark": "",
+  "timeline": [
+   {
+    "at": "2026-11-20T10:04:11.044Z",
+    "label": "Visitor registered"
+   },
+   {
+    "at": "2026-11-20T10:05:11.044Z",
+    "label": "Approval request sent"
+   },
+   {
+    "at": "2026-11-20T10:07:11.044Z",
+    "label": "Host approved"
+   },
+   {
+    "at": "2026-11-20T10:08:11.044Z",
+    "label": "Guard notified"
+   },
+   {
+    "at": "2026-11-20T10:10:11.044Z",
+    "label": "Visitor entered building"
+   },
+   {
+    "at": "2026-11-20T12:28:11.044Z",
+    "label": "Visitor exited building"
+   }
+  ]
+ },
+ {
+  "id": "vs-077",
+  "name": "Neha Khanna",
+  "mobile": "9918572608",
+  "email": "neha.khanna@gmail.com",
+  "photo": "",
+  "idType": "Driving License",
+  "idNumber": "290559XXXX",
+  "purpose": "Meeting",
+  "towerId": "tw-b",
+  "floorId": "fl-tb-1",
+  "officeId": "of-tb-101",
+  "hostId": "oe-114",
+  "expectedDuration": "2 hours",
+  "count": 1,
+  "status": "EXITED",
+  "guardId": "u-guard",
+  "gate": "Gate 2",
+  "requestedAt": "2026-11-20T12:28:11.044Z",
+  "approvedAt": "2026-11-20T12:31:11.044Z",
+  "entryAt": "2026-11-20T12:34:11.044Z",
+  "exitAt": "2026-11-20T14:14:11.044Z",
+  "remark": "",
+  "timeline": [
+   {
+    "at": "2026-11-20T12:28:11.044Z",
+    "label": "Visitor registered"
+   },
+   {
+    "at": "2026-11-20T12:29:11.044Z",
+    "label": "Approval request sent"
+   },
+   {
+    "at": "2026-11-20T12:31:11.044Z",
+    "label": "Host approved"
+   },
+   {
+    "at": "2026-11-20T12:32:11.044Z",
+    "label": "Guard notified"
+   },
+   {
+    "at": "2026-11-20T12:34:11.044Z",
+    "label": "Visitor entered building"
+   },
+   {
+    "at": "2026-11-20T14:14:11.044Z",
+    "label": "Visitor exited building"
+   }
+  ]
+ },
+ {
+  "id": "vs-078",
+  "name": "Harsh Mishra",
+  "mobile": "9163877394",
+  "email": "harsh.mishra@gmail.com",
+  "photo": "",
+  "idType": "Aadhaar",
+  "idNumber": "701396XXXX",
+  "purpose": "Delivery",
+  "towerId": "tw-a",
+  "floorId": "fl-ta-2",
+  "officeId": "of-ta-204",
+  "hostId": "oe-017",
+  "expectedDuration": "30 min",
+  "count": 1,
+  "status": "EXITED",
+  "guardId": "u-guard",
+  "gate": "Gate 1",
+  "requestedAt": "2026-11-20T06:15:11.044Z",
+  "approvedAt": "2026-11-20T06:18:11.044Z",
+  "entryAt": "2026-11-20T06:21:11.044Z",
+  "exitAt": "2026-11-20T07:47:11.044Z",
+  "remark": "",
+  "timeline": [
+   {
+    "at": "2026-11-20T06:15:11.044Z",
+    "label": "Visitor registered"
+   },
+   {
+    "at": "2026-11-20T06:16:11.044Z",
+    "label": "Approval request sent"
+   },
+   {
+    "at": "2026-11-20T06:18:11.044Z",
+    "label": "Host approved"
+   },
+   {
+    "at": "2026-11-20T06:19:11.044Z",
+    "label": "Guard notified"
+   },
+   {
+    "at": "2026-11-20T06:21:11.044Z",
+    "label": "Visitor entered building"
+   },
+   {
+    "at": "2026-11-20T07:47:11.044Z",
+    "label": "Visitor exited building"
+   }
+  ]
+ },
+ {
+  "id": "vs-079",
+  "name": "Arjun Gupta",
+  "mobile": "9651293469",
+  "email": "arjun.gupta@gmail.com",
+  "photo": "",
+  "idType": "Driving License",
+  "idNumber": "563086XXXX",
+  "purpose": "Delivery",
+  "towerId": "tw-a",
+  "floorId": "fl-ta-6",
+  "officeId": "of-ta-603",
+  "hostId": "oe-058",
+  "expectedDuration": "1 hour",
+  "count": 1,
+  "status": "EXITED",
+  "guardId": "u-guard",
+  "gate": "Gate 1",
+  "requestedAt": "2026-11-20T06:15:11.044Z",
+  "approvedAt": "2026-11-20T06:18:11.044Z",
+  "entryAt": "2026-11-20T06:21:11.044Z",
+  "exitAt": "2026-11-20T08:31:11.044Z",
+  "remark": "",
+  "timeline": [
+   {
+    "at": "2026-11-20T06:15:11.044Z",
+    "label": "Visitor registered"
+   },
+   {
+    "at": "2026-11-20T06:16:11.044Z",
+    "label": "Approval request sent"
+   },
+   {
+    "at": "2026-11-20T06:18:11.044Z",
+    "label": "Host approved"
+   },
+   {
+    "at": "2026-11-20T06:19:11.044Z",
+    "label": "Guard notified"
+   },
+   {
+    "at": "2026-11-20T06:21:11.044Z",
+    "label": "Visitor entered building"
+   },
+   {
+    "at": "2026-11-20T08:31:11.044Z",
+    "label": "Visitor exited building"
+   }
+  ]
+ },
+ {
+  "id": "vs-080",
+  "name": "Sneha Yadav",
+  "mobile": "9536305762",
+  "email": "sneha.yadav@gmail.com",
+  "photo": "",
+  "idType": "Passport",
+  "idNumber": "543404XXXX",
+  "purpose": "Delivery",
+  "towerId": "tw-b",
+  "floorId": "fl-tb-6",
+  "officeId": "of-tb-605",
+  "hostId": "oe-192",
+  "expectedDuration": "30 min",
+  "count": 1,
+  "status": "EXITED",
+  "guardId": "u-guard2",
+  "gate": "Gate 1",
+  "requestedAt": "2026-11-20T09:28:11.044Z",
+  "approvedAt": "2026-11-20T09:31:11.044Z",
+  "entryAt": "2026-11-20T09:34:11.044Z",
+  "exitAt": "2026-11-20T11:58:11.044Z",
+  "remark": "",
+  "timeline": [
+   {
+    "at": "2026-11-20T09:28:11.044Z",
+    "label": "Visitor registered"
+   },
+   {
+    "at": "2026-11-20T09:29:11.044Z",
+    "label": "Approval request sent"
+   },
+   {
+    "at": "2026-11-20T09:31:11.044Z",
+    "label": "Host approved"
+   },
+   {
+    "at": "2026-11-20T09:32:11.044Z",
+    "label": "Guard notified"
+   },
+   {
+    "at": "2026-11-20T09:34:11.044Z",
+    "label": "Visitor entered building"
+   },
+   {
+    "at": "2026-11-20T11:58:11.044Z",
+    "label": "Visitor exited building"
+   }
+  ]
+ },
+ {
+  "id": "vs-081",
+  "name": "Harsh Kumar",
+  "mobile": "9274864705",
+  "email": "harsh.kumar@gmail.com",
+  "photo": "",
+  "idType": "Driving License",
+  "idNumber": "487616XXXX",
+  "purpose": "Interview",
+  "towerId": "tw-b",
+  "floorId": "fl-tb-6",
+  "officeId": "of-tb-605",
+  "hostId": "oe-192",
+  "expectedDuration": "2 hours",
+  "count": 1,
+  "status": "EXITED",
+  "guardId": "u-guard",
+  "gate": "Gate 2",
+  "requestedAt": "2026-11-20T07:45:11.044Z",
+  "approvedAt": "2026-11-20T07:48:11.044Z",
+  "entryAt": "2026-11-20T07:51:11.044Z",
+  "exitAt": "2026-11-20T09:20:11.044Z",
+  "remark": "",
+  "timeline": [
+   {
+    "at": "2026-11-20T07:45:11.044Z",
+    "label": "Visitor registered"
+   },
+   {
+    "at": "2026-11-20T07:46:11.044Z",
+    "label": "Approval request sent"
+   },
+   {
+    "at": "2026-11-20T07:48:11.044Z",
+    "label": "Host approved"
+   },
+   {
+    "at": "2026-11-20T07:49:11.044Z",
+    "label": "Guard notified"
+   },
+   {
+    "at": "2026-11-20T07:51:11.044Z",
+    "label": "Visitor entered building"
+   },
+   {
+    "at": "2026-11-20T09:20:11.044Z",
+    "label": "Visitor exited building"
+   }
+  ]
+ },
+ {
+  "id": "vs-082",
+  "name": "Gaurav Mishra",
+  "mobile": "9757933695",
+  "email": "gaurav.mishra@gmail.com",
+  "photo": "",
+  "idType": "Passport",
+  "idNumber": "726790XXXX",
+  "purpose": "Maintenance",
+  "towerId": "tw-a",
+  "floorId": "fl-ta-2",
+  "officeId": "of-ta-206",
+  "hostId": "oe-021",
+  "expectedDuration": "2 hours",
+  "count": 1,
+  "status": "EXITED",
+  "guardId": "u-guard",
+  "gate": "Gate 1",
+  "requestedAt": "2026-11-19T11:10:11.044Z",
+  "approvedAt": "2026-11-19T11:13:11.044Z",
+  "entryAt": "2026-11-19T11:16:11.044Z",
+  "exitAt": "2026-11-19T13:00:11.044Z",
+  "remark": "",
+  "timeline": [
+   {
+    "at": "2026-11-19T11:10:11.044Z",
+    "label": "Visitor registered"
+   },
+   {
+    "at": "2026-11-19T11:11:11.044Z",
+    "label": "Approval request sent"
+   },
+   {
+    "at": "2026-11-19T11:13:11.044Z",
+    "label": "Host approved"
+   },
+   {
+    "at": "2026-11-19T11:14:11.044Z",
+    "label": "Guard notified"
+   },
+   {
+    "at": "2026-11-19T11:16:11.044Z",
+    "label": "Visitor entered building"
+   },
+   {
+    "at": "2026-11-19T13:00:11.044Z",
+    "label": "Visitor exited building"
+   }
+  ]
+ },
+ {
+  "id": "vs-083",
+  "name": "Meera Nair",
+  "mobile": "9386442676",
+  "email": "meera.nair@gmail.com",
+  "photo": "",
+  "idType": "Driving License",
+  "idNumber": "646881XXXX",
+  "purpose": "Delivery",
+  "towerId": "tw-b",
+  "floorId": "fl-tb-1",
+  "officeId": "of-tb-104",
+  "hostId": "oe-122",
+  "expectedDuration": "1 hour",
+  "count": 1,
+  "status": "EXITED",
+  "guardId": "u-guard2",
+  "gate": "Gate 1",
+  "requestedAt": "2026-11-19T08:18:11.044Z",
+  "approvedAt": "2026-11-19T08:21:11.044Z",
+  "entryAt": "2026-11-19T08:24:11.044Z",
+  "exitAt": "2026-11-19T10:46:11.044Z",
+  "remark": "",
+  "timeline": [
+   {
+    "at": "2026-11-19T08:18:11.044Z",
+    "label": "Visitor registered"
+   },
+   {
+    "at": "2026-11-19T08:19:11.044Z",
+    "label": "Approval request sent"
+   },
+   {
+    "at": "2026-11-19T08:21:11.044Z",
+    "label": "Host approved"
+   },
+   {
+    "at": "2026-11-19T08:22:11.044Z",
+    "label": "Guard notified"
+   },
+   {
+    "at": "2026-11-19T08:24:11.044Z",
+    "label": "Visitor entered building"
+   },
+   {
+    "at": "2026-11-19T10:46:11.044Z",
+    "label": "Visitor exited building"
+   }
+  ]
+ },
+ {
+  "id": "vs-084",
+  "name": "Ajay Gupta",
+  "mobile": "9307252197",
+  "email": "ajay.gupta@gmail.com",
+  "photo": "",
+  "idType": "PAN",
+  "idNumber": "704811XXXX",
+  "purpose": "Other",
+  "towerId": "tw-b",
+  "floorId": "fl-tb-8",
+  "officeId": "of-tb-802",
+  "hostId": "oe-209",
+  "expectedDuration": "2 hours",
+  "count": 1,
+  "status": "EXITED",
+  "guardId": "u-guard2",
+  "gate": "Gate 1",
+  "requestedAt": "2026-11-19T11:46:11.044Z",
+  "approvedAt": "2026-11-19T11:49:11.044Z",
+  "entryAt": "2026-11-19T11:52:11.044Z",
+  "exitAt": "2026-11-19T13:02:11.044Z",
+  "remark": "",
+  "timeline": [
+   {
+    "at": "2026-11-19T11:46:11.044Z",
+    "label": "Visitor registered"
+   },
+   {
+    "at": "2026-11-19T11:47:11.044Z",
+    "label": "Approval request sent"
+   },
+   {
+    "at": "2026-11-19T11:49:11.044Z",
+    "label": "Host approved"
+   },
+   {
+    "at": "2026-11-19T11:50:11.044Z",
+    "label": "Guard notified"
+   },
+   {
+    "at": "2026-11-19T11:52:11.044Z",
+    "label": "Visitor entered building"
+   },
+   {
+    "at": "2026-11-19T13:02:11.044Z",
+    "label": "Visitor exited building"
+   }
+  ]
+ },
+ {
+  "id": "vs-085",
+  "name": "Ajay Reddy",
+  "mobile": "9898865219",
+  "email": "ajay.reddy@gmail.com",
+  "photo": "",
+  "idType": "Aadhaar",
+  "idNumber": "582973XXXX",
+  "purpose": "Meeting",
+  "towerId": "tw-a",
+  "floorId": "fl-ta-5",
+  "officeId": "of-ta-501",
+  "hostId": "oe-045",
+  "expectedDuration": "2 hours",
+  "count": 1,
+  "status": "EXITED",
+  "guardId": "u-guard",
+  "gate": "Gate 1",
+  "requestedAt": "2026-11-19T09:42:11.044Z",
+  "approvedAt": "2026-11-19T09:45:11.044Z",
+  "entryAt": "2026-11-19T09:48:11.044Z",
+  "exitAt": "2026-11-19T11:08:11.044Z",
+  "remark": "",
+  "timeline": [
+   {
+    "at": "2026-11-19T09:42:11.044Z",
+    "label": "Visitor registered"
+   },
+   {
+    "at": "2026-11-19T09:43:11.044Z",
+    "label": "Approval request sent"
+   },
+   {
+    "at": "2026-11-19T09:45:11.044Z",
+    "label": "Host approved"
+   },
+   {
+    "at": "2026-11-19T09:46:11.044Z",
+    "label": "Guard notified"
+   },
+   {
+    "at": "2026-11-19T09:48:11.044Z",
+    "label": "Visitor entered building"
+   },
+   {
+    "at": "2026-11-19T11:08:11.044Z",
+    "label": "Visitor exited building"
+   }
+  ]
+ },
+ {
+  "id": "vs-086",
+  "name": "Yash Nair",
+  "mobile": "9203750413",
+  "email": "yash.nair@gmail.com",
+  "photo": "",
+  "idType": "PAN",
+  "idNumber": "509007XXXX",
+  "purpose": "Meeting",
+  "towerId": "tw-a",
+  "floorId": "fl-ta-5",
+  "officeId": "of-ta-506",
+  "hostId": "oe-053",
+  "expectedDuration": "2 hours",
+  "count": 2,
+  "status": "EXITED",
+  "guardId": "u-guard",
+  "gate": "Gate 1",
+  "requestedAt": "2026-11-19T06:08:11.044Z",
+  "approvedAt": "2026-11-19T06:11:11.044Z",
+  "entryAt": "2026-11-19T06:14:11.044Z",
+  "exitAt": "2026-11-19T07:04:11.044Z",
+  "remark": "",
+  "timeline": [
+   {
+    "at": "2026-11-19T06:08:11.044Z",
+    "label": "Visitor registered"
+   },
+   {
+    "at": "2026-11-19T06:09:11.044Z",
+    "label": "Approval request sent"
+   },
+   {
+    "at": "2026-11-19T06:11:11.044Z",
+    "label": "Host approved"
+   },
+   {
+    "at": "2026-11-19T06:12:11.044Z",
+    "label": "Guard notified"
+   },
+   {
+    "at": "2026-11-19T06:14:11.044Z",
+    "label": "Visitor entered building"
+   },
+   {
+    "at": "2026-11-19T07:04:11.044Z",
+    "label": "Visitor exited building"
+   }
+  ]
+ },
+ {
+  "id": "vs-087",
+  "name": "Karan Patel",
+  "mobile": "9261460845",
+  "email": "karan.patel@gmail.com",
+  "photo": "",
+  "idType": "Driving License",
+  "idNumber": "190619XXXX",
+  "purpose": "Interview",
+  "towerId": "tw-b",
+  "floorId": "fl-tb-6",
+  "officeId": "of-tb-602",
+  "hostId": "oe-184",
+  "expectedDuration": "1 hour",
+  "count": 1,
+  "status": "EXITED",
+  "guardId": "u-guard2",
+  "gate": "Gate 2",
+  "requestedAt": "2026-11-19T06:11:11.044Z",
+  "approvedAt": "2026-11-19T06:14:11.044Z",
+  "entryAt": "2026-11-19T06:17:11.044Z",
+  "exitAt": "2026-11-19T07:10:11.044Z",
+  "remark": "",
+  "timeline": [
+   {
+    "at": "2026-11-19T06:11:11.044Z",
+    "label": "Visitor registered"
+   },
+   {
+    "at": "2026-11-19T06:12:11.044Z",
+    "label": "Approval request sent"
+   },
+   {
+    "at": "2026-11-19T06:14:11.044Z",
+    "label": "Host approved"
+   },
+   {
+    "at": "2026-11-19T06:15:11.044Z",
+    "label": "Guard notified"
+   },
+   {
+    "at": "2026-11-19T06:17:11.044Z",
+    "label": "Visitor entered building"
+   },
+   {
+    "at": "2026-11-19T07:10:11.044Z",
+    "label": "Visitor exited building"
+   }
+  ]
+ },
+ {
+  "id": "vs-088",
+  "name": "Divya Gupta",
+  "mobile": "9488749252",
+  "email": "divya.gupta@gmail.com",
+  "photo": "",
+  "idType": "PAN",
+  "idNumber": "657215XXXX",
+  "purpose": "Delivery",
+  "towerId": "tw-a",
+  "floorId": "fl-ta-7",
+  "officeId": "of-ta-706",
+  "hostId": "oe-075",
+  "expectedDuration": "2 hours",
+  "count": 1,
+  "status": "EXITED",
+  "guardId": "u-guard",
+  "gate": "Gate 1",
+  "requestedAt": "2026-11-19T12:12:11.044Z",
+  "approvedAt": "2026-11-19T12:15:11.044Z",
+  "entryAt": "2026-11-19T12:18:11.044Z",
+  "exitAt": "2026-11-19T14:46:11.044Z",
+  "remark": "",
+  "timeline": [
+   {
+    "at": "2026-11-19T12:12:11.044Z",
+    "label": "Visitor registered"
+   },
+   {
+    "at": "2026-11-19T12:13:11.044Z",
+    "label": "Approval request sent"
+   },
+   {
+    "at": "2026-11-19T12:15:11.044Z",
+    "label": "Host approved"
+   },
+   {
+    "at": "2026-11-19T12:16:11.044Z",
+    "label": "Guard notified"
+   },
+   {
+    "at": "2026-11-19T12:18:11.044Z",
+    "label": "Visitor entered building"
+   },
+   {
+    "at": "2026-11-19T14:46:11.044Z",
+    "label": "Visitor exited building"
+   }
+  ]
+ },
+ {
+  "id": "vs-089",
+  "name": "Nisha Yadav",
+  "mobile": "9915335812",
+  "email": "nisha.yadav@gmail.com",
+  "photo": "",
+  "idType": "PAN",
+  "idNumber": "808635XXXX",
+  "purpose": "Interview",
+  "towerId": "tw-a",
+  "floorId": "fl-ta-5",
+  "officeId": "of-ta-506",
+  "hostId": "oe-053",
+  "expectedDuration": "30 min",
+  "count": 1,
+  "status": "EXITED",
+  "guardId": "u-guard",
+  "gate": "Gate 1",
+  "requestedAt": "2026-11-19T08:28:11.044Z",
+  "approvedAt": "2026-11-19T08:31:11.044Z",
+  "entryAt": "2026-11-19T08:34:11.044Z",
+  "exitAt": "2026-11-19T10:30:11.044Z",
+  "remark": "",
+  "timeline": [
+   {
+    "at": "2026-11-19T08:28:11.044Z",
+    "label": "Visitor registered"
+   },
+   {
+    "at": "2026-11-19T08:29:11.044Z",
+    "label": "Approval request sent"
+   },
+   {
+    "at": "2026-11-19T08:31:11.044Z",
+    "label": "Host approved"
+   },
+   {
+    "at": "2026-11-19T08:32:11.044Z",
+    "label": "Guard notified"
+   },
+   {
+    "at": "2026-11-19T08:34:11.044Z",
+    "label": "Visitor entered building"
+   },
+   {
+    "at": "2026-11-19T10:30:11.044Z",
+    "label": "Visitor exited building"
+   }
+  ]
+ },
+ {
+  "id": "vs-090",
+  "name": "Gaurav Das",
+  "mobile": "9210177497",
+  "email": "gaurav.das@gmail.com",
+  "photo": "",
+  "idType": "Passport",
+  "idNumber": "859003XXXX",
+  "purpose": "Meeting",
+  "towerId": "tw-a",
+  "floorId": "fl-ta-7",
+  "officeId": "of-ta-706",
+  "hostId": "oe-075",
+  "expectedDuration": "1 hour",
+  "count": 1,
+  "status": "EXITED",
+  "guardId": "u-guard",
+  "gate": "Gate 1",
+  "requestedAt": "2026-11-19T09:21:11.044Z",
+  "approvedAt": "2026-11-19T09:24:11.044Z",
+  "entryAt": "2026-11-19T09:27:11.044Z",
+  "exitAt": "2026-11-19T10:13:11.044Z",
+  "remark": "",
+  "timeline": [
+   {
+    "at": "2026-11-19T09:21:11.044Z",
+    "label": "Visitor registered"
+   },
+   {
+    "at": "2026-11-19T09:22:11.044Z",
+    "label": "Approval request sent"
+   },
+   {
+    "at": "2026-11-19T09:24:11.044Z",
+    "label": "Host approved"
+   },
+   {
+    "at": "2026-11-19T09:25:11.044Z",
+    "label": "Guard notified"
+   },
+   {
+    "at": "2026-11-19T09:27:11.044Z",
+    "label": "Visitor entered building"
+   },
+   {
+    "at": "2026-11-19T10:13:11.044Z",
+    "label": "Visitor exited building"
+   }
+  ]
+ },
+ {
+  "id": "vs-091",
+  "name": "Divya Iyer",
+  "mobile": "9639852750",
+  "email": "divya.iyer@gmail.com",
+  "photo": "",
+  "idType": "Passport",
+  "idNumber": "236176XXXX",
+  "purpose": "Interview",
+  "towerId": "tw-a",
+  "floorId": "fl-ta-4",
+  "officeId": "of-ta-404",
+  "hostId": "oe-040",
+  "expectedDuration": "30 min",
+  "count": 1,
+  "status": "EXITED",
+  "guardId": "u-guard",
+  "gate": "Gate 1",
+  "requestedAt": "2026-11-19T09:01:11.044Z",
+  "approvedAt": "2026-11-19T09:04:11.044Z",
+  "entryAt": "2026-11-19T09:07:11.044Z",
+  "exitAt": "2026-11-19T10:17:11.044Z",
+  "remark": "",
+  "timeline": [
+   {
+    "at": "2026-11-19T09:01:11.044Z",
+    "label": "Visitor registered"
+   },
+   {
+    "at": "2026-11-19T09:02:11.044Z",
+    "label": "Approval request sent"
+   },
+   {
+    "at": "2026-11-19T09:04:11.044Z",
+    "label": "Host approved"
+   },
+   {
+    "at": "2026-11-19T09:05:11.044Z",
+    "label": "Guard notified"
+   },
+   {
+    "at": "2026-11-19T09:07:11.044Z",
+    "label": "Visitor entered building"
+   },
+   {
+    "at": "2026-11-19T10:17:11.044Z",
+    "label": "Visitor exited building"
+   }
+  ]
+ },
+ {
+  "id": "vs-092",
+  "name": "Sneha Agarwal",
+  "mobile": "9187090312",
+  "email": "sneha.agarwal@gmail.com",
+  "photo": "",
+  "idType": "Aadhaar",
+  "idNumber": "804778XXXX",
+  "purpose": "Maintenance",
+  "towerId": "tw-b",
+  "floorId": "fl-tb-1",
+  "officeId": "of-tb-102",
+  "hostId": "oe-116",
+  "expectedDuration": "1 hour",
+  "count": 1,
+  "status": "EXITED",
+  "guardId": "u-guard",
+  "gate": "Gate 2",
+  "requestedAt": "2026-11-19T13:03:11.044Z",
+  "approvedAt": "2026-11-19T13:06:11.044Z",
+  "entryAt": "2026-11-19T13:09:11.044Z",
+  "exitAt": "2026-11-19T14:52:11.044Z",
+  "remark": "",
+  "timeline": [
+   {
+    "at": "2026-11-19T13:03:11.044Z",
+    "label": "Visitor registered"
+   },
+   {
+    "at": "2026-11-19T13:04:11.044Z",
+    "label": "Approval request sent"
+   },
+   {
+    "at": "2026-11-19T13:06:11.044Z",
+    "label": "Host approved"
+   },
+   {
+    "at": "2026-11-19T13:07:11.044Z",
+    "label": "Guard notified"
+   },
+   {
+    "at": "2026-11-19T13:09:11.044Z",
+    "label": "Visitor entered building"
+   },
+   {
+    "at": "2026-11-19T14:52:11.044Z",
+    "label": "Visitor exited building"
+   }
+  ]
+ },
+ {
+  "id": "vs-093",
+  "name": "Sunita Iyer",
+  "mobile": "9485997101",
+  "email": "sunita.iyer@gmail.com",
+  "photo": "",
+  "idType": "Aadhaar",
+  "idNumber": "195865XXXX",
+  "purpose": "Other",
+  "towerId": "tw-b",
+  "floorId": "fl-tb-2",
+  "officeId": "of-tb-201",
+  "hostId": "oe-128",
+  "expectedDuration": "2 hours",
+  "count": 1,
+  "status": "EXITED",
+  "guardId": "u-guard",
+  "gate": "Gate 1",
+  "requestedAt": "2026-11-18T07:32:11.044Z",
+  "approvedAt": "2026-11-18T07:35:11.044Z",
+  "entryAt": "2026-11-18T07:38:11.044Z",
+  "exitAt": "2026-11-18T08:00:11.044Z",
+  "remark": "",
+  "timeline": [
+   {
+    "at": "2026-11-18T07:32:11.044Z",
+    "label": "Visitor registered"
+   },
+   {
+    "at": "2026-11-18T07:33:11.044Z",
+    "label": "Approval request sent"
+   },
+   {
+    "at": "2026-11-18T07:35:11.044Z",
+    "label": "Host approved"
+   },
+   {
+    "at": "2026-11-18T07:36:11.044Z",
+    "label": "Guard notified"
+   },
+   {
+    "at": "2026-11-18T07:38:11.044Z",
+    "label": "Visitor entered building"
+   },
+   {
+    "at": "2026-11-18T08:00:11.044Z",
+    "label": "Visitor exited building"
+   }
+  ]
+ },
+ {
+  "id": "vs-094",
+  "name": "Shweta Nair",
+  "mobile": "9436026805",
+  "email": "shweta.nair@gmail.com",
+  "photo": "",
+  "idType": "Driving License",
+  "idNumber": "548915XXXX",
+  "purpose": "Meeting",
+  "towerId": "tw-a",
+  "floorId": "fl-ta-5",
+  "officeId": "of-ta-504",
+  "hostId": "oe-051",
+  "expectedDuration": "1 hour",
+  "count": 1,
+  "status": "EXITED",
+  "guardId": "u-guard",
+  "gate": "Gate 1",
+  "requestedAt": "2026-11-18T14:15:11.044Z",
+  "approvedAt": "2026-11-18T14:18:11.044Z",
+  "entryAt": "2026-11-18T14:21:11.044Z",
+  "exitAt": "2026-11-18T15:37:11.044Z",
+  "remark": "",
+  "timeline": [
+   {
+    "at": "2026-11-18T14:15:11.044Z",
+    "label": "Visitor registered"
+   },
+   {
+    "at": "2026-11-18T14:16:11.044Z",
+    "label": "Approval request sent"
+   },
+   {
+    "at": "2026-11-18T14:18:11.044Z",
+    "label": "Host approved"
+   },
+   {
+    "at": "2026-11-18T14:19:11.044Z",
+    "label": "Guard notified"
+   },
+   {
+    "at": "2026-11-18T14:21:11.044Z",
+    "label": "Visitor entered building"
+   },
+   {
+    "at": "2026-11-18T15:37:11.044Z",
+    "label": "Visitor exited building"
+   }
+  ]
+ },
+ {
+  "id": "vs-095",
+  "name": "Karan Mehta",
+  "mobile": "9235291795",
+  "email": "karan.mehta@gmail.com",
+  "photo": "",
+  "idType": "Aadhaar",
+  "idNumber": "130004XXXX",
+  "purpose": "Meeting",
+  "towerId": "tw-b",
+  "floorId": "fl-tb-8",
+  "officeId": "of-tb-801",
+  "hostId": "oe-207",
+  "expectedDuration": "2 hours",
+  "count": 1,
+  "status": "EXITED",
+  "guardId": "u-guard",
+  "gate": "Gate 1",
+  "requestedAt": "2026-11-18T08:27:11.044Z",
+  "approvedAt": "2026-11-18T08:30:11.044Z",
+  "entryAt": "2026-11-18T08:33:11.044Z",
+  "exitAt": "2026-11-18T10:06:11.044Z",
+  "remark": "",
+  "timeline": [
+   {
+    "at": "2026-11-18T08:27:11.044Z",
+    "label": "Visitor registered"
+   },
+   {
+    "at": "2026-11-18T08:28:11.044Z",
+    "label": "Approval request sent"
+   },
+   {
+    "at": "2026-11-18T08:30:11.044Z",
+    "label": "Host approved"
+   },
+   {
+    "at": "2026-11-18T08:31:11.044Z",
+    "label": "Guard notified"
+   },
+   {
+    "at": "2026-11-18T08:33:11.044Z",
+    "label": "Visitor entered building"
+   },
+   {
+    "at": "2026-11-18T10:06:11.044Z",
+    "label": "Visitor exited building"
+   }
+  ]
+ },
+ {
+  "id": "vs-096",
+  "name": "Manish Patel",
+  "mobile": "9355432094",
+  "email": "manish.patel@gmail.com",
+  "photo": "",
+  "idType": "PAN",
+  "idNumber": "811726XXXX",
+  "purpose": "Meeting",
+  "towerId": "tw-b",
+  "floorId": "fl-tb-6",
+  "officeId": "of-tb-603",
+  "hostId": "oe-186",
+  "expectedDuration": "30 min",
+  "count": 2,
+  "status": "REJECTED",
+  "guardId": "u-guard",
+  "gate": "Gate 1",
+  "requestedAt": "2026-11-18T11:16:11.044Z",
+  "approvedAt": "",
+  "entryAt": "",
+  "exitAt": "",
+  "remark": "Not expecting any visitor",
+  "timeline": [
+   {
+    "at": "2026-11-18T11:16:11.044Z",
+    "label": "Visitor registered"
+   },
+   {
+    "at": "2026-11-18T11:17:11.044Z",
+    "label": "Approval request sent"
+   },
+   {
+    "at": "2026-11-18T11:19:11.044Z",
+    "label": "Host rejected the request"
+   }
+  ]
+ },
+ {
+  "id": "vs-097",
+  "name": "Suresh Malhotra",
+  "mobile": "9793854298",
+  "email": "suresh.malhotra@gmail.com",
+  "photo": "",
+  "idType": "PAN",
+  "idNumber": "503472XXXX",
+  "purpose": "Interview",
+  "towerId": "tw-a",
+  "floorId": "fl-ta-5",
+  "officeId": "of-ta-504",
+  "hostId": "oe-051",
+  "expectedDuration": "2 hours",
+  "count": 1,
+  "status": "EXITED",
+  "guardId": "u-guard",
+  "gate": "Gate 1",
+  "requestedAt": "2026-11-18T09:36:11.044Z",
+  "approvedAt": "2026-11-18T09:39:11.044Z",
+  "entryAt": "2026-11-18T09:42:11.044Z",
+  "exitAt": "2026-11-18T10:31:11.044Z",
+  "remark": "",
+  "timeline": [
+   {
+    "at": "2026-11-18T09:36:11.044Z",
+    "label": "Visitor registered"
+   },
+   {
+    "at": "2026-11-18T09:37:11.044Z",
+    "label": "Approval request sent"
+   },
+   {
+    "at": "2026-11-18T09:39:11.044Z",
+    "label": "Host approved"
+   },
+   {
+    "at": "2026-11-18T09:40:11.044Z",
+    "label": "Guard notified"
+   },
+   {
+    "at": "2026-11-18T09:42:11.044Z",
+    "label": "Visitor entered building"
+   },
+   {
+    "at": "2026-11-18T10:31:11.044Z",
+    "label": "Visitor exited building"
+   }
+  ]
+ },
+ {
+  "id": "vs-098",
+  "name": "Nikhil Gupta",
+  "mobile": "9843080272",
+  "email": "nikhil.gupta@gmail.com",
+  "photo": "",
+  "idType": "Passport",
+  "idNumber": "832037XXXX",
+  "purpose": "Interview",
+  "towerId": "tw-a",
+  "floorId": "fl-ta-8",
+  "officeId": "of-ta-803",
+  "hostId": "oe-083",
+  "expectedDuration": "1 hour",
+  "count": 1,
+  "status": "EXITED",
+  "guardId": "u-guard2",
+  "gate": "Gate 2",
+  "requestedAt": "2026-11-18T09:02:11.044Z",
+  "approvedAt": "2026-11-18T09:05:11.044Z",
+  "entryAt": "2026-11-18T09:08:11.044Z",
+  "exitAt": "2026-11-18T10:23:11.044Z",
+  "remark": "",
+  "timeline": [
+   {
+    "at": "2026-11-18T09:02:11.044Z",
+    "label": "Visitor registered"
+   },
+   {
+    "at": "2026-11-18T09:03:11.044Z",
+    "label": "Approval request sent"
+   },
+   {
+    "at": "2026-11-18T09:05:11.044Z",
+    "label": "Host approved"
+   },
+   {
+    "at": "2026-11-18T09:06:11.044Z",
+    "label": "Guard notified"
+   },
+   {
+    "at": "2026-11-18T09:08:11.044Z",
+    "label": "Visitor entered building"
+   },
+   {
+    "at": "2026-11-18T10:23:11.044Z",
+    "label": "Visitor exited building"
+   }
+  ]
+ },
+ {
+  "id": "vs-099",
+  "name": "Anjali Sharma",
+  "mobile": "9224781302",
+  "email": "anjali.sharma@gmail.com",
+  "photo": "",
+  "idType": "Passport",
+  "idNumber": "741930XXXX",
+  "purpose": "Meeting",
+  "towerId": "tw-b",
+  "floorId": "fl-tb-7",
+  "officeId": "of-tb-701",
+  "hostId": "oe-197",
+  "expectedDuration": "30 min",
+  "count": 1,
+  "status": "EXITED",
+  "guardId": "u-guard2",
+  "gate": "Gate 1",
+  "requestedAt": "2026-11-18T14:29:11.044Z",
+  "approvedAt": "2026-11-18T14:32:11.044Z",
+  "entryAt": "2026-11-18T14:35:11.044Z",
+  "exitAt": "2026-11-18T14:59:11.044Z",
+  "remark": "",
+  "timeline": [
+   {
+    "at": "2026-11-18T14:29:11.044Z",
+    "label": "Visitor registered"
+   },
+   {
+    "at": "2026-11-18T14:30:11.044Z",
+    "label": "Approval request sent"
+   },
+   {
+    "at": "2026-11-18T14:32:11.044Z",
+    "label": "Host approved"
+   },
+   {
+    "at": "2026-11-18T14:33:11.044Z",
+    "label": "Guard notified"
+   },
+   {
+    "at": "2026-11-18T14:35:11.044Z",
+    "label": "Visitor entered building"
+   },
+   {
+    "at": "2026-11-18T14:59:11.044Z",
+    "label": "Visitor exited building"
+   }
+  ]
+ },
+ {
+  "id": "vs-100",
+  "name": "Deepak Agarwal",
+  "mobile": "9675191649",
+  "email": "deepak.agarwal@gmail.com",
+  "photo": "",
+  "idType": "Driving License",
+  "idNumber": "568949XXXX",
+  "purpose": "Delivery",
+  "towerId": "tw-b",
+  "floorId": "fl-tb-3",
+  "officeId": "of-tb-303",
+  "hostId": "oe-144",
+  "expectedDuration": "30 min",
+  "count": 1,
+  "status": "EXITED",
+  "guardId": "u-guard",
+  "gate": "Gate 1",
+  "requestedAt": "2026-11-18T07:01:11.044Z",
+  "approvedAt": "2026-11-18T07:04:11.044Z",
+  "entryAt": "2026-11-18T07:07:11.044Z",
+  "exitAt": "2026-11-18T09:32:11.044Z",
+  "remark": "",
+  "timeline": [
+   {
+    "at": "2026-11-18T07:01:11.044Z",
+    "label": "Visitor registered"
+   },
+   {
+    "at": "2026-11-18T07:02:11.044Z",
+    "label": "Approval request sent"
+   },
+   {
+    "at": "2026-11-18T07:04:11.044Z",
+    "label": "Host approved"
+   },
+   {
+    "at": "2026-11-18T07:05:11.044Z",
+    "label": "Guard notified"
+   },
+   {
+    "at": "2026-11-18T07:07:11.044Z",
+    "label": "Visitor entered building"
+   },
+   {
+    "at": "2026-11-18T09:32:11.044Z",
+    "label": "Visitor exited building"
+   }
+  ]
+ },
+ {
+  "id": "vs-101",
+  "name": "Amit Verma",
+  "mobile": "9324687333",
+  "email": "amit.verma@gmail.com",
+  "photo": "",
+  "idType": "Passport",
+  "idNumber": "843536XXXX",
+  "purpose": "Delivery",
+  "towerId": "tw-a",
+  "floorId": "fl-ta-8",
+  "officeId": "of-ta-805",
+  "hostId": "oe-085",
+  "expectedDuration": "30 min",
+  "count": 2,
+  "status": "EXITED",
+  "guardId": "u-guard",
+  "gate": "Gate 1",
+  "requestedAt": "2026-11-18T09:21:11.044Z",
+  "approvedAt": "2026-11-18T09:24:11.044Z",
+  "entryAt": "2026-11-18T09:27:11.044Z",
+  "exitAt": "2026-11-18T11:16:11.044Z",
+  "remark": "",
+  "timeline": [
+   {
+    "at": "2026-11-18T09:21:11.044Z",
+    "label": "Visitor registered"
+   },
+   {
+    "at": "2026-11-18T09:22:11.044Z",
+    "label": "Approval request sent"
+   },
+   {
+    "at": "2026-11-18T09:24:11.044Z",
+    "label": "Host approved"
+   },
+   {
+    "at": "2026-11-18T09:25:11.044Z",
+    "label": "Guard notified"
+   },
+   {
+    "at": "2026-11-18T09:27:11.044Z",
+    "label": "Visitor entered building"
+   },
+   {
+    "at": "2026-11-18T11:16:11.044Z",
+    "label": "Visitor exited building"
+   }
+  ]
+ },
+ {
+  "id": "vs-102",
+  "name": "Aarti Mishra",
+  "mobile": "9293491024",
+  "email": "aarti.mishra@gmail.com",
+  "photo": "",
+  "idType": "Aadhaar",
+  "idNumber": "989623XXXX",
+  "purpose": "Delivery",
+  "towerId": "tw-b",
+  "floorId": "fl-tb-2",
+  "officeId": "of-tb-201",
+  "hostId": "oe-128",
+  "expectedDuration": "30 min",
+  "count": 1,
+  "status": "EXITED",
+  "guardId": "u-guard2",
+  "gate": "Gate 1",
+  "requestedAt": "2026-11-18T12:59:11.044Z",
+  "approvedAt": "2026-11-18T13:02:11.044Z",
+  "entryAt": "2026-11-18T13:05:11.044Z",
+  "exitAt": "2026-11-18T15:29:11.044Z",
+  "remark": "",
+  "timeline": [
+   {
+    "at": "2026-11-18T12:59:11.044Z",
+    "label": "Visitor registered"
+   },
+   {
+    "at": "2026-11-18T13:00:11.044Z",
+    "label": "Approval request sent"
+   },
+   {
+    "at": "2026-11-18T13:02:11.044Z",
+    "label": "Host approved"
+   },
+   {
+    "at": "2026-11-18T13:03:11.044Z",
+    "label": "Guard notified"
+   },
+   {
+    "at": "2026-11-18T13:05:11.044Z",
+    "label": "Visitor entered building"
+   },
+   {
+    "at": "2026-11-18T15:29:11.044Z",
+    "label": "Visitor exited building"
+   }
+  ]
+ },
+ {
+  "id": "vs-103",
+  "name": "Sanjay Sharma",
+  "mobile": "9508940329",
+  "email": "sanjay.sharma@gmail.com",
+  "photo": "",
+  "idType": "Driving License",
+  "idNumber": "870848XXXX",
+  "purpose": "Personal",
+  "towerId": "tw-a",
+  "floorId": "fl-ta-4",
+  "officeId": "of-ta-404",
+  "hostId": "oe-040",
+  "expectedDuration": "1 hour",
+  "count": 1,
+  "status": "EXITED",
+  "guardId": "u-guard",
+  "gate": "Gate 1",
+  "requestedAt": "2026-11-18T09:18:11.044Z",
+  "approvedAt": "2026-11-18T09:21:11.044Z",
+  "entryAt": "2026-11-18T09:24:11.044Z",
+  "exitAt": "2026-11-18T10:17:11.044Z",
+  "remark": "",
+  "timeline": [
+   {
+    "at": "2026-11-18T09:18:11.044Z",
+    "label": "Visitor registered"
+   },
+   {
+    "at": "2026-11-18T09:19:11.044Z",
+    "label": "Approval request sent"
+   },
+   {
+    "at": "2026-11-18T09:21:11.044Z",
+    "label": "Host approved"
+   },
+   {
+    "at": "2026-11-18T09:22:11.044Z",
+    "label": "Guard notified"
+   },
+   {
+    "at": "2026-11-18T09:24:11.044Z",
+    "label": "Visitor entered building"
+   },
+   {
+    "at": "2026-11-18T10:17:11.044Z",
+    "label": "Visitor exited building"
+   }
+  ]
+ },
+ {
+  "id": "vs-104",
+  "name": "Yash Iyer",
+  "mobile": "9121838229",
+  "email": "yash.iyer@gmail.com",
+  "photo": "",
+  "idType": "Driving License",
+  "idNumber": "297590XXXX",
+  "purpose": "Meeting",
+  "towerId": "tw-b",
+  "floorId": "fl-tb-7",
+  "officeId": "of-tb-705",
+  "hostId": "oe-202",
+  "expectedDuration": "30 min",
+  "count": 1,
+  "status": "EXITED",
+  "guardId": "u-guard2",
+  "gate": "Gate 1",
+  "requestedAt": "2026-11-17T11:27:11.044Z",
+  "approvedAt": "2026-11-17T11:30:11.044Z",
+  "entryAt": "2026-11-17T11:33:11.044Z",
+  "exitAt": "2026-11-17T12:13:11.044Z",
+  "remark": "",
+  "timeline": [
+   {
+    "at": "2026-11-17T11:27:11.044Z",
+    "label": "Visitor registered"
+   },
+   {
+    "at": "2026-11-17T11:28:11.044Z",
+    "label": "Approval request sent"
+   },
+   {
+    "at": "2026-11-17T11:30:11.044Z",
+    "label": "Host approved"
+   },
+   {
+    "at": "2026-11-17T11:31:11.044Z",
+    "label": "Guard notified"
+   },
+   {
+    "at": "2026-11-17T11:33:11.044Z",
+    "label": "Visitor entered building"
+   },
+   {
+    "at": "2026-11-17T12:13:11.044Z",
+    "label": "Visitor exited building"
+   }
+  ]
+ },
+ {
+  "id": "vs-105",
+  "name": "Vikash Verma",
+  "mobile": "9849372362",
+  "email": "vikash.verma@gmail.com",
+  "photo": "",
+  "idType": "Driving License",
+  "idNumber": "504273XXXX",
+  "purpose": "Maintenance",
+  "towerId": "tw-a",
+  "floorId": "fl-ta-8",
+  "officeId": "of-ta-806",
+  "hostId": "oe-087",
+  "expectedDuration": "30 min",
+  "count": 1,
+  "status": "EXITED",
+  "guardId": "u-guard2",
+  "gate": "Gate 2",
+  "requestedAt": "2026-11-17T08:19:11.044Z",
+  "approvedAt": "2026-11-17T08:22:11.044Z",
+  "entryAt": "2026-11-17T08:25:11.044Z",
+  "exitAt": "2026-11-17T09:07:11.044Z",
+  "remark": "",
+  "timeline": [
+   {
+    "at": "2026-11-17T08:19:11.044Z",
+    "label": "Visitor registered"
+   },
+   {
+    "at": "2026-11-17T08:20:11.044Z",
+    "label": "Approval request sent"
+   },
+   {
+    "at": "2026-11-17T08:22:11.044Z",
+    "label": "Host approved"
+   },
+   {
+    "at": "2026-11-17T08:23:11.044Z",
+    "label": "Guard notified"
+   },
+   {
+    "at": "2026-11-17T08:25:11.044Z",
+    "label": "Visitor entered building"
+   },
+   {
+    "at": "2026-11-17T09:07:11.044Z",
+    "label": "Visitor exited building"
+   }
+  ]
+ },
+ {
+  "id": "vs-106",
+  "name": "Sneha Gupta",
+  "mobile": "9677879702",
+  "email": "sneha.gupta@gmail.com",
+  "photo": "",
+  "idType": "Driving License",
+  "idNumber": "701445XXXX",
+  "purpose": "Interview",
+  "towerId": "tw-b",
+  "floorId": "fl-tb-6",
+  "officeId": "of-tb-601",
+  "hostId": "oe-181",
+  "expectedDuration": "30 min",
+  "count": 1,
+  "status": "EXITED",
+  "guardId": "u-guard2",
+  "gate": "Gate 2",
+  "requestedAt": "2026-11-17T08:42:11.044Z",
+  "approvedAt": "2026-11-17T08:45:11.044Z",
+  "entryAt": "2026-11-17T08:48:11.044Z",
+  "exitAt": "2026-11-17T10:33:11.044Z",
+  "remark": "",
+  "timeline": [
+   {
+    "at": "2026-11-17T08:42:11.044Z",
+    "label": "Visitor registered"
+   },
+   {
+    "at": "2026-11-17T08:43:11.044Z",
+    "label": "Approval request sent"
+   },
+   {
+    "at": "2026-11-17T08:45:11.044Z",
+    "label": "Host approved"
+   },
+   {
+    "at": "2026-11-17T08:46:11.044Z",
+    "label": "Guard notified"
+   },
+   {
+    "at": "2026-11-17T08:48:11.044Z",
+    "label": "Visitor entered building"
+   },
+   {
+    "at": "2026-11-17T10:33:11.044Z",
+    "label": "Visitor exited building"
+   }
+  ]
+ },
+ {
+  "id": "vs-107",
+  "name": "Sanjay Khanna",
+  "mobile": "9690504357",
+  "email": "sanjay.khanna@gmail.com",
+  "photo": "",
+  "idType": "Passport",
+  "idNumber": "734898XXXX",
+  "purpose": "Other",
+  "towerId": "tw-a",
+  "floorId": "fl-ta-2",
+  "officeId": "of-ta-205",
+  "hostId": "oe-019",
+  "expectedDuration": "1 hour",
+  "count": 1,
+  "status": "EXITED",
+  "guardId": "u-guard",
+  "gate": "Gate 2",
+  "requestedAt": "2026-11-17T07:21:11.044Z",
+  "approvedAt": "2026-11-17T07:24:11.044Z",
+  "entryAt": "2026-11-17T07:27:11.044Z",
+  "exitAt": "2026-11-17T09:54:11.044Z",
+  "remark": "",
+  "timeline": [
+   {
+    "at": "2026-11-17T07:21:11.044Z",
+    "label": "Visitor registered"
+   },
+   {
+    "at": "2026-11-17T07:22:11.044Z",
+    "label": "Approval request sent"
+   },
+   {
+    "at": "2026-11-17T07:24:11.044Z",
+    "label": "Host approved"
+   },
+   {
+    "at": "2026-11-17T07:25:11.044Z",
+    "label": "Guard notified"
+   },
+   {
+    "at": "2026-11-17T07:27:11.044Z",
+    "label": "Visitor entered building"
+   },
+   {
+    "at": "2026-11-17T09:54:11.044Z",
+    "label": "Visitor exited building"
+   }
+  ]
+ },
+ {
+  "id": "vs-108",
+  "name": "Suresh Kapoor",
+  "mobile": "9776979399",
+  "email": "suresh.kapoor@gmail.com",
+  "photo": "",
+  "idType": "Aadhaar",
+  "idNumber": "199170XXXX",
+  "purpose": "Meeting",
+  "towerId": "tw-a",
+  "floorId": "fl-ta-10",
+  "officeId": "of-ta-1004",
+  "hostId": "oe-107",
+  "expectedDuration": "30 min",
+  "count": 1,
+  "status": "EXITED",
+  "guardId": "u-guard",
+  "gate": "Gate 2",
+  "requestedAt": "2026-11-17T10:29:11.044Z",
+  "approvedAt": "2026-11-17T10:32:11.044Z",
+  "entryAt": "2026-11-17T10:35:11.044Z",
+  "exitAt": "2026-11-17T12:28:11.044Z",
+  "remark": "",
+  "timeline": [
+   {
+    "at": "2026-11-17T10:29:11.044Z",
+    "label": "Visitor registered"
+   },
+   {
+    "at": "2026-11-17T10:30:11.044Z",
+    "label": "Approval request sent"
+   },
+   {
+    "at": "2026-11-17T10:32:11.044Z",
+    "label": "Host approved"
+   },
+   {
+    "at": "2026-11-17T10:33:11.044Z",
+    "label": "Guard notified"
+   },
+   {
+    "at": "2026-11-17T10:35:11.044Z",
+    "label": "Visitor entered building"
+   },
+   {
+    "at": "2026-11-17T12:28:11.044Z",
+    "label": "Visitor exited building"
+   }
+  ]
+ },
+ {
+  "id": "vs-109",
+  "name": "Isha Das",
+  "mobile": "9719914529",
+  "email": "isha.das@gmail.com",
+  "photo": "",
+  "idType": "Driving License",
+  "idNumber": "765051XXXX",
+  "purpose": "Meeting",
+  "towerId": "tw-b",
+  "floorId": "fl-tb-1",
+  "officeId": "of-tb-101",
+  "hostId": "oe-114",
+  "expectedDuration": "30 min",
+  "count": 1,
+  "status": "EXITED",
+  "guardId": "u-guard",
+  "gate": "Gate 2",
+  "requestedAt": "2026-11-17T11:24:11.044Z",
+  "approvedAt": "2026-11-17T11:27:11.044Z",
+  "entryAt": "2026-11-17T11:30:11.044Z",
+  "exitAt": "2026-11-17T12:10:11.044Z",
+  "remark": "",
+  "timeline": [
+   {
+    "at": "2026-11-17T11:24:11.044Z",
+    "label": "Visitor registered"
+   },
+   {
+    "at": "2026-11-17T11:25:11.044Z",
+    "label": "Approval request sent"
+   },
+   {
+    "at": "2026-11-17T11:27:11.044Z",
+    "label": "Host approved"
+   },
+   {
+    "at": "2026-11-17T11:28:11.044Z",
+    "label": "Guard notified"
+   },
+   {
+    "at": "2026-11-17T11:30:11.044Z",
+    "label": "Visitor entered building"
+   },
+   {
+    "at": "2026-11-17T12:10:11.044Z",
+    "label": "Visitor exited building"
+   }
+  ]
+ },
+ {
+  "id": "vs-110",
+  "name": "Komal Bansal",
+  "mobile": "9542995020",
+  "email": "komal.bansal@gmail.com",
+  "photo": "",
+  "idType": "PAN",
+  "idNumber": "786535XXXX",
+  "purpose": "Delivery",
+  "towerId": "tw-b",
+  "floorId": "fl-tb-5",
+  "officeId": "of-tb-503",
+  "hostId": "oe-171",
+  "expectedDuration": "1 hour",
+  "count": 1,
+  "status": "EXITED",
+  "guardId": "u-guard",
+  "gate": "Gate 1",
+  "requestedAt": "2026-11-17T10:11:11.044Z",
+  "approvedAt": "2026-11-17T10:14:11.044Z",
+  "entryAt": "2026-11-17T10:17:11.044Z",
+  "exitAt": "2026-11-17T11:10:11.044Z",
+  "remark": "",
+  "timeline": [
+   {
+    "at": "2026-11-17T10:11:11.044Z",
+    "label": "Visitor registered"
+   },
+   {
+    "at": "2026-11-17T10:12:11.044Z",
+    "label": "Approval request sent"
+   },
+   {
+    "at": "2026-11-17T10:14:11.044Z",
+    "label": "Host approved"
+   },
+   {
+    "at": "2026-11-17T10:15:11.044Z",
+    "label": "Guard notified"
+   },
+   {
+    "at": "2026-11-17T10:17:11.044Z",
+    "label": "Visitor entered building"
+   },
+   {
+    "at": "2026-11-17T11:10:11.044Z",
+    "label": "Visitor exited building"
+   }
+  ]
+ },
+ {
+  "id": "vs-111",
+  "name": "Sunita Khanna",
+  "mobile": "9930168531",
+  "email": "sunita.khanna@gmail.com",
+  "photo": "",
+  "idType": "Aadhaar",
+  "idNumber": "918299XXXX",
+  "purpose": "Meeting",
+  "towerId": "tw-a",
+  "floorId": "fl-ta-2",
+  "officeId": "of-ta-203",
+  "hostId": "oe-015",
+  "expectedDuration": "30 min",
+  "count": 1,
+  "status": "EXITED",
+  "guardId": "u-guard",
+  "gate": "Gate 2",
+  "requestedAt": "2026-11-17T07:40:11.044Z",
+  "approvedAt": "2026-11-17T07:43:11.044Z",
+  "entryAt": "2026-11-17T07:46:11.044Z",
+  "exitAt": "2026-11-17T08:48:11.044Z",
+  "remark": "",
+  "timeline": [
+   {
+    "at": "2026-11-17T07:40:11.044Z",
+    "label": "Visitor registered"
+   },
+   {
+    "at": "2026-11-17T07:41:11.044Z",
+    "label": "Approval request sent"
+   },
+   {
+    "at": "2026-11-17T07:43:11.044Z",
+    "label": "Host approved"
+   },
+   {
+    "at": "2026-11-17T07:44:11.044Z",
+    "label": "Guard notified"
+   },
+   {
+    "at": "2026-11-17T07:46:11.044Z",
+    "label": "Visitor entered building"
+   },
+   {
+    "at": "2026-11-17T08:48:11.044Z",
+    "label": "Visitor exited building"
+   }
+  ]
+ },
+ {
+  "id": "vs-112",
+  "name": "Pankaj Chopra",
+  "mobile": "9190561368",
+  "email": "pankaj.chopra@gmail.com",
+  "photo": "",
+  "idType": "Driving License",
+  "idNumber": "501662XXXX",
+  "purpose": "Maintenance",
+  "towerId": "tw-a",
+  "floorId": "fl-ta-10",
+  "officeId": "of-ta-1006",
+  "hostId": "oe-112",
+  "expectedDuration": "30 min",
+  "count": 1,
+  "status": "EXITED",
+  "guardId": "u-guard2",
+  "gate": "Gate 2",
+  "requestedAt": "2026-11-17T06:54:11.044Z",
+  "approvedAt": "2026-11-17T06:57:11.044Z",
+  "entryAt": "2026-11-17T07:00:11.044Z",
+  "exitAt": "2026-11-17T08:44:11.044Z",
+  "remark": "",
+  "timeline": [
+   {
+    "at": "2026-11-17T06:54:11.044Z",
+    "label": "Visitor registered"
+   },
+   {
+    "at": "2026-11-17T06:55:11.044Z",
+    "label": "Approval request sent"
+   },
+   {
+    "at": "2026-11-17T06:57:11.044Z",
+    "label": "Host approved"
+   },
+   {
+    "at": "2026-11-17T06:58:11.044Z",
+    "label": "Guard notified"
+   },
+   {
+    "at": "2026-11-17T07:00:11.044Z",
+    "label": "Visitor entered building"
+   },
+   {
+    "at": "2026-11-17T08:44:11.044Z",
+    "label": "Visitor exited building"
+   }
+  ]
+ },
+ {
+  "id": "vs-113",
+  "name": "Divya Sharma",
+  "mobile": "9205309707",
+  "email": "divya.sharma@gmail.com",
+  "photo": "",
+  "idType": "PAN",
+  "idNumber": "568092XXXX",
+  "purpose": "Other",
+  "towerId": "tw-a",
+  "floorId": "fl-ta-10",
+  "officeId": "of-ta-1006",
+  "hostId": "oe-112",
+  "expectedDuration": "30 min",
+  "count": 1,
+  "status": "EXITED",
+  "guardId": "u-guard2",
+  "gate": "Gate 2",
+  "requestedAt": "2026-11-17T11:20:11.044Z",
+  "approvedAt": "2026-11-17T11:23:11.044Z",
+  "entryAt": "2026-11-17T11:26:11.044Z",
+  "exitAt": "2026-11-17T12:16:11.044Z",
+  "remark": "",
+  "timeline": [
+   {
+    "at": "2026-11-17T11:20:11.044Z",
+    "label": "Visitor registered"
+   },
+   {
+    "at": "2026-11-17T11:21:11.044Z",
+    "label": "Approval request sent"
+   },
+   {
+    "at": "2026-11-17T11:23:11.044Z",
+    "label": "Host approved"
+   },
+   {
+    "at": "2026-11-17T11:24:11.044Z",
+    "label": "Guard notified"
+   },
+   {
+    "at": "2026-11-17T11:26:11.044Z",
+    "label": "Visitor entered building"
+   },
+   {
+    "at": "2026-11-17T12:16:11.044Z",
+    "label": "Visitor exited building"
+   }
+  ]
+ },
+ {
+  "id": "vs-114",
+  "name": "Komal Agarwal",
+  "mobile": "9553002647",
+  "email": "komal.agarwal@gmail.com",
+  "photo": "",
+  "idType": "Aadhaar",
+  "idNumber": "656194XXXX",
+  "purpose": "Meeting",
+  "towerId": "tw-a",
+  "floorId": "fl-ta-2",
+  "officeId": "of-ta-201",
+  "hostId": "oe-009",
+  "expectedDuration": "30 min",
+  "count": 1,
+  "status": "EXITED",
+  "guardId": "u-guard2",
+  "gate": "Gate 1",
+  "requestedAt": "2026-11-17T10:48:11.044Z",
+  "approvedAt": "2026-11-17T10:51:11.044Z",
+  "entryAt": "2026-11-17T10:54:11.044Z",
+  "exitAt": "2026-11-17T11:48:11.044Z",
+  "remark": "",
+  "timeline": [
+   {
+    "at": "2026-11-17T10:48:11.044Z",
+    "label": "Visitor registered"
+   },
+   {
+    "at": "2026-11-17T10:49:11.044Z",
+    "label": "Approval request sent"
+   },
+   {
+    "at": "2026-11-17T10:51:11.044Z",
+    "label": "Host approved"
+   },
+   {
+    "at": "2026-11-17T10:52:11.044Z",
+    "label": "Guard notified"
+   },
+   {
+    "at": "2026-11-17T10:54:11.044Z",
+    "label": "Visitor entered building"
+   },
+   {
+    "at": "2026-11-17T11:48:11.044Z",
+    "label": "Visitor exited building"
+   }
+  ]
+ },
+ {
+  "id": "vs-115",
+  "name": "Sunita Gupta",
+  "mobile": "9456637919",
+  "email": "sunita.gupta@gmail.com",
+  "photo": "",
+  "idType": "PAN",
+  "idNumber": "717097XXXX",
+  "purpose": "Personal",
+  "towerId": "tw-a",
+  "floorId": "fl-ta-6",
+  "officeId": "of-ta-603",
+  "hostId": "oe-058",
+  "expectedDuration": "1 hour",
+  "count": 1,
+  "status": "EXITED",
+  "guardId": "u-guard",
+  "gate": "Gate 2",
+  "requestedAt": "2026-11-16T06:26:11.044Z",
+  "approvedAt": "2026-11-16T06:29:11.044Z",
+  "entryAt": "2026-11-16T06:32:11.044Z",
+  "exitAt": "2026-11-16T06:59:11.044Z",
+  "remark": "",
+  "timeline": [
+   {
+    "at": "2026-11-16T06:26:11.044Z",
+    "label": "Visitor registered"
+   },
+   {
+    "at": "2026-11-16T06:27:11.044Z",
+    "label": "Approval request sent"
+   },
+   {
+    "at": "2026-11-16T06:29:11.044Z",
+    "label": "Host approved"
+   },
+   {
+    "at": "2026-11-16T06:30:11.044Z",
+    "label": "Guard notified"
+   },
+   {
+    "at": "2026-11-16T06:32:11.044Z",
+    "label": "Visitor entered building"
+   },
+   {
+    "at": "2026-11-16T06:59:11.044Z",
+    "label": "Visitor exited building"
+   }
+  ]
+ },
+ {
+  "id": "vs-116",
+  "name": "Isha Khanna",
+  "mobile": "9466437324",
+  "email": "isha.khanna@gmail.com",
+  "photo": "",
+  "idType": "Passport",
+  "idNumber": "939018XXXX",
+  "purpose": "Meeting",
+  "towerId": "tw-a",
+  "floorId": "fl-ta-5",
+  "officeId": "of-ta-503",
+  "hostId": "oe-049",
+  "expectedDuration": "30 min",
+  "count": 1,
+  "status": "EXITED",
+  "guardId": "u-guard2",
+  "gate": "Gate 1",
+  "requestedAt": "2026-11-16T06:03:11.044Z",
+  "approvedAt": "2026-11-16T06:06:11.044Z",
+  "entryAt": "2026-11-16T06:09:11.044Z",
+  "exitAt": "2026-11-16T07:38:11.044Z",
+  "remark": "",
+  "timeline": [
+   {
+    "at": "2026-11-16T06:03:11.044Z",
+    "label": "Visitor registered"
+   },
+   {
+    "at": "2026-11-16T06:04:11.044Z",
+    "label": "Approval request sent"
+   },
+   {
+    "at": "2026-11-16T06:06:11.044Z",
+    "label": "Host approved"
+   },
+   {
+    "at": "2026-11-16T06:07:11.044Z",
+    "label": "Guard notified"
+   },
+   {
+    "at": "2026-11-16T06:09:11.044Z",
+    "label": "Visitor entered building"
+   },
+   {
+    "at": "2026-11-16T07:38:11.044Z",
+    "label": "Visitor exited building"
+   }
+  ]
+ },
+ {
+  "id": "vs-117",
+  "name": "Suresh Mehta",
+  "mobile": "9267322408",
+  "email": "suresh.mehta@gmail.com",
+  "photo": "",
+  "idType": "Passport",
+  "idNumber": "746163XXXX",
+  "purpose": "Delivery",
+  "towerId": "tw-a",
+  "floorId": "fl-ta-7",
+  "officeId": "of-ta-701",
+  "hostId": "oe-065",
+  "expectedDuration": "30 min",
+  "count": 2,
+  "status": "EXITED",
+  "guardId": "u-guard2",
+  "gate": "Gate 2",
+  "requestedAt": "2026-11-16T14:51:11.044Z",
+  "approvedAt": "2026-11-16T14:54:11.044Z",
+  "entryAt": "2026-11-16T14:57:11.044Z",
+  "exitAt": "2026-11-16T15:49:11.044Z",
+  "remark": "",
+  "timeline": [
+   {
+    "at": "2026-11-16T14:51:11.044Z",
+    "label": "Visitor registered"
+   },
+   {
+    "at": "2026-11-16T14:52:11.044Z",
+    "label": "Approval request sent"
+   },
+   {
+    "at": "2026-11-16T14:54:11.044Z",
+    "label": "Host approved"
+   },
+   {
+    "at": "2026-11-16T14:55:11.044Z",
+    "label": "Guard notified"
+   },
+   {
+    "at": "2026-11-16T14:57:11.044Z",
+    "label": "Visitor entered building"
+   },
+   {
+    "at": "2026-11-16T15:49:11.044Z",
+    "label": "Visitor exited building"
+   }
+  ]
+ },
+ {
+  "id": "vs-118",
+  "name": "Deepak Gupta",
+  "mobile": "9369908356",
+  "email": "deepak.gupta@gmail.com",
+  "photo": "",
+  "idType": "Driving License",
+  "idNumber": "991469XXXX",
+  "purpose": "Delivery",
+  "towerId": "tw-b",
+  "floorId": "fl-tb-7",
+  "officeId": "of-tb-706",
+  "hostId": "oe-204",
+  "expectedDuration": "2 hours",
+  "count": 2,
+  "status": "EXITED",
+  "guardId": "u-guard2",
+  "gate": "Gate 1",
+  "requestedAt": "2026-11-16T12:26:11.044Z",
+  "approvedAt": "2026-11-16T12:29:11.044Z",
+  "entryAt": "2026-11-16T12:32:11.044Z",
+  "exitAt": "2026-11-16T13:33:11.044Z",
+  "remark": "",
+  "timeline": [
+   {
+    "at": "2026-11-16T12:26:11.044Z",
+    "label": "Visitor registered"
+   },
+   {
+    "at": "2026-11-16T12:27:11.044Z",
+    "label": "Approval request sent"
+   },
+   {
+    "at": "2026-11-16T12:29:11.044Z",
+    "label": "Host approved"
+   },
+   {
+    "at": "2026-11-16T12:30:11.044Z",
+    "label": "Guard notified"
+   },
+   {
+    "at": "2026-11-16T12:32:11.044Z",
+    "label": "Visitor entered building"
+   },
+   {
+    "at": "2026-11-16T13:33:11.044Z",
+    "label": "Visitor exited building"
+   }
+  ]
+ },
+ {
+  "id": "vs-119",
+  "name": "Kavita Sharma",
+  "mobile": "9371539933",
+  "email": "kavita.sharma@gmail.com",
+  "photo": "",
+  "idType": "Driving License",
+  "idNumber": "562905XXXX",
+  "purpose": "Delivery",
+  "towerId": "tw-b",
+  "floorId": "fl-tb-6",
+  "officeId": "of-tb-602",
+  "hostId": "oe-184",
+  "expectedDuration": "30 min",
+  "count": 1,
+  "status": "REJECTED",
+  "guardId": "u-guard2",
+  "gate": "Gate 2",
+  "requestedAt": "2026-11-16T13:30:11.044Z",
+  "approvedAt": "",
+  "entryAt": "",
+  "exitAt": "",
+  "remark": "Meeting cancelled",
+  "timeline": [
+   {
+    "at": "2026-11-16T13:30:11.044Z",
+    "label": "Visitor registered"
+   },
+   {
+    "at": "2026-11-16T13:31:11.044Z",
+    "label": "Approval request sent"
+   },
+   {
+    "at": "2026-11-16T13:33:11.044Z",
+    "label": "Host rejected the request"
+   }
+  ]
+ },
+ {
+  "id": "vs-120",
+  "name": "Yash Joshi",
+  "mobile": "9779425212",
+  "email": "yash.joshi@gmail.com",
+  "photo": "",
+  "idType": "Passport",
+  "idNumber": "518900XXXX",
+  "purpose": "Delivery",
+  "towerId": "tw-a",
+  "floorId": "fl-ta-3",
+  "officeId": "of-ta-304",
+  "hostId": "oe-026",
+  "expectedDuration": "1 hour",
+  "count": 1,
+  "status": "EXITED",
+  "guardId": "u-guard",
+  "gate": "Gate 1",
+  "requestedAt": "2026-11-16T07:19:11.044Z",
+  "approvedAt": "2026-11-16T07:22:11.044Z",
+  "entryAt": "2026-11-16T07:25:11.044Z",
+  "exitAt": "2026-11-16T07:46:11.044Z",
+  "remark": "",
+  "timeline": [
+   {
+    "at": "2026-11-16T07:19:11.044Z",
+    "label": "Visitor registered"
+   },
+   {
+    "at": "2026-11-16T07:20:11.044Z",
+    "label": "Approval request sent"
+   },
+   {
+    "at": "2026-11-16T07:22:11.044Z",
+    "label": "Host approved"
+   },
+   {
+    "at": "2026-11-16T07:23:11.044Z",
+    "label": "Guard notified"
+   },
+   {
+    "at": "2026-11-16T07:25:11.044Z",
+    "label": "Visitor entered building"
+   },
+   {
+    "at": "2026-11-16T07:46:11.044Z",
+    "label": "Visitor exited building"
+   }
+  ]
+ },
+ {
+  "id": "vs-121",
+  "name": "Pooja Gupta",
+  "mobile": "9762144853",
+  "email": "pooja.gupta@gmail.com",
+  "photo": "",
+  "idType": "Aadhaar",
+  "idNumber": "562019XXXX",
+  "purpose": "Meeting",
+  "towerId": "tw-b",
+  "floorId": "fl-tb-8",
+  "officeId": "of-tb-802",
+  "hostId": "oe-209",
+  "expectedDuration": "2 hours",
+  "count": 1,
+  "status": "EXITED",
+  "guardId": "u-guard",
+  "gate": "Gate 2",
+  "requestedAt": "2026-11-16T14:50:11.044Z",
+  "approvedAt": "2026-11-16T14:53:11.044Z",
+  "entryAt": "2026-11-16T14:56:11.044Z",
+  "exitAt": "2026-11-16T15:26:11.044Z",
+  "remark": "",
+  "timeline": [
+   {
+    "at": "2026-11-16T14:50:11.044Z",
+    "label": "Visitor registered"
+   },
+   {
+    "at": "2026-11-16T14:51:11.044Z",
+    "label": "Approval request sent"
+   },
+   {
+    "at": "2026-11-16T14:53:11.044Z",
+    "label": "Host approved"
+   },
+   {
+    "at": "2026-11-16T14:54:11.044Z",
+    "label": "Guard notified"
+   },
+   {
+    "at": "2026-11-16T14:56:11.044Z",
+    "label": "Visitor entered building"
+   },
+   {
+    "at": "2026-11-16T15:26:11.044Z",
+    "label": "Visitor exited building"
+   }
+  ]
+ },
+ {
+  "id": "vs-122",
+  "name": "Anjali Reddy",
+  "mobile": "9884659532",
+  "email": "anjali.reddy@gmail.com",
+  "photo": "",
+  "idType": "Driving License",
+  "idNumber": "389825XXXX",
+  "purpose": "Meeting",
+  "towerId": "tw-b",
+  "floorId": "fl-tb-5",
+  "officeId": "of-tb-505",
+  "hostId": "oe-176",
+  "expectedDuration": "1 hour",
+  "count": 2,
+  "status": "EXITED",
+  "guardId": "u-guard2",
+  "gate": "Gate 1",
+  "requestedAt": "2026-11-16T11:20:11.044Z",
+  "approvedAt": "2026-11-16T11:23:11.044Z",
+  "entryAt": "2026-11-16T11:26:11.044Z",
+  "exitAt": "2026-11-16T13:55:11.044Z",
+  "remark": "",
+  "timeline": [
+   {
+    "at": "2026-11-16T11:20:11.044Z",
+    "label": "Visitor registered"
+   },
+   {
+    "at": "2026-11-16T11:21:11.044Z",
+    "label": "Approval request sent"
+   },
+   {
+    "at": "2026-11-16T11:23:11.044Z",
+    "label": "Host approved"
+   },
+   {
+    "at": "2026-11-16T11:24:11.044Z",
+    "label": "Guard notified"
+   },
+   {
+    "at": "2026-11-16T11:26:11.044Z",
+    "label": "Visitor entered building"
+   },
+   {
+    "at": "2026-11-16T13:55:11.044Z",
+    "label": "Visitor exited building"
+   }
+  ]
+ },
+ {
+  "id": "vs-123",
+  "name": "Sneha Mishra",
+  "mobile": "9303880262",
+  "email": "sneha.mishra@gmail.com",
+  "photo": "",
+  "idType": "Aadhaar",
+  "idNumber": "861331XXXX",
+  "purpose": "Personal",
+  "towerId": "tw-a",
+  "floorId": "fl-ta-10",
+  "officeId": "of-ta-1005",
+  "hostId": "oe-109",
+  "expectedDuration": "2 hours",
+  "count": 1,
+  "status": "EXITED",
+  "guardId": "u-guard",
+  "gate": "Gate 1",
+  "requestedAt": "2026-11-16T10:58:11.044Z",
+  "approvedAt": "2026-11-16T11:01:11.044Z",
+  "entryAt": "2026-11-16T11:04:11.044Z",
+  "exitAt": "2026-11-16T12:00:11.044Z",
+  "remark": "",
+  "timeline": [
+   {
+    "at": "2026-11-16T10:58:11.044Z",
+    "label": "Visitor registered"
+   },
+   {
+    "at": "2026-11-16T10:59:11.044Z",
+    "label": "Approval request sent"
+   },
+   {
+    "at": "2026-11-16T11:01:11.044Z",
+    "label": "Host approved"
+   },
+   {
+    "at": "2026-11-16T11:02:11.044Z",
+    "label": "Guard notified"
+   },
+   {
+    "at": "2026-11-16T11:04:11.044Z",
+    "label": "Visitor entered building"
+   },
+   {
+    "at": "2026-11-16T12:00:11.044Z",
+    "label": "Visitor exited building"
+   }
+  ]
+ },
+ {
+  "id": "vs-124",
+  "name": "Manish Yadav",
+  "mobile": "9860594113",
+  "email": "manish.yadav@gmail.com",
+  "photo": "",
+  "idType": "Driving License",
+  "idNumber": "497265XXXX",
+  "purpose": "Personal",
+  "towerId": "tw-a",
+  "floorId": "fl-ta-6",
+  "officeId": "of-ta-601",
+  "hostId": "oe-055",
+  "expectedDuration": "2 hours",
+  "count": 1,
+  "status": "EXITED",
+  "guardId": "u-guard",
+  "gate": "Gate 1",
+  "requestedAt": "2026-11-16T11:48:11.044Z",
+  "approvedAt": "2026-11-16T11:51:11.044Z",
+  "entryAt": "2026-11-16T11:54:11.044Z",
+  "exitAt": "2026-11-16T13:28:11.044Z",
+  "remark": "",
+  "timeline": [
+   {
+    "at": "2026-11-16T11:48:11.044Z",
+    "label": "Visitor registered"
+   },
+   {
+    "at": "2026-11-16T11:49:11.044Z",
+    "label": "Approval request sent"
+   },
+   {
+    "at": "2026-11-16T11:51:11.044Z",
+    "label": "Host approved"
+   },
+   {
+    "at": "2026-11-16T11:52:11.044Z",
+    "label": "Guard notified"
+   },
+   {
+    "at": "2026-11-16T11:54:11.044Z",
+    "label": "Visitor entered building"
+   },
+   {
+    "at": "2026-11-16T13:28:11.044Z",
+    "label": "Visitor exited building"
+   }
+  ]
+ },
+ {
+  "id": "vs-125",
+  "name": "Kavita Bansal",
+  "mobile": "9126453836",
+  "email": "kavita.bansal@gmail.com",
+  "photo": "",
+  "idType": "Passport",
+  "idNumber": "958010XXXX",
+  "purpose": "Meeting",
+  "towerId": "tw-a",
+  "floorId": "fl-ta-9",
+  "officeId": "of-ta-903",
+  "hostId": "oe-092",
+  "expectedDuration": "1 hour",
+  "count": 1,
+  "status": "EXITED",
+  "guardId": "u-guard2",
+  "gate": "Gate 1",
+  "requestedAt": "2026-11-16T11:15:11.044Z",
+  "approvedAt": "2026-11-16T11:18:11.044Z",
+  "entryAt": "2026-11-16T11:21:11.044Z",
+  "exitAt": "2026-11-16T12:00:11.044Z",
+  "remark": "",
+  "timeline": [
+   {
+    "at": "2026-11-16T11:15:11.044Z",
+    "label": "Visitor registered"
+   },
+   {
+    "at": "2026-11-16T11:16:11.044Z",
+    "label": "Approval request sent"
+   },
+   {
+    "at": "2026-11-16T11:18:11.044Z",
+    "label": "Host approved"
+   },
+   {
+    "at": "2026-11-16T11:19:11.044Z",
+    "label": "Guard notified"
+   },
+   {
+    "at": "2026-11-16T11:21:11.044Z",
+    "label": "Visitor entered building"
+   },
+   {
+    "at": "2026-11-16T12:00:11.044Z",
+    "label": "Visitor exited building"
+   }
+  ]
+ }
+]

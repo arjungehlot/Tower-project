@@ -1,0 +1,33 @@
+import { useEffect, useState } from 'react'
+import { useNavigate, useSearchParams } from 'react-router-dom'
+import { Plus } from 'lucide-react'
+import { Button, DataTable, PageHeader, Select, StatusBadge, Tabs } from '@/components/ui'
+import { TicketForm } from '@/components/business/TicketForm'
+import { useTickets } from '@/hooks/useTickets'
+import { useLookups } from '@/hooks/useLookups'
+import { useMe } from '@/hooks/useMe'
+import { TICKET_CATEGORIES, PRIORITIES } from '@/utils/constants'
+import { ago } from '@/utils/dateUtils'
+
+export default function TicketList({ mine }: { mine?: boolean }) {
+  const nav = useNavigate(), L = useLookups(), { me, officeId, can } = useMe(), { tickets } = useTickets(), [params, setParams] = useSearchParams()
+  const [open, setOpen] = useState(false), [tab, setTab] = useState('all'), [f, setF] = useState({ cat: '', pri: '', st: '' })
+  useEffect(() => { if (params.get('new')) { setOpen(true); setParams({}, { replace: true }) } }, [params]) // eslint-disable-line
+  let base = tickets
+  if (me?.role.startsWith('OFFICE') || mine) base = base.filter((t) => t.officeId === officeId)
+  if (me?.role === 'STAFF') base = base.filter((t) => t.assignedEmployeeId === me.refId)
+  const G: Record<string, (s: string) => boolean> = { all: () => true, open: (s) => s === 'OPEN', active: (s) => ['ASSIGNED', 'IN_PROGRESS', 'WAITING'].includes(s), done: (s) => ['RESOLVED', 'CLOSED'].includes(s) }
+  const rows = base.filter((t) => G[tab](t.status) && (!f.cat || t.category === f.cat) && (!f.pri || t.priority === f.pri) && (!f.st || t.status === f.st)).sort((a, b) => b.createdAt.localeCompare(a.createdAt))
+  return <>
+    <PageHeader title={mine || me?.role.startsWith('OFFICE') ? 'My Tickets' : 'Tickets'} subtitle="Service desk — complaints and maintenance requests" actions={can('tickets', 'create') && <Button variant="primary" icon={<Plus size={14} />} onClick={() => setOpen(true)}>Raise ticket</Button>} />
+    <Tabs value={tab} onChange={setTab} tabs={[{ id: 'all', label: 'All', count: base.length }, { id: 'open', label: 'Needs assignment', count: base.filter((t) => t.status === 'OPEN').length }, { id: 'active', label: 'In progress', count: base.filter((t) => G.active(t.status)).length }, { id: 'done', label: 'Resolved / closed', count: base.filter((t) => G.done(t.status)).length }]} />
+    <div className="mt-3"><DataTable rows={rows} rowKey={(t) => t.id} onRowClick={(t) => nav(`/tickets/${t.id}`)} exportName="tickets" searchText={(t) => `${t.code} ${t.subject} Office ${L.officeNo(t.officeId)}`}
+      filters={<><Select aria-label="Category" className="w-32" value={f.cat} onChange={(e) => setF({ ...f, cat: e.target.value })} options={TICKET_CATEGORIES} placeholder="Category" /><Select aria-label="Priority" className="w-28" value={f.pri} onChange={(e) => setF({ ...f, pri: e.target.value })} options={PRIORITIES} placeholder="Priority" /><Select aria-label="Status" className="w-32" value={f.st} onChange={(e) => setF({ ...f, st: e.target.value })} options={['OPEN', 'ASSIGNED', 'IN_PROGRESS', 'WAITING', 'RESOLVED', 'CLOSED']} placeholder="Status" /></>}
+      columns={[{ key: 'c', header: 'Ticket', sort: (t) => t.code, render: (t) => <div><p className="font-semibold">{t.subject}</p><p className="text-xxs text-muted">{t.code} · {t.category}</p></div>, csv: (t) => `${t.code} ${t.subject}` },
+        { key: 'o', header: 'Office', sort: (t) => L.officeNo(t.officeId), render: (t) => <span>{L.officeNo(t.officeId)} <span className="text-muted">· {L.officeTenant(t.officeId)?.name}</span></span>, csv: (t) => L.officeNo(t.officeId), hideMobile: true },
+        { key: 'p', header: 'Priority', sort: (t) => PRIORITIES.indexOf(t.priority), render: (t) => <StatusBadge status={t.priority} />, csv: (t) => t.priority }, { key: 'a', header: 'Assigned', render: (t) => L.employee(t.assignedEmployeeId)?.name ?? <span className="text-faint">Unassigned</span>, csv: (t) => L.employee(t.assignedEmployeeId)?.name, hideMobile: true },
+        { key: 'd', header: 'Raised', sort: (t) => t.createdAt, render: (t) => ago(t.createdAt), csv: (t) => t.createdAt }, { key: 's', header: 'Status', sort: (t) => t.status, render: (t) => <StatusBadge status={t.status} />, csv: (t) => t.status }]}
+      empty={{ title: 'No tickets found', text: 'Nothing matches this view.', action: can('tickets', 'create') ? 'Raise ticket' : undefined, onAction: () => setOpen(true) }} /></div>
+    <TicketForm open={open} onClose={() => setOpen(false)} />
+  </>
+}

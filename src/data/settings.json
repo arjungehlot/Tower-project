@@ -1,0 +1,61 @@
+[
+ {
+  "id": "settings",
+  "seedAt": "2026-11-25T08:00:11.044Z",
+  "productName": "TowerFlow",
+  "subtitle": "Smart Building Management",
+  "visitor": {
+   "autoRejectMinutes": 15,
+   "requirePhoto": true,
+   "requireId": true
+  },
+  "notifications": {
+   "whatsapp": true,
+   "email": true,
+   "inApp": true,
+   "types": {
+    "visitor": true,
+    "ticket": true,
+    "task": true,
+    "payment": false
+   }
+  },
+  "whatsapp": {
+   "number": "+91 98100 55000",
+   "provider": "Meta Cloud API (simulated)",
+   "apiStatus": "Connected",
+   "templates": {
+    "visitor": "Visitor {{visitorName}} is waiting at {{gate}} to visit {{office}}. Please approve or reject.",
+    "ticket": "New maintenance ticket #{{ticket}} has been assigned to you. Priority: {{priority}}.",
+    "task": "New task assigned: {{task}}."
+   }
+  },
+  "email": {
+   "provider": "SMTP (simulated)",
+   "host": "smtp.towerflow.in",
+   "status": "Connected"
+  },
+  "emergencyContacts": [
+   {
+    "label": "Fire Brigade",
+    "number": "101"
+   },
+   {
+    "label": "Ambulance",
+    "number": "102"
+   },
+   {
+    "label": "Police",
+    "number": "100"
+   },
+   {
+    "label": "Building Control Room",
+    "number": "+91 120 4001 000"
+   },
+   {
+    "label": "Lift AMC Vendor",
+    "number": "+91 98100 33777"
+   }
+  ]
+ }
+]

@@ -1,0 +1,110 @@
+[
+ {
+  "id": "fl-ta-1",
+  "towerId": "tw-a",
+  "number": 1,
+  "name": "Ground+1"
+ },
+ {
+  "id": "fl-ta-2",
+  "towerId": "tw-a",
+  "number": 2,
+  "name": "Floor 2"
+ },
+ {
+  "id": "fl-ta-3",
+  "towerId": "tw-a",
+  "number": 3,
+  "name": "Floor 3"
+ },
+ {
+  "id": "fl-ta-4",
+  "towerId": "tw-a",
+  "number": 4,
+  "name": "Floor 4"
+ },
+ {
+  "id": "fl-ta-5",
+  "towerId": "tw-a",
+  "number": 5,
+  "name": "Floor 5"
+ },
+ {
+  "id": "fl-ta-6",
+  "towerId": "tw-a",
+  "number": 6,
+  "name": "Floor 6"
+ },
+ {
+  "id": "fl-ta-7",
+  "towerId": "tw-a",
+  "number": 7,
+  "name": "Floor 7"
+ },
+ {
+  "id": "fl-ta-8",
+  "towerId": "tw-a",
+  "number": 8,
+  "name": "Floor 8"
+ },
+ {
+  "id": "fl-ta-9",
+  "towerId": "tw-a",
+  "number": 9,
+  "name": "Floor 9"
+ },
+ {
+  "id": "fl-ta-10",
+  "towerId": "tw-a",
+  "number": 10,
+  "name": "Floor 10"
+ },
+ {
+  "id": "fl-tb-1",
+  "towerId": "tw-b",
+  "number": 1,
+  "name": "Ground+1"
+ },
+ {
+  "id": "fl-tb-2",
+  "towerId": "tw-b",
+  "number": 2,
+  "name": "Floor 2"
+ },
+ {
+  "id": "fl-tb-3",
+  "towerId": "tw-b",
+  "number": 3,
+  "name": "Floor 3"
+ },
+ {
+  "id": "fl-tb-4",
+  "towerId": "tw-b",
+  "number": 4,
+  "name": "Floor 4"
+ },
+ {
+  "id": "fl-tb-5",
+  "towerId": "tw-b",
+  "number": 5,
+  "name": "Floor 5"
+ },
+ {
+  "id": "fl-tb-6",
+  "towerId": "tw-b",
+  "number": 6,
+  "name": "Floor 6"
+ },
+ {
+  "id": "fl-tb-7",
+  "towerId": "tw-b",
+  "number": 7,
+  "name": "Floor 7"
+ },
+ {
+  "id": "fl-tb-8",
+  "towerId": "tw-b",
+  "number": 8,
+  "name": "Floor 8"
+ }
+]

@@ -1,0 +1,57 @@
+[
+ {
+  "id": "dc-1",
+  "title": "Lease Agreement — ABC Technologies",
+  "type": "Lease",
+  "entity": "Tenant",
+  "entityId": "tn-01",
+  "uploadedBy": "Admin",
+  "uploadedAt": "2026-11-25T06:20:11.044Z",
+  "fileName": "Lease_Agreement_ABC_Technologies.pdf",
+  "size": "240 KB"
+ },
+ {
+  "id": "dc-2",
+  "title": "ID Proof — Amit Sharma",
+  "type": "ID Proof",
+  "entity": "Staff",
+  "entityId": "st-001",
+  "uploadedBy": "Admin",
+  "uploadedAt": "2026-11-24T13:40:11.044Z",
+  "fileName": "ID_Proof_Amit_Sharma.pdf",
+  "size": "240 KB"
+ },
+ {
+  "id": "dc-3",
+  "title": "Invoice INV-2201",
+  "type": "Invoice",
+  "entity": "Tenant",
+  "entityId": "tn-02",
+  "uploadedBy": "Admin",
+  "uploadedAt": "2026-11-23T21:00:11.044Z",
+  "fileName": "Invoice_INV_2201.pdf",
+  "size": "240 KB"
+ },
+ {
+  "id": "dc-4",
+  "title": "Lift AMC Contract",
+  "type": "Maintenance document",
+  "entity": "Asset",
+  "entityId": "as-02",
+  "uploadedBy": "Admin",
+  "uploadedAt": "2026-11-23T04:20:11.044Z",
+  "fileName": "Lift_AMC_Contract.pdf",
+  "size": "240 KB"
+ },
+ {
+  "id": "dc-5",
+  "title": "Completion proof — TASK-103",
+  "type": "Completion proof",
+  "entity": "Ticket",
+  "entityId": "tkt-003",
+  "uploadedBy": "Admin",
+  "uploadedAt": "2026-11-22T11:40:11.044Z",
+  "fileName": "Completion_proof_TASK_103.pdf",
+  "size": "240 KB"
+ }
+]

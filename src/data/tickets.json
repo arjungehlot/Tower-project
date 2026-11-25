@@ -1,0 +1,1719 @@
+[
+ {
+  "id": "tkt-001",
+  "code": "TK-1001",
+  "subject": "Fire extinguisher expired",
+  "description": "Reported by the office. Please check at the earliest and update.",
+  "category": "Fire Safety",
+  "priority": "HIGH",
+  "status": "OPEN",
+  "towerId": "tw-a",
+  "floorId": "fl-ta-1",
+  "officeId": "of-ta-103",
+  "reporterId": "oe-001",
+  "assignedEmployeeId": "",
+  "preferredVisit": "Anytime today",
+  "attachments": [],
+  "createdAt": "2026-11-25T04:49:11.044Z",
+  "dueAt": "2026-11-26T04:49:11.044Z",
+  "rating": null,
+  "taskId": "",
+  "comments": [
+   {
+    "id": "c-0-1",
+    "by": "Office",
+    "kind": "office",
+    "text": "Reported by the office. Please check at the earliest and update.",
+    "at": "2026-11-25T04:49:11.044Z"
+   }
+  ],
+  "timeline": [
+   {
+    "at": "2026-11-25T04:49:11.044Z",
+    "label": "Ticket raised"
+   }
+  ]
+ },
+ {
+  "id": "tkt-002",
+  "code": "TK-1002",
+  "subject": "Move furniture to storage",
+  "description": "Reported by the office. Please check at the earliest and update.",
+  "category": "General",
+  "priority": "CRITICAL",
+  "status": "OPEN",
+  "towerId": "tw-a",
+  "floorId": "fl-ta-1",
+  "officeId": "of-ta-103",
+  "reporterId": "oe-001",
+  "assignedEmployeeId": "",
+  "preferredVisit": "Anytime today",
+  "attachments": [],
+  "createdAt": "2026-11-25T06:00:11.044Z",
+  "dueAt": "2026-11-25T10:00:11.044Z",
+  "rating": null,
+  "taskId": "",
+  "comments": [
+   {
+    "id": "c-1-1",
+    "by": "Office",
+    "kind": "office",
+    "text": "Reported by the office. Please check at the earliest and update.",
+    "at": "2026-11-25T06:00:11.044Z"
+   }
+  ],
+  "timeline": [
+   {
+    "at": "2026-11-25T06:00:11.044Z",
+    "label": "Ticket raised"
+   }
+  ]
+ },
+ {
+  "id": "tkt-003",
+  "code": "TK-1003",
+  "subject": "Cabin door lock jammed",
+  "description": "Reported by the office. Please check at the earliest and update.",
+  "category": "Maintenance",
+  "priority": "MEDIUM",
+  "status": "ASSIGNED",
+  "towerId": "tw-a",
+  "floorId": "fl-ta-1",
+  "officeId": "of-ta-103",
+  "reporterId": "oe-001",
+  "assignedEmployeeId": "st-041",
+  "preferredVisit": "Anytime today",
+  "attachments": [],
+  "createdAt": "2026-11-25T07:14:11.044Z",
+  "dueAt": "2026-11-27T07:14:11.044Z",
+  "rating": null,
+  "taskId": "tk-001",
+  "comments": [
+   {
+    "id": "c-2-1",
+    "by": "Office",
+    "kind": "office",
+    "text": "Reported by the office. Please check at the earliest and update.",
+    "at": "2026-11-25T07:14:11.044Z"
+   },
+   {
+    "id": "c-2-2",
+    "by": "Nisha Singh",
+    "kind": "staff",
+    "text": "On it. Will update shortly.",
+    "at": "2026-11-25T07:44:11.044Z"
+   }
+  ],
+  "timeline": [
+   {
+    "at": "2026-11-25T07:14:11.044Z",
+    "label": "Ticket raised"
+   },
+   {
+    "at": "2026-11-25T07:29:11.044Z",
+    "label": "Assigned to Nisha Singh"
+   }
+  ]
+ },
+ {
+  "id": "tkt-004",
+  "code": "TK-1004",
+  "subject": "Lift 2 stops between floors",
+  "description": "Reported by the office. Please check at the earliest and update.",
+  "category": "Lift",
+  "priority": "CRITICAL",
+  "status": "IN_PROGRESS",
+  "towerId": "tw-a",
+  "floorId": "fl-ta-1",
+  "officeId": "of-ta-103",
+  "reporterId": "oe-001",
+  "assignedEmployeeId": "st-044",
+  "preferredVisit": "Anytime today",
+  "attachments": [],
+  "createdAt": "2026-11-25T05:00:11.044Z",
+  "dueAt": "2026-11-25T09:00:11.044Z",
+  "rating": null,
+  "taskId": "tk-002",
+  "comments": [
+   {
+    "id": "c-3-1",
+    "by": "Office",
+    "kind": "office",
+    "text": "Reported by the office. Please check at the earliest and update.",
+    "at": "2026-11-25T05:00:11.044Z"
+   },
+   {
+    "id": "c-3-2",
+    "by": "Rajesh Bansal",
+    "kind": "staff",
+    "text": "On it. Will update shortly.",
+    "at": "2026-11-25T05:30:11.044Z"
+   }
+  ],
+  "timeline": [
+   {
+    "at": "2026-11-25T05:00:11.044Z",
+    "label": "Ticket raised"
+   },
+   {
+    "at": "2026-11-25T05:15:11.044Z",
+    "label": "Assigned to Rajesh Bansal"
+   },
+   {
+    "at": "2026-11-25T05:40:11.044Z",
+    "label": "Work in progress"
+   }
+  ]
+ },
+ {
+  "id": "tkt-005",
+  "code": "TK-1005",
+  "subject": "AC not cooling",
+  "description": "Reported by the office. Please check at the earliest and update.",
+  "category": "HVAC",
+  "priority": "HIGH",
+  "status": "IN_PROGRESS",
+  "towerId": "tw-a",
+  "floorId": "fl-ta-5",
+  "reporterId": "oe-053",
+  "assignedEmployeeId": "st-031",
+  "preferredVisit": "Anytime today",
+  "attachments": [],
+  "createdAt": "2026-11-25T03:51:11.044Z",
+  "dueAt": "2026-11-26T03:51:11.044Z",
+  "rating": null,
+  "taskId": "tk-003",
+  "comments": [
+   {
+    "id": "c-4-1",
+    "by": "Office",
+    "kind": "office",
+    "text": "Reported by the office. Please check at the earliest and update.",
+    "at": "2026-11-25T03:51:11.044Z"
+   },
+   {
+    "id": "c-4-2",
+    "by": "Neha Agarwal",
+    "kind": "staff",
+    "text": "On it. Will update shortly.",
+    "at": "2026-11-25T04:21:11.044Z"
+   }
+  ],
+  "timeline": [
+   {
+    "at": "2026-11-25T03:51:11.044Z",
+    "label": "Ticket raised"
+   },
+   {
+    "at": "2026-11-25T04:06:11.044Z",
+    "label": "Assigned to Neha Agarwal"
+   },
+   {
+    "at": "2026-11-25T04:31:11.044Z",
+    "label": "Work in progress"
+   }
+  ]
+ },
+ {
+  "id": "tkt-006",
+  "code": "TK-1006",
+  "subject": "Access card not working",
+  "description": "Reported by the office. Please check at the earliest and update.",
+  "category": "Security",
+  "priority": "MEDIUM",
+  "status": "WAITING",
+  "towerId": "tw-a",
+  "floorId": "fl-ta-10",
+  "reporterId": "oe-104",
+  "assignedEmployeeId": "st-026",
+  "preferredVisit": "Anytime today",
+  "attachments": [],
+  "createdAt": "2026-11-25T02:19:11.044Z",
+  "dueAt": "2026-11-27T02:19:11.044Z",
+  "rating": null,
+  "taskId": "tk-004",
+  "comments": [
+   {
+    "id": "c-5-1",
+    "by": "Office",
+    "kind": "office",
+    "text": "Reported by the office. Please check at the earliest and update.",
+    "at": "2026-11-25T02:19:11.044Z"
+   },
+   {
+    "id": "c-5-2",
+    "by": "Neha Kapoor",
+    "kind": "staff",
+    "text": "On it. Will update shortly.",
+    "at": "2026-11-25T02:49:11.044Z"
+   }
+  ],
+  "timeline": [
+   {
+    "at": "2026-11-25T02:19:11.044Z",
+    "label": "Ticket raised"
+   },
+   {
+    "at": "2026-11-25T02:34:11.044Z",
+    "label": "Assigned to Neha Kapoor"
+   },
+   {
+    "at": "2026-11-25T02:59:11.044Z",
+    "label": "Work in progress"
+   }
+  ]
+ },
+ {
+  "id": "tkt-007",
+  "code": "TK-1007",
+  "subject": "Fire extinguisher expired",
+  "description": "Reported by the office. Please check at the earliest and update.",
+  "category": "Fire Safety",
+  "priority": "MEDIUM",
+  "status": "RESOLVED",
+  "towerId": "tw-a",
+  "floorId": "fl-ta-1",
+  "officeId": "of-ta-103",
+  "reporterId": "oe-001",
+  "assignedEmployeeId": "st-042",
+  "preferredVisit": "Anytime today",
+  "attachments": [],
+  "createdAt": "2026-11-25T04:22:11.044Z",
+  "dueAt": "2026-11-27T04:22:11.044Z",
+  "rating": null,
+  "taskId": "tk-005",
+  "comments": [
+   {
+    "id": "c-6-1",
+    "by": "Office",
+    "kind": "office",
+    "text": "Reported by the office. Please check at the earliest and update.",
+    "at": "2026-11-25T04:22:11.044Z"
+   },
+   {
+    "id": "c-6-2",
+    "by": "Rahul Malhotra",
+    "kind": "staff",
+    "text": "On it. Will update shortly.",
+    "at": "2026-11-25T04:52:11.044Z"
+   }
+  ],
+  "timeline": [
+   {
+    "at": "2026-11-25T04:22:11.044Z",
+    "label": "Ticket raised"
+   },
+   {
+    "at": "2026-11-25T04:37:11.044Z",
+    "label": "Assigned to Rahul Malhotra"
+   },
+   {
+    "at": "2026-11-25T05:02:11.044Z",
+    "label": "Work in progress"
+   },
+   {
+    "at": "2026-11-25T06:52:11.044Z",
+    "label": "Marked resolved"
+   }
+  ]
+ },
+ {
+  "id": "tkt-008",
+  "code": "TK-1008",
+  "subject": "Fire extinguisher expired",
+  "description": "Reported by the office. Please check at the earliest and update.",
+  "category": "Fire Safety",
+  "priority": "LOW",
+  "status": "CLOSED",
+  "towerId": "tw-b",
+  "floorId": "fl-tb-1",
+  "reporterId": "oe-122",
+  "assignedEmployeeId": "st-044",
+  "preferredVisit": "Anytime today",
+  "attachments": [],
+  "createdAt": "2026-11-25T04:03:11.044Z",
+  "dueAt": "2026-11-28T04:03:11.044Z",
+  "rating": 5,
+  "taskId": "tk-006",
+  "comments": [
+   {
+    "id": "c-7-1",
+    "by": "Office",
+    "kind": "office",
+    "text": "Reported by the office. Please check at the earliest and update.",
+    "at": "2026-11-25T04:03:11.044Z"
+   },
+   {
+    "id": "c-7-2",
+    "by": "Rajesh Bansal",
+    "kind": "staff",
+    "text": "On it. Will update shortly.",
+    "at": "2026-11-25T04:33:11.044Z"
+   }
+  ],
+  "timeline": [
+   {
+    "at": "2026-11-25T04:03:11.044Z",
+    "label": "Ticket raised"
+   },
+   {
+    "at": "2026-11-25T04:18:11.044Z",
+    "label": "Assigned to Rajesh Bansal"
+   },
+   {
+    "at": "2026-11-25T04:43:11.044Z",
+    "label": "Work in progress"
+   },
+   {
+    "at": "2026-11-25T06:33:11.044Z",
+    "label": "Marked resolved"
+   },
+   {
+    "at": "2026-11-25T07:43:11.044Z",
+    "label": "Office confirmed resolution — ticket closed"
+   }
+  ]
+ },
+ {
+  "id": "tkt-009",
+  "code": "TK-1009",
+  "subject": "AC not cooling",
+  "description": "Reported by the office. Please check at the earliest and update.",
+  "category": "HVAC",
+  "priority": "HIGH",
+  "status": "CLOSED",
+  "towerId": "tw-a",
+  "floorId": "fl-ta-6",
+  "reporterId": "oe-058",
+  "assignedEmployeeId": "st-031",
+  "preferredVisit": "Anytime today",
+  "attachments": [],
+  "createdAt": "2026-11-25T06:33:11.044Z",
+  "dueAt": "2026-11-26T06:33:11.044Z",
+  "rating": 5,
+  "taskId": "tk-007",
+  "comments": [
+   {
+    "id": "c-8-1",
+    "by": "Office",
+    "kind": "office",
+    "text": "Reported by the office. Please check at the earliest and update.",
+    "at": "2026-11-25T06:33:11.044Z"
+   },
+   {
+    "id": "c-8-2",
+    "by": "Neha Agarwal",
+    "kind": "staff",
+    "text": "On it. Will update shortly.",
+    "at": "2026-11-25T07:03:11.044Z"
+   }
+  ],
+  "timeline": [
+   {
+    "at": "2026-11-25T06:33:11.044Z",
+    "label": "Ticket raised"
+   },
+   {
+    "at": "2026-11-25T06:48:11.044Z",
+    "label": "Assigned to Neha Agarwal"
+   },
+   {
+    "at": "2026-11-25T07:13:11.044Z",
+    "label": "Work in progress"
+   },
+   {
+    "at": "2026-11-25T09:03:11.044Z",
+    "label": "Marked resolved"
+   },
+   {
+    "at": "2026-11-25T10:13:11.044Z",
+    "label": "Office confirmed resolution — ticket closed"
+   }
+  ]
+ },
+ {
+  "id": "tkt-010",
+  "code": "TK-1010",
+  "subject": "Washroom tap leaking",
+  "description": "Reported by the office. Please check at the earliest and update.",
+  "category": "Plumbing",
+  "priority": "MEDIUM",
+  "status": "CLOSED",
+  "towerId": "tw-b",
+  "floorId": "fl-tb-4",
+  "reporterId": "oe-156",
+  "assignedEmployeeId": "st-009",
+  "preferredVisit": "Anytime today",
+  "attachments": [],
+  "createdAt": "2026-11-25T02:19:11.044Z",
+  "dueAt": "2026-11-27T02:19:11.044Z",
+  "rating": 3,
+  "taskId": "tk-008",
+  "comments": [
+   {
+    "id": "c-9-1",
+    "by": "Office",
+    "kind": "office",
+    "text": "Reported by the office. Please check at the earliest and update.",
+    "at": "2026-11-25T02:19:11.044Z"
+   },
+   {
+    "id": "c-9-2",
+    "by": "Sunita Kumar",
+    "kind": "staff",
+    "text": "On it. Will update shortly.",
+    "at": "2026-11-25T02:49:11.044Z"
+   }
+  ],
+  "timeline": [
+   {
+    "at": "2026-11-25T02:19:11.044Z",
+    "label": "Ticket raised"
+   },
+   {
+    "at": "2026-11-25T02:34:11.044Z",
+    "label": "Assigned to Sunita Kumar"
+   },
+   {
+    "at": "2026-11-25T02:59:11.044Z",
+    "label": "Work in progress"
+   },
+   {
+    "at": "2026-11-25T04:49:11.044Z",
+    "label": "Marked resolved"
+   },
+   {
+    "at": "2026-11-25T05:59:11.044Z",
+    "label": "Office confirmed resolution — ticket closed"
+   }
+  ]
+ },
+ {
+  "id": "tkt-011",
+  "code": "TK-1011",
+  "subject": "MCB trips frequently",
+  "description": "Reported by the office. Please check at the earliest and update.",
+  "category": "Electrical",
+  "priority": "CRITICAL",
+  "status": "OPEN",
+  "towerId": "tw-b",
+  "floorId": "fl-tb-6",
+  "reporterId": "oe-181",
+  "assignedEmployeeId": "",
+  "preferredVisit": "Anytime today",
+  "attachments": [],
+  "createdAt": "2026-11-25T00:38:11.044Z",
+  "dueAt": "2026-11-25T04:38:11.044Z",
+  "rating": null,
+  "taskId": "",
+  "comments": [
+   {
+    "id": "c-10-1",
+    "by": "Office",
+    "kind": "office",
+    "text": "Reported by the office. Please check at the earliest and update.",
+    "at": "2026-11-25T00:38:11.044Z"
+   }
+  ],
+  "timeline": [
+   {
+    "at": "2026-11-25T00:38:11.044Z",
+    "label": "Ticket raised"
+   }
+  ]
+ },
+ {
+  "id": "tkt-012",
+  "code": "TK-1012",
+  "subject": "Cabin door lock jammed",
+  "description": "Reported by the office. Please check at the earliest and update.",
+  "category": "Maintenance",
+  "priority": "HIGH",
+  "status": "OPEN",
+  "towerId": "tw-a",
+  "floorId": "fl-ta-9",
+  "reporterId": "oe-095",
+  "assignedEmployeeId": "",
+  "preferredVisit": "Anytime today",
+  "attachments": [],
+  "createdAt": "2026-11-25T04:09:11.044Z",
+  "dueAt": "2026-11-26T04:09:11.044Z",
+  "rating": null,
+  "taskId": "",
+  "comments": [
+   {
+    "id": "c-11-1",
+    "by": "Office",
+    "kind": "office",
+    "text": "Reported by the office. Please check at the earliest and update.",
+    "at": "2026-11-25T04:09:11.044Z"
+   }
+  ],
+  "timeline": [
+   {
+    "at": "2026-11-25T04:09:11.044Z",
+    "label": "Ticket raised"
+   }
+  ]
+ },
+ {
+  "id": "tkt-013",
+  "code": "TK-1013",
+  "subject": "Fire extinguisher expired",
+  "description": "Reported by the office. Please check at the earliest and update.",
+  "category": "Fire Safety",
+  "priority": "LOW",
+  "status": "ASSIGNED",
+  "towerId": "tw-a",
+  "floorId": "fl-ta-4",
+  "reporterId": "oe-038",
+  "assignedEmployeeId": "st-043",
+  "preferredVisit": "Anytime today",
+  "attachments": [],
+  "createdAt": "2026-11-17T23:29:11.044Z",
+  "dueAt": "2026-11-20T23:29:11.044Z",
+  "rating": null,
+  "taskId": "tk-009",
+  "comments": [
+   {
+    "id": "c-12-1",
+    "by": "Office",
+    "kind": "office",
+    "text": "Reported by the office. Please check at the earliest and update.",
+    "at": "2026-11-17T23:29:11.044Z"
+   },
+   {
+    "id": "c-12-2",
+    "by": "Vikash Bansal",
+    "kind": "staff",
+    "text": "On it. Will update shortly.",
+    "at": "2026-11-17T23:59:11.044Z"
+   }
+  ],
+  "timeline": [
+   {
+    "at": "2026-11-17T23:29:11.044Z",
+    "label": "Ticket raised"
+   },
+   {
+    "at": "2026-11-17T23:44:11.044Z",
+    "label": "Assigned to Vikash Bansal"
+   }
+  ]
+ },
+ {
+  "id": "tkt-014",
+  "code": "TK-1014",
+  "subject": "Power socket sparking",
+  "description": "Reported by the office. Please check at the earliest and update.",
+  "category": "Electrical",
+  "priority": "HIGH",
+  "status": "IN_PROGRESS",
+  "towerId": "tw-a",
+  "floorId": "fl-ta-1",
+  "reporterId": "oe-001",
+  "assignedEmployeeId": "st-001",
+  "preferredVisit": "Anytime today",
+  "attachments": [],
+  "createdAt": "2026-11-17T20:00:11.044Z",
+  "dueAt": "2026-11-18T20:00:11.044Z",
+  "rating": null,
+  "taskId": "tk-010",
+  "comments": [
+   {
+    "id": "c-13-1",
+    "by": "Office",
+    "kind": "office",
+    "text": "Reported by the office. Please check at the earliest and update.",
+    "at": "2026-11-17T20:00:11.044Z"
+   },
+   {
+    "id": "c-13-2",
+    "by": "Amit Sharma",
+    "kind": "staff",
+    "text": "On it. Will update shortly.",
+    "at": "2026-11-17T20:30:11.044Z"
+   }
+  ],
+  "timeline": [
+   {
+    "at": "2026-11-17T20:00:11.044Z",
+    "label": "Ticket raised"
+   },
+   {
+    "at": "2026-11-17T20:15:11.044Z",
+    "label": "Assigned to Amit Sharma"
+   },
+   {
+    "at": "2026-11-17T20:40:11.044Z",
+    "label": "Work in progress"
+   }
+  ]
+ },
+ {
+  "id": "tkt-015",
+  "code": "TK-1015",
+  "subject": "Move furniture to storage",
+  "description": "Reported by the office. Please check at the earliest and update.",
+  "category": "General",
+  "priority": "CRITICAL",
+  "status": "IN_PROGRESS",
+  "towerId": "tw-a",
+  "floorId": "fl-ta-1",
+  "reporterId": "oe-006",
+  "assignedEmployeeId": "st-052",
+  "preferredVisit": "Anytime today",
+  "attachments": [],
+  "createdAt": "2026-11-21T05:09:11.044Z",
+  "dueAt": "2026-11-21T09:09:11.044Z",
+  "rating": null,
+  "taskId": "tk-011",
+  "comments": [
+   {
+    "id": "c-14-1",
+    "by": "Office",
+    "kind": "office",
+    "text": "Reported by the office. Please check at the earliest and update.",
+    "at": "2026-11-21T05:09:11.044Z"
+   },
+   {
+    "id": "c-14-2",
+    "by": "Sneha Verma",
+    "kind": "staff",
+    "text": "On it. Will update shortly.",
+    "at": "2026-11-21T05:39:11.044Z"
+   }
+  ],
+  "timeline": [
+   {
+    "at": "2026-11-21T05:09:11.044Z",
+    "label": "Ticket raised"
+   },
+   {
+    "at": "2026-11-21T05:24:11.044Z",
+    "label": "Assigned to Sneha Verma"
+   },
+   {
+    "at": "2026-11-21T05:49:11.044Z",
+    "label": "Work in progress"
+   }
+  ]
+ },
+ {
+  "id": "tkt-016",
+  "code": "TK-1016",
+  "subject": "Fire extinguisher expired",
+  "description": "Reported by the office. Please check at the earliest and update.",
+  "category": "Fire Safety",
+  "priority": "HIGH",
+  "status": "WAITING",
+  "towerId": "tw-a",
+  "floorId": "fl-ta-1",
+  "reporterId": "oe-006",
+  "assignedEmployeeId": "st-043",
+  "preferredVisit": "Anytime today",
+  "attachments": [],
+  "createdAt": "2026-11-18T13:52:11.044Z",
+  "dueAt": "2026-11-19T13:52:11.044Z",
+  "rating": null,
+  "taskId": "tk-012",
+  "comments": [
+   {
+    "id": "c-15-1",
+    "by": "Office",
+    "kind": "office",
+    "text": "Reported by the office. Please check at the earliest and update.",
+    "at": "2026-11-18T13:52:11.044Z"
+   },
+   {
+    "id": "c-15-2",
+    "by": "Vikash Bansal",
+    "kind": "staff",
+    "text": "On it. Will update shortly.",
+    "at": "2026-11-18T14:22:11.044Z"
+   }
+  ],
+  "timeline": [
+   {
+    "at": "2026-11-18T13:52:11.044Z",
+    "label": "Ticket raised"
+   },
+   {
+    "at": "2026-11-18T14:07:11.044Z",
+    "label": "Assigned to Vikash Bansal"
+   },
+   {
+    "at": "2026-11-18T14:32:11.044Z",
+    "label": "Work in progress"
+   }
+  ]
+ },
+ {
+  "id": "tkt-017",
+  "code": "TK-1017",
+  "subject": "MCB trips frequently",
+  "description": "Reported by the office. Please check at the earliest and update.",
+  "category": "Electrical",
+  "priority": "LOW",
+  "status": "RESOLVED",
+  "towerId": "tw-b",
+  "floorId": "fl-tb-4",
+  "reporterId": "oe-159",
+  "assignedEmployeeId": "st-005",
+  "preferredVisit": "Anytime today",
+  "attachments": [],
+  "createdAt": "2026-11-18T18:15:11.044Z",
+  "dueAt": "2026-11-21T18:15:11.044Z",
+  "rating": null,
+  "taskId": "tk-013",
+  "comments": [
+   {
+    "id": "c-16-1",
+    "by": "Office",
+    "kind": "office",
+    "text": "Reported by the office. Please check at the earliest and update.",
+    "at": "2026-11-18T18:15:11.044Z"
+   },
+   {
+    "id": "c-16-2",
+    "by": "Anjali Khanna",
+    "kind": "staff",
+    "text": "On it. Will update shortly.",
+    "at": "2026-11-18T18:45:11.044Z"
+   }
+  ],
+  "timeline": [
+   {
+    "at": "2026-11-18T18:15:11.044Z",
+    "label": "Ticket raised"
+   },
+   {
+    "at": "2026-11-18T18:30:11.044Z",
+    "label": "Assigned to Anjali Khanna"
+   },
+   {
+    "at": "2026-11-18T18:55:11.044Z",
+    "label": "Work in progress"
+   },
+   {
+    "at": "2026-11-18T20:45:11.044Z",
+    "label": "Marked resolved"
+   }
+  ]
+ },
+ {
+  "id": "tkt-018",
+  "code": "TK-1018",
+  "subject": "AC not cooling",
+  "description": "Reported by the office. Please check at the earliest and update.",
+  "category": "HVAC",
+  "priority": "CRITICAL",
+  "status": "CLOSED",
+  "towerId": "tw-b",
+  "floorId": "fl-tb-4",
+  "reporterId": "oe-154",
+  "assignedEmployeeId": "st-033",
+  "preferredVisit": "Anytime today",
+  "attachments": [],
+  "createdAt": "2026-11-20T04:16:11.044Z",
+  "dueAt": "2026-11-20T08:16:11.044Z",
+  "rating": 5,
+  "taskId": "tk-014",
+  "comments": [
+   {
+    "id": "c-17-1",
+    "by": "Office",
+    "kind": "office",
+    "text": "Reported by the office. Please check at the earliest and update.",
+    "at": "2026-11-20T04:16:11.044Z"
+   },
+   {
+    "id": "c-17-2",
+    "by": "Ritu Kumar",
+    "kind": "staff",
+    "text": "On it. Will update shortly.",
+    "at": "2026-11-20T04:46:11.044Z"
+   }
+  ],
+  "timeline": [
+   {
+    "at": "2026-11-20T04:16:11.044Z",
+    "label": "Ticket raised"
+   },
+   {
+    "at": "2026-11-20T04:31:11.044Z",
+    "label": "Assigned to Ritu Kumar"
+   },
+   {
+    "at": "2026-11-20T04:56:11.044Z",
+    "label": "Work in progress"
+   },
+   {
+    "at": "2026-11-20T06:46:11.044Z",
+    "label": "Marked resolved"
+   },
+   {
+    "at": "2026-11-20T07:56:11.044Z",
+    "label": "Office confirmed resolution — ticket closed"
+   }
+  ]
+ },
+ {
+  "id": "tkt-019",
+  "code": "TK-1019",
+  "subject": "Leased line down",
+  "description": "Reported by the office. Please check at the earliest and update.",
+  "category": "Internet",
+  "priority": "MEDIUM",
+  "status": "CLOSED",
+  "towerId": "tw-a",
+  "floorId": "fl-ta-10",
+  "reporterId": "oe-100",
+  "assignedEmployeeId": "st-038",
+  "preferredVisit": "Anytime today",
+  "attachments": [],
+  "createdAt": "2026-11-23T19:31:11.044Z",
+  "dueAt": "2026-11-25T19:31:11.044Z",
+  "rating": 4,
+  "taskId": "tk-015",
+  "comments": [
+   {
+    "id": "c-18-1",
+    "by": "Office",
+    "kind": "office",
+    "text": "Reported by the office. Please check at the earliest and update.",
+    "at": "2026-11-23T19:31:11.044Z"
+   },
+   {
+    "id": "c-18-2",
+    "by": "Anjali Bansal",
+    "kind": "staff",
+    "text": "On it. Will update shortly.",
+    "at": "2026-11-23T20:01:11.044Z"
+   }
+  ],
+  "timeline": [
+   {
+    "at": "2026-11-23T19:31:11.044Z",
+    "label": "Ticket raised"
+   },
+   {
+    "at": "2026-11-23T19:46:11.044Z",
+    "label": "Assigned to Anjali Bansal"
+   },
+   {
+    "at": "2026-11-23T20:11:11.044Z",
+    "label": "Work in progress"
+   },
+   {
+    "at": "2026-11-23T22:01:11.044Z",
+    "label": "Marked resolved"
+   },
+   {
+    "at": "2026-11-23T23:11:11.044Z",
+    "label": "Office confirmed resolution — ticket closed"
+   }
+  ]
+ },
+ {
+  "id": "tkt-020",
+  "code": "TK-1020",
+  "subject": "Move furniture to storage",
+  "description": "Reported by the office. Please check at the earliest and update.",
+  "category": "General",
+  "priority": "LOW",
+  "status": "CLOSED",
+  "towerId": "tw-a",
+  "floorId": "fl-ta-10",
+  "reporterId": "oe-100",
+  "assignedEmployeeId": "st-049",
+  "preferredVisit": "Anytime today",
+  "attachments": [],
+  "createdAt": "2026-11-17T05:38:11.044Z",
+  "dueAt": "2026-11-20T05:38:11.044Z",
+  "rating": 4,
+  "taskId": "tk-016",
+  "comments": [
+   {
+    "id": "c-19-1",
+    "by": "Office",
+    "kind": "office",
+    "text": "Reported by the office. Please check at the earliest and update.",
+    "at": "2026-11-17T05:38:11.044Z"
+   },
+   {
+    "id": "c-19-2",
+    "by": "Rajesh Mehta",
+    "kind": "staff",
+    "text": "On it. Will update shortly.",
+    "at": "2026-11-17T06:08:11.044Z"
+   }
+  ],
+  "timeline": [
+   {
+    "at": "2026-11-17T05:38:11.044Z",
+    "label": "Ticket raised"
+   },
+   {
+    "at": "2026-11-17T05:53:11.044Z",
+    "label": "Assigned to Rajesh Mehta"
+   },
+   {
+    "at": "2026-11-17T06:18:11.044Z",
+    "label": "Work in progress"
+   },
+   {
+    "at": "2026-11-17T08:08:11.044Z",
+    "label": "Marked resolved"
+   },
+   {
+    "at": "2026-11-17T09:18:11.044Z",
+    "label": "Office confirmed resolution — ticket closed"
+   }
+  ]
+ },
+ {
+  "id": "tkt-021",
+  "code": "TK-1021",
+  "subject": "Fire extinguisher expired",
+  "description": "Reported by the office. Please check at the earliest and update.",
+  "category": "Fire Safety",
+  "priority": "HIGH",
+  "status": "OPEN",
+  "towerId": "tw-a",
+  "floorId": "fl-ta-3",
+  "reporterId": "oe-024",
+  "assignedEmployeeId": "",
+  "preferredVisit": "Anytime today",
+  "attachments": [],
+  "createdAt": "2026-11-18T21:11:11.044Z",
+  "dueAt": "2026-11-19T21:11:11.044Z",
+  "rating": null,
+  "taskId": "",
+  "comments": [
+   {
+    "id": "c-20-1",
+    "by": "Office",
+    "kind": "office",
+    "text": "Reported by the office. Please check at the earliest and update.",
+    "at": "2026-11-18T21:11:11.044Z"
+   }
+  ],
+  "timeline": [
+   {
+    "at": "2026-11-18T21:11:11.044Z",
+    "label": "Ticket raised"
+   }
+  ]
+ },
+ {
+  "id": "tkt-022",
+  "code": "TK-1022",
+  "subject": "MCB trips frequently",
+  "description": "Reported by the office. Please check at the earliest and update.",
+  "category": "Electrical",
+  "priority": "CRITICAL",
+  "status": "OPEN",
+  "towerId": "tw-b",
+  "floorId": "fl-tb-7",
+  "reporterId": "oe-200",
+  "assignedEmployeeId": "",
+  "preferredVisit": "Anytime today",
+  "attachments": [],
+  "createdAt": "2026-11-19T11:10:11.044Z",
+  "dueAt": "2026-11-19T15:10:11.044Z",
+  "rating": null,
+  "taskId": "",
+  "comments": [
+   {
+    "id": "c-21-1",
+    "by": "Office",
+    "kind": "office",
+    "text": "Reported by the office. Please check at the earliest and update.",
+    "at": "2026-11-19T11:10:11.044Z"
+   }
+  ],
+  "timeline": [
+   {
+    "at": "2026-11-19T11:10:11.044Z",
+    "label": "Ticket raised"
+   }
+  ]
+ },
+ {
+  "id": "tkt-023",
+  "code": "TK-1023",
+  "subject": "Strange noise from AC vent",
+  "description": "Reported by the office. Please check at the earliest and update.",
+  "category": "HVAC",
+  "priority": "MEDIUM",
+  "status": "ASSIGNED",
+  "towerId": "tw-a",
+  "floorId": "fl-ta-4",
+  "reporterId": "oe-032",
+  "assignedEmployeeId": "st-029",
+  "preferredVisit": "Anytime today",
+  "attachments": [],
+  "createdAt": "2026-11-21T13:48:11.044Z",
+  "dueAt": "2026-11-23T13:48:11.044Z",
+  "rating": null,
+  "taskId": "tk-017",
+  "comments": [
+   {
+    "id": "c-22-1",
+    "by": "Office",
+    "kind": "office",
+    "text": "Reported by the office. Please check at the earliest and update.",
+    "at": "2026-11-21T13:48:11.044Z"
+   },
+   {
+    "id": "c-22-2",
+    "by": "Rahul Chopra",
+    "kind": "staff",
+    "text": "On it. Will update shortly.",
+    "at": "2026-11-21T14:18:11.044Z"
+   }
+  ],
+  "timeline": [
+   {
+    "at": "2026-11-21T13:48:11.044Z",
+    "label": "Ticket raised"
+   },
+   {
+    "at": "2026-11-21T14:03:11.044Z",
+    "label": "Assigned to Rahul Chopra"
+   }
+  ]
+ },
+ {
+  "id": "tkt-024",
+  "code": "TK-1024",
+  "subject": "Move furniture to storage",
+  "description": "Reported by the office. Please check at the earliest and update.",
+  "category": "General",
+  "priority": "CRITICAL",
+  "status": "IN_PROGRESS",
+  "towerId": "tw-b",
+  "floorId": "fl-tb-7",
+  "reporterId": "oe-197",
+  "assignedEmployeeId": "st-049",
+  "preferredVisit": "Anytime today",
+  "attachments": [],
+  "createdAt": "2026-11-20T20:04:11.044Z",
+  "dueAt": "2026-11-21T00:04:11.044Z",
+  "rating": null,
+  "taskId": "tk-018",
+  "comments": [
+   {
+    "id": "c-23-1",
+    "by": "Office",
+    "kind": "office",
+    "text": "Reported by the office. Please check at the earliest and update.",
+    "at": "2026-11-20T20:04:11.044Z"
+   },
+   {
+    "id": "c-23-2",
+    "by": "Rajesh Mehta",
+    "kind": "staff",
+    "text": "On it. Will update shortly.",
+    "at": "2026-11-20T20:34:11.044Z"
+   }
+  ],
+  "timeline": [
+   {
+    "at": "2026-11-20T20:04:11.044Z",
+    "label": "Ticket raised"
+   },
+   {
+    "at": "2026-11-20T20:19:11.044Z",
+    "label": "Assigned to Rajesh Mehta"
+   },
+   {
+    "at": "2026-11-20T20:44:11.044Z",
+    "label": "Work in progress"
+   }
+  ]
+ },
+ {
+  "id": "tkt-025",
+  "code": "TK-1025",
+  "subject": "Access card not working",
+  "description": "Reported by the office. Please check at the earliest and update.",
+  "category": "Security",
+  "priority": "MEDIUM",
+  "status": "IN_PROGRESS",
+  "towerId": "tw-a",
+  "floorId": "fl-ta-6",
+  "reporterId": "oe-058",
+  "assignedEmployeeId": "st-026",
+  "preferredVisit": "Anytime today",
+  "attachments": [],
+  "createdAt": "2026-11-20T21:08:11.044Z",
+  "dueAt": "2026-11-22T21:08:11.044Z",
+  "rating": null,
+  "taskId": "tk-019",
+  "comments": [
+   {
+    "id": "c-24-1",
+    "by": "Office",
+    "kind": "office",
+    "text": "Reported by the office. Please check at the earliest and update.",
+    "at": "2026-11-20T21:08:11.044Z"
+   },
+   {
+    "id": "c-24-2",
+    "by": "Neha Kapoor",
+    "kind": "staff",
+    "text": "On it. Will update shortly.",
+    "at": "2026-11-20T21:38:11.044Z"
+   }
+  ],
+  "timeline": [
+   {
+    "at": "2026-11-20T21:08:11.044Z",
+    "label": "Ticket raised"
+   },
+   {
+    "at": "2026-11-20T21:23:11.044Z",
+    "label": "Assigned to Neha Kapoor"
+   },
+   {
+    "at": "2026-11-20T21:48:11.044Z",
+    "label": "Work in progress"
+   }
+  ]
+ },
+ {
+  "id": "tkt-026",
+  "code": "TK-1026",
+  "subject": "Move furniture to storage",
+  "description": "Reported by the office. Please check at the earliest and update.",
+  "category": "General",
+  "priority": "MEDIUM",
+  "status": "WAITING",
+  "towerId": "tw-b",
+  "floorId": "fl-tb-6",
+  "reporterId": "oe-181",
+  "assignedEmployeeId": "st-050",
+  "preferredVisit": "Anytime today",
+  "attachments": [],
+  "createdAt": "2026-11-18T18:56:11.044Z",
+  "dueAt": "2026-11-20T18:56:11.044Z",
+  "rating": null,
+  "taskId": "tk-020",
+  "comments": [
+   {
+    "id": "c-25-1",
+    "by": "Office",
+    "kind": "office",
+    "text": "Reported by the office. Please check at the earliest and update.",
+    "at": "2026-11-18T18:56:11.044Z"
+   },
+   {
+    "id": "c-25-2",
+    "by": "Ritu Agarwal",
+    "kind": "staff",
+    "text": "On it. Will update shortly.",
+    "at": "2026-11-18T19:26:11.044Z"
+   }
+  ],
+  "timeline": [
+   {
+    "at": "2026-11-18T18:56:11.044Z",
+    "label": "Ticket raised"
+   },
+   {
+    "at": "2026-11-18T19:11:11.044Z",
+    "label": "Assigned to Ritu Agarwal"
+   },
+   {
+    "at": "2026-11-18T19:36:11.044Z",
+    "label": "Work in progress"
+   }
+  ]
+ },
+ {
+  "id": "tkt-027",
+  "code": "TK-1027",
+  "subject": "Move furniture to storage",
+  "description": "Reported by the office. Please check at the earliest and update.",
+  "category": "General",
+  "priority": "HIGH",
+  "status": "RESOLVED",
+  "towerId": "tw-a",
+  "floorId": "fl-ta-6",
+  "reporterId": "oe-060",
+  "assignedEmployeeId": "st-052",
+  "preferredVisit": "Anytime today",
+  "attachments": [],
+  "createdAt": "2026-11-22T09:27:11.044Z",
+  "dueAt": "2026-11-23T09:27:11.044Z",
+  "rating": null,
+  "taskId": "tk-021",
+  "comments": [
+   {
+    "id": "c-26-1",
+    "by": "Office",
+    "kind": "office",
+    "text": "Reported by the office. Please check at the earliest and update.",
+    "at": "2026-11-22T09:27:11.044Z"
+   },
+   {
+    "id": "c-26-2",
+    "by": "Sneha Verma",
+    "kind": "staff",
+    "text": "On it. Will update shortly.",
+    "at": "2026-11-22T09:57:11.044Z"
+   }
+  ],
+  "timeline": [
+   {
+    "at": "2026-11-22T09:27:11.044Z",
+    "label": "Ticket raised"
+   },
+   {
+    "at": "2026-11-22T09:42:11.044Z",
+    "label": "Assigned to Sneha Verma"
+   },
+   {
+    "at": "2026-11-22T10:07:11.044Z",
+    "label": "Work in progress"
+   },
+   {
+    "at": "2026-11-22T11:57:11.044Z",
+    "label": "Marked resolved"
+   }
+  ]
+ },
+ {
+  "id": "tkt-028",
+  "code": "TK-1028",
+  "subject": "Power socket sparking",
+  "description": "Reported by the office. Please check at the earliest and update.",
+  "category": "Electrical",
+  "priority": "HIGH",
+  "status": "CLOSED",
+  "towerId": "tw-a",
+  "floorId": "fl-ta-5",
+  "reporterId": "oe-045",
+  "assignedEmployeeId": "st-002",
+  "preferredVisit": "Anytime today",
+  "attachments": [],
+  "createdAt": "2026-11-21T19:13:11.044Z",
+  "dueAt": "2026-11-22T19:13:11.044Z",
+  "rating": 3,
+  "taskId": "tk-022",
+  "comments": [
+   {
+    "id": "c-27-1",
+    "by": "Office",
+    "kind": "office",
+    "text": "Reported by the office. Please check at the earliest and update.",
+    "at": "2026-11-21T19:13:11.044Z"
+   },
+   {
+    "id": "c-27-2",
+    "by": "Isha Iyer",
+    "kind": "staff",
+    "text": "On it. Will update shortly.",
+    "at": "2026-11-21T19:43:11.044Z"
+   }
+  ],
+  "timeline": [
+   {
+    "at": "2026-11-21T19:13:11.044Z",
+    "label": "Ticket raised"
+   },
+   {
+    "at": "2026-11-21T19:28:11.044Z",
+    "label": "Assigned to Isha Iyer"
+   },
+   {
+    "at": "2026-11-21T19:53:11.044Z",
+    "label": "Work in progress"
+   },
+   {
+    "at": "2026-11-21T21:43:11.044Z",
+    "label": "Marked resolved"
+   },
+   {
+    "at": "2026-11-21T22:53:11.044Z",
+    "label": "Office confirmed resolution — ticket closed"
+   }
+  ]
+ },
+ {
+  "id": "tkt-029",
+  "code": "TK-1029",
+  "subject": "Power socket sparking",
+  "description": "Reported by the office. Please check at the earliest and update.",
+  "category": "Electrical",
+  "priority": "CRITICAL",
+  "status": "CLOSED",
+  "towerId": "tw-b",
+  "floorId": "fl-tb-4",
+  "reporterId": "oe-164",
+  "assignedEmployeeId": "st-002",
+  "preferredVisit": "Anytime today",
+  "attachments": [],
+  "createdAt": "2026-11-23T03:24:11.044Z",
+  "dueAt": "2026-11-23T07:24:11.044Z",
+  "rating": 5,
+  "taskId": "tk-023",
+  "comments": [
+   {
+    "id": "c-28-1",
+    "by": "Office",
+    "kind": "office",
+    "text": "Reported by the office. Please check at the earliest and update.",
+    "at": "2026-11-23T03:24:11.044Z"
+   },
+   {
+    "id": "c-28-2",
+    "by": "Isha Iyer",
+    "kind": "staff",
+    "text": "On it. Will update shortly.",
+    "at": "2026-11-23T03:54:11.044Z"
+   }
+  ],
+  "timeline": [
+   {
+    "at": "2026-11-23T03:24:11.044Z",
+    "label": "Ticket raised"
+   },
+   {
+    "at": "2026-11-23T03:39:11.044Z",
+    "label": "Assigned to Isha Iyer"
+   },
+   {
+    "at": "2026-11-23T04:04:11.044Z",
+    "label": "Work in progress"
+   },
+   {
+    "at": "2026-11-23T05:54:11.044Z",
+    "label": "Marked resolved"
+   },
+   {
+    "at": "2026-11-23T07:04:11.044Z",
+    "label": "Office confirmed resolution — ticket closed"
+   }
+  ]
+ },
+ {
+  "id": "tkt-030",
+  "code": "TK-1030",
+  "subject": "Access card not working",
+  "description": "Reported by the office. Please check at the earliest and update.",
+  "category": "Security",
+  "priority": "MEDIUM",
+  "status": "CLOSED",
+  "towerId": "tw-a",
+  "floorId": "fl-ta-10",
+  "reporterId": "oe-100",
+  "assignedEmployeeId": "st-024",
+  "preferredVisit": "Anytime today",
+  "attachments": [],
+  "createdAt": "2026-11-22T14:13:11.044Z",
+  "dueAt": "2026-11-24T14:13:11.044Z",
+  "rating": 4,
+  "taskId": "tk-024",
+  "comments": [
+   {
+    "id": "c-29-1",
+    "by": "Office",
+    "kind": "office",
+    "text": "Reported by the office. Please check at the earliest and update.",
+    "at": "2026-11-22T14:13:11.044Z"
+   },
+   {
+    "id": "c-29-2",
+    "by": "Nisha Mehta",
+    "kind": "staff",
+    "text": "On it. Will update shortly.",
+    "at": "2026-11-22T14:43:11.044Z"
+   }
+  ],
+  "timeline": [
+   {
+    "at": "2026-11-22T14:13:11.044Z",
+    "label": "Ticket raised"
+   },
+   {
+    "at": "2026-11-22T14:28:11.044Z",
+    "label": "Assigned to Nisha Mehta"
+   },
+   {
+    "at": "2026-11-22T14:53:11.044Z",
+    "label": "Work in progress"
+   },
+   {
+    "at": "2026-11-22T16:43:11.044Z",
+    "label": "Marked resolved"
+   },
+   {
+    "at": "2026-11-22T17:53:11.044Z",
+    "label": "Office confirmed resolution — ticket closed"
+   }
+  ]
+ },
+ {
+  "id": "tkt-031",
+  "code": "TK-1031",
+  "subject": "Lift 2 stops between floors",
+  "description": "Reported by the office. Please check at the earliest and update.",
+  "category": "Lift",
+  "priority": "CRITICAL",
+  "status": "OPEN",
+  "towerId": "tw-b",
+  "floorId": "fl-tb-5",
+  "reporterId": "oe-171",
+  "assignedEmployeeId": "",
+  "preferredVisit": "Anytime today",
+  "attachments": [],
+  "createdAt": "2026-11-17T20:14:11.044Z",
+  "dueAt": "2026-11-18T00:14:11.044Z",
+  "rating": null,
+  "taskId": "",
+  "comments": [
+   {
+    "id": "c-30-1",
+    "by": "Office",
+    "kind": "office",
+    "text": "Reported by the office. Please check at the earliest and update.",
+    "at": "2026-11-17T20:14:11.044Z"
+   }
+  ],
+  "timeline": [
+   {
+    "at": "2026-11-17T20:14:11.044Z",
+    "label": "Ticket raised"
+   }
+  ]
+ },
+ {
+  "id": "tkt-032",
+  "code": "TK-1032",
+  "subject": "Access card not working",
+  "description": "Reported by the office. Please check at the earliest and update.",
+  "category": "Security",
+  "priority": "HIGH",
+  "status": "OPEN",
+  "towerId": "tw-a",
+  "floorId": "fl-ta-2",
+  "reporterId": "oe-019",
+  "assignedEmployeeId": "",
+  "preferredVisit": "Anytime today",
+  "attachments": [],
+  "createdAt": "2026-11-21T13:26:11.044Z",
+  "dueAt": "2026-11-22T13:26:11.044Z",
+  "rating": null,
+  "taskId": "",
+  "comments": [
+   {
+    "id": "c-31-1",
+    "by": "Office",
+    "kind": "office",
+    "text": "Reported by the office. Please check at the earliest and update.",
+    "at": "2026-11-21T13:26:11.044Z"
+   }
+  ],
+  "timeline": [
+   {
+    "at": "2026-11-21T13:26:11.044Z",
+    "label": "Ticket raised"
+   }
+  ]
+ },
+ {
+  "id": "tkt-033",
+  "code": "TK-1033",
+  "subject": "Cabin door lock jammed",
+  "description": "Reported by the office. Please check at the earliest and update.",
+  "category": "Maintenance",
+  "priority": "HIGH",
+  "status": "ASSIGNED",
+  "towerId": "tw-a",
+  "floorId": "fl-ta-2",
+  "reporterId": "oe-009",
+  "assignedEmployeeId": "st-043",
+  "preferredVisit": "Anytime today",
+  "attachments": [],
+  "createdAt": "2026-11-22T16:40:11.044Z",
+  "dueAt": "2026-11-23T16:40:11.044Z",
+  "rating": null,
+  "taskId": "tk-025",
+  "comments": [
+   {
+    "id": "c-32-1",
+    "by": "Office",
+    "kind": "office",
+    "text": "Reported by the office. Please check at the earliest and update.",
+    "at": "2026-11-22T16:40:11.044Z"
+   },
+   {
+    "id": "c-32-2",
+    "by": "Vikash Bansal",
+    "kind": "staff",
+    "text": "On it. Will update shortly.",
+    "at": "2026-11-22T17:10:11.044Z"
+   }
+  ],
+  "timeline": [
+   {
+    "at": "2026-11-22T16:40:11.044Z",
+    "label": "Ticket raised"
+   },
+   {
+    "at": "2026-11-22T16:55:11.044Z",
+    "label": "Assigned to Vikash Bansal"
+   }
+  ]
+ },
+ {
+  "id": "tkt-034",
+  "code": "TK-1034",
+  "subject": "Access card not working",
+  "description": "Reported by the office. Please check at the earliest and update.",
+  "category": "Security",
+  "priority": "HIGH",
+  "status": "IN_PROGRESS",
+  "towerId": "tw-a",
+  "floorId": "fl-ta-8",
+  "reporterId": "oe-087",
+  "assignedEmployeeId": "st-027",
+  "preferredVisit": "Anytime today",
+  "attachments": [],
+  "createdAt": "2026-11-17T04:29:11.044Z",
+  "dueAt": "2026-11-18T04:29:11.044Z",
+  "rating": null,
+  "taskId": "tk-026",
+  "comments": [
+   {
+    "id": "c-33-1",
+    "by": "Office",
+    "kind": "office",
+    "text": "Reported by the office. Please check at the earliest and update.",
+    "at": "2026-11-17T04:29:11.044Z"
+   },
+   {
+    "id": "c-33-2",
+    "by": "Swati Mehta",
+    "kind": "staff",
+    "text": "On it. Will update shortly.",
+    "at": "2026-11-17T04:59:11.044Z"
+   }
+  ],
+  "timeline": [
+   {
+    "at": "2026-11-17T04:29:11.044Z",
+    "label": "Ticket raised"
+   },
+   {
+    "at": "2026-11-17T04:44:11.044Z",
+    "label": "Assigned to Swati Mehta"
+   },
+   {
+    "at": "2026-11-17T05:09:11.044Z",
+    "label": "Work in progress"
+   }
+  ]
+ },
+ {
+  "id": "tkt-035",
+  "code": "TK-1035",
+  "subject": "MCB trips frequently",
+  "description": "Reported by the office. Please check at the earliest and update.",
+  "category": "Electrical",
+  "priority": "MEDIUM",
+  "status": "IN_PROGRESS",
+  "towerId": "tw-b",
+  "floorId": "fl-tb-4",
+  "reporterId": "oe-152",
+  "assignedEmployeeId": "st-005",
+  "preferredVisit": "Anytime today",
+  "attachments": [],
+  "createdAt": "2026-11-18T09:24:11.044Z",
+  "dueAt": "2026-11-20T09:24:11.044Z",
+  "rating": null,
+  "taskId": "tk-027",
+  "comments": [
+   {
+    "id": "c-34-1",
+    "by": "Office",
+    "kind": "office",
+    "text": "Reported by the office. Please check at the earliest and update.",
+    "at": "2026-11-18T09:24:11.044Z"
+   },
+   {
+    "id": "c-34-2",
+    "by": "Anjali Khanna",
+    "kind": "staff",
+    "text": "On it. Will update shortly.",
+    "at": "2026-11-18T09:54:11.044Z"
+   }
+  ],
+  "timeline": [
+   {
+    "at": "2026-11-18T09:24:11.044Z",
+    "label": "Ticket raised"
+   },
+   {
+    "at": "2026-11-18T09:39:11.044Z",
+    "label": "Assigned to Anjali Khanna"
+   },
+   {
+    "at": "2026-11-18T10:04:11.044Z",
+    "label": "Work in progress"
+   }
+  ]
+ },
+ {
+  "id": "tkt-036",
+  "code": "TK-1036",
+  "subject": "Ceiling tile broken",
+  "description": "Reported by the office. Please check at the earliest and update.",
+  "category": "Maintenance",
+  "priority": "LOW",
+  "status": "WAITING",
+  "towerId": "tw-b",
+  "floorId": "fl-tb-3",
+  "reporterId": "oe-144",
+  "assignedEmployeeId": "st-043",
+  "preferredVisit": "Anytime today",
+  "attachments": [],
+  "createdAt": "2026-11-21T07:24:11.044Z",
+  "dueAt": "2026-11-24T07:24:11.044Z",
+  "rating": null,
+  "taskId": "tk-028",
+  "comments": [
+   {
+    "id": "c-35-1",
+    "by": "Office",
+    "kind": "office",
+    "text": "Reported by the office. Please check at the earliest and update.",
+    "at": "2026-11-21T07:24:11.044Z"
+   },
+   {
+    "id": "c-35-2",
+    "by": "Vikash Bansal",
+    "kind": "staff",
+    "text": "On it. Will update shortly.",
+    "at": "2026-11-21T07:54:11.044Z"
+   }
+  ],
+  "timeline": [
+   {
+    "at": "2026-11-21T07:24:11.044Z",
+    "label": "Ticket raised"
+   },
+   {
+    "at": "2026-11-21T07:39:11.044Z",
+    "label": "Assigned to Vikash Bansal"
+   },
+   {
+    "at": "2026-11-21T08:04:11.044Z",
+    "label": "Work in progress"
+   }
+  ]
+ }
+]

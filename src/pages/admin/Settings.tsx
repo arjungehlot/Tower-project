@@ -1,0 +1,32 @@
+import { useState } from 'react'
+import { Button, Card, Field, Input, PageHeader, Select, Tabs, StatusBadge, Badge } from '@/components/ui'
+import { useDb } from '@/store/db'
+import { auditLog } from '@/services/core'
+import type { Settings as S } from '@/types'
+
+const Toggle = ({ label, checked, onChange, hint }: { label: string; checked: boolean; onChange: (b: boolean) => void; hint?: string }) => (
+  <label className="flex cursor-pointer items-center justify-between gap-4 py-2.5"><span><span className="block text-[13px] font-medium">{label}</span>{hint && <span className="text-xxs text-muted">{hint}</span>}</span>
+    <button type="button" role="switch" aria-checked={checked} onClick={() => onChange(!checked)} className={`relative h-5 w-9 shrink-0 rounded-full transition-colors ${checked ? 'bg-brand' : 'bg-line'}`}><span className={`absolute top-0.5 h-4 w-4 rounded-full bg-white transition-all ${checked ? 'left-[18px]' : 'left-0.5'}`} /></button></label>
+)
+export default function Settings() {
+  const stored = useDb((s) => s.settings[0]), patch = useDb((s) => s.patch), towers = useDb((s) => s.towers), demo = useDb((s) => s.demoMode), setDemo = useDb((s) => s.setDemo), reset = useDb((s) => s.resetData)
+  const [tab, setTab] = useState('general'), [s, setS] = useState<S>(stored)
+  const save = () => { patch('settings', 'settings', s as never); auditLog(`updated ${tab} settings`, 'Settings', tab); useDb.getState().toast('Settings saved.') }
+  const upd = (fn: (d: S) => void) => setS((p) => { const d = structuredClone(p); fn(d); return d })
+  return <><PageHeader title="Settings" subtitle="Configure building, notifications and integrations" actions={<Button variant="primary" onClick={save}>Save changes</Button>} />
+    <Tabs value={tab} onChange={setTab} tabs={[{ id: 'general', label: 'General' }, { id: 'building', label: 'Building' }, { id: 'visitor', label: 'Visitor' }, { id: 'notifications', label: 'Notifications' }, { id: 'whatsapp', label: 'WhatsApp' }, { id: 'email', label: 'Email' }, { id: 'security', label: 'Security' }]} />
+    <div className="mt-4 max-w-2xl">
+      {tab === 'general' && <Card title="General"><div className="grid grid-cols-2 gap-3"><Field label="Product name"><Input value={s.productName} onChange={(e) => upd((d) => { d.productName = e.target.value })} /></Field><Field label="Subtitle"><Input value={s.subtitle} onChange={(e) => upd((d) => { d.subtitle = e.target.value })} /></Field></div>
+        <div className="mt-2 divide-y divide-line"><Toggle label="Demo mode" hint="Shows the demo control panel and lets admins act on behalf of staff" checked={demo} onChange={setDemo} /></div><Button className="mt-3" variant="danger" onClick={() => confirm('Reset all data to seed?') && reset()}>Reset demo data</Button></Card>}
+      {tab === 'building' && <Card title="Building settings"><ul className="divide-y divide-line">{towers.map((t) => <li key={t.id} className="flex justify-between py-2 text-xs"><span><b>{t.name}</b> · {t.address}</span><Badge tone="brand">{t.floors} floors</Badge></li>)}</ul><p className="mt-2 text-xxs text-muted">Edit towers under Building → Towers.</p></Card>}
+      {tab === 'visitor' && <Card title="Visitor settings"><Toggle label="Require visitor photo" checked={s.visitor.requirePhoto} onChange={(b) => upd((d) => { d.visitor.requirePhoto = b })} /><Toggle label="Require ID proof" checked={s.visitor.requireId} onChange={(b) => upd((d) => { d.visitor.requireId = b })} />
+        <Field label="Auto-reject unanswered requests after (minutes)" className="mt-2"><Input type="number" value={s.visitor.autoRejectMinutes} onChange={(e) => upd((d) => { d.visitor.autoRejectMinutes = +e.target.value })} /></Field></Card>}
+      {tab === 'notifications' && <Card title="Notification settings"><div className="divide-y divide-line"><Toggle label="In-app notifications" checked={s.notifications.inApp} onChange={(b) => upd((d) => { d.notifications.inApp = b })} /><Toggle label="WhatsApp notifications" checked={s.notifications.whatsapp} onChange={(b) => upd((d) => { d.notifications.whatsapp = b })} /><Toggle label="Email notifications" checked={s.notifications.email} onChange={(b) => upd((d) => { d.notifications.email = b })} />
+        {Object.keys(s.notifications.types).map((k) => <Toggle key={k} label={`${k[0].toUpperCase()}${k.slice(1)} alerts`} checked={s.notifications.types[k]} onChange={(b) => upd((d) => { d.notifications.types[k] = b })} />)}</div></Card>}
+      {tab === 'whatsapp' && <Card title="WhatsApp integration (simulated)" action={<StatusBadge status={s.whatsapp.apiStatus} />}><div className="grid grid-cols-2 gap-3"><Field label="WhatsApp number"><Input value={s.whatsapp.number} onChange={(e) => upd((d) => { d.whatsapp.number = e.target.value })} /></Field><Field label="Provider"><Select value={s.whatsapp.provider} onChange={(e) => upd((d) => { d.whatsapp.provider = e.target.value })} options={['Meta Cloud API (simulated)', 'Twilio (simulated)', 'Gupshup (simulated)']} /></Field>
+        <Field label="API status"><Select value={s.whatsapp.apiStatus} onChange={(e) => upd((d) => { d.whatsapp.apiStatus = e.target.value })} options={['Connected', 'Disconnected']} /></Field></div>
+        <p className="label mt-4">Templates</p>{Object.entries(s.whatsapp.templates).map(([k, v]) => <Field key={k} label={k} className="mb-2"><Input value={v} onChange={(e) => upd((d) => { d.whatsapp.templates[k] = e.target.value })} /></Field>)}<p className="text-xxs text-muted">Use {'{{variables}}'} such as visitorName, gate, office, ticket, priority, task.</p></Card>}
+      {tab === 'email' && <Card title="Email settings (simulated)" action={<StatusBadge status={s.email.status} />}><div className="grid grid-cols-2 gap-3"><Field label="Provider"><Input value={s.email.provider} onChange={(e) => upd((d) => { d.email.provider = e.target.value })} /></Field><Field label="SMTP host"><Input value={s.email.host} onChange={(e) => upd((d) => { d.email.host = e.target.value })} /></Field></div></Card>}
+      {tab === 'security' && <Card title="Security settings"><Toggle label="Require re-authentication for deletions" checked hint="Enforced by confirmation dialogs in this prototype" onChange={() => undefined} /><Toggle label="Audit all admin actions" checked hint="Always on" onChange={() => undefined} /></Card>}
+    </div></>
+}

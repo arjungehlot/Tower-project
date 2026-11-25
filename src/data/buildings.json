@@ -1,0 +1,12 @@
+[
+ {
+  "id": "bl-1",
+  "name": "TowerFlow Business Park",
+  "city": "Noida",
+  "towerIds": [
+   "tw-a",
+   "tw-b"
+  ],
+  "capacity": 1200
+ }
+]

@@ -1,0 +1,2850 @@
+[
+ {
+  "id": "tk-001",
+  "code": "TASK-101",
+  "title": "Cabin door lock jammed",
+  "description": "Reported by the office. Please check at the earliest and update.",
+  "category": "Maintenance",
+  "towerId": "tw-a",
+  "floorId": "fl-ta-1",
+  "officeId": "of-ta-103",
+  "locationNote": "",
+  "priority": "MEDIUM",
+  "assignedEmployeeId": "st-041",
+  "supervisorId": "sv-3",
+  "ticketId": "tkt-003",
+  "createdBy": "u-admin",
+  "createdAt": "2026-11-25T07:19:11.039Z",
+  "deadline": "2026-11-26T12:19:11.039Z",
+  "status": "ASSIGNED",
+  "progress": 0,
+  "startedAt": "",
+  "completedAt": "",
+  "verifiedAt": "",
+  "verifiedBy": "",
+  "rating": null,
+  "proof": "",
+  "notes": "",
+  "comments": [],
+  "timeline": [
+   {
+    "at": "2026-11-25T07:19:11.039Z",
+    "label": "Task created"
+   },
+   {
+    "at": "2026-11-25T07:20:11.039Z",
+    "label": "Assigned to Nisha Singh"
+   }
+  ]
+ },
+ {
+  "id": "tk-002",
+  "code": "TASK-102",
+  "title": "Lift 2 stops between floors",
+  "description": "Reported by the office. Please check at the earliest and update.",
+  "category": "Maintenance",
+  "towerId": "tw-a",
+  "floorId": "fl-ta-1",
+  "officeId": "of-ta-103",
+  "locationNote": "",
+  "priority": "CRITICAL",
+  "assignedEmployeeId": "st-044",
+  "supervisorId": "sv-2",
+  "ticketId": "tkt-004",
+  "createdBy": "u-admin",
+  "createdAt": "2026-11-25T05:05:11.039Z",
+  "deadline": "2026-11-26T03:05:11.039Z",
+  "status": "IN_PROGRESS",
+  "progress": 76,
+  "startedAt": "2026-11-25T05:25:11.039Z",
+  "completedAt": "",
+  "verifiedAt": "",
+  "verifiedBy": "",
+  "rating": null,
+  "proof": "",
+  "notes": "",
+  "comments": [],
+  "timeline": [
+   {
+    "at": "2026-11-25T05:05:11.039Z",
+    "label": "Task created"
+   },
+   {
+    "at": "2026-11-25T05:06:11.039Z",
+    "label": "Assigned to Rajesh Bansal"
+   },
+   {
+    "at": "2026-11-25T05:15:11.039Z",
+    "label": "Accepted by employee"
+   },
+   {
+    "at": "2026-11-25T05:25:11.039Z",
+    "label": "Work started"
+   }
+  ]
+ },
+ {
+  "id": "tk-003",
+  "code": "TASK-103",
+  "title": "AC not cooling",
+  "description": "Reported by the office. Please check at the earliest and update.",
+  "category": "HVAC Technician",
+  "towerId": "tw-a",
+  "floorId": "fl-ta-5",
+  "locationNote": "",
+  "priority": "HIGH",
+  "assignedEmployeeId": "st-031",
+  "supervisorId": "sv-4",
+  "ticketId": "tkt-005",
+  "createdBy": "u-admin",
+  "createdAt": "2026-11-25T03:56:11.039Z",
+  "deadline": "2026-11-25T09:56:11.039Z",
+  "status": "IN_PROGRESS",
+  "progress": 53,
+  "startedAt": "2026-11-25T04:16:11.039Z",
+  "completedAt": "",
+  "verifiedAt": "",
+  "verifiedBy": "",
+  "rating": null,
+  "proof": "",
+  "notes": "",
+  "comments": [],
+  "timeline": [
+   {
+    "at": "2026-11-25T03:56:11.039Z",
+    "label": "Task created"
+   },
+   {
+    "at": "2026-11-25T03:57:11.039Z",
+    "label": "Assigned to Neha Agarwal"
+   },
+   {
+    "at": "2026-11-25T04:06:11.039Z",
+    "label": "Accepted by employee"
+   },
+   {
+    "at": "2026-11-25T04:16:11.039Z",
+    "label": "Work started"
+   }
+  ]
+ },
+ {
+  "id": "tk-004",
+  "code": "TASK-104",
+  "title": "Access card not working",
+  "description": "Reported by the office. Please check at the earliest and update.",
+  "category": "Security",
+  "towerId": "tw-a",
+  "floorId": "fl-ta-10",
+  "locationNote": "",
+  "priority": "MEDIUM",
+  "assignedEmployeeId": "st-026",
+  "supervisorId": "sv-4",
+  "ticketId": "tkt-006",
+  "createdBy": "u-admin",
+  "createdAt": "2026-11-25T02:24:11.039Z",
+  "deadline": "2026-11-25T15:24:11.039Z",
+  "status": "ON_HOLD",
+  "progress": 64,
+  "startedAt": "2026-11-25T02:44:11.039Z",
+  "completedAt": "",
+  "verifiedAt": "",
+  "verifiedBy": "",
+  "rating": null,
+  "proof": "",
+  "notes": "",
+  "comments": [],
+  "timeline": [
+   {
+    "at": "2026-11-25T02:24:11.039Z",
+    "label": "Task created"
+   },
+   {
+    "at": "2026-11-25T02:25:11.039Z",
+    "label": "Assigned to Neha Kapoor"
+   },
+   {
+    "at": "2026-11-25T02:34:11.039Z",
+    "label": "Accepted by employee"
+   },
+   {
+    "at": "2026-11-25T02:44:11.039Z",
+    "label": "Work started"
+   },
+   {
+    "at": "2026-11-25T03:14:11.039Z",
+    "label": "On hold — waiting for spare parts"
+   }
+  ]
+ },
+ {
+  "id": "tk-005",
+  "code": "TASK-105",
+  "title": "Fire extinguisher expired",
+  "description": "Reported by the office. Please check at the earliest and update.",
+  "category": "Maintenance",
+  "towerId": "tw-a",
+  "floorId": "fl-ta-1",
+  "officeId": "of-ta-103",
+  "locationNote": "",
+  "priority": "MEDIUM",
+  "assignedEmployeeId": "st-042",
+  "supervisorId": "sv-4",
+  "ticketId": "tkt-007",
+  "createdBy": "u-admin",
+  "createdAt": "2026-11-25T04:27:11.039Z",
+  "deadline": "2026-11-25T20:27:11.039Z",
+  "status": "COMPLETED",
+  "progress": 100,
+  "startedAt": "2026-11-25T04:47:11.039Z",
+  "completedAt": "2026-11-25T05:21:11.039Z",
+  "verifiedAt": "",
+  "verifiedBy": "",
+  "rating": null,
+  "proof": "",
+  "notes": "",
+  "comments": [],
+  "timeline": [
+   {
+    "at": "2026-11-25T04:27:11.039Z",
+    "label": "Task created"
+   },
+   {
+    "at": "2026-11-25T04:28:11.039Z",
+    "label": "Assigned to Rahul Malhotra"
+   },
+   {
+    "at": "2026-11-25T04:37:11.039Z",
+    "label": "Accepted by employee"
+   },
+   {
+    "at": "2026-11-25T04:47:11.039Z",
+    "label": "Work started"
+   },
+   {
+    "at": "2026-11-25T05:21:11.039Z",
+    "label": "Work completed"
+   }
+  ]
+ },
+ {
+  "id": "tk-006",
+  "code": "TASK-106",
+  "title": "Fire extinguisher expired",
+  "description": "Reported by the office. Please check at the earliest and update.",
+  "category": "Maintenance",
+  "towerId": "tw-b",
+  "floorId": "fl-tb-1",
+  "locationNote": "",
+  "priority": "LOW",
+  "assignedEmployeeId": "st-044",
+  "supervisorId": "sv-2",
+  "ticketId": "tkt-008",
+  "createdBy": "u-admin",
+  "createdAt": "2026-11-25T04:08:11.039Z",
+  "deadline": "2026-11-25T16:08:11.039Z",
+  "status": "COMPLETED",
+  "progress": 100,
+  "startedAt": "2026-11-25T04:28:11.039Z",
+  "completedAt": "2026-11-25T06:10:11.039Z",
+  "verifiedAt": "2026-11-25T06:20:11.039Z",
+  "verifiedBy": "sv-2",
+  "rating": {
+   "quality": 5,
+   "speed": 3,
+   "professionalism": 5,
+   "cleanliness": 3,
+   "overall": 4,
+   "comment": "Neat and quick."
+  },
+  "proof": "",
+  "notes": "",
+  "comments": [],
+  "timeline": [
+   {
+    "at": "2026-11-25T04:08:11.039Z",
+    "label": "Task created"
+   },
+   {
+    "at": "2026-11-25T04:09:11.039Z",
+    "label": "Assigned to Rajesh Bansal"
+   },
+   {
+    "at": "2026-11-25T04:18:11.039Z",
+    "label": "Accepted by employee"
+   },
+   {
+    "at": "2026-11-25T04:28:11.039Z",
+    "label": "Work started"
+   },
+   {
+    "at": "2026-11-25T06:10:11.039Z",
+    "label": "Work completed"
+   },
+   {
+    "at": "2026-11-25T06:20:11.039Z",
+    "label": "Verified by supervisor"
+   },
+   {
+    "at": "2026-11-25T06:25:11.039Z",
+    "label": "Rated by supervisor"
+   }
+  ]
+ },
+ {
+  "id": "tk-007",
+  "code": "TASK-107",
+  "title": "AC not cooling",
+  "description": "Reported by the office. Please check at the earliest and update.",
+  "category": "HVAC Technician",
+  "towerId": "tw-a",
+  "floorId": "fl-ta-6",
+  "locationNote": "",
+  "priority": "HIGH",
+  "assignedEmployeeId": "st-031",
+  "supervisorId": "sv-4",
+  "ticketId": "tkt-009",
+  "createdBy": "u-admin",
+  "createdAt": "2026-11-25T06:38:11.039Z",
+  "deadline": "2026-11-25T18:38:11.039Z",
+  "status": "COMPLETED",
+  "progress": 100,
+  "startedAt": "2026-11-25T06:58:11.039Z",
+  "completedAt": "2026-11-25T08:05:11.039Z",
+  "verifiedAt": "2026-11-25T08:15:11.039Z",
+  "verifiedBy": "sv-4",
+  "rating": {
+   "quality": 5,
+   "speed": 3,
+   "professionalism": 5,
+   "cleanliness": 4,
+   "overall": 4.3,
+   "comment": "Good work."
+  },
+  "proof": "",
+  "notes": "",
+  "comments": [],
+  "timeline": [
+   {
+    "at": "2026-11-25T06:38:11.039Z",
+    "label": "Task created"
+   },
+   {
+    "at": "2026-11-25T06:39:11.039Z",
+    "label": "Assigned to Neha Agarwal"
+   },
+   {
+    "at": "2026-11-25T06:48:11.039Z",
+    "label": "Accepted by employee"
+   },
+   {
+    "at": "2026-11-25T06:58:11.039Z",
+    "label": "Work started"
+   },
+   {
+    "at": "2026-11-25T08:05:11.039Z",
+    "label": "Work completed"
+   },
+   {
+    "at": "2026-11-25T08:15:11.039Z",
+    "label": "Verified by supervisor"
+   },
+   {
+    "at": "2026-11-25T08:20:11.039Z",
+    "label": "Rated by supervisor"
+   }
+  ]
+ },
+ {
+  "id": "tk-008",
+  "code": "TASK-108",
+  "title": "Washroom tap leaking",
+  "description": "Reported by the office. Please check at the earliest and update.",
+  "category": "Plumber",
+  "towerId": "tw-b",
+  "floorId": "fl-tb-4",
+  "locationNote": "",
+  "priority": "MEDIUM",
+  "assignedEmployeeId": "st-009",
+  "supervisorId": "sv-6",
+  "ticketId": "tkt-010",
+  "createdBy": "u-admin",
+  "createdAt": "2026-11-25T02:24:11.039Z",
+  "deadline": "2026-11-25T16:24:11.039Z",
+  "status": "COMPLETED",
+  "progress": 100,
+  "startedAt": "2026-11-25T02:44:11.039Z",
+  "completedAt": "2026-11-25T04:20:11.039Z",
+  "verifiedAt": "2026-11-25T04:30:11.039Z",
+  "verifiedBy": "sv-6",
+  "rating": {
+   "quality": 4,
+   "speed": 3,
+   "professionalism": 5,
+   "cleanliness": 4,
+   "overall": 4,
+   "comment": "Excellent job!"
+  },
+  "proof": "",
+  "notes": "",
+  "comments": [],
+  "timeline": [
+   {
+    "at": "2026-11-25T02:24:11.039Z",
+    "label": "Task created"
+   },
+   {
+    "at": "2026-11-25T02:25:11.039Z",
+    "label": "Assigned to Sunita Kumar"
+   },
+   {
+    "at": "2026-11-25T02:34:11.039Z",
+    "label": "Accepted by employee"
+   },
+   {
+    "at": "2026-11-25T02:44:11.039Z",
+    "label": "Work started"
+   },
+   {
+    "at": "2026-11-25T04:20:11.039Z",
+    "label": "Work completed"
+   },
+   {
+    "at": "2026-11-25T04:30:11.039Z",
+    "label": "Verified by supervisor"
+   },
+   {
+    "at": "2026-11-25T04:35:11.039Z",
+    "label": "Rated by supervisor"
+   }
+  ]
+ },
+ {
+  "id": "tk-009",
+  "code": "TASK-109",
+  "title": "Fire extinguisher expired",
+  "description": "Reported by the office. Please check at the earliest and update.",
+  "category": "Maintenance",
+  "towerId": "tw-a",
+  "floorId": "fl-ta-4",
+  "locationNote": "",
+  "priority": "LOW",
+  "assignedEmployeeId": "st-043",
+  "supervisorId": "sv-3",
+  "ticketId": "tkt-013",
+  "createdBy": "u-admin",
+  "createdAt": "2026-11-17T23:34:11.039Z",
+  "deadline": "2026-11-18T18:34:11.039Z",
+  "status": "ASSIGNED",
+  "progress": 0,
+  "startedAt": "",
+  "completedAt": "",
+  "verifiedAt": "",
+  "verifiedBy": "",
+  "rating": null,
+  "proof": "",
+  "notes": "",
+  "comments": [],
+  "timeline": [
+   {
+    "at": "2026-11-17T23:34:11.039Z",
+    "label": "Task created"
+   },
+   {
+    "at": "2026-11-17T23:35:11.039Z",
+    "label": "Assigned to Vikash Bansal"
+   }
+  ]
+ },
+ {
+  "id": "tk-010",
+  "code": "TASK-110",
+  "title": "Power socket sparking",
+  "description": "Reported by the office. Please check at the earliest and update.",
+  "category": "Electrician",
+  "towerId": "tw-a",
+  "floorId": "fl-ta-1",
+  "locationNote": "",
+  "priority": "HIGH",
+  "assignedEmployeeId": "st-001",
+  "supervisorId": "sv-4",
+  "ticketId": "tkt-014",
+  "createdBy": "u-admin",
+  "createdAt": "2026-11-17T20:05:11.039Z",
+  "deadline": "2026-11-18T05:05:11.039Z",
+  "status": "IN_PROGRESS",
+  "progress": 41,
+  "startedAt": "2026-11-17T20:25:11.039Z",
+  "completedAt": "",
+  "verifiedAt": "",
+  "verifiedBy": "",
+  "rating": null,
+  "proof": "",
+  "notes": "",
+  "comments": [],
+  "timeline": [
+   {
+    "at": "2026-11-17T20:05:11.039Z",
+    "label": "Task created"
+   },
+   {
+    "at": "2026-11-17T20:06:11.039Z",
+    "label": "Assigned to Amit Sharma"
+   },
+   {
+    "at": "2026-11-17T20:15:11.039Z",
+    "label": "Accepted by employee"
+   },
+   {
+    "at": "2026-11-17T20:25:11.039Z",
+    "label": "Work started"
+   }
+  ]
+ },
+ {
+  "id": "tk-011",
+  "code": "TASK-111",
+  "title": "Move furniture to storage",
+  "description": "Reported by the office. Please check at the earliest and update.",
+  "category": "General Worker",
+  "towerId": "tw-a",
+  "floorId": "fl-ta-1",
+  "locationNote": "",
+  "priority": "CRITICAL",
+  "assignedEmployeeId": "st-052",
+  "supervisorId": "sv-2",
+  "ticketId": "tkt-015",
+  "createdBy": "u-admin",
+  "createdAt": "2026-11-21T05:14:11.039Z",
+  "deadline": "2026-11-21T17:14:11.039Z",
+  "status": "IN_PROGRESS",
+  "progress": 40,
+  "startedAt": "2026-11-21T05:34:11.039Z",
+  "completedAt": "",
+  "verifiedAt": "",
+  "verifiedBy": "",
+  "rating": null,
+  "proof": "",
+  "notes": "",
+  "comments": [],
+  "timeline": [
+   {
+    "at": "2026-11-21T05:14:11.039Z",
+    "label": "Task created"
+   },
+   {
+    "at": "2026-11-21T05:15:11.039Z",
+    "label": "Assigned to Sneha Verma"
+   },
+   {
+    "at": "2026-11-21T05:24:11.039Z",
+    "label": "Accepted by employee"
+   },
+   {
+    "at": "2026-11-21T05:34:11.039Z",
+    "label": "Work started"
+   }
+  ]
+ },
+ {
+  "id": "tk-012",
+  "code": "TASK-112",
+  "title": "Fire extinguisher expired",
+  "description": "Reported by the office. Please check at the earliest and update.",
+  "category": "Maintenance",
+  "towerId": "tw-a",
+  "floorId": "fl-ta-1",
+  "locationNote": "",
+  "priority": "HIGH",
+  "assignedEmployeeId": "st-043",
+  "supervisorId": "sv-3",
+  "ticketId": "tkt-016",
+  "createdBy": "u-admin",
+  "createdAt": "2026-11-18T13:57:11.039Z",
+  "deadline": "2026-11-18T16:57:11.039Z",
+  "status": "ON_HOLD",
+  "progress": 24,
+  "startedAt": "2026-11-18T14:17:11.039Z",
+  "completedAt": "",
+  "verifiedAt": "",
+  "verifiedBy": "",
+  "rating": null,
+  "proof": "",
+  "notes": "",
+  "comments": [],
+  "timeline": [
+   {
+    "at": "2026-11-18T13:57:11.039Z",
+    "label": "Task created"
+   },
+   {
+    "at": "2026-11-18T13:58:11.039Z",
+    "label": "Assigned to Vikash Bansal"
+   },
+   {
+    "at": "2026-11-18T14:07:11.039Z",
+    "label": "Accepted by employee"
+   },
+   {
+    "at": "2026-11-18T14:17:11.039Z",
+    "label": "Work started"
+   },
+   {
+    "at": "2026-11-18T14:47:11.039Z",
+    "label": "On hold — waiting for spare parts"
+   }
+  ]
+ },
+ {
+  "id": "tk-013",
+  "code": "TASK-113",
+  "title": "MCB trips frequently",
+  "description": "Reported by the office. Please check at the earliest and update.",
+  "category": "Electrician",
+  "towerId": "tw-b",
+  "floorId": "fl-tb-4",
+  "locationNote": "",
+  "priority": "LOW",
+  "assignedEmployeeId": "st-005",
+  "supervisorId": "sv-4",
+  "ticketId": "tkt-017",
+  "createdBy": "u-admin",
+  "createdAt": "2026-11-18T18:20:11.039Z",
+  "deadline": "2026-11-19T12:20:11.039Z",
+  "status": "COMPLETED",
+  "progress": 100,
+  "startedAt": "2026-11-18T18:40:11.039Z",
+  "completedAt": "2026-11-18T20:27:11.039Z",
+  "verifiedAt": "",
+  "verifiedBy": "",
+  "rating": null,
+  "proof": "",
+  "notes": "",
+  "comments": [],
+  "timeline": [
+   {
+    "at": "2026-11-18T18:20:11.039Z",
+    "label": "Task created"
+   },
+   {
+    "at": "2026-11-18T18:21:11.039Z",
+    "label": "Assigned to Anjali Khanna"
+   },
+   {
+    "at": "2026-11-18T18:30:11.039Z",
+    "label": "Accepted by employee"
+   },
+   {
+    "at": "2026-11-18T18:40:11.039Z",
+    "label": "Work started"
+   },
+   {
+    "at": "2026-11-18T20:27:11.039Z",
+    "label": "Work completed"
+   }
+  ]
+ },
+ {
+  "id": "tk-014",
+  "code": "TASK-114",
+  "title": "AC not cooling",
+  "description": "Reported by the office. Please check at the earliest and update.",
+  "category": "HVAC Technician",
+  "towerId": "tw-b",
+  "floorId": "fl-tb-4",
+  "locationNote": "",
+  "priority": "CRITICAL",
+  "assignedEmployeeId": "st-033",
+  "supervisorId": "sv-1",
+  "ticketId": "tkt-018",
+  "createdBy": "u-admin",
+  "createdAt": "2026-11-20T04:21:11.038Z",
+  "deadline": "2026-11-21T07:21:11.038Z",
+  "status": "COMPLETED",
+  "progress": 100,
+  "startedAt": "2026-11-20T04:41:11.038Z",
+  "completedAt": "2026-11-20T05:18:11.038Z",
+  "verifiedAt": "2026-11-20T05:28:11.038Z",
+  "verifiedBy": "sv-1",
+  "rating": {
+   "quality": 3,
+   "speed": 3,
+   "professionalism": 5,
+   "cleanliness": 3,
+   "overall": 3.5,
+   "comment": "Excellent job!"
+  },
+  "proof": "",
+  "notes": "",
+  "comments": [],
+  "timeline": [
+   {
+    "at": "2026-11-20T04:21:11.038Z",
+    "label": "Task created"
+   },
+   {
+    "at": "2026-11-20T04:22:11.038Z",
+    "label": "Assigned to Ritu Kumar"
+   },
+   {
+    "at": "2026-11-20T04:31:11.038Z",
+    "label": "Accepted by employee"
+   },
+   {
+    "at": "2026-11-20T04:41:11.038Z",
+    "label": "Work started"
+   },
+   {
+    "at": "2026-11-20T05:18:11.038Z",
+    "label": "Work completed"
+   },
+   {
+    "at": "2026-11-20T05:28:11.038Z",
+    "label": "Verified by supervisor"
+   },
+   {
+    "at": "2026-11-20T05:33:11.038Z",
+    "label": "Rated by supervisor"
+   }
+  ]
+ },
+ {
+  "id": "tk-015",
+  "code": "TASK-115",
+  "title": "Leased line down",
+  "description": "Reported by the office. Please check at the earliest and update.",
+  "category": "IT Support",
+  "towerId": "tw-a",
+  "floorId": "fl-ta-10",
+  "locationNote": "",
+  "priority": "MEDIUM",
+  "assignedEmployeeId": "st-038",
+  "supervisorId": "sv-1",
+  "ticketId": "tkt-019",
+  "createdBy": "u-admin",
+  "createdAt": "2026-11-23T19:36:11.038Z",
+  "deadline": "2026-11-24T22:36:11.038Z",
+  "status": "COMPLETED",
+  "progress": 100,
+  "startedAt": "2026-11-23T19:56:11.038Z",
+  "completedAt": "2026-11-23T21:22:11.038Z",
+  "verifiedAt": "2026-11-23T21:32:11.038Z",
+  "verifiedBy": "sv-1",
+  "rating": {
+   "quality": 4,
+   "speed": 4,
+   "professionalism": 4,
+   "cleanliness": 5,
+   "overall": 4.3,
+   "comment": "Good work."
+  },
+  "proof": "",
+  "notes": "",
+  "comments": [],
+  "timeline": [
+   {
+    "at": "2026-11-23T19:36:11.038Z",
+    "label": "Task created"
+   },
+   {
+    "at": "2026-11-23T19:37:11.038Z",
+    "label": "Assigned to Anjali Bansal"
+   },
+   {
+    "at": "2026-11-23T19:46:11.038Z",
+    "label": "Accepted by employee"
+   },
+   {
+    "at": "2026-11-23T19:56:11.038Z",
+    "label": "Work started"
+   },
+   {
+    "at": "2026-11-23T21:22:11.038Z",
+    "label": "Work completed"
+   },
+   {
+    "at": "2026-11-23T21:32:11.038Z",
+    "label": "Verified by supervisor"
+   },
+   {
+    "at": "2026-11-23T21:37:11.038Z",
+    "label": "Rated by supervisor"
+   }
+  ]
+ },
+ {
+  "id": "tk-016",
+  "code": "TASK-116",
+  "title": "Move furniture to storage",
+  "description": "Reported by the office. Please check at the earliest and update.",
+  "category": "General Worker",
+  "towerId": "tw-a",
+  "floorId": "fl-ta-10",
+  "locationNote": "",
+  "priority": "LOW",
+  "assignedEmployeeId": "st-049",
+  "supervisorId": "sv-5",
+  "ticketId": "tkt-020",
+  "createdBy": "u-admin",
+  "createdAt": "2026-11-17T05:43:11.038Z",
+  "deadline": "2026-11-18T04:43:11.038Z",
+  "status": "COMPLETED",
+  "progress": 100,
+  "startedAt": "2026-11-17T06:03:11.038Z",
+  "completedAt": "2026-11-17T07:43:11.038Z",
+  "verifiedAt": "2026-11-17T07:53:11.038Z",
+  "verifiedBy": "sv-5",
+  "rating": {
+   "quality": 5,
+   "speed": 5,
+   "professionalism": 4,
+   "cleanliness": 3,
+   "overall": 4.3,
+   "comment": "Excellent job!"
+  },
+  "proof": "",
+  "notes": "",
+  "comments": [],
+  "timeline": [
+   {
+    "at": "2026-11-17T05:43:11.038Z",
+    "label": "Task created"
+   },
+   {
+    "at": "2026-11-17T05:44:11.038Z",
+    "label": "Assigned to Rajesh Mehta"
+   },
+   {
+    "at": "2026-11-17T05:53:11.038Z",
+    "label": "Accepted by employee"
+   },
+   {
+    "at": "2026-11-17T06:03:11.038Z",
+    "label": "Work started"
+   },
+   {
+    "at": "2026-11-17T07:43:11.038Z",
+    "label": "Work completed"
+   },
+   {
+    "at": "2026-11-17T07:53:11.038Z",
+    "label": "Verified by supervisor"
+   },
+   {
+    "at": "2026-11-17T07:58:11.038Z",
+    "label": "Rated by supervisor"
+   }
+  ]
+ },
+ {
+  "id": "tk-017",
+  "code": "TASK-117",
+  "title": "Strange noise from AC vent",
+  "description": "Reported by the office. Please check at the earliest and update.",
+  "category": "HVAC Technician",
+  "towerId": "tw-a",
+  "floorId": "fl-ta-4",
+  "locationNote": "",
+  "priority": "MEDIUM",
+  "assignedEmployeeId": "st-029",
+  "supervisorId": "sv-6",
+  "ticketId": "tkt-023",
+  "createdBy": "u-admin",
+  "createdAt": "2026-11-21T13:53:11.038Z",
+  "deadline": "2026-11-22T15:53:11.038Z",
+  "status": "ASSIGNED",
+  "progress": 0,
+  "startedAt": "",
+  "completedAt": "",
+  "verifiedAt": "",
+  "verifiedBy": "",
+  "rating": null,
+  "proof": "",
+  "notes": "",
+  "comments": [],
+  "timeline": [
+   {
+    "at": "2026-11-21T13:53:11.038Z",
+    "label": "Task created"
+   },
+   {
+    "at": "2026-11-21T13:54:11.038Z",
+    "label": "Assigned to Rahul Chopra"
+   }
+  ]
+ },
+ {
+  "id": "tk-018",
+  "code": "TASK-118",
+  "title": "Move furniture to storage",
+  "description": "Reported by the office. Please check at the earliest and update.",
+  "category": "General Worker",
+  "towerId": "tw-b",
+  "floorId": "fl-tb-7",
+  "locationNote": "",
+  "priority": "CRITICAL",
+  "assignedEmployeeId": "st-049",
+  "supervisorId": "sv-5",
+  "ticketId": "tkt-024",
+  "createdBy": "u-admin",
+  "createdAt": "2026-11-20T20:09:11.038Z",
+  "deadline": "2026-11-21T05:09:11.038Z",
+  "status": "IN_PROGRESS",
+  "progress": 27,
+  "startedAt": "2026-11-20T20:29:11.038Z",
+  "completedAt": "",
+  "verifiedAt": "",
+  "verifiedBy": "",
+  "rating": null,
+  "proof": "",
+  "notes": "",
+  "comments": [],
+  "timeline": [
+   {
+    "at": "2026-11-20T20:09:11.038Z",
+    "label": "Task created"
+   },
+   {
+    "at": "2026-11-20T20:10:11.038Z",
+    "label": "Assigned to Rajesh Mehta"
+   },
+   {
+    "at": "2026-11-20T20:19:11.038Z",
+    "label": "Accepted by employee"
+   },
+   {
+    "at": "2026-11-20T20:29:11.038Z",
+    "label": "Work started"
+   }
+  ]
+ },
+ {
+  "id": "tk-019",
+  "code": "TASK-119",
+  "title": "Access card not working",
+  "description": "Reported by the office. Please check at the earliest and update.",
+  "category": "Security",
+  "towerId": "tw-a",
+  "floorId": "fl-ta-6",
+  "locationNote": "",
+  "priority": "MEDIUM",
+  "assignedEmployeeId": "st-026",
+  "supervisorId": "sv-4",
+  "ticketId": "tkt-025",
+  "createdBy": "u-admin",
+  "createdAt": "2026-11-20T21:13:11.038Z",
+  "deadline": "2026-11-21T19:13:11.038Z",
+  "status": "IN_PROGRESS",
+  "progress": 78,
+  "startedAt": "2026-11-20T21:33:11.038Z",
+  "completedAt": "",
+  "verifiedAt": "",
+  "verifiedBy": "",
+  "rating": null,
+  "proof": "",
+  "notes": "",
+  "comments": [],
+  "timeline": [
+   {
+    "at": "2026-11-20T21:13:11.038Z",
+    "label": "Task created"
+   },
+   {
+    "at": "2026-11-20T21:14:11.038Z",
+    "label": "Assigned to Neha Kapoor"
+   },
+   {
+    "at": "2026-11-20T21:23:11.038Z",
+    "label": "Accepted by employee"
+   },
+   {
+    "at": "2026-11-20T21:33:11.038Z",
+    "label": "Work started"
+   }
+  ]
+ },
+ {
+  "id": "tk-020",
+  "code": "TASK-120",
+  "title": "Move furniture to storage",
+  "description": "Reported by the office. Please check at the earliest and update.",
+  "category": "General Worker",
+  "towerId": "tw-b",
+  "floorId": "fl-tb-6",
+  "locationNote": "",
+  "priority": "MEDIUM",
+  "assignedEmployeeId": "st-050",
+  "supervisorId": "sv-6",
+  "ticketId": "tkt-026",
+  "createdBy": "u-admin",
+  "createdAt": "2026-11-18T19:01:11.038Z",
+  "deadline": "2026-11-19T15:01:11.038Z",
+  "status": "ON_HOLD",
+  "progress": 43,
+  "startedAt": "2026-11-18T19:21:11.038Z",
+  "completedAt": "",
+  "verifiedAt": "",
+  "verifiedBy": "",
+  "rating": null,
+  "proof": "",
+  "notes": "",
+  "comments": [],
+  "timeline": [
+   {
+    "at": "2026-11-18T19:01:11.038Z",
+    "label": "Task created"
+   },
+   {
+    "at": "2026-11-18T19:02:11.038Z",
+    "label": "Assigned to Ritu Agarwal"
+   },
+   {
+    "at": "2026-11-18T19:11:11.038Z",
+    "label": "Accepted by employee"
+   },
+   {
+    "at": "2026-11-18T19:21:11.038Z",
+    "label": "Work started"
+   },
+   {
+    "at": "2026-11-18T19:51:11.038Z",
+    "label": "On hold — waiting for spare parts"
+   }
+  ]
+ },
+ {
+  "id": "tk-021",
+  "code": "TASK-121",
+  "title": "Move furniture to storage",
+  "description": "Reported by the office. Please check at the earliest and update.",
+  "category": "General Worker",
+  "towerId": "tw-a",
+  "floorId": "fl-ta-6",
+  "locationNote": "",
+  "priority": "HIGH",
+  "assignedEmployeeId": "st-052",
+  "supervisorId": "sv-2",
+  "ticketId": "tkt-027",
+  "createdBy": "u-admin",
+  "createdAt": "2026-11-22T09:32:11.038Z",
+  "deadline": "2026-11-22T17:32:11.038Z",
+  "status": "COMPLETED",
+  "progress": 100,
+  "startedAt": "2026-11-22T09:52:11.038Z",
+  "completedAt": "2026-11-22T11:26:11.038Z",
+  "verifiedAt": "",
+  "verifiedBy": "",
+  "rating": null,
+  "proof": "",
+  "notes": "",
+  "comments": [],
+  "timeline": [
+   {
+    "at": "2026-11-22T09:32:11.038Z",
+    "label": "Task created"
+   },
+   {
+    "at": "2026-11-22T09:33:11.038Z",
+    "label": "Assigned to Sneha Verma"
+   },
+   {
+    "at": "2026-11-22T09:42:11.038Z",
+    "label": "Accepted by employee"
+   },
+   {
+    "at": "2026-11-22T09:52:11.038Z",
+    "label": "Work started"
+   },
+   {
+    "at": "2026-11-22T11:26:11.038Z",
+    "label": "Work completed"
+   }
+  ]
+ },
+ {
+  "id": "tk-022",
+  "code": "TASK-122",
+  "title": "Power socket sparking",
+  "description": "Reported by the office. Please check at the earliest and update.",
+  "category": "Electrician",
+  "towerId": "tw-a",
+  "floorId": "fl-ta-5",
+  "locationNote": "",
+  "priority": "HIGH",
+  "assignedEmployeeId": "st-002",
+  "supervisorId": "sv-5",
+  "ticketId": "tkt-028",
+  "createdBy": "u-admin",
+  "createdAt": "2026-11-21T19:18:11.038Z",
+  "deadline": "2026-11-22T10:18:11.038Z",
+  "status": "COMPLETED",
+  "progress": 100,
+  "startedAt": "2026-11-21T19:38:11.038Z",
+  "completedAt": "2026-11-21T20:51:11.038Z",
+  "verifiedAt": "2026-11-21T21:01:11.038Z",
+  "verifiedBy": "sv-5",
+  "rating": {
+   "quality": 4,
+   "speed": 5,
+   "professionalism": 5,
+   "cleanliness": 4,
+   "overall": 4.5,
+   "comment": "Neat and quick."
+  },
+  "proof": "",
+  "notes": "",
+  "comments": [],
+  "timeline": [
+   {
+    "at": "2026-11-21T19:18:11.038Z",
+    "label": "Task created"
+   },
+   {
+    "at": "2026-11-21T19:19:11.038Z",
+    "label": "Assigned to Isha Iyer"
+   },
+   {
+    "at": "2026-11-21T19:28:11.038Z",
+    "label": "Accepted by employee"
+   },
+   {
+    "at": "2026-11-21T19:38:11.038Z",
+    "label": "Work started"
+   },
+   {
+    "at": "2026-11-21T20:51:11.038Z",
+    "label": "Work completed"
+   },
+   {
+    "at": "2026-11-21T21:01:11.038Z",
+    "label": "Verified by supervisor"
+   },
+   {
+    "at": "2026-11-21T21:06:11.038Z",
+    "label": "Rated by supervisor"
+   }
+  ]
+ },
+ {
+  "id": "tk-023",
+  "code": "TASK-123",
+  "title": "Power socket sparking",
+  "description": "Reported by the office. Please check at the earliest and update.",
+  "category": "Electrician",
+  "towerId": "tw-b",
+  "floorId": "fl-tb-4",
+  "locationNote": "",
+  "priority": "CRITICAL",
+  "assignedEmployeeId": "st-002",
+  "supervisorId": "sv-5",
+  "ticketId": "tkt-029",
+  "createdBy": "u-admin",
+  "createdAt": "2026-11-23T03:29:11.038Z",
+  "deadline": "2026-11-24T06:29:11.038Z",
+  "status": "COMPLETED",
+  "progress": 100,
+  "startedAt": "2026-11-23T03:49:11.038Z",
+  "completedAt": "2026-11-23T05:05:11.038Z",
+  "verifiedAt": "2026-11-23T05:15:11.038Z",
+  "verifiedBy": "sv-5",
+  "rating": {
+   "quality": 3,
+   "speed": 4,
+   "professionalism": 5,
+   "cleanliness": 4,
+   "overall": 4,
+   "comment": "Excellent job!"
+  },
+  "proof": "",
+  "notes": "",
+  "comments": [],
+  "timeline": [
+   {
+    "at": "2026-11-23T03:29:11.038Z",
+    "label": "Task created"
+   },
+   {
+    "at": "2026-11-23T03:30:11.038Z",
+    "label": "Assigned to Isha Iyer"
+   },
+   {
+    "at": "2026-11-23T03:39:11.038Z",
+    "label": "Accepted by employee"
+   },
+   {
+    "at": "2026-11-23T03:49:11.038Z",
+    "label": "Work started"
+   },
+   {
+    "at": "2026-11-23T05:05:11.038Z",
+    "label": "Work completed"
+   },
+   {
+    "at": "2026-11-23T05:15:11.038Z",
+    "label": "Verified by supervisor"
+   },
+   {
+    "at": "2026-11-23T05:20:11.038Z",
+    "label": "Rated by supervisor"
+   }
+  ]
+ },
+ {
+  "id": "tk-024",
+  "code": "TASK-124",
+  "title": "Access card not working",
+  "description": "Reported by the office. Please check at the earliest and update.",
+  "category": "Security",
+  "towerId": "tw-a",
+  "floorId": "fl-ta-10",
+  "locationNote": "",
+  "priority": "MEDIUM",
+  "assignedEmployeeId": "st-024",
+  "supervisorId": "sv-2",
+  "ticketId": "tkt-030",
+  "createdBy": "u-admin",
+  "createdAt": "2026-11-22T14:18:11.038Z",
+  "deadline": "2026-11-22T17:18:11.038Z",
+  "status": "COMPLETED",
+  "progress": 100,
+  "startedAt": "2026-11-22T14:38:11.038Z",
+  "completedAt": "2026-11-22T15:49:11.038Z",
+  "verifiedAt": "2026-11-22T15:59:11.038Z",
+  "verifiedBy": "sv-2",
+  "rating": {
+   "quality": 3,
+   "speed": 5,
+   "professionalism": 5,
+   "cleanliness": 4,
+   "overall": 4.3,
+   "comment": "Good work."
+  },
+  "proof": "",
+  "notes": "",
+  "comments": [],
+  "timeline": [
+   {
+    "at": "2026-11-22T14:18:11.038Z",
+    "label": "Task created"
+   },
+   {
+    "at": "2026-11-22T14:19:11.038Z",
+    "label": "Assigned to Nisha Mehta"
+   },
+   {
+    "at": "2026-11-22T14:28:11.038Z",
+    "label": "Accepted by employee"
+   },
+   {
+    "at": "2026-11-22T14:38:11.038Z",
+    "label": "Work started"
+   },
+   {
+    "at": "2026-11-22T15:49:11.038Z",
+    "label": "Work completed"
+   },
+   {
+    "at": "2026-11-22T15:59:11.038Z",
+    "label": "Verified by supervisor"
+   },
+   {
+    "at": "2026-11-22T16:04:11.038Z",
+    "label": "Rated by supervisor"
+   }
+  ]
+ },
+ {
+  "id": "tk-025",
+  "code": "TASK-125",
+  "title": "Cabin door lock jammed",
+  "description": "Reported by the office. Please check at the earliest and update.",
+  "category": "Maintenance",
+  "towerId": "tw-a",
+  "floorId": "fl-ta-2",
+  "locationNote": "",
+  "priority": "HIGH",
+  "assignedEmployeeId": "st-043",
+  "supervisorId": "sv-3",
+  "ticketId": "tkt-033",
+  "createdBy": "u-admin",
+  "createdAt": "2026-11-22T16:45:11.038Z",
+  "deadline": "2026-11-23T17:45:11.038Z",
+  "status": "ASSIGNED",
+  "progress": 0,
+  "startedAt": "",
+  "completedAt": "",
+  "verifiedAt": "",
+  "verifiedBy": "",
+  "rating": null,
+  "proof": "",
+  "notes": "",
+  "comments": [],
+  "timeline": [
+   {
+    "at": "2026-11-22T16:45:11.038Z",
+    "label": "Task created"
+   },
+   {
+    "at": "2026-11-22T16:46:11.038Z",
+    "label": "Assigned to Vikash Bansal"
+   }
+  ]
+ },
+ {
+  "id": "tk-026",
+  "code": "TASK-126",
+  "title": "Access card not working",
+  "description": "Reported by the office. Please check at the earliest and update.",
+  "category": "Security",
+  "towerId": "tw-a",
+  "floorId": "fl-ta-8",
+  "locationNote": "",
+  "priority": "HIGH",
+  "assignedEmployeeId": "st-027",
+  "supervisorId": "sv-5",
+  "ticketId": "tkt-034",
+  "createdBy": "u-admin",
+  "createdAt": "2026-11-17T04:34:11.038Z",
+  "deadline": "2026-11-17T21:34:11.038Z",
+  "status": "IN_PROGRESS",
+  "progress": 28,
+  "startedAt": "2026-11-17T04:54:11.038Z",
+  "completedAt": "",
+  "verifiedAt": "",
+  "verifiedBy": "",
+  "rating": null,
+  "proof": "",
+  "notes": "",
+  "comments": [],
+  "timeline": [
+   {
+    "at": "2026-11-17T04:34:11.038Z",
+    "label": "Task created"
+   },
+   {
+    "at": "2026-11-17T04:35:11.038Z",
+    "label": "Assigned to Swati Mehta"
+   },
+   {
+    "at": "2026-11-17T04:44:11.038Z",
+    "label": "Accepted by employee"
+   },
+   {
+    "at": "2026-11-17T04:54:11.038Z",
+    "label": "Work started"
+   }
+  ]
+ },
+ {
+  "id": "tk-027",
+  "code": "TASK-127",
+  "title": "MCB trips frequently",
+  "description": "Reported by the office. Please check at the earliest and update.",
+  "category": "Electrician",
+  "towerId": "tw-b",
+  "floorId": "fl-tb-4",
+  "locationNote": "",
+  "priority": "MEDIUM",
+  "assignedEmployeeId": "st-005",
+  "supervisorId": "sv-4",
+  "ticketId": "tkt-035",
+  "createdBy": "u-admin",
+  "createdAt": "2026-11-18T09:29:11.038Z",
+  "deadline": "2026-11-19T12:29:11.038Z",
+  "status": "IN_PROGRESS",
+  "progress": 53,
+  "startedAt": "2026-11-18T09:49:11.038Z",
+  "completedAt": "",
+  "verifiedAt": "",
+  "verifiedBy": "",
+  "rating": null,
+  "proof": "",
+  "notes": "",
+  "comments": [],
+  "timeline": [
+   {
+    "at": "2026-11-18T09:29:11.038Z",
+    "label": "Task created"
+   },
+   {
+    "at": "2026-11-18T09:30:11.038Z",
+    "label": "Assigned to Anjali Khanna"
+   },
+   {
+    "at": "2026-11-18T09:39:11.038Z",
+    "label": "Accepted by employee"
+   },
+   {
+    "at": "2026-11-18T09:49:11.038Z",
+    "label": "Work started"
+   }
+  ]
+ },
+ {
+  "id": "tk-028",
+  "code": "TASK-128",
+  "title": "Ceiling tile broken",
+  "description": "Reported by the office. Please check at the earliest and update.",
+  "category": "Maintenance",
+  "towerId": "tw-b",
+  "floorId": "fl-tb-3",
+  "locationNote": "",
+  "priority": "LOW",
+  "assignedEmployeeId": "st-043",
+  "supervisorId": "sv-3",
+  "ticketId": "tkt-036",
+  "createdBy": "u-admin",
+  "createdAt": "2026-11-21T07:29:11.038Z",
+  "deadline": "2026-11-21T10:29:11.038Z",
+  "status": "ON_HOLD",
+  "progress": 79,
+  "startedAt": "2026-11-21T07:49:11.038Z",
+  "completedAt": "",
+  "verifiedAt": "",
+  "verifiedBy": "",
+  "rating": null,
+  "proof": "",
+  "notes": "",
+  "comments": [],
+  "timeline": [
+   {
+    "at": "2026-11-21T07:29:11.038Z",
+    "label": "Task created"
+   },
+   {
+    "at": "2026-11-21T07:30:11.038Z",
+    "label": "Assigned to Vikash Bansal"
+   },
+   {
+    "at": "2026-11-21T07:39:11.038Z",
+    "label": "Accepted by employee"
+   },
+   {
+    "at": "2026-11-21T07:49:11.038Z",
+    "label": "Work started"
+   },
+   {
+    "at": "2026-11-21T08:19:11.038Z",
+    "label": "On hold — waiting for spare parts"
+   }
+  ]
+ },
+ {
+  "id": "tk-029",
+  "code": "TASK-129",
+  "title": "Event setup support",
+  "description": "Event setup support. Please attend and share completion photos.",
+  "category": "Other",
+  "towerId": "tw-b",
+  "floorId": "fl-tb-5",
+  "officeId": "of-tb-501",
+  "locationNote": "",
+  "priority": "CRITICAL",
+  "assignedEmployeeId": "st-054",
+  "supervisorId": "sv-5",
+  "ticketId": "",
+  "createdBy": "u-admin",
+  "createdAt": "2026-11-24T08:52:11.044Z",
+  "deadline": "2026-11-25T13:52:11.044Z",
+  "status": "ASSIGNED",
+  "progress": 0,
+  "startedAt": "",
+  "completedAt": "",
+  "verifiedAt": "",
+  "verifiedBy": "",
+  "rating": null,
+  "proof": "",
+  "notes": "",
+  "comments": [],
+  "timeline": [
+   {
+    "at": "2026-11-24T08:52:11.044Z",
+    "label": "Task created"
+   },
+   {
+    "at": "2026-11-24T08:53:11.044Z",
+    "label": "Assigned to Nikhil Patel"
+   }
+  ]
+ },
+ {
+  "id": "tk-030",
+  "code": "TASK-130",
+  "title": "Repaint stairwell",
+  "description": "Repaint stairwell. Please attend and share completion photos.",
+  "category": "Maintenance",
+  "towerId": "tw-a",
+  "floorId": "fl-ta-4",
+  "officeId": "of-ta-406",
+  "locationNote": "",
+  "priority": "MEDIUM",
+  "assignedEmployeeId": "st-043",
+  "supervisorId": "sv-3",
+  "ticketId": "",
+  "createdBy": "u-admin",
+  "createdAt": "2026-11-25T05:21:11.044Z",
+  "deadline": "2026-11-25T09:21:11.044Z",
+  "status": "ACCEPTED",
+  "progress": 0,
+  "startedAt": "",
+  "completedAt": "",
+  "verifiedAt": "",
+  "verifiedBy": "",
+  "rating": null,
+  "proof": "",
+  "notes": "",
+  "comments": [],
+  "timeline": [
+   {
+    "at": "2026-11-25T05:21:11.044Z",
+    "label": "Task created"
+   },
+   {
+    "at": "2026-11-25T05:22:11.044Z",
+    "label": "Assigned to Vikash Bansal"
+   },
+   {
+    "at": "2026-11-25T05:31:11.044Z",
+    "label": "Accepted by employee"
+   }
+  ]
+ },
+ {
+  "id": "tk-031",
+  "code": "TASK-131",
+  "title": "Replace corridor lights",
+  "description": "Replace corridor lights. Please attend and share completion photos.",
+  "category": "Electrician",
+  "towerId": "tw-b",
+  "floorId": "fl-tb-6",
+  "officeId": "of-tb-603",
+  "locationNote": "",
+  "priority": "LOW",
+  "assignedEmployeeId": "st-001",
+  "supervisorId": "sv-4",
+  "ticketId": "",
+  "createdBy": "u-admin",
+  "createdAt": "2026-11-21T14:42:11.044Z",
+  "deadline": "2026-11-21T20:42:11.044Z",
+  "status": "IN_PROGRESS",
+  "progress": 39,
+  "startedAt": "2026-11-21T15:02:11.044Z",
+  "completedAt": "",
+  "verifiedAt": "",
+  "verifiedBy": "",
+  "rating": null,
+  "proof": "",
+  "notes": "",
+  "comments": [],
+  "timeline": [
+   {
+    "at": "2026-11-21T14:42:11.044Z",
+    "label": "Task created"
+   },
+   {
+    "at": "2026-11-21T14:43:11.044Z",
+    "label": "Assigned to Amit Sharma"
+   },
+   {
+    "at": "2026-11-21T14:52:11.044Z",
+    "label": "Accepted by employee"
+   },
+   {
+    "at": "2026-11-21T15:02:11.044Z",
+    "label": "Work started"
+   }
+  ]
+ },
+ {
+  "id": "tk-032",
+  "code": "TASK-132",
+  "title": "Fix pantry tap",
+  "description": "Fix pantry tap. Please attend and share completion photos.",
+  "category": "Plumber",
+  "towerId": "tw-a",
+  "floorId": "fl-ta-2",
+  "officeId": "of-ta-203",
+  "locationNote": "",
+  "priority": "HIGH",
+  "assignedEmployeeId": "st-009",
+  "supervisorId": "sv-6",
+  "ticketId": "",
+  "createdBy": "u-admin",
+  "createdAt": "2026-11-23T16:18:11.044Z",
+  "deadline": "2026-11-24T02:18:11.044Z",
+  "status": "COMPLETED",
+  "progress": 100,
+  "startedAt": "2026-11-23T16:38:11.044Z",
+  "completedAt": "2026-11-23T18:37:11.044Z",
+  "verifiedAt": "2026-11-23T18:47:11.044Z",
+  "verifiedBy": "sv-6",
+  "rating": {
+   "quality": 3,
+   "speed": 3,
+   "professionalism": 5,
+   "cleanliness": 4,
+   "overall": 3.8,
+   "comment": "Excellent job!"
+  },
+  "proof": "",
+  "notes": "",
+  "comments": [],
+  "timeline": [
+   {
+    "at": "2026-11-23T16:18:11.044Z",
+    "label": "Task created"
+   },
+   {
+    "at": "2026-11-23T16:19:11.044Z",
+    "label": "Assigned to Sunita Kumar"
+   },
+   {
+    "at": "2026-11-23T16:28:11.044Z",
+    "label": "Accepted by employee"
+   },
+   {
+    "at": "2026-11-23T16:38:11.044Z",
+    "label": "Work started"
+   },
+   {
+    "at": "2026-11-23T18:37:11.044Z",
+    "label": "Work completed"
+   },
+   {
+    "at": "2026-11-23T18:47:11.044Z",
+    "label": "Verified by supervisor"
+   },
+   {
+    "at": "2026-11-23T18:52:11.044Z",
+    "label": "Rated by supervisor"
+   }
+  ]
+ },
+ {
+  "id": "tk-033",
+  "code": "TASK-133",
+  "title": "Repair reception desk",
+  "description": "Repair reception desk. Please attend and share completion photos.",
+  "category": "Carpenter",
+  "towerId": "tw-b",
+  "floorId": "fl-tb-6",
+  "officeId": "of-tb-602",
+  "locationNote": "",
+  "priority": "HIGH",
+  "assignedEmployeeId": "st-035",
+  "supervisorId": "sv-3",
+  "ticketId": "",
+  "createdBy": "u-admin",
+  "createdAt": "2026-11-21T10:26:11.044Z",
+  "deadline": "2026-11-21T22:26:11.044Z",
+  "status": "COMPLETED",
+  "progress": 100,
+  "startedAt": "2026-11-21T10:46:11.044Z",
+  "completedAt": "2026-11-21T11:45:11.044Z",
+  "verifiedAt": "",
+  "verifiedBy": "",
+  "rating": null,
+  "proof": "",
+  "notes": "",
+  "comments": [],
+  "timeline": [
+   {
+    "at": "2026-11-21T10:26:11.044Z",
+    "label": "Task created"
+   },
+   {
+    "at": "2026-11-21T10:27:11.044Z",
+    "label": "Assigned to Sneha Agarwal"
+   },
+   {
+    "at": "2026-11-21T10:36:11.044Z",
+    "label": "Accepted by employee"
+   },
+   {
+    "at": "2026-11-21T10:46:11.044Z",
+    "label": "Work started"
+   },
+   {
+    "at": "2026-11-21T11:45:11.044Z",
+    "label": "Work completed"
+   }
+  ]
+ },
+ {
+  "id": "tk-034",
+  "code": "TASK-134",
+  "title": "Repaint stairwell",
+  "description": "Repaint stairwell. Please attend and share completion photos.",
+  "category": "Maintenance",
+  "towerId": "tw-a",
+  "floorId": "fl-ta-10",
+  "officeId": "of-ta-1001",
+  "locationNote": "",
+  "priority": "MEDIUM",
+  "assignedEmployeeId": "st-042",
+  "supervisorId": "sv-4",
+  "ticketId": "",
+  "createdBy": "u-admin",
+  "createdAt": "2026-11-21T16:17:11.044Z",
+  "deadline": "2026-11-22T10:17:11.044Z",
+  "status": "COMPLETED",
+  "progress": 100,
+  "startedAt": "2026-11-21T16:37:11.044Z",
+  "completedAt": "2026-11-21T17:58:11.044Z",
+  "verifiedAt": "2026-11-21T18:08:11.044Z",
+  "verifiedBy": "sv-4",
+  "rating": {
+   "quality": 3,
+   "speed": 5,
+   "professionalism": 4,
+   "cleanliness": 3,
+   "overall": 3.8,
+   "comment": "Excellent job!"
+  },
+  "proof": "",
+  "notes": "",
+  "comments": [],
+  "timeline": [
+   {
+    "at": "2026-11-21T16:17:11.044Z",
+    "label": "Task created"
+   },
+   {
+    "at": "2026-11-21T16:18:11.044Z",
+    "label": "Assigned to Rahul Malhotra"
+   },
+   {
+    "at": "2026-11-21T16:27:11.044Z",
+    "label": "Accepted by employee"
+   },
+   {
+    "at": "2026-11-21T16:37:11.044Z",
+    "label": "Work started"
+   },
+   {
+    "at": "2026-11-21T17:58:11.044Z",
+    "label": "Work completed"
+   },
+   {
+    "at": "2026-11-21T18:08:11.044Z",
+    "label": "Verified by supervisor"
+   },
+   {
+    "at": "2026-11-21T18:13:11.044Z",
+    "label": "Rated by supervisor"
+   }
+  ]
+ },
+ {
+  "id": "tk-035",
+  "code": "TASK-135",
+  "title": "Repair reception desk",
+  "description": "Repair reception desk. Please attend and share completion photos.",
+  "category": "Carpenter",
+  "towerId": "tw-b",
+  "floorId": "fl-tb-5",
+  "officeId": "of-tb-504",
+  "locationNote": "",
+  "priority": "LOW",
+  "assignedEmployeeId": "st-036",
+  "supervisorId": "sv-3",
+  "ticketId": "",
+  "createdBy": "u-admin",
+  "createdAt": "2026-11-21T07:11:11.044Z",
+  "deadline": "2026-11-21T11:11:11.044Z",
+  "status": "ON_HOLD",
+  "progress": 27,
+  "startedAt": "2026-11-21T07:31:11.044Z",
+  "completedAt": "",
+  "verifiedAt": "",
+  "verifiedBy": "",
+  "rating": null,
+  "proof": "",
+  "notes": "",
+  "comments": [],
+  "timeline": [
+   {
+    "at": "2026-11-21T07:11:11.044Z",
+    "label": "Task created"
+   },
+   {
+    "at": "2026-11-21T07:12:11.044Z",
+    "label": "Assigned to Sanjay Patel"
+   },
+   {
+    "at": "2026-11-21T07:21:11.044Z",
+    "label": "Accepted by employee"
+   },
+   {
+    "at": "2026-11-21T07:31:11.044Z",
+    "label": "Work started"
+   },
+   {
+    "at": "2026-11-21T08:01:11.044Z",
+    "label": "On hold — waiting for spare parts"
+   }
+  ]
+ },
+ {
+  "id": "tk-036",
+  "code": "TASK-136",
+  "title": "Inspect UPS room wiring",
+  "description": "Inspect UPS room wiring. Please attend and share completion photos.",
+  "category": "Electrician",
+  "towerId": "tw-b",
+  "floorId": "fl-tb-6",
+  "officeId": "of-tb-601",
+  "locationNote": "",
+  "priority": "HIGH",
+  "assignedEmployeeId": "st-001",
+  "supervisorId": "sv-4",
+  "ticketId": "",
+  "createdBy": "u-admin",
+  "createdAt": "2026-11-24T16:53:11.044Z",
+  "deadline": "2026-11-24T22:53:11.044Z",
+  "status": "CANCELLED",
+  "progress": 0,
+  "startedAt": "",
+  "completedAt": "",
+  "verifiedAt": "",
+  "verifiedBy": "",
+  "rating": null,
+  "proof": "",
+  "notes": "",
+  "comments": [],
+  "timeline": [
+   {
+    "at": "2026-11-24T16:53:11.044Z",
+    "label": "Task created"
+   },
+   {
+    "at": "2026-11-24T16:54:11.044Z",
+    "label": "Assigned to Amit Sharma"
+   }
+  ]
+ },
+ {
+  "id": "tk-037",
+  "code": "TASK-137",
+  "title": "Shift storage boxes",
+  "description": "Shift storage boxes. Please attend and share completion photos.",
+  "category": "General Worker",
+  "towerId": "tw-a",
+  "floorId": "fl-ta-8",
+  "officeId": "of-ta-802",
+  "locationNote": "",
+  "priority": "LOW",
+  "assignedEmployeeId": "st-052",
+  "supervisorId": "sv-2",
+  "ticketId": "",
+  "createdBy": "u-admin",
+  "createdAt": "2026-11-23T23:45:11.044Z",
+  "deadline": "2026-11-24T11:45:11.044Z",
+  "status": "REJECTED",
+  "progress": 0,
+  "startedAt": "",
+  "completedAt": "",
+  "verifiedAt": "",
+  "verifiedBy": "",
+  "rating": null,
+  "proof": "",
+  "notes": "",
+  "comments": [],
+  "timeline": [
+   {
+    "at": "2026-11-23T23:45:11.044Z",
+    "label": "Task created"
+   },
+   {
+    "at": "2026-11-23T23:46:11.044Z",
+    "label": "Assigned to Sneha Verma"
+   }
+  ]
+ },
+ {
+  "id": "tk-038",
+  "code": "TASK-138",
+  "title": "Shift storage boxes",
+  "description": "Shift storage boxes. Please attend and share completion photos.",
+  "category": "General Worker",
+  "towerId": "tw-b",
+  "floorId": "fl-tb-3",
+  "officeId": "of-tb-303",
+  "locationNote": "",
+  "priority": "CRITICAL",
+  "assignedEmployeeId": "st-051",
+  "supervisorId": "sv-6",
+  "ticketId": "",
+  "createdBy": "u-admin",
+  "createdAt": "2026-11-22T22:03:11.044Z",
+  "deadline": "2026-11-23T11:03:11.044Z",
+  "status": "ASSIGNED",
+  "progress": 0,
+  "startedAt": "",
+  "completedAt": "",
+  "verifiedAt": "",
+  "verifiedBy": "",
+  "rating": null,
+  "proof": "",
+  "notes": "",
+  "comments": [],
+  "timeline": [
+   {
+    "at": "2026-11-22T22:03:11.044Z",
+    "label": "Task created"
+   },
+   {
+    "at": "2026-11-22T22:04:11.044Z",
+    "label": "Assigned to Yash Das"
+   }
+  ]
+ },
+ {
+  "id": "tk-039",
+  "code": "TASK-139",
+  "title": "Repaint stairwell",
+  "description": "Repaint stairwell. Please attend and share completion photos.",
+  "category": "Maintenance",
+  "towerId": "tw-b",
+  "floorId": "fl-tb-1",
+  "officeId": "of-tb-105",
+  "locationNote": "",
+  "priority": "HIGH",
+  "assignedEmployeeId": "st-045",
+  "supervisorId": "sv-3",
+  "ticketId": "",
+  "createdBy": "u-admin",
+  "createdAt": "2026-11-23T05:23:11.044Z",
+  "deadline": "2026-11-24T05:23:11.044Z",
+  "status": "ACCEPTED",
+  "progress": 0,
+  "startedAt": "",
+  "completedAt": "",
+  "verifiedAt": "",
+  "verifiedBy": "",
+  "rating": null,
+  "proof": "",
+  "notes": "",
+  "comments": [],
+  "timeline": [
+   {
+    "at": "2026-11-23T05:23:11.044Z",
+    "label": "Task created"
+   },
+   {
+    "at": "2026-11-23T05:24:11.044Z",
+    "label": "Assigned to Gaurav Kumar"
+   },
+   {
+    "at": "2026-11-23T05:33:11.044Z",
+    "label": "Accepted by employee"
+   }
+  ]
+ },
+ {
+  "id": "tk-040",
+  "code": "TASK-140",
+  "title": "Clear drainage block",
+  "description": "Clear drainage block. Please attend and share completion photos.",
+  "category": "Plumber",
+  "towerId": "tw-b",
+  "floorId": "fl-tb-1",
+  "officeId": "of-tb-104",
+  "locationNote": "",
+  "priority": "MEDIUM",
+  "assignedEmployeeId": "st-009",
+  "supervisorId": "sv-6",
+  "ticketId": "",
+  "createdBy": "u-admin",
+  "createdAt": "2026-11-23T03:19:11.044Z",
+  "deadline": "2026-11-23T12:19:11.044Z",
+  "status": "IN_PROGRESS",
+  "progress": 51,
+  "startedAt": "2026-11-23T03:39:11.044Z",
+  "completedAt": "",
+  "verifiedAt": "",
+  "verifiedBy": "",
+  "rating": null,
+  "proof": "",
+  "notes": "",
+  "comments": [],
+  "timeline": [
+   {
+    "at": "2026-11-23T03:19:11.044Z",
+    "label": "Task created"
+   },
+   {
+    "at": "2026-11-23T03:20:11.044Z",
+    "label": "Assigned to Sunita Kumar"
+   },
+   {
+    "at": "2026-11-23T03:29:11.044Z",
+    "label": "Accepted by employee"
+   },
+   {
+    "at": "2026-11-23T03:39:11.044Z",
+    "label": "Work started"
+   }
+  ]
+ },
+ {
+  "id": "tk-041",
+  "code": "TASK-141",
+  "title": "Deep clean lobby",
+  "description": "Deep clean lobby. Please attend and share completion photos.",
+  "category": "Cleaner",
+  "towerId": "tw-a",
+  "floorId": "fl-ta-1",
+  "officeId": "of-ta-106",
+  "locationNote": "",
+  "priority": "HIGH",
+  "assignedEmployeeId": "st-019",
+  "supervisorId": "sv-5",
+  "ticketId": "",
+  "createdBy": "u-admin",
+  "createdAt": "2026-11-22T13:52:11.044Z",
+  "deadline": "2026-11-22T18:52:11.044Z",
+  "status": "COMPLETED",
+  "progress": 100,
+  "startedAt": "2026-11-22T14:12:11.044Z",
+  "completedAt": "2026-11-22T15:48:11.044Z",
+  "verifiedAt": "",
+  "verifiedBy": "",
+  "rating": null,
+  "proof": "",
+  "notes": "",
+  "comments": [],
+  "timeline": [
+   {
+    "at": "2026-11-22T13:52:11.044Z",
+    "label": "Task created"
+   },
+   {
+    "at": "2026-11-22T13:53:11.044Z",
+    "label": "Assigned to Rajesh Verma"
+   },
+   {
+    "at": "2026-11-22T14:02:11.044Z",
+    "label": "Accepted by employee"
+   },
+   {
+    "at": "2026-11-22T14:12:11.044Z",
+    "label": "Work started"
+   },
+   {
+    "at": "2026-11-22T15:48:11.044Z",
+    "label": "Work completed"
+   }
+  ]
+ },
+ {
+  "id": "tk-042",
+  "code": "TASK-142",
+  "title": "Night patrol check",
+  "description": "Night patrol check. Please attend and share completion photos.",
+  "category": "Security",
+  "towerId": "tw-a",
+  "floorId": "fl-ta-7",
+  "officeId": "of-ta-704",
+  "locationNote": "",
+  "priority": "HIGH",
+  "assignedEmployeeId": "st-024",
+  "supervisorId": "sv-2",
+  "ticketId": "",
+  "createdBy": "u-admin",
+  "createdAt": "2026-11-24T08:01:11.044Z",
+  "deadline": "2026-11-25T13:01:11.044Z",
+  "status": "COMPLETED",
+  "progress": 100,
+  "startedAt": "2026-11-24T08:21:11.044Z",
+  "completedAt": "2026-11-24T08:53:11.044Z",
+  "verifiedAt": "",
+  "verifiedBy": "",
+  "rating": null,
+  "proof": "",
+  "notes": "",
+  "comments": [],
+  "timeline": [
+   {
+    "at": "2026-11-24T08:01:11.044Z",
+    "label": "Task created"
+   },
+   {
+    "at": "2026-11-24T08:02:11.044Z",
+    "label": "Assigned to Nisha Mehta"
+   },
+   {
+    "at": "2026-11-24T08:11:11.044Z",
+    "label": "Accepted by employee"
+   },
+   {
+    "at": "2026-11-24T08:21:11.044Z",
+    "label": "Work started"
+   },
+   {
+    "at": "2026-11-24T08:53:11.044Z",
+    "label": "Work completed"
+   }
+  ]
+ },
+ {
+  "id": "tk-043",
+  "code": "TASK-143",
+  "title": "Event setup support",
+  "description": "Event setup support. Please attend and share completion photos.",
+  "category": "Other",
+  "towerId": "tw-a",
+  "floorId": "fl-ta-9",
+  "officeId": "of-ta-904",
+  "locationNote": "",
+  "priority": "CRITICAL",
+  "assignedEmployeeId": "st-053",
+  "supervisorId": "sv-4",
+  "ticketId": "",
+  "createdBy": "u-admin",
+  "createdAt": "2026-11-24T13:54:11.044Z",
+  "deadline": "2026-11-25T19:54:11.044Z",
+  "status": "COMPLETED",
+  "progress": 100,
+  "startedAt": "2026-11-24T14:14:11.044Z",
+  "completedAt": "2026-11-24T16:11:11.044Z",
+  "verifiedAt": "2026-11-24T16:21:11.044Z",
+  "verifiedBy": "sv-4",
+  "rating": {
+   "quality": 4,
+   "speed": 3,
+   "professionalism": 5,
+   "cleanliness": 4,
+   "overall": 4,
+   "comment": "Good work."
+  },
+  "proof": "",
+  "notes": "",
+  "comments": [],
+  "timeline": [
+   {
+    "at": "2026-11-24T13:54:11.044Z",
+    "label": "Task created"
+   },
+   {
+    "at": "2026-11-24T13:55:11.044Z",
+    "label": "Assigned to Isha Mehta"
+   },
+   {
+    "at": "2026-11-24T14:04:11.044Z",
+    "label": "Accepted by employee"
+   },
+   {
+    "at": "2026-11-24T14:14:11.044Z",
+    "label": "Work started"
+   },
+   {
+    "at": "2026-11-24T16:11:11.044Z",
+    "label": "Work completed"
+   },
+   {
+    "at": "2026-11-24T16:21:11.044Z",
+    "label": "Verified by supervisor"
+   },
+   {
+    "at": "2026-11-24T16:26:11.044Z",
+    "label": "Rated by supervisor"
+   }
+  ]
+ },
+ {
+  "id": "tk-044",
+  "code": "TASK-144",
+  "title": "Event setup support",
+  "description": "Event setup support. Please attend and share completion photos.",
+  "category": "Other",
+  "towerId": "tw-a",
+  "floorId": "fl-ta-2",
+  "officeId": "of-ta-205",
+  "locationNote": "",
+  "priority": "CRITICAL",
+  "assignedEmployeeId": "st-053",
+  "supervisorId": "sv-4",
+  "ticketId": "",
+  "createdBy": "u-admin",
+  "createdAt": "2026-11-21T02:16:11.044Z",
+  "deadline": "2026-11-21T15:16:11.044Z",
+  "status": "ON_HOLD",
+  "progress": 61,
+  "startedAt": "2026-11-21T02:36:11.044Z",
+  "completedAt": "",
+  "verifiedAt": "",
+  "verifiedBy": "",
+  "rating": null,
+  "proof": "",
+  "notes": "",
+  "comments": [],
+  "timeline": [
+   {
+    "at": "2026-11-21T02:16:11.044Z",
+    "label": "Task created"
+   },
+   {
+    "at": "2026-11-21T02:17:11.044Z",
+    "label": "Assigned to Isha Mehta"
+   },
+   {
+    "at": "2026-11-21T02:26:11.044Z",
+    "label": "Accepted by employee"
+   },
+   {
+    "at": "2026-11-21T02:36:11.044Z",
+    "label": "Work started"
+   },
+   {
+    "at": "2026-11-21T03:06:11.044Z",
+    "label": "On hold — waiting for spare parts"
+   }
+  ]
+ },
+ {
+  "id": "tk-045",
+  "code": "TASK-145",
+  "title": "Event setup support",
+  "description": "Event setup support. Please attend and share completion photos.",
+  "category": "Other",
+  "towerId": "tw-a",
+  "floorId": "fl-ta-5",
+  "officeId": "of-ta-503",
+  "locationNote": "",
+  "priority": "MEDIUM",
+  "assignedEmployeeId": "st-054",
+  "supervisorId": "sv-5",
+  "ticketId": "",
+  "createdBy": "u-admin",
+  "createdAt": "2026-11-24T05:18:11.044Z",
+  "deadline": "2026-11-24T17:18:11.044Z",
+  "status": "CANCELLED",
+  "progress": 0,
+  "startedAt": "",
+  "completedAt": "",
+  "verifiedAt": "",
+  "verifiedBy": "",
+  "rating": null,
+  "proof": "",
+  "notes": "",
+  "comments": [],
+  "timeline": [
+   {
+    "at": "2026-11-24T05:18:11.044Z",
+    "label": "Task created"
+   },
+   {
+    "at": "2026-11-24T05:19:11.044Z",
+    "label": "Assigned to Nikhil Patel"
+   }
+  ]
+ },
+ {
+  "id": "tk-046",
+  "code": "TASK-146",
+  "title": "Shift storage boxes",
+  "description": "Shift storage boxes. Please attend and share completion photos.",
+  "category": "General Worker",
+  "towerId": "tw-b",
+  "floorId": "fl-tb-3",
+  "officeId": "of-tb-304",
+  "locationNote": "",
+  "priority": "HIGH",
+  "assignedEmployeeId": "st-052",
+  "supervisorId": "sv-2",
+  "ticketId": "",
+  "createdBy": "u-admin",
+  "createdAt": "2026-11-24T04:52:11.044Z",
+  "deadline": "2026-11-24T12:52:11.044Z",
+  "status": "REJECTED",
+  "progress": 0,
+  "startedAt": "",
+  "completedAt": "",
+  "verifiedAt": "",
+  "verifiedBy": "",
+  "rating": null,
+  "proof": "",
+  "notes": "",
+  "comments": [],
+  "timeline": [
+   {
+    "at": "2026-11-24T04:52:11.044Z",
+    "label": "Task created"
+   },
+   {
+    "at": "2026-11-24T04:53:11.044Z",
+    "label": "Assigned to Sneha Verma"
+   }
+  ]
+ },
+ {
+  "id": "tk-047",
+  "code": "TASK-147",
+  "title": "Quarterly AC service",
+  "description": "Quarterly AC service. Please attend and share completion photos.",
+  "category": "HVAC Technician",
+  "towerId": "tw-a",
+  "floorId": "fl-ta-8",
+  "officeId": "of-ta-802",
+  "locationNote": "",
+  "priority": "HIGH",
+  "assignedEmployeeId": "st-032",
+  "supervisorId": "sv-6",
+  "ticketId": "",
+  "createdBy": "u-admin",
+  "createdAt": "2026-11-20T13:13:11.044Z",
+  "deadline": "2026-11-21T09:13:11.044Z",
+  "status": "ASSIGNED",
+  "progress": 0,
+  "startedAt": "",
+  "completedAt": "",
+  "verifiedAt": "",
+  "verifiedBy": "",
+  "rating": null,
+  "proof": "",
+  "notes": "",
+  "comments": [],
+  "timeline": [
+   {
+    "at": "2026-11-20T13:13:11.044Z",
+    "label": "Task created"
+   },
+   {
+    "at": "2026-11-20T13:14:11.044Z",
+    "label": "Assigned to Anjali Nair"
+   }
+  ]
+ },
+ {
+  "id": "tk-048",
+  "code": "TASK-148",
+  "title": "Quarterly AC service",
+  "description": "Quarterly AC service. Please attend and share completion photos.",
+  "category": "HVAC Technician",
+  "towerId": "tw-b",
+  "floorId": "fl-tb-3",
+  "officeId": "of-tb-301",
+  "locationNote": "",
+  "priority": "MEDIUM",
+  "assignedEmployeeId": "st-029",
+  "supervisorId": "sv-6",
+  "ticketId": "",
+  "createdBy": "u-admin",
+  "createdAt": "2026-11-24T23:03:11.044Z",
+  "deadline": "2026-11-25T17:03:11.044Z",
+  "status": "ACCEPTED",
+  "progress": 0,
+  "startedAt": "",
+  "completedAt": "",
+  "verifiedAt": "",
+  "verifiedBy": "",
+  "rating": null,
+  "proof": "",
+  "notes": "",
+  "comments": [],
+  "timeline": [
+   {
+    "at": "2026-11-24T23:03:11.044Z",
+    "label": "Task created"
+   },
+   {
+    "at": "2026-11-24T23:04:11.044Z",
+    "label": "Assigned to Rahul Chopra"
+   },
+   {
+    "at": "2026-11-24T23:13:11.044Z",
+    "label": "Accepted by employee"
+   }
+  ]
+ },
+ {
+  "id": "tk-049",
+  "code": "TASK-149",
+  "title": "Event setup support",
+  "description": "Event setup support. Please attend and share completion photos.",
+  "category": "Other",
+  "towerId": "tw-a",
+  "floorId": "fl-ta-10",
+  "officeId": "of-ta-1003",
+  "locationNote": "",
+  "priority": "HIGH",
+  "assignedEmployeeId": "st-053",
+  "supervisorId": "sv-4",
+  "ticketId": "",
+  "createdBy": "u-admin",
+  "createdAt": "2026-11-21T17:33:11.044Z",
+  "deadline": "2026-11-22T20:33:11.044Z",
+  "status": "IN_PROGRESS",
+  "progress": 55,
+  "startedAt": "2026-11-21T17:53:11.044Z",
+  "completedAt": "",
+  "verifiedAt": "",
+  "verifiedBy": "",
+  "rating": null,
+  "proof": "",
+  "notes": "",
+  "comments": [],
+  "timeline": [
+   {
+    "at": "2026-11-21T17:33:11.044Z",
+    "label": "Task created"
+   },
+   {
+    "at": "2026-11-21T17:34:11.044Z",
+    "label": "Assigned to Isha Mehta"
+   },
+   {
+    "at": "2026-11-21T17:43:11.044Z",
+    "label": "Accepted by employee"
+   },
+   {
+    "at": "2026-11-21T17:53:11.044Z",
+    "label": "Work started"
+   }
+  ]
+ },
+ {
+  "id": "tk-050",
+  "code": "TASK-150",
+  "title": "Night patrol check",
+  "description": "Night patrol check. Please attend and share completion photos.",
+  "category": "Security",
+  "towerId": "tw-a",
+  "floorId": "fl-ta-5",
+  "officeId": "of-ta-502",
+  "locationNote": "",
+  "priority": "HIGH",
+  "assignedEmployeeId": "st-028",
+  "supervisorId": "sv-4",
+  "ticketId": "",
+  "createdBy": "u-admin",
+  "createdAt": "2026-11-24T06:31:11.044Z",
+  "deadline": "2026-11-24T09:31:11.044Z",
+  "status": "COMPLETED",
+  "progress": 100,
+  "startedAt": "2026-11-24T06:51:11.044Z",
+  "completedAt": "2026-11-24T07:53:11.044Z",
+  "verifiedAt": "2026-11-24T08:03:11.044Z",
+  "verifiedBy": "sv-4",
+  "rating": {
+   "quality": 4,
+   "speed": 3,
+   "professionalism": 4,
+   "cleanliness": 4,
+   "overall": 3.8,
+   "comment": "Satisfactory."
+  },
+  "proof": "",
+  "notes": "",
+  "comments": [],
+  "timeline": [
+   {
+    "at": "2026-11-24T06:31:11.044Z",
+    "label": "Task created"
+   },
+   {
+    "at": "2026-11-24T06:32:11.044Z",
+    "label": "Assigned to Aarti Malhotra"
+   },
+   {
+    "at": "2026-11-24T06:41:11.044Z",
+    "label": "Accepted by employee"
+   },
+   {
+    "at": "2026-11-24T06:51:11.044Z",
+    "label": "Work started"
+   },
+   {
+    "at": "2026-11-24T07:53:11.044Z",
+    "label": "Work completed"
+   },
+   {
+    "at": "2026-11-24T08:03:11.044Z",
+    "label": "Verified by supervisor"
+   },
+   {
+    "at": "2026-11-24T08:08:11.044Z",
+    "label": "Rated by supervisor"
+   }
+  ]
+ },
+ {
+  "id": "tk-051",
+  "code": "TASK-151",
+  "title": "Inspect UPS room wiring",
+  "description": "Inspect UPS room wiring. Please attend and share completion photos.",
+  "category": "Electrician",
+  "towerId": "tw-b",
+  "floorId": "fl-tb-6",
+  "officeId": "of-tb-605",
+  "locationNote": "",
+  "priority": "HIGH",
+  "assignedEmployeeId": "st-002",
+  "supervisorId": "sv-5",
+  "ticketId": "",
+  "createdBy": "u-admin",
+  "createdAt": "2026-11-23T19:49:11.044Z",
+  "deadline": "2026-11-24T18:49:11.044Z",
+  "status": "COMPLETED",
+  "progress": 100,
+  "startedAt": "2026-11-23T20:09:11.044Z",
+  "completedAt": "2026-11-23T22:07:11.044Z",
+  "verifiedAt": "2026-11-23T22:17:11.044Z",
+  "verifiedBy": "sv-5",
+  "rating": {
+   "quality": 3,
+   "speed": 4,
+   "professionalism": 5,
+   "cleanliness": 4,
+   "overall": 4,
+   "comment": "Excellent job!"
+  },
+  "proof": "",
+  "notes": "",
+  "comments": [],
+  "timeline": [
+   {
+    "at": "2026-11-23T19:49:11.044Z",
+    "label": "Task created"
+   },
+   {
+    "at": "2026-11-23T19:50:11.044Z",
+    "label": "Assigned to Isha Iyer"
+   },
+   {
+    "at": "2026-11-23T19:59:11.044Z",
+    "label": "Accepted by employee"
+   },
+   {
+    "at": "2026-11-23T20:09:11.044Z",
+    "label": "Work started"
+   },
+   {
+    "at": "2026-11-23T22:07:11.044Z",
+    "label": "Work completed"
+   },
+   {
+    "at": "2026-11-23T22:17:11.044Z",
+    "label": "Verified by supervisor"
+   },
+   {
+    "at": "2026-11-23T22:22:11.044Z",
+    "label": "Rated by supervisor"
+   }
+  ]
+ },
+ {
+  "id": "tk-052",
+  "code": "TASK-152",
+  "title": "Repaint stairwell",
+  "description": "Repaint stairwell. Please attend and share completion photos.",
+  "category": "Maintenance",
+  "towerId": "tw-b",
+  "floorId": "fl-tb-4",
+  "officeId": "of-tb-403",
+  "locationNote": "",
+  "priority": "MEDIUM",
+  "assignedEmployeeId": "st-045",
+  "supervisorId": "sv-3",
+  "ticketId": "",
+  "createdBy": "u-admin",
+  "createdAt": "2026-11-20T15:33:11.044Z",
+  "deadline": "2026-11-21T06:33:11.044Z",
+  "status": "COMPLETED",
+  "progress": 100,
+  "startedAt": "2026-11-20T15:53:11.044Z",
+  "completedAt": "2026-11-20T17:11:11.044Z",
+  "verifiedAt": "2026-11-20T17:21:11.044Z",
+  "verifiedBy": "sv-3",
+  "rating": {
+   "quality": 5,
+   "speed": 4,
+   "professionalism": 4,
+   "cleanliness": 3,
+   "overall": 4,
+   "comment": "Good work."
+  },
+  "proof": "",
+  "notes": "",
+  "comments": [],
+  "timeline": [
+   {
+    "at": "2026-11-20T15:33:11.044Z",
+    "label": "Task created"
+   },
+   {
+    "at": "2026-11-20T15:34:11.044Z",
+    "label": "Assigned to Gaurav Kumar"
+   },
+   {
+    "at": "2026-11-20T15:43:11.044Z",
+    "label": "Accepted by employee"
+   },
+   {
+    "at": "2026-11-20T15:53:11.044Z",
+    "label": "Work started"
+   },
+   {
+    "at": "2026-11-20T17:11:11.044Z",
+    "label": "Work completed"
+   },
+   {
+    "at": "2026-11-20T17:21:11.044Z",
+    "label": "Verified by supervisor"
+   },
+   {
+    "at": "2026-11-20T17:26:11.044Z",
+    "label": "Rated by supervisor"
+   }
+  ]
+ },
+ {
+  "id": "tk-053",
+  "code": "TASK-153",
+  "title": "Quarterly AC service",
+  "description": "Quarterly AC service. Please attend and share completion photos.",
+  "category": "HVAC Technician",
+  "towerId": "tw-b",
+  "floorId": "fl-tb-8",
+  "officeId": "of-tb-806",
+  "locationNote": "",
+  "priority": "HIGH",
+  "assignedEmployeeId": "st-033",
+  "supervisorId": "sv-1",
+  "ticketId": "",
+  "createdBy": "u-admin",
+  "createdAt": "2026-11-22T13:04:11.044Z",
+  "deadline": "2026-11-23T12:04:11.044Z",
+  "status": "ON_HOLD",
+  "progress": 43,
+  "startedAt": "2026-11-22T13:24:11.044Z",
+  "completedAt": "",
+  "verifiedAt": "",
+  "verifiedBy": "",
+  "rating": null,
+  "proof": "",
+  "notes": "",
+  "comments": [],
+  "timeline": [
+   {
+    "at": "2026-11-22T13:04:11.044Z",
+    "label": "Task created"
+   },
+   {
+    "at": "2026-11-22T13:05:11.044Z",
+    "label": "Assigned to Ritu Kumar"
+   },
+   {
+    "at": "2026-11-22T13:14:11.044Z",
+    "label": "Accepted by employee"
+   },
+   {
+    "at": "2026-11-22T13:24:11.044Z",
+    "label": "Work started"
+   },
+   {
+    "at": "2026-11-22T13:54:11.044Z",
+    "label": "On hold — waiting for spare parts"
+   }
+  ]
+ },
+ {
+  "id": "tk-054",
+  "code": "TASK-154",
+  "title": "Event setup support",
+  "description": "Event setup support. Please attend and share completion photos.",
+  "category": "Other",
+  "towerId": "tw-b",
+  "floorId": "fl-tb-8",
+  "officeId": "of-tb-806",
+  "locationNote": "",
+  "priority": "CRITICAL",
+  "assignedEmployeeId": "st-053",
+  "supervisorId": "sv-4",
+  "ticketId": "",
+  "createdBy": "u-admin",
+  "createdAt": "2026-11-21T22:40:11.044Z",
+  "deadline": "2026-11-22T08:40:11.044Z",
+  "status": "CANCELLED",
+  "progress": 0,
+  "startedAt": "",
+  "completedAt": "",
+  "verifiedAt": "",
+  "verifiedBy": "",
+  "rating": null,
+  "proof": "",
+  "notes": "",
+  "comments": [],
+  "timeline": [
+   {
+    "at": "2026-11-21T22:40:11.044Z",
+    "label": "Task created"
+   },
+   {
+    "at": "2026-11-21T22:41:11.044Z",
+    "label": "Assigned to Isha Mehta"
+   }
+  ]
+ },
+ {
+  "id": "tk-055",
+  "code": "TASK-155",
+  "title": "Inspect UPS room wiring",
+  "description": "Inspect UPS room wiring. Please attend and share completion photos.",
+  "category": "Electrician",
+  "towerId": "tw-b",
+  "floorId": "fl-tb-1",
+  "officeId": "of-tb-102",
+  "locationNote": "",
+  "priority": "MEDIUM",
+  "assignedEmployeeId": "st-007",
+  "supervisorId": "sv-1",
+  "ticketId": "",
+  "createdBy": "u-admin",
+  "createdAt": "2026-11-23T05:51:11.044Z",
+  "deadline": "2026-11-24T05:51:11.044Z",
+  "status": "REJECTED",
+  "progress": 0,
+  "startedAt": "",
+  "completedAt": "",
+  "verifiedAt": "",
+  "verifiedBy": "",
+  "rating": null,
+  "proof": "",
+  "notes": "",
+  "comments": [],
+  "timeline": [
+   {
+    "at": "2026-11-23T05:51:11.044Z",
+    "label": "Task created"
+   },
+   {
+    "at": "2026-11-23T05:52:11.044Z",
+    "label": "Assigned to Suresh Singh"
+   }
+  ]
+ },
+ {
+  "id": "tk-056",
+  "code": "TASK-156",
+  "title": "Clear drainage block",
+  "description": "Clear drainage block. Please attend and share completion photos.",
+  "category": "Plumber",
+  "towerId": "tw-a",
+  "floorId": "fl-ta-6",
+  "officeId": "of-ta-605",
+  "locationNote": "",
+  "priority": "LOW",
+  "assignedEmployeeId": "st-012",
+  "supervisorId": "sv-3",
+  "ticketId": "",
+  "createdBy": "u-admin",
+  "createdAt": "2026-11-21T12:03:11.044Z",
+  "deadline": "2026-11-22T09:03:11.044Z",
+  "status": "ASSIGNED",
+  "progress": 0,
+  "startedAt": "",
+  "completedAt": "",
+  "verifiedAt": "",
+  "verifiedBy": "",
+  "rating": null,
+  "proof": "",
+  "notes": "",
+  "comments": [],
+  "timeline": [
+   {
+    "at": "2026-11-21T12:03:11.044Z",
+    "label": "Task created"
+   },
+   {
+    "at": "2026-11-21T12:04:11.044Z",
+    "label": "Assigned to Ajay Verma"
+   }
+  ]
+ },
+ {
+  "id": "tk-057",
+  "code": "TASK-157",
+  "title": "Fix electricity issue — Office 702",
+  "description": "Fix electricity issue — Office 702. Please attend and share completion photos.",
+  "category": "Electrician",
+  "towerId": "tw-a",
+  "floorId": "fl-ta-7",
+  "officeId": "of-ta-702",
+  "locationNote": "",
+  "priority": "HIGH",
+  "assignedEmployeeId": "st-001",
+  "supervisorId": "sv-4",
+  "ticketId": "",
+  "createdBy": "u-admin",
+  "createdAt": "2026-11-25T07:45:11.044Z",
+  "deadline": "2026-11-26T06:45:11.044Z",
+  "status": "ASSIGNED",
+  "progress": 0,
+  "startedAt": "",
+  "completedAt": "",
+  "verifiedAt": "",
+  "verifiedBy": "",
+  "rating": null,
+  "proof": "",
+  "notes": "",
+  "comments": [],
+  "timeline": [
+   {
+    "at": "2026-11-25T07:45:11.044Z",
+    "label": "Task created"
+   },
+   {
+    "at": "2026-11-25T07:46:11.044Z",
+    "label": "Assigned to Amit Sharma"
+   }
+  ]
+ },
+ {
+  "id": "tk-058",
+  "code": "TASK-158",
+  "title": "Replace tube lights — Floor 3 corridor",
+  "description": "Replace tube lights — Floor 3 corridor. Please attend and share completion photos.",
+  "category": "Electrician",
+  "towerId": "tw-a",
+  "floorId": "fl-ta-3",
+  "officeId": "of-ta-301",
+  "locationNote": "",
+  "priority": "MEDIUM",
+  "assignedEmployeeId": "st-001",
+  "supervisorId": "sv-4",
+  "ticketId": "",
+  "createdBy": "u-admin",
+  "createdAt": "2026-11-25T06:30:11.044Z",
+  "deadline": "2026-11-26T06:30:11.044Z",
+  "status": "IN_PROGRESS",
+  "progress": 74,
+  "startedAt": "2026-11-25T06:50:11.044Z",
+  "completedAt": "",
+  "verifiedAt": "",
+  "verifiedBy": "",
+  "rating": null,
+  "proof": "",
+  "notes": "",
+  "comments": [],
+  "timeline": [
+   {
+    "at": "2026-11-25T06:30:11.044Z",
+    "label": "Task created"
+   },
+   {
+    "at": "2026-11-25T06:31:11.044Z",
+    "label": "Assigned to Amit Sharma"
+   },
+   {
+    "at": "2026-11-25T06:40:11.044Z",
+    "label": "Accepted by employee"
+   },
+   {
+    "at": "2026-11-25T06:50:11.044Z",
+    "label": "Work started"
+   }
+  ]
+ }
+]

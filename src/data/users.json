@@ -1,0 +1,74 @@
+[
+ {
+  "id": "u-super",
+  "name": "Ravi Malhotra",
+  "email": "super@towerflow.in",
+  "password": "demo123",
+  "role": "SUPER_ADMIN",
+  "refId": "",
+  "phone": "9810000001"
+ },
+ {
+  "id": "u-admin",
+  "name": "Anil Kapoor",
+  "email": "admin@towerflow.in",
+  "password": "demo123",
+  "role": "ADMIN",
+  "refId": "",
+  "phone": "9810000002"
+ },
+ {
+  "id": "u-sup",
+  "name": "Vikash Kumar",
+  "email": "supervisor@towerflow.in",
+  "password": "demo123",
+  "role": "SUPERVISOR",
+  "refId": "sv-1",
+  "phone": "9304986877"
+ },
+ {
+  "id": "u-guard",
+  "name": "Ramesh Yadav",
+  "email": "guard@towerflow.in",
+  "password": "demo123",
+  "role": "SECURITY_GUARD",
+  "refId": "",
+  "phone": "9810000004"
+ },
+ {
+  "id": "u-guard2",
+  "name": "Bhupender Singh",
+  "email": "guard2@towerflow.in",
+  "password": "demo123",
+  "role": "SECURITY_GUARD",
+  "refId": "",
+  "phone": "9810000005"
+ },
+ {
+  "id": "u-oadmin",
+  "name": "Anjali Das",
+  "email": "office@towerflow.in",
+  "password": "demo123",
+  "role": "OFFICE_ADMIN",
+  "refId": "oe-001",
+  "phone": "9908632389"
+ },
+ {
+  "id": "u-oemp",
+  "name": "Nisha Yadav",
+  "email": "employee@towerflow.in",
+  "password": "demo123",
+  "role": "OFFICE_EMPLOYEE",
+  "refId": "oe-002",
+  "phone": "9725867564"
+ },
+ {
+  "id": "u-staff",
+  "name": "Amit Sharma",
+  "email": "staff@towerflow.in",
+  "password": "demo123",
+  "role": "STAFF",
+  "refId": "st-001",
+  "phone": "9266113197"
+ }
+]

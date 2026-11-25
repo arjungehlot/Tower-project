@@ -1,0 +1,242 @@
+[
+ {
+  "id": "au-001",
+  "user": "Admin",
+  "action": "assigned Ticket #TK-1024 to Amit",
+  "module": "Tickets",
+  "entity": "TK-1024",
+  "timestamp": "2026-11-25T07:48:11.044Z",
+  "ip": "192.168.1.19",
+  "device": "Chrome · Windows"
+ },
+ {
+  "id": "au-002",
+  "user": "Admin",
+  "action": "changed Office 1004 status",
+  "module": "Offices",
+  "entity": "Office 1004",
+  "timestamp": "2026-11-25T06:37:11.044Z",
+  "ip": "192.168.1.53",
+  "device": "Safari · iPad"
+ },
+ {
+  "id": "au-003",
+  "user": "Supervisor",
+  "action": "rated task #TASK-102",
+  "module": "Tasks",
+  "entity": "TASK-102",
+  "timestamp": "2026-11-25T05:26:11.044Z",
+  "ip": "192.168.1.62",
+  "device": "Edge · Windows"
+ },
+ {
+  "id": "au-004",
+  "user": "Guard",
+  "action": "allowed entry for a visitor",
+  "module": "Visitors",
+  "entity": "Visitor",
+  "timestamp": "2026-11-25T04:15:11.044Z",
+  "ip": "192.168.1.15",
+  "device": "Edge · Windows"
+ },
+ {
+  "id": "au-005",
+  "user": "Admin",
+  "action": "added tenant Nova Cybersecurity",
+  "module": "Tenants",
+  "entity": "Nova Cybersecurity",
+  "timestamp": "2026-11-25T03:04:11.044Z",
+  "ip": "192.168.1.72",
+  "device": "Chrome · Android"
+ },
+ {
+  "id": "au-006",
+  "user": "Admin",
+  "action": "updated rent for Office 502",
+  "module": "Offices",
+  "entity": "Office 502",
+  "timestamp": "2026-11-25T01:53:11.044Z",
+  "ip": "192.168.1.26",
+  "device": "Chrome · Android"
+ },
+ {
+  "id": "au-007",
+  "user": "Admin",
+  "action": "assigned Ticket #TK-1024 to Amit",
+  "module": "Tickets",
+  "entity": "TK-1024",
+  "timestamp": "2026-11-25T00:42:11.044Z",
+  "ip": "192.168.1.36",
+  "device": "Chrome · Android"
+ },
+ {
+  "id": "au-008",
+  "user": "Admin",
+  "action": "changed Office 1004 status",
+  "module": "Offices",
+  "entity": "Office 1004",
+  "timestamp": "2026-11-24T23:31:11.044Z",
+  "ip": "192.168.1.55",
+  "device": "Edge · Windows"
+ },
+ {
+  "id": "au-009",
+  "user": "Supervisor",
+  "action": "rated task #TASK-102",
+  "module": "Tasks",
+  "entity": "TASK-102",
+  "timestamp": "2026-11-24T22:20:11.044Z",
+  "ip": "192.168.1.80",
+  "device": "Edge · Windows"
+ },
+ {
+  "id": "au-010",
+  "user": "Guard",
+  "action": "allowed entry for a visitor",
+  "module": "Visitors",
+  "entity": "Visitor",
+  "timestamp": "2026-11-24T21:09:11.044Z",
+  "ip": "192.168.1.16",
+  "device": "Edge · Windows"
+ },
+ {
+  "id": "au-011",
+  "user": "Admin",
+  "action": "added tenant Nova Cybersecurity",
+  "module": "Tenants",
+  "entity": "Nova Cybersecurity",
+  "timestamp": "2026-11-24T19:58:11.044Z",
+  "ip": "192.168.1.76",
+  "device": "Chrome · Windows"
+ },
+ {
+  "id": "au-012",
+  "user": "Admin",
+  "action": "updated rent for Office 502",
+  "module": "Offices",
+  "entity": "Office 502",
+  "timestamp": "2026-11-24T18:47:11.044Z",
+  "ip": "192.168.1.74",
+  "device": "Safari · iPad"
+ },
+ {
+  "id": "au-013",
+  "user": "Admin",
+  "action": "assigned Ticket #TK-1024 to Amit",
+  "module": "Tickets",
+  "entity": "TK-1024",
+  "timestamp": "2026-11-24T17:36:11.044Z",
+  "ip": "192.168.1.77",
+  "device": "Chrome · Windows"
+ },
+ {
+  "id": "au-014",
+  "user": "Admin",
+  "action": "changed Office 1004 status",
+  "module": "Offices",
+  "entity": "Office 1004",
+  "timestamp": "2026-11-24T16:25:11.044Z",
+  "ip": "192.168.1.45",
+  "device": "Edge · Windows"
+ },
+ {
+  "id": "au-015",
+  "user": "Supervisor",
+  "action": "rated task #TASK-102",
+  "module": "Tasks",
+  "entity": "TASK-102",
+  "timestamp": "2026-11-24T15:14:11.044Z",
+  "ip": "192.168.1.24",
+  "device": "Chrome · Windows"
+ },
+ {
+  "id": "au-016",
+  "user": "Guard",
+  "action": "allowed entry for a visitor",
+  "module": "Visitors",
+  "entity": "Visitor",
+  "timestamp": "2026-11-24T14:03:11.044Z",
+  "ip": "192.168.1.59",
+  "device": "Safari · iPad"
+ },
+ {
+  "id": "au-017",
+  "user": "Admin",
+  "action": "added tenant Nova Cybersecurity",
+  "module": "Tenants",
+  "entity": "Nova Cybersecurity",
+  "timestamp": "2026-11-24T12:52:11.044Z",
+  "ip": "192.168.1.83",
+  "device": "Chrome · Android"
+ },
+ {
+  "id": "au-018",
+  "user": "Admin",
+  "action": "updated rent for Office 502",
+  "module": "Offices",
+  "entity": "Office 502",
+  "timestamp": "2026-11-24T11:41:11.044Z",
+  "ip": "192.168.1.43",
+  "device": "Safari · iPad"
+ },
+ {
+  "id": "au-019",
+  "user": "Admin",
+  "action": "assigned Ticket #TK-1024 to Amit",
+  "module": "Tickets",
+  "entity": "TK-1024",
+  "timestamp": "2026-11-24T10:30:11.044Z",
+  "ip": "192.168.1.81",
+  "device": "Safari · iPad"
+ },
+ {
+  "id": "au-020",
+  "user": "Admin",
+  "action": "changed Office 1004 status",
+  "module": "Offices",
+  "entity": "Office 1004",
+  "timestamp": "2026-11-24T09:19:11.044Z",
+  "ip": "192.168.1.45",
+  "device": "Chrome · Android"
+ },
+ {
+  "id": "au-021",
+  "user": "Supervisor",
+  "action": "rated task #TASK-102",
+  "module": "Tasks",
+  "entity": "TASK-102",
+  "timestamp": "2026-11-24T08:08:11.044Z",
+  "ip": "192.168.1.28",
+  "device": "Chrome · Windows"
+ },
+ {
+  "id": "au-022",
+  "user": "Guard",
+  "action": "allowed entry for a visitor",
+  "module": "Visitors",
+  "entity": "Visitor",
+  "timestamp": "2026-11-24T06:57:11.044Z",
+  "ip": "192.168.1.10",
+  "device": "Chrome · Windows"
+ },
+ {
+  "id": "au-023",
+  "user": "Admin",
+  "action": "added tenant Nova Cybersecurity",
+  "module": "Tenants",
+  "entity": "Nova Cybersecurity",
+  "timestamp": "2026-11-24T05:46:11.044Z",
+  "ip": "192.168.1.15",
+  "device": "Chrome · Android"
+ },
+ {
+  "id": "au-024",
+  "user": "Admin",
+  "action": "updated rent for Office 502",
+  "module": "Offices",
+  "entity": "Office 502",
+  "timestamp": "2026-11-24T04:35:11.044Z",
+  "ip": "192.168.1.71",
+  "device": "Chrome · Android"
+ }
+]

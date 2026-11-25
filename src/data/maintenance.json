@@ -1,0 +1,66 @@
+[
+ {
+  "id": "mt-01",
+  "title": "Lift maintenance",
+  "frequency": "Monthly",
+  "assetId": "as-01",
+  "nextDue": "2026-11-26",
+  "status": "Upcoming"
+ },
+ {
+  "id": "mt-02",
+  "title": "Generator load test",
+  "frequency": "Monthly",
+  "assetId": "as-02",
+  "nextDue": "2026-12-13",
+  "status": "Upcoming"
+ },
+ {
+  "id": "mt-03",
+  "title": "Fire extinguisher audit",
+  "frequency": "Quarterly",
+  "assetId": "as-03",
+  "nextDue": "2027-01-08",
+  "status": "Upcoming"
+ },
+ {
+  "id": "mt-04",
+  "title": "AC filter cleaning",
+  "frequency": "Quarterly",
+  "assetId": "as-04",
+  "nextDue": "2027-01-12",
+  "status": "Upcoming"
+ },
+ {
+  "id": "mt-05",
+  "title": "Water tank cleaning",
+  "frequency": "Half-yearly",
+  "assetId": "as-05",
+  "nextDue": "2027-01-08",
+  "status": "Upcoming"
+ },
+ {
+  "id": "mt-06",
+  "title": "Electrical panel thermography",
+  "frequency": "Yearly",
+  "assetId": "as-06",
+  "nextDue": "2027-01-07",
+  "status": "Upcoming"
+ },
+ {
+  "id": "mt-07",
+  "title": "CCTV health check",
+  "frequency": "Monthly",
+  "assetId": "as-07",
+  "nextDue": "2027-01-18",
+  "status": "Upcoming"
+ },
+ {
+  "id": "mt-08",
+  "title": "Pest control",
+  "frequency": "Quarterly",
+  "assetId": "as-08",
+  "nextDue": "2026-12-26",
+  "status": "Upcoming"
+ }
+]
