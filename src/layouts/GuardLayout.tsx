@@ -20,7 +20,7 @@ export default function GuardLayout() {
           <button onClick={() => { logout(); nav('/login') }} aria-label="Sign out" className="rounded-lg p-2 text-muted hover:bg-subtle"><LogOut size={18} /></button>
         </div>
       </header>
-      <main className="mx-auto w-full max-w-6xl flex-1 p-3 md:p-5"><ErrorBoundary><Outlet /></ErrorBoundary></main>
+      <main className="mx-auto w-full max-w-[1700px] flex-1 p-3 md:p-5"><ErrorBoundary><Outlet /></ErrorBoundary></main>
       <DemoPanel />
     </div>
   )

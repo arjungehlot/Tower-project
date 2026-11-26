@@ -1,3 +1,4 @@
+import { createPortal } from 'react-dom'
 import { useEffect, useRef, useState, type ReactNode } from 'react'
 import { motion, animate } from 'framer-motion'
 import { Star, Inbox, TrendingUp, TrendingDown } from 'lucide-react'
@@ -7,9 +8,9 @@ import { Button } from './Button'
 import { Area, AreaChart, ResponsiveContainer } from 'recharts'
 
 export const Card = ({ children, className, title, action, pad = true }: { children: ReactNode; className?: string; title?: ReactNode; action?: ReactNode; pad?: boolean }) => (
-  <section className={cx('rounded-xl border border-line bg-surface shadow-card', className)}>
+  <section className={cx('flex flex-col rounded-xl border border-line bg-surface shadow-card', className)}>
     {(title || action) && <header className="flex items-center justify-between gap-2 border-b px-3 py-2"><h3 className="text-[12.5px] font-semibold tracking-tight">{title}</h3>{action}</header>}
-    <div className={pad ? 'p-3' : ''}>{children}</div>
+    <div className={cx('min-h-0 flex-1', pad && 'p-3')}>{children}</div>
   </section>
 )
 export function Avatar({ name, src, size = 28 }: { name: string; src?: string; size?: number }) {
@@ -70,14 +71,29 @@ export function Tooltip({ text, children }: { text: string; children: ReactNode 
   return <span className="group relative inline-flex">{children}<span role="tooltip" className="pointer-events-none absolute left-full top-1/2 z-50 ml-2 -translate-y-1/2 whitespace-nowrap rounded-md bg-slate-900 px-2 py-1 text-xxs text-white opacity-0 shadow-pop transition-opacity group-hover:opacity-100 group-focus-within:opacity-100">{text}</span></span>
 }
 export function Dropdown({ trigger, items, align = 'right' }: { trigger: ReactNode; items: { label: string; icon?: ReactNode; onClick: () => void; danger?: boolean; hidden?: boolean }[]; align?: 'left' | 'right' }) {
-  const [open, setOpen] = useState(false), ref = useRef<HTMLDivElement>(null)
-  useEffect(() => { const h = (e: MouseEvent) => { if (!ref.current?.contains(e.target as Node)) setOpen(false) }; document.addEventListener('mousedown', h); return () => document.removeEventListener('mousedown', h) }, [])
+  const [pos, setPos] = useState<{ top: number; left: number } | null>(null), ref = useRef<HTMLDivElement>(null), menu = useRef<HTMLDivElement>(null)
+  const close = () => setPos(null)
+  useEffect(() => {
+    if (!pos) return
+    const h = (e: MouseEvent) => { const t = e.target as Node; if (!ref.current?.contains(t) && !menu.current?.contains(t)) close() }
+    const k = (e: KeyboardEvent) => { if (e.key === 'Escape') close() }
+    document.addEventListener('mousedown', h); document.addEventListener('keydown', k); window.addEventListener('resize', close); window.addEventListener('scroll', close, true)
+    return () => { document.removeEventListener('mousedown', h); document.removeEventListener('keydown', k); window.removeEventListener('resize', close); window.removeEventListener('scroll', close, true) }
+  }, [pos])
+  const toggle = () => {
+    if (pos) return close()
+    const r = ref.current!.getBoundingClientRect(), w = 176, n = items.filter((i) => !i.hidden).length, h = n * 32 + 8
+    const left = Math.max(8, Math.min(align === 'right' ? r.right - w : r.left, window.innerWidth - w - 8))
+    const top = r.bottom + 4 + h > window.innerHeight ? Math.max(8, r.top - h - 4) : r.bottom + 4
+    setPos({ top, left })
+  }
   return (
-    <div ref={ref} className="relative" onClick={(e) => e.stopPropagation()}>
-      <div onClick={() => setOpen((o) => !o)} aria-haspopup="menu" aria-expanded={open}>{trigger}</div>
-      {open && <motion.div initial={{ opacity: 0, y: -4 }} animate={{ opacity: 1, y: 0 }} role="menu" className={cx('absolute z-40 mt-1 min-w-[10rem] rounded-lg border border-line bg-surface p-1 shadow-pop', align === 'right' ? 'right-0' : 'left-0')}>
-        {items.filter((i) => !i.hidden).map((i) => <button key={i.label} role="menuitem" onClick={() => { setOpen(false); i.onClick() }} className={cx('flex w-full items-center gap-2 rounded-md px-2.5 py-1.5 text-left text-xs hover:bg-subtle', i.danger && 'text-bad')}>{i.icon}{i.label}</button>)}
-      </motion.div>}
+    <div ref={ref} className="relative inline-block" onClick={(e) => e.stopPropagation()}>
+      <div onClick={toggle} aria-haspopup="menu" aria-expanded={!!pos}>{trigger}</div>
+      {pos && createPortal(
+        <motion.div ref={menu} initial={{ opacity: 0, y: -4, scale: 0.98 }} animate={{ opacity: 1, y: 0, scale: 1 }} role="menu" style={{ top: pos.top, left: pos.left }} onClick={(e) => e.stopPropagation()} className="fixed z-[70] w-44 rounded-xl border border-line bg-surface p-1 shadow-pop ring-1 ring-black/5">
+          {items.filter((i) => !i.hidden).map((i) => <button key={i.label} role="menuitem" onClick={() => { close(); i.onClick() }} className={cx('flex w-full items-center gap-2 rounded-lg px-2.5 py-1.5 text-left text-xs font-medium transition-colors', i.danger ? 'text-bad hover:bg-bad/10' : 'hover:bg-subtle')}>{i.icon}{i.label}</button>)}
+        </motion.div>, document.body)}
     </div>
   )
 }

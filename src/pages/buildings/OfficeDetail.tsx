@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Link, useNavigate, useParams } from 'react-router-dom'
-import { ArrowLeft } from 'lucide-react'
+import { ArrowLeft, Maximize2, IndianRupee, Wrench, CalendarClock, Users, Ticket, Building2, Layers, DoorOpen, UserRound, StickyNote, Phone, Mail } from 'lucide-react'
+import type { ReactNode } from 'react'
 import { Badge, Button, Card, KV, PageHeader, StatusBadge, Tabs, Timeline, Select, DataTable, Avatar } from '@/components/ui'
 import { useDb } from '@/store/db'
 import { useLookups } from '@/hooks/useLookups'
@@ -23,9 +24,27 @@ export default function OfficeDetail() {
       title={<span className="flex items-center gap-2">Office {o.number} <StatusBadge status={o.status} /></span>} subtitle={`${t?.name ?? 'Unassigned'} · ${L.location(o.towerId, o.floorId)}`}
       actions={can('offices', 'update') && <Select aria-label="Change status" className="w-44" value={o.status} onChange={(e) => changeOfficeStatus(o.id, e.target.value)} options={OFFICE_STATUSES} />} />
     <Tabs value={tab} onChange={setTab} tabs={[{ id: 'overview', label: 'Overview' }, { id: 'employees', label: 'Employees', count: emps.length }, { id: 'visitors', label: 'Visitors', count: vis.length }, { id: 'tickets', label: 'Tickets', count: tks.length }, { id: 'lease', label: 'Lease' }, { id: 'activity', label: 'Activity' }]} />
-    <div className="mt-4">
-      {tab === 'overview' && <div className="grid gap-3 lg:grid-cols-2"><Card title="Unit details"><KV k="Tower" v={L.tower(o.towerId)?.name} /><KV k="Floor" v={L.floor(o.floorId)?.number} /><KV k="Area" v={`${o.area} sqft`} /><KV k="Type" v={o.type} /><KV k="Owner" v={o.ownerName} /><KV k="Notes" v={o.notes} /></Card>
-        <Card title="Contact & rent"><KV k="Company" v={t && <Link className="text-brand" to={`/tenants/${t.id}`}>{t.name}</Link>} /><KV k="Contact person" v={o.contactPerson} /><KV k="Phone" v={o.contactNumber} /><KV k="Email" v={o.email} /><KV k="Monthly rent" v={o.rent ? currency(o.rent) : ''} /><KV k="Maintenance" v={o.maintenanceCharge ? currency(o.maintenanceCharge) : ''} /></Card></div>}
+    <div className="mt-3">
+      {tab === 'overview' && <div className="space-y-2.5">
+        <div className="grid grid-cols-2 divide-x divide-y divide-line overflow-hidden rounded-xl border border-line bg-surface shadow-card md:grid-cols-3 md:divide-y-0 xl:grid-cols-6">
+          {([[Maximize2, 'Area', `${o.area.toLocaleString('en-IN')} sqft`, 'text-info'], [IndianRupee, 'Monthly rent', o.rent ? currency(o.rent) : '—', 'text-ok'], [Wrench, 'Maintenance', o.maintenanceCharge ? currency(o.maintenanceCharge) : '—', 'text-warn'], [CalendarClock, 'Lease ends', left === null ? '—' : left < 0 ? `Expired ${-left}d ago` : `in ${left} days`, left !== null && left < 60 ? 'text-bad' : 'text-vis'], [Users, 'Employees', String(emps.length), 'text-brand'], [Ticket, 'Tickets', String(tks.length), 'text-info']] as [typeof Users, string, string, string][]).map(([Icon, k, v, tone]) => <div key={k} className="flex items-center gap-2.5 px-3 py-2.5"><span className={`flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-subtle ${tone}`}><Icon size={16} /></span><div className="min-w-0 leading-tight"><p className="text-[10px] font-semibold uppercase tracking-wider text-muted">{k}</p><p className="truncate text-[13px] font-bold">{v}</p></div></div>)}
+        </div>
+        <div className="grid items-start gap-2.5 lg:grid-cols-2">
+          <Card title="Unit details"><div className="grid grid-cols-2 gap-1.5">
+            {([[Building2, 'Tower', L.tower(o.towerId)?.name], [Layers, 'Floor', L.floor(o.floorId)?.number], [Maximize2, 'Area', `${o.area} sqft`], [DoorOpen, 'Type', o.type], [UserRound, 'Owner', o.ownerName], [StickyNote, 'Notes', o.notes]] as [typeof Users, string, ReactNode][]).map(([Icon, k, v]) => <div key={k} className="flex items-center gap-2 rounded-lg bg-subtle/50 px-2.5 py-1.5"><Icon size={14} className="shrink-0 text-faint" /><div className="min-w-0 leading-tight"><p className="text-[9.5px] font-semibold uppercase tracking-wider text-muted">{k}</p><p className="truncate text-xs font-semibold">{v || '—'}</p></div></div>)}
+          </div></Card>
+          <Card title="Tenant & contact" pad={false}>
+            <div className="flex items-center gap-3 border-b bg-gradient-to-r from-brand-soft/70 to-transparent px-3 py-2.5">
+              <Avatar name={t?.name ?? 'Vacant'} size={38} />
+              <div className="min-w-0 flex-1 leading-tight">{t ? <Link className="truncate text-sm font-bold text-brand hover:underline" to={`/tenants/${t.id}`}>{t.name}</Link> : <p className="text-sm font-bold text-muted">No tenant assigned</p>}<p className="text-[11px] text-muted">Contact: {o.contactPerson || '—'}</p></div>
+              {t && <StatusBadge status={left !== null && left < 60 ? 'Expiring soon' : 'Active'} />}
+            </div>
+            <div className="grid gap-1.5 p-2.5">
+              <a href={o.contactNumber ? `tel:${o.contactNumber}` : undefined} className="flex items-center gap-2.5 rounded-lg border border-line px-2.5 py-1.5 text-xs transition-colors hover:bg-subtle/60"><span className="flex h-7 w-7 items-center justify-center rounded-md bg-ok/15 text-ok"><Phone size={13} /></span><span className="font-medium tabular-nums">{o.contactNumber || '—'}</span><span className="ml-auto text-[10px] uppercase tracking-wide text-faint">Phone</span></a>
+              <a href={o.email ? `mailto:${o.email}` : undefined} className="flex items-center gap-2.5 rounded-lg border border-line px-2.5 py-1.5 text-xs transition-colors hover:bg-subtle/60"><span className="flex h-7 w-7 items-center justify-center rounded-md bg-info/15 text-info"><Mail size={13} /></span><span className="truncate font-medium">{o.email || '—'}</span><span className="ml-auto text-[10px] uppercase tracking-wide text-faint">Email</span></a>
+            </div>
+          </Card>
+        </div></div>}
       {tab === 'employees' && <DataTable rows={emps} rowKey={(e) => e.id} pageSize={8} columns={[{ key: 'n', header: 'Name', render: (e) => <span className="flex items-center gap-2"><Avatar name={e.name} size={24} />{e.name}</span> }, { key: 'd', header: 'Designation', render: (e) => e.designation }, { key: 'p', header: 'Phone', render: (e) => e.phone }, { key: 'e', header: 'Email', render: (e) => e.email, hideMobile: true }]} empty={{ title: 'No employees registered' }} />}
       {tab === 'visitors' && <DataTable rows={vis} rowKey={(v) => v.id} pageSize={8} onRowClick={(v) => nav(`/visitors/${v.id}`)} columns={[{ key: 'n', header: 'Visitor', render: (v) => v.name }, { key: 'p', header: 'Purpose', render: (v) => v.purpose }, { key: 't', header: 'Requested', render: (v) => fmtDateTime(v.requestedAt) }, { key: 's', header: 'Status', render: (v) => <StatusBadge status={v.status} /> }]} empty={{ title: 'No visitors yet' }} />}
       {tab === 'tickets' && <DataTable rows={tks} rowKey={(x) => x.id} pageSize={8} onRowClick={(x) => nav(`/tickets/${x.id}`)} columns={[{ key: 'c', header: 'Ticket', render: (x) => <b>{x.code}</b> }, { key: 's', header: 'Subject', render: (x) => x.subject }, { key: 'p', header: 'Priority', render: (x) => <StatusBadge status={x.priority} /> }, { key: 'st', header: 'Status', render: (x) => <StatusBadge status={x.status} /> }]} empty={{ title: 'No tickets', text: 'This office has not raised any tickets.' }} />}

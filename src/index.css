@@ -27,3 +27,13 @@ body { @apply bg-bg text-ink font-sans antialiased text-[13px]; background-image
   .label { @apply mb-1 block text-[10px] font-semibold uppercase tracking-wider text-muted; }
 }
 @media print { aside, header, .no-print { display: none !important; } main { padding: 0 !important; } }
+
+/* Login hero animations */
+@keyframes tf-blink { 0%, 100% { opacity: .15 } 50% { opacity: .95 } }
+@keyframes tf-float { 0%, 100% { transform: translateY(0) } 50% { transform: translateY(-10px) } }
+@keyframes tf-pulse-ring { 0% { transform: scale(.6); opacity: .7 } 100% { transform: scale(2.2); opacity: 0 } }
+@keyframes tf-drift { 0%, 100% { transform: translate(0,0) } 50% { transform: translate(24px,-18px) } }
+.tf-win { animation: tf-blink 4s ease-in-out infinite; }
+.tf-float { animation: tf-float 6s ease-in-out infinite; }
+@media (prefers-reduced-motion: reduce) { .tf-win, .tf-float { animation: none; opacity: .6 } }
+@keyframes pop { from { opacity: 0; transform: translateY(-4px) scale(.97) } to { opacity: 1; transform: none } }

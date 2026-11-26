@@ -4,7 +4,7 @@ import { useForm } from 'react-hook-form'
 import { z } from 'zod'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { motion, AnimatePresence } from 'framer-motion'
-import { ArrowLeft, ArrowRight, CheckCircle2, Send } from 'lucide-react'
+import { ArrowLeft, ArrowRight, CheckCircle2, Send, Phone, AtSign, IdCard, Building2, MapPin, UserRound, Briefcase, Users, Clock } from 'lucide-react'
 import { Avatar, Button, Card, Field, Input, PageHeader, Select, StatusBadge, Timeline } from '@/components/ui'
 import { PhotoCapture } from '@/components/business/PhotoCapture'
 import { useDb } from '@/store/db'
@@ -87,9 +87,21 @@ export default function VisitorRegister() {
               <Field label="Expected duration"><Select {...register('expectedDuration')} options={['30 min', '1 hour', '2 hours', 'Half day', 'Full day']} /></Field>
               <Field label="Number of visitors" error={errors.count?.message}><Input type="number" min={1} {...register('count')} /></Field>
             </div>}
-            {step === last && (() => { const g = getValues(); return <div className="flex flex-col items-center gap-4 sm:flex-row sm:items-start">
-              <Avatar name={g.name} src={photo} size={isOffice ? 56 : 96} />
-              <div className="grid flex-1 grid-cols-2 gap-x-6 gap-y-2 text-xs">{([['Name', g.name], ['Mobile', g.mobile], ['Email', g.email || '—'], ['ID', `${g.idType} · ${g.idNumber}`], ['Purpose', g.purpose], ['Visitors', g.count], ['Visiting', `Office ${L.officeNo(g.officeId)} · ${L.officeTenant(g.officeId)?.name}`], ['Host', L.host(g.hostId)?.name], ['Location', L.location(g.towerId, g.floorId)], ['Expected', g.expectedDuration]] as [string, unknown][]).map(([k, v]) => <div key={k}><p className="label">{k}</p><p className="font-medium">{String(v)}</p></div>)}</div></div> })()}
+            {step === last && (() => { const g = getValues(); const row = (Icon: typeof Phone, k: string, v: unknown) => <div key={k} className="flex items-center gap-2 rounded-lg bg-subtle/60 px-2.5 py-1.5"><Icon size={14} className="shrink-0 text-faint" /><div className="min-w-0 leading-tight"><p className="text-[9.5px] font-semibold uppercase tracking-wider text-muted">{k}</p><p className="truncate text-xs font-semibold">{String(v || '—')}</p></div></div>; return <div className="space-y-2.5">
+              <div className="flex items-center gap-3 rounded-xl bg-gradient-to-r from-brand-soft to-transparent p-2.5">
+                <Avatar name={g.name} src={photo} size={isOffice ? 48 : 64} />
+                <div className="min-w-0 flex-1 leading-tight"><p className="truncate text-base font-bold">{g.name}</p><div className="mt-1 flex flex-wrap gap-x-3 gap-y-0.5 text-xs text-muted"><span className="inline-flex items-center gap-1"><Phone size={12} />{g.mobile}</span>{g.email && <span className="inline-flex items-center gap-1"><AtSign size={12} />{g.email}</span>}</div></div>
+                {!isOffice && <span className="inline-flex shrink-0 items-center gap-1 rounded-full border border-ok/50 bg-ok/20 px-2 py-0.5 text-[10.5px] font-semibold text-ok"><IdCard size={12} />{g.idType} · {g.idNumber}</span>}
+              </div>
+              <div className="grid gap-1.5 sm:grid-cols-2 lg:grid-cols-3">
+                {row(Building2, 'Visiting', `Office ${L.officeNo(g.officeId)} · ${L.officeTenant(g.officeId)?.name ?? ''}`)}
+                {row(MapPin, 'Location', L.location(g.towerId, g.floorId))}
+                {row(UserRound, 'Host', L.host(g.hostId)?.name)}
+                {row(Briefcase, 'Purpose', g.purpose)}
+                {row(Users, 'Visitors', g.count)}
+                {row(Clock, 'Expected', g.expectedDuration)}
+              </div>
+            </div> })()}
           </motion.div>
         </AnimatePresence>
         <div className="mt-5 flex justify-between border-t pt-3">

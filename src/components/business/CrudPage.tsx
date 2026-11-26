@@ -35,7 +35,7 @@ export function CrudPage<T extends { id: string }>(p: Props<T>) {
   return (
     <>
       <PageHeader title={p.title} subtitle={p.subtitle} actions={<>{p.actions}{!p.readOnly && <Button variant="primary" icon={<Plus size={14} />} onClick={() => setForm({ open: true, item: null })}>Add {p.entity}</Button>}</>} />
-      <DataTable rows={filtered} columns={cols} rowKey={(r) => r.id} onRowClick={p.onRowClick} searchText={p.searchText} exportName={p.exportName ?? p.coll} pageSize={p.pageSize ?? 10}
+      <DataTable rows={filtered} columns={cols} rowKey={(r) => r.id} onRowClick={p.onRowClick} searchText={p.searchText} exportName={p.exportName ?? p.coll} pageSize={p.pageSize}
         filters={p.filters?.map((f) => <Select key={f.label} aria-label={f.label} className="w-36" value={fv[f.label] ?? ''} onChange={(e) => setFv({ ...fv, [f.label]: e.target.value })} options={f.options} placeholder={f.label} />)}
         empty={{ title: `No ${p.entity.toLowerCase()}s found`, text: 'Try a different search or add a new record.', action: p.readOnly ? undefined : `Add ${p.entity}`, onAction: () => setForm({ open: true, item: null }) }} />
       <CrudForm open={form.open} onClose={() => setForm({ open: false, item: null })} title={form.item ? `Edit ${p.entity}` : `Add ${p.entity}`} fields={p.fields} initial={form.item as unknown as Record<string, unknown>} onSubmit={save} />

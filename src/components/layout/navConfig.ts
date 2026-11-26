@@ -16,7 +16,7 @@ export const NAV: NavSection[] = [
     // { label: 'Floors', to: '/floors', icon: Layers, roles: ADM },
     { label: 'Offices', to: '/offices', icon: DoorOpen, roles: [...ADM, ...SUP] },
     // { label: 'Tenants / Companies', to: '/tenants', icon: Building, roles: ADM },
-//     { label: 'Lease Management', to: '/leases', icon: FileText, roles: ADM },
+    // { label: 'Lease Management', to: '/leases', icon: FileText, roles: ADM },
   ] },
   { title: 'Security', items: [
     { label: 'Visitor Management', to: '/visitors', icon: UserRoundCheck, roles: [...ADM, ...OFF, ...SUP], end: true },
@@ -24,7 +24,7 @@ export const NAV: NavSection[] = [
     { label: 'Invite Visitor', to: '/visitor/register', icon: UserPlus, roles: OFF },
     { label: 'Live Visitors', to: '/visitors/live', icon: Radio, roles: [...ADM, ...SUP] },
     // { label: 'Gate Entries', to: '/visitors/gate', icon: ScanLine, roles: ADM },
-//     { label: 'Visitor History', to: '/visitors/history', icon: History, roles: ADM },
+    // { label: 'Visitor History', to: '/visitors/history', icon: History, roles: ADM },
   ] },
   { title: 'Operations', items: [
     // { label: 'Staff Management', to: '/staff', icon: Users, roles: [...ADM, ...SUP], end: true }, { label: 'Staff Availability', to: '/staff/availability', icon: Activity, roles: [...ADM, ...SUP] },

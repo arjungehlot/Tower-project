@@ -13,9 +13,10 @@ export function BuildingViz() {
   const t = towers.find((x) => x.id === tw) ?? towers[0]
   const fl = floors.filter((f) => f.towerId === t.id).sort((a, b) => b.number - a.number)
   return (
-    <Card title="Live building status" action={<MapLegend />}>
+    <Card title="Live building status" action={<MapLegend />} className="xl:h-full">
+      <div className="xl:relative xl:h-full"><div className="xl:absolute xl:inset-0 xl:flex xl:flex-col">
       <Tabs value={t.id} onChange={setTw} tabs={towers.map((x) => ({ id: x.id, label: x.name }))} />
-      <div className="mt-3 max-h-[372px] space-y-1 overflow-y-auto pr-1">
+      <div className="mt-3 max-h-[372px] space-y-1 overflow-y-auto pr-1 xl:max-h-none xl:min-h-0 xl:flex-1">
         {fl.map((f, i) => (
           <motion.div key={f.id} initial={{ opacity: 0, x: -8 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: i * 0.03 }} className="flex items-center gap-2">
             <button onClick={() => nav(`/floors/${f.id}`)} className="w-14 shrink-0 rounded-md bg-subtle px-1.5 py-1 text-left text-xxs font-semibold text-muted hover:bg-brand-soft hover:text-brand" aria-label={`Open floor ${f.number}`}>Floor {f.number}</button>
@@ -28,6 +29,7 @@ export function BuildingViz() {
           </motion.div>
         ))}
       </div>
+      </div></div>
     </Card>
   )
 }

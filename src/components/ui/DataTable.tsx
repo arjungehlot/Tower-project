@@ -13,7 +13,8 @@ interface Props<T> {
   empty?: { title: string; text?: string; action?: string; onAction?: () => void }; exportName?: string; defaultSort?: { key: string; dir: 'asc' | 'desc' }
 }
 /** Compact table: sticky header, search, sort, pagination, bulk select, and card layout on mobile. */
-export function DataTable<T>({ columns, rows, rowKey, onRowClick, searchText, filters, toolbar, pageSize = 10, selectable, bulk, empty, exportName, defaultSort }: Props<T>) {
+export function DataTable<T>({ columns, rows, rowKey, onRowClick, searchText, filters, toolbar, pageSize: pageSizeProp, selectable, bulk, empty, exportName, defaultSort }: Props<T>) {
+  const fill = pageSizeProp === undefined, pageSize = pageSizeProp ?? 15
   const [q, setQ] = useState(''), [page, setPage] = useState(0), [sort, setSort] = useState(defaultSort ?? null as { key: string; dir: 'asc' | 'desc' } | null), [sel, setSel] = useState<Set<string>>(new Set())
   const data = useMemo(() => {
     let r = rows
@@ -27,8 +28,8 @@ export function DataTable<T>({ columns, rows, rowKey, onRowClick, searchText, fi
   const allSel = slice.length > 0 && slice.every((r) => sel.has(rowKey(r)))
   const flip = (id: string) => setSel((s) => { const n = new Set(s); n.has(id) ? n.delete(id) : n.add(id); return n })
   return (
-    <div className="overflow-hidden rounded-xl border border-line bg-surface shadow-card">
-      <div className="flex flex-wrap items-center gap-1.5 border-b bg-subtle/40 p-2">
+    <div className={cx('flex flex-col overflow-hidden rounded-xl border border-line bg-surface shadow-card', fill && 'md:min-h-[calc(100dvh-8.75rem)]')}>
+      <div className="flex flex-wrap items-center gap-1.5 border-b bg-subtle/40 px-2 py-1.5">
         {searchText && <SearchBox value={q} onChange={(v) => { setQ(v); setPage(0) }} className="w-full sm:w-60" />}
         {filters}
         <div className="ml-auto flex items-center gap-2">
@@ -39,20 +40,20 @@ export function DataTable<T>({ columns, rows, rowKey, onRowClick, searchText, fi
       </div>
       {data.length === 0 ? <EmptyState {...(empty ?? { title: 'No records found', text: 'Try adjusting your search or filters.' })} /> : (
         <>
-          <div className="hidden max-h-[64vh] overflow-auto md:block">
+          <div className={cx('hidden overflow-auto md:block', fill ? 'min-h-0 flex-1' : 'max-h-[64vh]')}>
             <table className="w-full border-separate border-spacing-0 text-left text-[12.5px]">
               <thead className="sticky top-0 z-10 bg-subtle/95 text-[10px] uppercase tracking-wider text-muted backdrop-blur">
                 <tr>
-                  {selectable && <th className="w-8 border-b px-3 py-2"><input type="checkbox" aria-label="Select all" checked={allSel} onChange={() => setSel((s) => { const n = new Set(s); slice.forEach((r) => (allSel ? n.delete(rowKey(r)) : n.add(rowKey(r)))); return n })} /></th>}
-                  {columns.map((c) => <th key={c.key} className={cx('border-b px-3 py-2 font-bold', c.className)} aria-sort={sort?.key === c.key ? (sort.dir === 'asc' ? 'ascending' : 'descending') : undefined}>
+                  {selectable && <th className="w-8 border-b px-2.5 py-1.5"><input type="checkbox" aria-label="Select all" checked={allSel} onChange={() => setSel((s) => { const n = new Set(s); slice.forEach((r) => (allSel ? n.delete(rowKey(r)) : n.add(rowKey(r)))); return n })} /></th>}
+                  {columns.map((c) => <th key={c.key} className={cx('border-b px-2.5 py-1.5 font-bold', c.className)} aria-sort={sort?.key === c.key ? (sort.dir === 'asc' ? 'ascending' : 'descending') : undefined}>
                     {c.sort ? <button className="inline-flex items-center gap-1 uppercase hover:text-ink" onClick={() => toggleSort(c.key)}>{c.header}{sort?.key === c.key && (sort.dir === 'asc' ? <ArrowUp size={11} /> : <ArrowDown size={11} />)}</button> : c.header}</th>)}
                 </tr>
               </thead>
               <tbody>
                 {slice.map((r) => (
                   <tr key={rowKey(r)} onClick={() => onRowClick?.(r)} className={cx('group transition-colors even:bg-subtle/25 hover:bg-brand-soft/60', onRowClick && 'cursor-pointer')}>
-                    {selectable && <td className="border-b border-line/60 px-3 py-1.5" onClick={(e) => e.stopPropagation()}><input type="checkbox" aria-label="Select row" checked={sel.has(rowKey(r))} onChange={() => flip(rowKey(r))} /></td>}
-                    {columns.map((c) => <td key={c.key} className={cx('border-b border-line/60 px-3 py-1.5 align-middle first:font-medium group-hover:border-line', c.className)}>{c.render ? c.render(r) : (r as Record<string, ReactNode>)[c.key]}</td>)}
+                    {selectable && <td className="border-b border-line/60 px-2.5 py-1" onClick={(e) => e.stopPropagation()}><input type="checkbox" aria-label="Select row" checked={sel.has(rowKey(r))} onChange={() => flip(rowKey(r))} /></td>}
+                    {columns.map((c) => <td key={c.key} className={cx('border-b border-line/60 px-2.5 py-1 align-middle first:font-medium group-hover:border-line', c.className)}>{c.render ? c.render(r) : (r as Record<string, ReactNode>)[c.key]}</td>)}
                   </tr>
                 ))}
               </tbody>
@@ -65,7 +66,7 @@ export function DataTable<T>({ columns, rows, rowKey, onRowClick, searchText, fi
               </div>
             ))}
           </div>
-          <div className="flex items-center justify-between border-t bg-subtle/30 px-3 py-1.5 text-xs text-muted">
+          <div className="mt-auto flex items-center justify-between border-t bg-subtle/30 px-3 py-1.5 text-xs text-muted">
             <span>Showing <b className="text-ink">{cur * pageSize + 1}–{Math.min(data.length, cur * pageSize + pageSize)}</b> of <b className="text-ink">{data.length}</b></span>
             <div className="flex items-center gap-0.5"><Button size="xs" variant="ghost" aria-label="Previous page" disabled={cur === 0} onClick={() => setPage(cur - 1)}><ChevronLeft size={14} /></Button>
               {Array.from({ length: pages }, (_, i) => i).filter((i) => i === 0 || i === pages - 1 || Math.abs(i - cur) <= 1).map((i, k, arr) => <span key={i} className="flex items-center">{k > 0 && arr[k - 1] !== i - 1 && <span className="px-1">…</span>}<button onClick={() => setPage(i)} aria-label={`Page ${i + 1}`} aria-current={i === cur} className={cx('h-6 min-w-6 rounded-md px-1.5 text-xxs font-semibold', i === cur ? 'bg-brand text-white dark:text-slate-900' : 'hover:bg-subtle')}>{i + 1}</button></span>)}

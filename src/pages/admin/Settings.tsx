@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Button, Card, Field, Input, PageHeader, Select, Tabs, StatusBadge, Badge } from '@/components/ui'
+import { Button, confirmAction, Card, Field, Input, PageHeader, Select, Tabs, StatusBadge, Badge } from '@/components/ui'
 import { useDb } from '@/store/db'
 import { auditLog } from '@/services/core'
 import type { Settings as S } from '@/types'
@@ -17,7 +17,7 @@ export default function Settings() {
     <Tabs value={tab} onChange={setTab} tabs={[{ id: 'general', label: 'General' }, { id: 'building', label: 'Building' }, { id: 'visitor', label: 'Visitor' }, { id: 'notifications', label: 'Notifications' }, { id: 'whatsapp', label: 'WhatsApp' }, { id: 'email', label: 'Email' }, { id: 'security', label: 'Security' }]} />
     <div className="mt-4 max-w-2xl">
       {tab === 'general' && <Card title="General"><div className="grid grid-cols-2 gap-3"><Field label="Product name"><Input value={s.productName} onChange={(e) => upd((d) => { d.productName = e.target.value })} /></Field><Field label="Subtitle"><Input value={s.subtitle} onChange={(e) => upd((d) => { d.subtitle = e.target.value })} /></Field></div>
-        <div className="mt-2 divide-y divide-line"><Toggle label="Demo mode" hint="Shows the demo control panel and lets admins act on behalf of staff" checked={demo} onChange={setDemo} /></div><Button className="mt-3" variant="danger" onClick={() => confirm('Reset all data to seed?') && reset()}>Reset demo data</Button></Card>}
+        <div className="mt-2 divide-y divide-line"><Toggle label="Demo mode" hint="Shows the demo control panel and lets admins act on behalf of staff" checked={demo} onChange={setDemo} /></div><Button className="mt-3" variant="danger" onClick={async () => { if (await confirmAction({ title: 'Reset demo data', message: 'Reset all data to the original seed? Everything you changed will be lost.', confirmLabel: 'Reset data' })) reset() }}>Reset demo data</Button></Card>}
       {tab === 'building' && <Card title="Building settings"><ul className="divide-y divide-line">{towers.map((t) => <li key={t.id} className="flex justify-between py-2 text-xs"><span><b>{t.name}</b> · {t.address}</span><Badge tone="brand">{t.floors} floors</Badge></li>)}</ul><p className="mt-2 text-xxs text-muted">Edit towers under Building → Towers.</p></Card>}
       {tab === 'visitor' && <Card title="Visitor settings"><Toggle label="Require visitor photo" checked={s.visitor.requirePhoto} onChange={(b) => upd((d) => { d.visitor.requirePhoto = b })} /><Toggle label="Require ID proof" checked={s.visitor.requireId} onChange={(b) => upd((d) => { d.visitor.requireId = b })} />
         <Field label="Auto-reject unanswered requests after (minutes)" className="mt-2"><Input type="number" value={s.visitor.autoRejectMinutes} onChange={(e) => upd((d) => { d.visitor.autoRejectMinutes = +e.target.value })} /></Field></Card>}
