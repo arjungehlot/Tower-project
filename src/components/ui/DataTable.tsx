@@ -1,3 +1,5 @@
+import { useRecent, isNew } from '@/store/recent'
+import { NewTag } from './Badge'
 import { useMemo, useState, type ReactNode } from 'react'
 import { ArrowDown, ArrowUp, ChevronLeft, ChevronRight, Download } from 'lucide-react'
 import { SearchBox } from './Form'
@@ -5,7 +7,7 @@ import { Button } from './Button'
 import { EmptyState } from './Display'
 import { cx, downloadCsv } from '@/utils/helpers'
 
-export interface Column<T> { key: string; header: string; render?: (r: T) => ReactNode; sort?: (r: T) => string | number; className?: string; hideMobile?: boolean; csv?: (r: T) => unknown }
+export interface Column<T> { key: string; header: string; render?: (r: T) => ReactNode; sort?: (r: T) => string | number; className?: string; sticky?: boolean; hideMobile?: boolean; csv?: (r: T) => unknown }
 interface Props<T> {
   columns: Column<T>[]; rows: T[]; rowKey: (r: T) => string; onRowClick?: (r: T) => void
   searchText?: (r: T) => string; filters?: ReactNode; toolbar?: ReactNode; pageSize?: number
@@ -14,7 +16,8 @@ interface Props<T> {
 }
 /** Compact table: sticky header, search, sort, pagination, bulk select, and card layout on mobile. */
 export function DataTable<T>({ columns, rows, rowKey, onRowClick, searchText, filters, toolbar, pageSize: pageSizeProp, selectable, bulk, empty, exportName, defaultSort }: Props<T>) {
-  const fill = pageSizeProp === undefined, pageSize = pageSizeProp ?? 15
+  const fresh = useRecent((s) => s.ids)
+  const fill = pageSizeProp === undefined, pageSize = pageSizeProp ?? 20
   const [q, setQ] = useState(''), [page, setPage] = useState(0), [sort, setSort] = useState(defaultSort ?? null as { key: string; dir: 'asc' | 'desc' } | null), [sel, setSel] = useState<Set<string>>(new Set())
   const data = useMemo(() => {
     let r = rows
@@ -45,15 +48,15 @@ export function DataTable<T>({ columns, rows, rowKey, onRowClick, searchText, fi
               <thead className="sticky top-0 z-10 bg-subtle/95 text-[10px] uppercase tracking-wider text-muted backdrop-blur">
                 <tr>
                   {selectable && <th className="w-8 border-b px-2.5 py-1.5"><input type="checkbox" aria-label="Select all" checked={allSel} onChange={() => setSel((s) => { const n = new Set(s); slice.forEach((r) => (allSel ? n.delete(rowKey(r)) : n.add(rowKey(r)))); return n })} /></th>}
-                  {columns.map((c) => <th key={c.key} className={cx('border-b px-2.5 py-1.5 font-bold', c.className)} aria-sort={sort?.key === c.key ? (sort.dir === 'asc' ? 'ascending' : 'descending') : undefined}>
+                  {columns.map((c) => <th key={c.key} className={cx('border-b px-2.5 py-1.5 font-semibold', c.sticky && 'sticky left-0 z-20 bg-subtle shadow-[1px_0_0_0_rgb(0_0_0/0.06)]', c.className)} aria-sort={sort?.key === c.key ? (sort.dir === 'asc' ? 'ascending' : 'descending') : undefined}>
                     {c.sort ? <button className="inline-flex items-center gap-1 uppercase hover:text-ink" onClick={() => toggleSort(c.key)}>{c.header}{sort?.key === c.key && (sort.dir === 'asc' ? <ArrowUp size={11} /> : <ArrowDown size={11} />)}</button> : c.header}</th>)}
                 </tr>
               </thead>
               <tbody>
                 {slice.map((r) => (
-                  <tr key={rowKey(r)} onClick={() => onRowClick?.(r)} className={cx('group transition-colors even:bg-subtle/25 hover:bg-brand-soft/60', onRowClick && 'cursor-pointer')}>
+                  <tr key={rowKey(r)} onClick={() => onRowClick?.(r)} className={cx('group transition-colors hover:bg-brand-soft/60', isNew(fresh, rowKey(r)) ? 'bg-info/[0.07]' : 'even:bg-subtle/25', onRowClick && 'cursor-pointer')}>
                     {selectable && <td className="border-b border-line/60 px-2.5 py-1" onClick={(e) => e.stopPropagation()}><input type="checkbox" aria-label="Select row" checked={sel.has(rowKey(r))} onChange={() => flip(rowKey(r))} /></td>}
-                    {columns.map((c) => <td key={c.key} className={cx('border-b border-line/60 px-2.5 py-1 align-middle first:font-medium group-hover:border-line', c.className)}>{c.render ? c.render(r) : (r as Record<string, ReactNode>)[c.key]}</td>)}
+                    {columns.map((c, ci) => <td key={c.key} className={cx('border-b border-line/60 px-2.5 py-1 align-middle text-[12.5px] font-normal first:font-medium group-hover:border-line', c.sticky && 'sticky left-0 z-[5] bg-surface shadow-[1px_0_0_0_rgb(0_0_0/0.06)] group-hover:bg-brand-soft', c.className)}>{ci === 0 && isNew(fresh, rowKey(r)) ? <div className="flex items-center gap-2"><NewTag />{c.render ? c.render(r) : (r as Record<string, ReactNode>)[c.key]}</div> : c.render ? c.render(r) : (r as Record<string, ReactNode>)[c.key]}</td>)}
                   </tr>
                 ))}
               </tbody>
@@ -61,7 +64,7 @@ export function DataTable<T>({ columns, rows, rowKey, onRowClick, searchText, fi
           </div>
           <div className="divide-y divide-line md:hidden">
             {slice.map((r) => (
-              <div key={rowKey(r)} onClick={() => onRowClick?.(r)} className="space-y-1.5 p-3">
+              <div key={rowKey(r)} onClick={() => onRowClick?.(r)} className={cx('space-y-1.5 p-3', isNew(fresh, rowKey(r)) && 'bg-info/[0.07]')}>{isNew(fresh, rowKey(r)) && <NewTag />}
                 {columns.filter((c) => !c.hideMobile).map((c, i) => <div key={c.key} className={cx('flex justify-between gap-3 text-xs', i === 0 && 'text-sm font-semibold')}>{i > 0 && <span className="text-muted">{c.header}</span>}<span className={i > 0 ? 'text-right' : ''}>{c.render ? c.render(r) : (r as Record<string, ReactNode>)[c.key]}</span></div>)}
               </div>
             ))}

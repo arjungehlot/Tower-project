@@ -1,7 +1,7 @@
-import { useState } from 'react'
+import { useState, type ReactNode } from 'react'
 import { Link, useParams } from 'react-router-dom'
-import { ArrowLeft, Send, Paperclip, RotateCcw, CheckCircle2 } from 'lucide-react'
-import { Avatar, Badge, Button, Card, Input, KV, Modal, PageHeader, Select, StatusBadge, Stars, Timeline } from '@/components/ui'
+import { ArrowLeft, Send, Paperclip, RotateCcw, CheckCircle2, User, DoorOpen, UserCog, CalendarPlus, Timer, Clock, ClipboardList } from 'lucide-react'
+import { Avatar, Badge, Button, Card, Input, Modal, PageHeader, Select, StatusBadge, Stars, Timeline } from '@/components/ui'
 import { TaskActions } from '@/components/business/TaskActions'
 import { StaffCard } from '@/components/business/StaffCard'
 import { useDb } from '@/store/db'
@@ -30,16 +30,37 @@ export default function TicketDetail() {
         {can('tickets', 'update') && !['CLOSED'].includes(t.status) && t.status !== 'OPEN' && <Select aria-label="Status" className="w-36" value={t.status} onChange={(e) => ts.setStatus(t.id, e.target.value as never)} options={['ASSIGNED', 'IN_PROGRESS', 'WAITING', 'RESOLVED']} />}</>} />
     <div className="grid gap-3 lg:grid-cols-3">
       <div className="space-y-3 lg:col-span-2">
-        <Card title="Details"><p className="mb-3 text-[13px]">{t.description}</p><div className="grid gap-x-8 sm:grid-cols-2"><KV k="Reporter" v={reporter && `${reporter.name} (${reporter.designation})`} /><KV k="Office" v={<Link className="text-brand" to={`/offices/${t.officeId}`}>{L.officeNo(t.officeId)} · {L.officeTenant(t.officeId)?.name}</Link>} /><KV k="Raised" v={fmtDateTime(t.createdAt)} /><KV k="SLA due" v={fmtDateTime(t.dueAt)} /><KV k="Preferred visit" v={t.preferredVisit} /><KV k="Assigned staff" v={emp && <span className="inline-flex items-center gap-1.5"><Avatar name={emp.name} size={18} />{emp.name}</span>} /></div>
-          {t.attachments.length > 0 && <p className="mt-2 text-xs text-muted"><Paperclip size={12} className="mr-1 inline" />{t.attachments.join(', ')}</p>}</Card>
+        <Card title="Details" action={overdue ? <Badge tone="red" dot>SLA breached</Badge> : <span className="text-xxs text-muted">Due {fmtDateTime(t.dueAt)}</span>}>
+          <p className="mb-2.5 rounded-lg bg-subtle/70 px-3 py-2 text-[13px] leading-snug">{t.description}</p>
+          <div className="grid grid-cols-2 gap-2 md:grid-cols-3">
+            <Tile icon={<User size={13} />} k="Reporter" v={reporter && <span className="inline-flex items-center gap-1.5"><Avatar name={reporter.name} size={16} />{reporter.name}<span className="text-xxs text-muted">· {reporter.designation}</span></span>} />
+            <Tile icon={<DoorOpen size={13} />} k="Office" v={<Link className="text-brand hover:underline" to={`/offices/${t.officeId}`}>{L.officeNo(t.officeId)} · {L.officeTenant(t.officeId)?.name}</Link>} />
+            <Tile icon={<UserCog size={13} />} k="Assigned staff" v={emp ? <span className="inline-flex items-center gap-1.5"><Avatar name={emp.name} size={16} />{emp.name}</span> : 'Unassigned'} />
+            <Tile icon={<CalendarPlus size={13} />} k="Raised" v={fmtDateTime(t.createdAt)} />
+            <Tile icon={<Timer size={13} />} k="SLA due" v={fmtDateTime(t.dueAt)} tone={overdue ? 'bad' : 'warn'} />
+            <Tile icon={<Clock size={13} />} k="Preferred visit" v={t.preferredVisit} />
+          </div>
+          {t.attachments.length > 0 && <p className="mt-2.5 flex items-center gap-1.5 text-xs text-muted"><Paperclip size={12} />{t.attachments.join(', ')}</p>}</Card>
         {canAssign && <Card title="Recommended staff — assign to resolve" pad={false}><div className="space-y-1.5 p-3">{recs.slice(0, 6).map((e, i) => <StaffCard key={e.id} e={e} right={<div className="flex items-center gap-2"><StatusBadge status={e.status} /><Button size="xs" variant={i === 0 ? 'primary' : 'secondary'} onClick={() => ts.assign(t.id, e.id)}>Assign</Button></div>} />)}{recs.length === 0 && <p className="text-xs text-muted">No staff registered for this category.</p>}<p className="pt-1 text-xxs text-faint">Ranked by availability → location → workload → skill → rating.</p></div></Card>}
-        {task && <Card title="Work updates" action={<div className="flex gap-1"><TaskActions t={task} size="xs" /></div>}><div className="flex items-center justify-between text-xs"><Link className="font-semibold text-brand" to={`/tasks/${task.id}`}>{task.code}</Link><StatusBadge status={task.status} /></div><div className="mt-2 h-1.5 overflow-hidden rounded-full bg-subtle"><div className="h-full rounded-full bg-brand transition-all" style={{ width: `${task.progress}%` }} /></div><p className="mt-1 text-xxs text-muted">{task.progress}% complete{task.proof && ` · Proof: ${task.proof}`}</p></Card>}
+        {task && <Card title="Work updates" action={<div className="flex gap-1"><TaskActions t={task} size="xs" /></div>}>
+          <div className="flex items-center gap-3"><span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-gradient-to-br from-brand/20 to-brand/5 text-brand"><ClipboardList size={15} /></span>
+            <div className="min-w-0 flex-1"><div className="flex items-center justify-between gap-2 text-xs"><Link className="font-semibold text-brand hover:underline" to={`/tasks/${task.id}`}>{task.code}</Link><StatusBadge status={task.status} /></div>
+              <div className="mt-1.5 flex items-center gap-2"><div className="h-2 flex-1 overflow-hidden rounded-full bg-subtle"><div className="h-full rounded-full bg-gradient-to-r from-brand to-vis transition-all" style={{ width: `${task.progress}%` }} /></div><b className="w-9 text-right text-xs">{task.progress}%</b></div></div></div>
+          {task.proof && <p className="mt-2 text-xxs text-muted">Proof: {task.proof}</p>}</Card>}
         {t.status === 'CLOSED' && <Card title="Resolution"><p className="text-xs">Closed after office confirmation.</p>{t.rating && <p className="mt-1 flex items-center gap-2 text-xs">Office rating: <Stars value={t.rating} size={13} /></p>}</Card>}
-        <Card title="Conversation"><div className="space-y-2.5">{comments.map((c) => <div key={c.id} className={cx('flex gap-2', c.kind === 'office' && 'flex-row-reverse')}><Avatar name={c.by} size={26} /><div className={cx('max-w-[80%] rounded-xl px-3 py-1.5', c.kind === 'internal' ? 'border border-dashed border-warn bg-warn/10' : c.kind === 'office' ? 'bg-brand-soft' : 'bg-subtle')}><p className="text-xxs text-muted"><b className="text-ink">{c.by}</b> · {KIND[c.kind]} · {fmtTime(c.at)}</p><p className="text-xs">{c.text}</p></div></div>)}</div>
-          <div className="mt-3 flex gap-2">{!isOffice && me?.role !== 'STAFF' && <Select aria-label="Comment type" className="w-32" value={kind} onChange={(e) => setKind(e.target.value as Comment['kind'])} options={[{ value: 'admin', label: 'Comment' }, { value: 'internal', label: 'Internal note' }]} />}<Input value={msg} onChange={(e) => setMsg(e.target.value)} onKeyDown={(e) => e.key === 'Enter' && send()} placeholder="Write a message…" aria-label="Message" /><Button variant="primary" onClick={send} aria-label="Send"><Send size={14} /></Button></div></Card>
+        <Card title="Conversation" action={<span className="rounded-full bg-subtle px-2 py-0.5 text-xxs font-semibold text-muted">{comments.length}</span>}>
+          <div className="max-h-64 space-y-2 overflow-y-auto pr-1">{comments.map((c) => <div key={c.id} className={cx('flex gap-2', c.kind === 'office' && 'flex-row-reverse')}><Avatar name={c.by} size={24} /><div className={cx('max-w-[80%] rounded-2xl px-3 py-1.5', c.kind === 'internal' ? 'border border-dashed border-warn bg-warn/10' : c.kind === 'office' ? 'rounded-tr-sm bg-brand-soft' : 'rounded-tl-sm bg-subtle')}><p className="text-[10.5px] text-muted"><b className="text-ink">{c.by}</b> · {KIND[c.kind]} · {fmtTime(c.at)}</p><p className="text-xs">{c.text}</p></div></div>)}</div>
+          <div className="mt-2.5 flex gap-2 border-t pt-2.5">{!isOffice && me?.role !== 'STAFF' && <Select aria-label="Comment type" className="w-32" value={kind} onChange={(e) => setKind(e.target.value as Comment['kind'])} options={[{ value: 'admin', label: 'Comment' }, { value: 'internal', label: 'Internal note' }]} />}<Input value={msg} onChange={(e) => setMsg(e.target.value)} onKeyDown={(e) => e.key === 'Enter' && send()} placeholder="Write a message…" aria-label="Message" /><Button variant="primary" onClick={send} aria-label="Send"><Send size={14} /></Button></div></Card>
       </div>
-      <Card title="Timeline"><Timeline items={t.timeline} /></Card>
+      <div className="relative h-[340px] lg:h-auto lg:min-h-[300px]"><Card className="absolute inset-0" pad={false} title="Timeline" action={<span className="text-xxs text-muted">{t.timeline.length} events</span>}>
+        <div className="relative h-full"><div className="absolute inset-0 overflow-y-auto p-3 pl-4"><Timeline items={t.timeline} /></div></div></Card></div>
     </div>
     <Modal open={rate} onClose={() => setRate(false)} title="Confirm resolution" size="sm" footer={<><Button onClick={() => setRate(false)}>Cancel</Button><Button variant="success" onClick={() => { ts.confirmClose(t.id, stars); setRate(false) }}>Close ticket</Button></>}><p className="mb-3 text-xs text-muted">Is the issue resolved? Rate the service.</p><div className="flex justify-center"><Stars value={stars} onChange={setStars} size={28} /></div></Modal>
   </>
+}
+
+function Tile({ icon, k, v, tone }: { icon: ReactNode; k: string; v?: ReactNode; tone?: 'warn' | 'bad' }) {
+  return <div className="min-w-0 rounded-lg border border-line bg-surface px-2.5 py-1.5">
+    <p className={`flex items-center gap-1 text-[10px] font-semibold uppercase tracking-wide ${tone === 'bad' ? 'text-bad' : tone === 'warn' ? 'text-warn' : 'text-faint'}`}>{icon}{k}</p>
+    <p className="mt-0.5 truncate text-[12.5px] font-medium">{v || '—'}</p></div>
 }

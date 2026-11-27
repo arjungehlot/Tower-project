@@ -16,7 +16,7 @@ export default function Offices() {
     searchText={(o) => `${o.number} ${L.tenant(o.tenantId)?.name ?? ''} ${o.contactPerson} ${L.tower(o.towerId)?.name}`}
     filters={[{ label: 'Tower', options: towers.map((t) => t.name), pick: (o) => L.tower(o.towerId)?.name ?? '' }, { label: 'Status', options: OFFICE_STATUSES, pick: (o) => o.status }, { label: 'Type', options: OFFICE_TYPES, pick: (o) => o.type }]}
     onRowClick={(o) => nav(`/offices/${o.id}`)}
-    columns={[{ key: 'n', header: 'Office', sort: (o) => o.number, render: (o) => <span className="font-semibold">{o.number}</span> },
+    columns={[{ key: 'n', header: 'Office', sort: (o) => o.number, render: (o) => <span className="font-medium">{o.number}</span> },
       { key: 't', header: 'Tower / Floor', sort: (o) => o.towerId + o.floorId, render: (o) => `${L.tower(o.towerId)?.code} · F${L.floor(o.floorId)?.number}` },
       { key: 'c', header: 'Company', sort: (o) => L.tenant(o.tenantId)?.name ?? '', render: (o) => L.tenant(o.tenantId)?.name ?? <span className="text-faint">—</span> },
       { key: 'a', header: 'Area (sqft)', sort: (o) => o.area, render: (o) => o.area.toLocaleString('en-IN'), hideMobile: true },

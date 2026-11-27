@@ -1,6 +1,6 @@
 import { useNavigate, Link } from 'react-router-dom'
 import { Building, UserRoundCheck, Users, LogOut, Ticket, UserCheck, HardHat, ShieldQuestion, AlertTriangle, CalendarClock, IndianRupee, Check, ChevronRight } from 'lucide-react'
-import { Avatar, Badge, Card, PageHeader, ProgressBar, StatCard, StatusBadge } from '@/components/ui'
+import { Avatar, Badge, Card, PageHeader, ProgressBar, StatusBadge } from '@/components/ui'
 import { BuildingViz } from '@/components/business/BuildingViz'
 import { ActivityFeed } from '@/components/business/ActivityFeed'
 import { VisitorCard } from '@/components/business/VisitorCard'
@@ -18,6 +18,7 @@ import { currency } from '@/utils/constants'
 import { daysUntil, fmtTime, isToday, dayKey } from '@/utils/dateUtils'
 import { countBy } from '@/utils/helpers'
 
+const GO: Record<string, string> = { 'Total offices': '/offices', 'Visitors today': '/visitors', 'Inside now': '/visitors/live', 'Exited today': '/visitors', 'Open tickets': '/tickets', 'Available staff': '/staff', 'Active staff': '/staff', Approvals: '/visitors' }
 const spark = (dates: string[]) => [...Array(7)].map((_, i) => { const d = new Date(Date.now() - (6 - i) * 86400000).toISOString().slice(0, 10); return dates.filter((x) => x && dayKey(x) === d).length })
 export default function Dashboard() {
   const nav = useNavigate(), L = useLookups(), { me } = useMe(), s = useDb()
@@ -34,27 +35,33 @@ export default function Dashboard() {
   const ticketStatus = Object.entries(countBy(s.tickets, (t) => t.status)).map(([name, value]) => ({ name: name.replace('_', ' '), value }))
   return <>
     <PageHeader title={`Welcome back, ${me?.name.split(' ')[0]}`} subtitle={`${new Date().toLocaleDateString('en-IN', { weekday: 'long', day: 'numeric', month: 'long' })} · Command center`} />
-    <div className="mb-3 grid grid-cols-2 gap-3 md:grid-cols-4">
-      <StatCard label="Total offices" value={os.total} icon={<Building size={15} />} sub={`${os.occupied} occupied · ${os.vacant} vacant`} trend={Math.round((os.occupied / os.total) * 100) - 70} onClick={() => nav('/offices')} />
-      <StatCard label="Visitors today" value={vs.total} icon={<UserRoundCheck size={15} />} tone="vis" spark={sp} sub="vs 7-day trend" trend={8} onClick={() => nav('/visitors')} />
-      <StatCard label="Currently inside" value={vs.inside} icon={<Users size={15} />} tone="info" sub="Live" onClick={() => nav('/visitors/live')} />
-      <StatCard label="Exited today" value={vs.exited} icon={<LogOut size={15} />} sub={`${vs.entered} entered`} />
-      <StatCard label="Open tickets" value={ts.active} icon={<Ticket size={15} />} tone="warn" sub={`${ts.critical} critical · ${ts.overdue} overdue`} onClick={() => nav('/tickets')} />
-      <StatCard label="Available staff" value={es.available} icon={<UserCheck size={15} />} tone="ok" sub={`${es.busy} busy`} onClick={() => nav('/staff/availability')} />
-      <StatCard label="Active staff" value={es.active} icon={<HardHat size={15} />} sub={`of ${es.total} registered`} />
-      <StatCard label="Pending approvals" value={pending.length} icon={<ShieldQuestion size={15} />} tone="warn" sub={`${tk.toVerify} tasks to verify`} onClick={() => nav('/visitors/live')} />
+    <div className="mb-3 grid grid-cols-2 gap-px overflow-hidden rounded-xl border border-line bg-line shadow-card sm:grid-cols-4 xl:grid-cols-8">
+      {([
+        ['Total offices', os.total, <Building size={14} />, 'text-brand bg-brand/10', `${os.occupied} occ · ${os.vacant} vacant`, Math.round((os.occupied / os.total) * 100) - 70],
+        ['Visitors today', vs.total, <UserRoundCheck size={14} />, 'text-vis bg-vis/10', 'vs 7-day avg', 8],
+        ['Inside now', vs.inside, <Users size={14} />, 'text-info bg-info/10', 'Live'],
+        ['Exited today', vs.exited, <LogOut size={14} />, 'text-muted bg-subtle', `${vs.entered} entered`],
+        ['Open tickets', ts.active, <Ticket size={14} />, 'text-warn bg-warn/10', `${ts.critical} critical · ${ts.overdue} overdue`],
+        ['Available staff', es.available, <UserCheck size={14} />, 'text-ok bg-ok/10', `${es.busy} busy`],
+        ['Active staff', es.active, <HardHat size={14} />, 'text-brand bg-brand/10', `of ${es.total} registered`],
+        ['Approvals', pending.length, <ShieldQuestion size={14} />, 'text-warn bg-warn/10', `${tk.toVerify} to verify`],
+      ] as [string, number, React.ReactNode, string, string, number?][]).map(([l, v, ic, tc, sub, tr]) => <Link key={l} to={GO[l]} className="group min-w-0 bg-surface px-3 py-2.5 transition-colors hover:bg-brand-soft/60 focus-visible:bg-brand-soft/60 focus-visible:outline-none">
+        <div className="flex items-center justify-between gap-1"><span className="truncate text-[10.5px] font-medium uppercase tracking-wide text-muted">{l}</span><span className={`flex h-6 w-6 shrink-0 items-center justify-center rounded-md ${tc}`}>{ic}</span></div>
+        <p className="mt-1 flex items-baseline gap-1.5 text-xl font-semibold leading-none tabular-nums">{v}{tr !== undefined && <span className={`text-[10.5px] font-medium ${tr >= 0 ? 'text-ok' : 'text-bad'}`}>{tr >= 0 ? '+' : ''}{tr}%</span>}</p>
+        <p className="mt-1 truncate text-[11px] text-muted">{sub}</p>
+      </Link>)}
     </div>
-    <div className="grid items-stretch gap-3 xl:h-[500px] xl:grid-cols-3">
+    <div className="grid items-stretch gap-3 xl:grid-cols-3">
       <div className="xl:col-span-2 xl:h-full"><BuildingViz /></div>
-      <Card title="Live visitor monitor" action={<Link to="/visitors/live" className="text-xxs font-medium text-brand">View all</Link>} className="xl:h-full" pad={false}>
-        <div className="xl:relative xl:h-full"><div className="max-h-[400px] space-y-1.5 overflow-y-auto p-2 xl:absolute xl:inset-0 xl:max-h-none">{inside.slice(0, 6).map((v) => <VisitorCard key={v.id} v={v} showDuration onClick={() => nav(`/visitors/${v.id}`)} />)}{pending.slice(0, 3).map((v) => <VisitorCard key={v.id} v={v} onClick={() => nav(`/visitors/${v.id}`)} actions={<VisitorActions v={v} size="xs" />} />)}{!inside.length && !pending.length && <p className="p-6 text-center text-xs text-muted">No active visitors.</p>}</div></div>
+      <Card title="Live visitor monitor" action={<Link to="/visitors/live" className="text-xxs font-medium text-brand">View all</Link>} className="xl:relative xl:h-full" pad={false}>
+        <div><div className="max-h-[400px] space-y-1.5 overflow-y-auto p-2 xl:absolute xl:inset-x-0 xl:bottom-0 xl:top-[37px] xl:max-h-none">{inside.slice(0, 6).map((v) => <VisitorCard key={v.id} v={v} showDuration onClick={() => nav(`/visitors/${v.id}`)} />)}{pending.slice(0, 3).map((v) => <VisitorCard key={v.id} v={v} onClick={() => nav(`/visitors/${v.id}`)} actions={<VisitorActions v={v} size="xs" />} />)}{!inside.length && !pending.length && <p className="p-6 text-center text-xs text-muted">No active visitors.</p>}</div></div>
       </Card>
     </div>
     <div className="mt-3 grid items-stretch gap-3 md:grid-cols-2 xl:grid-cols-3">
-      <Card title="Building occupancy"><div className="flex items-end justify-between"><div><p className="text-2xl font-bold">{totalIn}</p><p className="text-xxs text-muted">of {cap.toLocaleString('en-IN')} capacity</p></div><Badge tone="brand">{Math.round((totalIn / cap) * 100)}%</Badge></div><ProgressBar className="mt-2" value={(totalIn / cap) * 100} />
+      <Card title="Building occupancy"><div className="flex items-end justify-between"><div><p className="text-xl font-semibold">{totalIn}</p><p className="text-xxs text-muted">of {cap.toLocaleString('en-IN')} capacity</p></div><Badge tone="brand">{Math.round((totalIn / cap) * 100)}%</Badge></div><ProgressBar className="mt-2" value={(totalIn / cap) * 100} />
         <div className="mt-3 grid grid-cols-3 gap-2 text-center text-xs"><div><p className="font-bold">{empIn}</p><p className="text-xxs text-muted">Employees</p></div><div><p className="font-bold text-info">{inside.length}</p><p className="text-xxs text-muted">Visitors</p></div><div><p className="font-bold">{vs.exited}</p><p className="text-xxs text-muted">Exited</p></div></div></Card>
-      <Card title="Entries vs exits today"><LineSeries data={hours} keys={['Entries', 'Exits']} h={150} /></Card>
-      <Card title="Ticket status"><Donut data={ticketStatus} h={170} /></Card>
+      <Card title="Entries vs exits today"><LineSeries data={hours} keys={['Entries', 'Exits']} h={130} /></Card>
+      <Card title="Ticket status"><Donut data={ticketStatus} h={140} /></Card>
       <Card title="Alerts" action={<span className="inline-flex items-center gap-1 rounded-full bg-warn/15 px-2 py-0.5 text-[10.5px] font-semibold text-warn"><AlertTriangle size={11} />{alerts.length}</span>} pad={false}>
         <ul className="max-h-[300px] space-y-1.5 overflow-y-auto p-2">{alerts.map((a) => { const [head, ...rest] = a.text.split(': '), code = head.replace('Critical ticket ', ''), crit = a.tone === 'red'; return <li key={a.id}><Link to={a.to} className={`group flex items-center gap-2.5 rounded-lg border border-l-[3px] bg-surface px-2.5 py-1.5 transition-all hover:-translate-y-px hover:shadow-card ${crit ? 'border-bad/20 border-l-bad' : 'border-warn/20 border-l-warn'}`}>
           <span className={`flex h-7 w-7 shrink-0 items-center justify-center rounded-md ${crit ? 'bg-bad/15 text-bad' : 'bg-warn/15 text-warn'}`}><AlertTriangle size={14} /></span>
@@ -64,7 +71,7 @@ export default function Dashboard() {
       <Card title="Recent approvals" action={<span className="rounded-full bg-ok/15 px-2 py-0.5 text-[10.5px] font-semibold text-ok">{recentApprovals.length} today</span>} pad={false}>
         <ul className="space-y-1.5 p-2">{recentApprovals.map((v) => <li key={v.id} className="flex items-center gap-2.5 rounded-lg border border-line px-2.5 py-1.5 transition-colors hover:bg-subtle/60"><Avatar name={v.name} src={v.photo} size={30} /><div className="min-w-0 flex-1 leading-tight"><p className="truncate text-xs font-semibold">{v.name}</p><p className="mt-0.5 flex items-center gap-1.5 text-[10.5px] text-muted"><span className="rounded bg-subtle px-1 py-px font-semibold">Office {L.officeNo(v.officeId)}</span>{fmtTime(v.approvedAt)}</p></div><span className="inline-flex items-center gap-1 rounded-full border border-ok/50 bg-ok/20 px-1.5 py-0.5 text-[10px] font-semibold text-ok"><Check size={11} />Approved</span></li>)}</ul></Card>
       <Card title="Upcoming maintenance" action={<CalendarClock size={14} className="text-muted" />}><ul className="space-y-2">{upcoming.map((m) => { const d = daysUntil(m.nextDue); return <li key={m.id} className="flex items-center justify-between text-xs"><span>{m.title}<span className="block text-xxs text-muted">{m.frequency}</span></span><Badge tone={d < 0 ? 'red' : d < 7 ? 'orange' : 'blue'}>{d < 0 ? `${-d}d overdue` : `in ${d}d`}</Badge></li> })}</ul></Card>
-      {isAdmin && <Card title="Rent overview" action={<IndianRupee size={14} className="text-muted" />}><p className="text-2xl font-bold">{currency(rent)}</p><p className="text-xxs text-muted">Monthly rent roll · {os.occupied} paying offices</p><div className="mt-3"><Bars data={s.towers.map((t) => ({ name: t.name, value: Math.round(offices.filter((o) => o.towerId === t.id && o.status === 'Occupied').reduce((a, o) => a + o.rent, 0) / 1000) }))} h={120} /></div><p className="text-center text-xxs text-muted">₹ thousands per month</p></Card>}
+      {isAdmin && <Card title="Rent overview" action={<IndianRupee size={14} className="text-muted" />}><p className="text-xl font-semibold">{currency(rent)}</p><p className="text-xxs text-muted">Monthly rent roll · {os.occupied} paying offices</p><div className="mt-3"><Bars data={s.towers.map((t) => ({ name: t.name, value: Math.round(offices.filter((o) => o.towerId === t.id && o.status === 'Occupied').reduce((a, o) => a + o.rent, 0) / 1000) }))} h={120} /></div><p className="text-center text-xxs text-muted">₹ thousands per month</p></Card>}
       <Card title="Staff availability"><div className="space-y-2">{[['Available', es.available, 'ok'], ['Busy', es.busy, 'info'], ['On break', es.onBreak, 'warn'], ['Off duty / absent', es.offDuty + es.absent, 'bad']].map(([l, n, t]) => <div key={l as string}><div className="flex justify-between text-xs"><span>{l}</span><b>{n}</b></div><ProgressBar value={((n as number) / es.total) * 100} tone={t as 'ok'} /></div>)}</div></Card>
     </div>
     <p className="sr-only"><StatusBadge status="OPEN" />{today.length}</p>

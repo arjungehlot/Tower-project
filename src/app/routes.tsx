@@ -12,6 +12,7 @@ import OfficeDashboard from '@/pages/dashboard/OfficeDashboard'
 import StaffDashboard from '@/pages/dashboard/StaffDashboard'
 import GuardHome from '@/pages/guard/GuardHome'
 import Towers from '@/pages/buildings/Towers'
+import Tower3DPage from '@/pages/buildings/Tower3DPage'
 import { Floors, FloorDetail } from '@/pages/buildings/Floors'
 import Offices from '@/pages/buildings/Offices'
 import OfficeDetail from '@/pages/buildings/OfficeDetail'
@@ -62,7 +63,7 @@ export const router = createBrowserRouter([
   { element: <Shell roles={GRD} layout={<GuardLayout />} />, children: [{ path: '/guard', element: <GuardHome /> }, { path: '/guard/register', element: <VisitorRegister /> }, { path: '/guard/emergency', element: <Emergency /> }] },
   { element: <Shell roles={[...ADM, ...SUP, ...OFF, ...STF]} layout={<AppLayout />} />, children: [
     { path: '/dashboard', element: g([...ADM, ...SUP], <Dashboard />) }, { path: '/office', element: g(OFF, <OfficeDashboard />) }, { path: '/my-work', element: g(STF, <StaffDashboard />) },
-    { path: '/towers', element: g(ADM, <Towers />) }, { path: '/floors', element: g(ADM, <Floors />) }, { path: '/floors/:id', element: g(ADM, <FloorDetail />) },
+    { path: '/towers', element: g(ADM, <Towers />) }, { path: '/tower-3d', element: g([...ADM, ...SUP], <Tower3DPage />) }, { path: '/floors', element: g(ADM, <Floors />) }, { path: '/floors/:id', element: g(ADM, <FloorDetail />) },
     { path: '/offices', element: g([...ADM, ...SUP], <Offices />) }, { path: '/offices/:id', element: g([...ADM, ...SUP, ...OFF], <OfficeDetail />) },
     { path: '/tenants', element: g(ADM, <Tenants />) }, { path: '/tenants/:id', element: g(ADM, <TenantDetail />) }, { path: '/leases', element: g(ADM, <Leases />) },
     { path: '/visitors', element: g([...ADM, ...SUP, ...OFF], <VisitorList />) }, { path: '/visitors/gate', element: g(ADM, <VisitorList mode="gate" />) }, { path: '/visitors/history', element: g(ADM, <VisitorList mode="history" />) },

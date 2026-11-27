@@ -1,3 +1,4 @@
+import { markNew } from './recent'
 import { create } from 'zustand'
 import type { Db, Coll, Role, User } from '@/types'
 import { storage } from '@/services/storageService'
@@ -77,7 +78,7 @@ export const useDb = create<State>((set, get) => ({
   towerFilter: 'all',
   demoMode: storage.get<boolean>('demo') ?? true,
   toasts: [],
-  add: (c, item) => set((s) => { const next = [item, ...(s[c] as unknown[])] as never; storage.set(c, next); return { [c]: next } as never }),
+  add: (c, item) => set((s) => { markNew((item as { id?: string }).id); const next = [item, ...(s[c] as unknown[])] as never; storage.set(c, next); return { [c]: next } as never }),
   patch: (c, id, p) => set((s) => { const next = (s[c] as { id: string }[]).map((x) => (x.id === id ? { ...x, ...p } : x)) as never; storage.set(c, next); return { [c]: next } as never }),
   remove: (c, id) => set((s) => { const next = (s[c] as { id: string }[]).filter((x) => x.id !== id) as never; storage.set(c, next); return { [c]: next } as never }),
   setAll: (c, items) => { storage.set(c, items); set({ [c]: items } as never) },

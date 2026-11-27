@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom'
-import { Badge, PageHeader, DataTable, Select, StatCard } from '@/components/ui'
+import { Pill, PageHeader, DataTable, Select, StatCard } from '@/components/ui'
 import { FileText, AlertTriangle, CalendarClock, IndianRupee } from 'lucide-react'
 import { useState } from 'react'
 import { useDb } from '@/store/db'
@@ -17,6 +17,6 @@ export default function Leases() {
     </div>
     <DataTable rows={rows} rowKey={(o) => o.id} onRowClick={(o) => nav(`/offices/${o.id}`)} searchText={(o) => `${o.number} ${L.tenant(o.tenantId)?.name}`} exportName="leases" defaultSort={{ key: 'e', dir: 'asc' }}
       filters={<Select aria-label="Lease state" className="w-40" value={f} onChange={(e) => setF(e.target.value)} placeholder="All leases" options={['Expired', 'Expiring soon', 'Active']} />}
-      columns={[{ key: 'o', header: 'Office', sort: (o) => o.number, render: (o) => <b>{o.number}</b>, csv: (o) => o.number }, { key: 'c', header: 'Company', sort: (o) => L.tenant(o.tenantId)?.name ?? '', render: (o) => L.tenant(o.tenantId)?.name, csv: (o) => L.tenant(o.tenantId)?.name }, { key: 's', header: 'Start', sort: (o) => o.leaseStart, render: (o) => fmtDate(o.leaseStart) }, { key: 'e', header: 'End', sort: (o) => o.leaseEnd, render: (o) => fmtDate(o.leaseEnd) },
-        { key: 'r', header: 'Rent', sort: (o) => o.rent, render: (o) => currency(o.rent), csv: (o) => o.rent }, { key: 'd', header: 'Deposit', sort: (o) => o.deposit, render: (o) => currency(o.deposit), hideMobile: true }, { key: 'l', header: 'Status', sort: (o) => o.left, render: (o) => o.left < 0 ? <Badge tone="red" dot>Expired</Badge> : o.left < 90 ? <Badge tone="orange" dot>{o.left}d left</Badge> : <Badge tone="green" dot>Active</Badge> }]} /></>
+      columns={[{ key: 'o', header: 'Office', sort: (o) => o.number, render: (o) => o.number, csv: (o) => o.number }, { key: 'c', header: 'Company', sort: (o) => L.tenant(o.tenantId)?.name ?? '', render: (o) => L.tenant(o.tenantId)?.name, csv: (o) => L.tenant(o.tenantId)?.name }, { key: 's', header: 'Start', sort: (o) => o.leaseStart, render: (o) => fmtDate(o.leaseStart) }, { key: 'e', header: 'End', sort: (o) => o.leaseEnd, render: (o) => fmtDate(o.leaseEnd) },
+        { key: 'r', header: 'Rent', sort: (o) => o.rent, render: (o) => currency(o.rent), csv: (o) => o.rent }, { key: 'd', header: 'Deposit', sort: (o) => o.deposit, render: (o) => currency(o.deposit), hideMobile: true }, { key: 'l', header: 'Status', sort: (o) => o.left, render: (o) => o.left < 0 ? <Pill tone="bad">Expired</Pill> : o.left < 90 ? <Pill tone="warn">{o.left}d left</Pill> : <Pill tone="ok">Active</Pill> }]} /></>
 }

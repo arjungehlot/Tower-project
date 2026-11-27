@@ -13,11 +13,11 @@ export const toneOf = (s: string): Tone => MAP[s] ?? 'gray'
 export function Badge({ tone = 'gray', children, dot, className }: { tone?: Tone; children: ReactNode; dot?: boolean; className?: string }) {
   return <span className={cx('inline-flex items-center gap-1 rounded-md px-1.5 py-px text-[10.5px] font-semibold whitespace-nowrap ring-1 ring-inset ring-current/15', TONES[tone], className)}>{dot && <span className="h-1.5 w-1.5 rounded-full bg-current" />}{children}</span>
 }
-const SOLID: Record<string, string> = { green: 'bg-ok/20 text-ok border-ok/50', orange: 'bg-warn/20 text-warn border-warn/50', red: 'bg-bad/20 text-bad border-bad/50', blue: 'bg-info/20 text-info border-info/50', gray: 'bg-faint/25 text-muted border-faint/60', purple: 'bg-vis/20 text-vis border-vis/50', brand: 'bg-brand/20 text-brand border-brand/50' }
-const LIVE = new Set(['PENDING', 'INSIDE', 'INFO_REQUESTED', 'IN_PROGRESS', 'OPEN'])
 export function StatusBadge({ status, label }: { status: string; label?: string }) {
-  const tone = toneOf(status), live = LIVE.has(status)
-  return <span className={cx('inline-flex items-center gap-1.5 whitespace-nowrap rounded-full border px-2 py-0.5 text-[10.5px] font-semibold', SOLID[tone])}>
-    <span className="relative flex h-1.5 w-1.5"><span className={cx('absolute inline-flex h-full w-full rounded-full bg-current opacity-60', live && 'animate-ping')} /><span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-current" /></span>{label ?? status.replace(/_/g, ' ')}
-  </span>
+  const tone = toneOf(status)
+  const text = label ?? (/^[A-Z_]+$/.test(status) ? status.charAt(0) + status.slice(1).toLowerCase().replace(/_/g, ' ') : status)
+  return <span className={cx('inline-flex items-center whitespace-nowrap rounded-md px-2 py-0.5 text-[11px] font-medium', TONES[tone])}>{text}</span>
 }
+
+/** Light-blue "NEW" tag shown on freshly created records. */
+export const NewTag = ({ className }: { className?: string }) => <span className={cx('inline-flex shrink-0 items-center rounded-md bg-info/15 px-1.5 py-px text-[9.5px] font-medium tracking-wider text-info ring-1 ring-inset ring-info/20', className)}>NEW</span>

@@ -30,24 +30,32 @@ export function CommandPalette({ open, onClose }: { open: boolean; onClose: () =
   }, [q, me, s.visitors, s.offices, s.employees, s.tickets, s.tasks, s.tenants])
   const go = (h?: Hit) => { if (h) { nav(h.to); onClose() } }
   if (!open) return null
+  const TONE: Record<string, string> = { 'Go to': 'bg-brand/10 text-brand', Visitors: 'bg-vis/10 text-vis', Offices: 'bg-info/10 text-info', Employees: 'bg-ok/10 text-ok', Tickets: 'bg-warn/10 text-warn', Tasks: 'bg-bad/10 text-bad', Companies: 'bg-subtle text-muted' }
+  const Key = ({ children }: { children: React.ReactNode }) => <kbd className="rounded-md border border-line bg-surface px-1.5 py-px font-sans text-[10px] font-semibold text-muted shadow-sm">{children}</kbd>
   return (
-    <div className="fixed inset-0 z-[70] flex items-start justify-center bg-slate-900/50 p-4 pt-[12vh]" onClick={onClose} role="dialog" aria-modal="true" aria-label="Command palette">
-      <div className="w-full max-w-xl overflow-hidden rounded-2xl border border-line bg-surface shadow-pop" onClick={(e) => e.stopPropagation()}>
-        <div className="flex items-center gap-2 border-b px-3"><Search size={16} className="text-faint" />
-          <input ref={ref} value={q} onChange={(e) => { setQ(e.target.value); setIdx(0) }} placeholder="Search visitors, offices, employees, tickets, tasks, companies…" aria-label="Search"
+    <div className="fixed inset-0 z-[70] flex items-start justify-center bg-slate-900/45 p-4 pt-[11vh] backdrop-blur-sm" onClick={onClose} role="dialog" aria-modal="true" aria-label="Command palette">
+      <div className="w-full max-w-xl animate-[pop_.16s_ease-out] overflow-hidden rounded-2xl border border-line bg-surface shadow-pop ring-1 ring-black/5" onClick={(e) => e.stopPropagation()}>
+        <div className="h-0.5 bg-gradient-to-r from-brand/40 via-vis/30 to-info/30" />
+        <div className="flex items-center gap-3 border-b px-4">
+          <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-gradient-to-br from-brand/20 to-vis/10 text-brand"><Search size={15} /></span>
+          <input ref={ref} value={q} onChange={(e) => { setQ(e.target.value); setIdx(0) }} placeholder="Search visitors, offices, tickets, tasks…" aria-label="Search" autoComplete="off"
             onKeyDown={(e) => { if (e.key === 'ArrowDown') { e.preventDefault(); setIdx((i) => Math.min(i + 1, hits.length - 1)) } else if (e.key === 'ArrowUp') { e.preventDefault(); setIdx((i) => Math.max(i - 1, 0)) } else if (e.key === 'Enter') go(hits[idx]); else if (e.key === 'Escape') onClose() }}
-            className="h-12 flex-1 bg-transparent text-sm outline-none placeholder:text-faint" /><kbd className="rounded border px-1.5 text-xxs text-muted">Esc</kbd></div>
-        <ul className="max-h-[50vh] overflow-y-auto p-1.5" role="listbox">
-          {hits.length === 0 && <li className="px-3 py-8 text-center text-xs text-muted">No results for “{q}”</li>}
+            style={{ outline: 'none', boxShadow: 'none' }} className="h-12 flex-1 border-0 bg-transparent text-sm font-medium outline-none ring-0 placeholder:font-normal placeholder:text-faint focus:outline-none focus:ring-0 focus-visible:outline-none" />
+          <button onClick={onClose} className="rounded-md border border-line bg-subtle px-1.5 py-0.5 text-[10px] font-semibold text-muted hover:text-ink">ESC</button></div>
+        <ul className="max-h-[48vh] overflow-y-auto p-2" role="listbox">
+          {hits.length === 0 && <li className="flex flex-col items-center gap-1 px-3 py-9 text-center"><span className="flex h-10 w-10 items-center justify-center rounded-full bg-subtle text-faint"><Search size={18} /></span><p className="text-sm font-semibold">No results</p><p className="text-xs text-muted">Nothing matches “{q}”. Try a name, office number or ticket code.</p></li>}
           {hits.map((h, i) => (
             <li key={h.group + h.id} role="option" aria-selected={i === idx}>
-              {(i === 0 || hits[i - 1].group !== h.group) && <p className="px-2 pb-1 pt-2 text-[10px] font-semibold uppercase tracking-wider text-faint">{h.group}</p>}
-              <button onMouseEnter={() => setIdx(i)} onClick={() => go(h)} className={cx('flex w-full items-center gap-2.5 rounded-lg px-2.5 py-2 text-left text-[13px]', i === idx && 'bg-brand-soft text-brand')}>
-                {h.icon}<span className="flex-1 truncate">{h.label}</span>{h.sub && <span className="truncate text-xxs text-muted">{h.sub}</span>}{i === idx && <CornerDownLeft size={12} />}
+              {(i === 0 || hits[i - 1].group !== h.group) && <p className="px-2 pb-1 pt-2.5 text-[10px] font-bold uppercase tracking-wider text-faint">{h.group}</p>}
+              <button onMouseEnter={() => setIdx(i)} onClick={() => go(h)} className={cx('group flex w-full items-center gap-3 rounded-xl px-2.5 py-1.5 text-left text-[13px] transition-colors', i === idx ? 'bg-brand-soft' : 'hover:bg-subtle')}>
+                <span className={cx('flex h-7 w-7 shrink-0 items-center justify-center rounded-lg', TONE[h.group] ?? TONE['Go to'])}>{h.icon}</span>
+                <span className="min-w-0 flex-1"><span className={cx('block truncate font-medium', i === idx && 'text-brand')}>{h.label}</span>{h.sub && <span className="block truncate text-xxs text-muted">{h.sub}</span>}</span>
+                {i === idx && <span className="flex items-center gap-1 text-xxs font-semibold text-brand">Open<CornerDownLeft size={12} /></span>}
               </button>
             </li>
           ))}
         </ul>
+        <div className="flex items-center justify-between border-t bg-subtle/50 px-4 py-2 text-[11px] text-muted"><span className="flex items-center gap-3"><span className="flex items-center gap-1"><Key>↑</Key><Key>↓</Key>navigate</span><span className="flex items-center gap-1"><Key>↵</Key>open</span></span><span>{hits.length} result{hits.length === 1 ? '' : 's'}</span></div>
       </div>
     </div>
   )

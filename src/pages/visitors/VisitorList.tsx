@@ -1,7 +1,7 @@
 import { useMemo, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { Plus } from 'lucide-react'
-import { Avatar, Button, DataTable, PageHeader, Select, StatusBadge } from '@/components/ui'
+import { Avatar, Button, DataTable, PageHeader, Select, Pill, Dash, Muted, shortDT, type PillTone } from '@/components/ui'
 import { VisitorActions } from '@/components/business/VisitorActions'
 import { LiveDuration } from '@/components/business/VisitorCard'
 import { useVisitors } from '@/hooks/useVisitors'
@@ -9,8 +9,11 @@ import { useLookups } from '@/hooks/useLookups'
 import { useMe } from '@/hooks/useMe'
 import { useDb } from '@/store/db'
 import { PURPOSES } from '@/utils/constants'
-import { fmtDateTime, fmtTime, isToday } from '@/utils/dateUtils'
+import { fmtTime, isToday } from '@/utils/dateUtils'
 import type { Visitor } from '@/types'
+
+const VT: Record<string, PillTone> = { PENDING: 'warn', APPROVED: 'ok', REJECTED: 'bad', INSIDE: 'info', EXITED: 'muted', INFO_REQUESTED: 'vis' }
+const VL: Record<string, string> = { PENDING: 'Pending', APPROVED: 'Approved', REJECTED: 'Rejected', INSIDE: 'Inside', EXITED: 'Exited', INFO_REQUESTED: 'Info requested' }
 
 const TITLES = { all: ['Visitor Management', 'All visitor registrations'], gate: ['Gate Entries', "Today's entries and exits at the gate"], history: ['Visitor History', 'Completed and rejected visits'] }
 export default function VisitorList({ mode = 'all' }: { mode?: 'all' | 'gate' | 'history' }) {
@@ -42,14 +45,15 @@ export default function VisitorList({ mode = 'all' }: { mode?: 'all' | 'gate' | 
         <Select aria-label="Guard" className="!w-24" value={f.guard} onChange={(e) => set('guard', e.target.value)} options={users.filter((u) => u.role === 'SECURITY_GUARD').map((u) => ({ value: u.id, label: u.name }))} placeholder="Guard" />
         <Select aria-label="Purpose" className="!w-24" value={f.purpose} onChange={(e) => set('purpose', e.target.value)} options={PURPOSES} placeholder="Purpose" /></>}
       columns={[
-        { key: 'p', header: 'Visitor', sort: (v) => v.name, csv: (v) => v.name, render: (v: Visitor) => <div className="flex items-center gap-2"><Avatar name={v.name} src={v.photo} size={28} /><p className="font-semibold">{v.name}</p></div> },
-        { key: 'm', header: 'Mobile', render: (v) => <span className="tabular-nums text-muted">{v.mobile}</span>, csv: (v) => v.mobile, hideMobile: true },
-        { key: 'o', header: 'Office', sort: (v) => L.officeNo(v.officeId), render: (v) => <span className="inline-flex items-center gap-1.5"><b>{L.officeNo(v.officeId)}</b><span className="rounded bg-subtle px-1 py-px text-[9.5px] font-semibold text-muted">{L.tower(v.towerId)?.code}</span></span>, csv: (v) => L.officeNo(v.officeId) },
-        { key: 'h', header: 'Host', sort: (v) => L.host(v.hostId)?.name ?? '', render: (v) => L.host(v.hostId)?.name, hideMobile: true, csv: (v) => L.host(v.hostId)?.name },
-        { key: 'pu', header: 'Purpose', sort: (v) => v.purpose, render: (v) => <span className="rounded-md bg-brand-soft px-1.5 py-0.5 text-[10.5px] font-medium text-brand">{v.purpose}</span>, csv: (v) => v.purpose, hideMobile: true },
-        { key: 'en', header: 'Entry', sort: (v) => v.entryAt, render: (v) => v.entryAt ? <span className="tabular-nums">{fmtDateTime(v.entryAt)}</span> : <span className="text-faint">—</span>, csv: (v) => v.entryAt },
-        { key: 'ex', header: 'Exit / Inside', sort: (v) => v.exitAt, render: (v) => v.status === 'INSIDE' ? <span className="font-medium text-info"><LiveDuration from={v.entryAt} /></span> : v.exitAt ? <span className="tabular-nums">{fmtTime(v.exitAt)}</span> : <span className="text-faint">—</span>, csv: (v) => v.exitAt, hideMobile: true },
-        { key: 's', header: 'Status', sort: (v) => v.status, render: (v) => <StatusBadge status={v.status} />, csv: (v) => v.status },
+        { key: 'p', header: 'Visitor', sort: (v) => v.name, csv: (v) => v.name, render: (v: Visitor) => <span className="inline-flex items-center gap-2 whitespace-nowrap font-medium"><Avatar name={v.name} src={v.photo} size={24} />{v.name}</span> },
+        { key: 'm', header: 'Mobile', render: (v) => <Muted>{v.mobile}</Muted>, csv: (v) => v.mobile, hideMobile: true },
+        { key: 'o', header: 'Office', sort: (v) => L.officeNo(v.officeId), render: (v) => <span className="whitespace-nowrap">{L.officeNo(v.officeId)}</span>, csv: (v) => L.officeNo(v.officeId) },
+        { key: 't', header: 'Tower', sort: (v) => L.tower(v.towerId)?.name ?? '', render: (v) => <Muted>{L.tower(v.towerId)?.name}</Muted>, csv: (v) => L.tower(v.towerId)?.name, hideMobile: true },
+        { key: 'h', header: 'Host', sort: (v) => L.host(v.hostId)?.name ?? '', render: (v) => <span className="whitespace-nowrap">{L.host(v.hostId)?.name}</span>, hideMobile: true, csv: (v) => L.host(v.hostId)?.name },
+        { key: 'pu', header: 'Purpose', sort: (v) => v.purpose, render: (v) => <Muted>{v.purpose}</Muted>, csv: (v) => v.purpose, hideMobile: true },
+        { key: 'en', header: 'Entry', sort: (v) => v.entryAt, render: (v) => shortDT(v.entryAt), csv: (v) => v.entryAt },
+        { key: 'ex', header: 'Exit / Inside', sort: (v) => v.exitAt, render: (v) => v.status === 'INSIDE' ? <span className="whitespace-nowrap text-info"><LiveDuration from={v.entryAt} /></span> : v.exitAt ? <span className="whitespace-nowrap">{fmtTime(v.exitAt)}</span> : <Dash />, csv: (v) => v.exitAt, hideMobile: true },
+        { key: 's', header: 'Status', sort: (v) => v.status, render: (v) => <Pill tone={VT[v.status] ?? 'muted'}>{VL[v.status] ?? v.status}</Pill>, csv: (v) => v.status },
         { key: 'a', header: 'Actions', className: 'text-right', render: (v) => <div className="flex justify-end gap-1" onClick={(e) => e.stopPropagation()}><VisitorActions v={v} size="xs" iconOnly /></div> },
       ]}
       empty={{ title: 'No visitors found', text: 'Adjust the filters or register a new visitor.', action: can('visitors', 'create') ? 'Register Visitor' : undefined, onAction: () => nav('/visitor/register') }} />

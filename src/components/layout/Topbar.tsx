@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import { Link, useLocation, useNavigate } from 'react-router-dom'
 import { Bell, Building2, ChevronRight, Menu, Moon, Plus, Search, Sun, LogOut, User, UserRoundCheck, Ticket, ShieldAlert, CheckCheck, Settings2, BellOff, CreditCard, ClipboardList, DoorOpen, Users, Building } from 'lucide-react'
 import { useDb } from '@/store/db'
@@ -18,7 +18,14 @@ export function Topbar({ openMenu, openSearch }: { openMenu: () => void; openSea
   const { theme, setTheme, logout, towers, towerFilter, setTowerFilter, notifications } = useDb()
   const crumbs = useMemo(() => loc.pathname.split('/').filter(Boolean), [loc.pathname])
   const mine = notifications.filter((n) => visibleTo(n, me)), unread = mine.filter((n) => !n.read)
-  const [bell, setBell] = useState(false)
+  const [bell, setBell] = useState(false), bellRef = useRef<HTMLDivElement>(null)
+  useEffect(() => {
+    if (!bell) return
+    const down = (e: MouseEvent | TouchEvent) => { if (bellRef.current && !bellRef.current.contains(e.target as Node)) setBell(false) }
+    const key = (e: KeyboardEvent) => e.key === 'Escape' && setBell(false)
+    document.addEventListener('mousedown', down); document.addEventListener('touchstart', down); document.addEventListener('keydown', key)
+    return () => { document.removeEventListener('mousedown', down); document.removeEventListener('touchstart', down); document.removeEventListener('keydown', key) }
+  }, [bell])
   if (!me) return null
   const isAdm = ['SUPER_ADMIN', 'ADMIN'].includes(me.role)
   const create = [
@@ -32,7 +39,7 @@ export function Topbar({ openMenu, openSearch }: { openMenu: () => void; openSea
   const rl = ROLE_LABEL[me.role]
   return (
     <header className="no-print sticky top-0 z-30 flex h-11 items-center gap-2 border-b bg-surface/85 px-3 backdrop-blur-md md:px-4">
-      <span className="pointer-events-none absolute inset-x-0 top-0 h-[2px] bg-gradient-to-r from-brand via-vis to-info" />
+      <span className="pointer-events-none absolute inset-x-0 top-0 h-[2px] bg-gradient-to-r from-brand/40 via-vis/30 to-info/30" />
       <button className="rounded-md p-1.5 text-muted hover:bg-subtle md:hidden" onClick={openMenu} aria-label="Open menu"><Menu size={18} /></button>
       <nav aria-label="Breadcrumb" className="hidden min-w-0 items-center gap-1 text-[11.5px] text-muted lg:flex">
         <Link to="/" className="rounded px-1 hover:bg-subtle hover:text-ink">Home</Link>
@@ -43,12 +50,12 @@ export function Topbar({ openMenu, openSearch }: { openMenu: () => void; openSea
       </button>
       {isAdm && towers.length > 1 && <label className="relative hidden md:block"><Building2 size={13} className="pointer-events-none absolute left-2.5 top-1/2 -translate-y-1/2 text-brand" /><select aria-label="Select tower" value={towerFilter} onChange={(e) => setTowerFilter(e.target.value)} className="input !h-7 !w-32 rounded-full !pl-7 text-[11.5px] font-medium"><option value="all">All towers</option>{towers.map((t) => <option key={t.id} value={t.id}>{t.name}</option>)}</select></label>}
       {create.some((c) => !c.hidden) && <Dropdown trigger={<button className="inline-flex h-7 items-center gap-1 rounded-full bg-gradient-to-b from-brand to-brand-strong px-3 text-xs font-semibold text-white shadow-sm shadow-brand/30 hover:brightness-110 dark:text-slate-900"><Plus size={14} /><span className="hidden sm:inline">Create</span></button>} items={create} />}
-      <div className="relative">
+      <div className="relative" ref={bellRef}>
         <button className="relative rounded-full p-1.5 text-muted transition-colors hover:bg-subtle hover:text-ink" onClick={() => setBell(!bell)} aria-label={`Notifications, ${unread.length} unread`}><Bell size={16} />{unread.length > 0 && <span className="absolute -right-0.5 -top-0.5 flex h-4 min-w-4 items-center justify-center rounded-full bg-bad px-1 text-[9px] font-bold text-white ring-2 ring-surface">{unread.length > 99 ? '99+' : unread.length}</span>}</button>
-        {bell && <><div className="fixed inset-0 z-30" onClick={() => setBell(false)} /><div className="absolute right-0 z-40 mt-2 w-[22rem] max-w-[92vw] origin-top-right animate-[pop_.14s_ease-out] overflow-hidden rounded-2xl border border-line bg-surface shadow-pop ring-1 ring-black/5">
-          <div className="relative flex items-center justify-between bg-gradient-to-r from-brand to-vis px-4 py-3 text-white dark:text-slate-900">
-            <div><p className="text-[13px] font-semibold leading-tight">Notifications</p><p className="text-[11px] opacity-80">{unread.length ? `${unread.length} unread` : 'You\u2019re all caught up'}</p></div>
-            {unread.length > 0 && <button onClick={() => markAllRead(me)} className="inline-flex items-center gap-1 rounded-full bg-white/20 px-2.5 py-1 text-[11px] font-medium backdrop-blur transition hover:bg-white/30"><CheckCheck size={12} />Mark all read</button>}
+        {bell && <><div className="absolute right-0 z-40 mt-2 w-[22rem] max-w-[92vw] origin-top-right animate-[pop_.14s_ease-out] overflow-hidden rounded-2xl border border-line bg-surface shadow-pop ring-1 ring-black/5">
+          <div className="relative flex items-center justify-between border-b bg-gradient-to-r from-brand-soft to-surface px-4 py-3 text-ink">
+            <div><p className="text-[13px] font-semibold leading-tight">Notifications</p><p className="text-[11px] text-muted">{unread.length ? `${unread.length} unread` : 'You\u2019re all caught up'}</p></div>
+            {unread.length > 0 && <button onClick={() => markAllRead(me)} className="inline-flex items-center gap-1 rounded-full border border-line bg-surface px-2.5 py-1 text-[11px] font-semibold text-brand shadow-sm transition hover:bg-subtle"><CheckCheck size={12} />Mark all read</button>}
           </div>
           <ul className="max-h-[22rem] overflow-y-auto p-1.5">{mine.slice(0, 7).map((n) => { const k = NOTI[n.category] ?? NOTI.System; return <li key={n.id}><button onClick={() => { markRead(n.id); setBell(false); nav(n.link || '/notifications') }} className={`group flex w-full items-start gap-2.5 rounded-xl px-2.5 py-2 text-left transition-colors hover:bg-subtle ${n.read ? '' : 'bg-brand-soft/50'}`}>
             <span className={`mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-xl ${k.tone}`}>{k.icon}</span>

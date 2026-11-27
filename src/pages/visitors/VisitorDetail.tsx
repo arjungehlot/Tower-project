@@ -1,13 +1,21 @@
-import type { ReactNode } from 'react'
+import { useState, type ReactNode } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import { ArrowLeft, MessageCircle, Mail, Phone, AtSign, IdCard, Users, Clock, LogIn, LogOut, Timer, Building2, MapPin, UserRound, ShieldCheck, DoorClosed } from 'lucide-react'
-import { Avatar, Card, StatusBadge } from '@/components/ui'
+import { Avatar, Card, Modal, StatusBadge } from '@/components/ui'
 import { VisitorActions } from '@/components/business/VisitorActions'
 import { LiveDuration } from '@/components/business/VisitorCard'
 import { useDb } from '@/store/db'
 import { useLookups } from '@/hooks/useLookups'
 import { fmtDateTime, fmtTime } from '@/utils/dateUtils'
 
+function Photo({ name, src }: { name: string; src?: string }) {
+  const [open, setOpen] = useState(false)
+  if (!src) return <Avatar name={name} size={96} />
+  return <>
+    <button type="button" onClick={() => setOpen(true)} aria-label="View photo" className="group relative h-24 w-24 shrink-0 overflow-hidden rounded-2xl border border-line shadow-card"><img src={src} alt={name} className="h-full w-full object-cover transition-transform group-hover:scale-105" /></button>
+    <Modal open={open} onClose={() => setOpen(false)} title={name}><img src={src} alt={name} className="mx-auto max-h-[70vh] w-full rounded-xl object-contain" /></Modal>
+  </>
+}
 function Stat({ icon, label, value, tone = 'text-brand' }: { icon: ReactNode; label: string; value: ReactNode; tone?: string }) {
   return <div className="flex items-center gap-2 px-3 py-1.5"><span className={`flex h-7 w-7 shrink-0 items-center justify-center rounded-md bg-subtle ${tone}`}>{icon}</span><div className="min-w-0 leading-tight"><p className="text-[9.5px] font-semibold uppercase tracking-wider text-muted">{label}</p><p className="truncate text-xs font-semibold">{value || '—'}</p></div></div>
 }
@@ -22,9 +30,9 @@ export default function VisitorDetail() {
   return <div className="space-y-2.5">
     <Link to="/visitors" className="inline-flex items-center gap-1 text-xs text-muted hover:text-ink"><ArrowLeft size={12} />Visitors</Link>
     <div className="relative overflow-hidden rounded-xl border border-line bg-surface shadow-card">
-      <span className="absolute inset-x-0 top-0 h-[3px] bg-gradient-to-r from-brand via-vis to-info" />
-      <div className="flex flex-wrap items-center gap-x-3 gap-y-2 px-3 pb-2.5 pt-3.5">
-        <Avatar name={v.name} src={v.photo} size={42} />
+      <span className="absolute inset-x-0 top-0 h-0.5 bg-gradient-to-r from-brand/40 via-vis/30 to-info/30" />
+      <div className="flex flex-wrap items-center gap-x-3 gap-y-2 px-3.5 pb-3 pt-4">
+        <Photo name={v.name} src={v.photo} />
         <div className="min-w-[200px] flex-1">
           <div className="flex flex-wrap items-center gap-2"><h1 className="text-base font-bold leading-tight">{v.name}</h1><StatusBadge status={v.status} /><span className="rounded-md bg-subtle px-1.5 py-0.5 text-[10.5px] font-semibold text-muted">{v.id.toUpperCase()}</span></div>
           <div className="mt-1 flex flex-wrap gap-x-4 gap-y-0.5 text-xs text-muted"><span className="inline-flex items-center gap-1"><Phone size={12} />{v.mobile}</span>{v.email && <span className="inline-flex items-center gap-1"><AtSign size={12} />{v.email}</span>}<span className="inline-flex items-center gap-1"><IdCard size={12} />{v.idType} · {v.idNumber}</span></div>

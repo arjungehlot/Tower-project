@@ -27,7 +27,7 @@ export function StatCard({ label, value, icon, sub, trend, tone = 'brand', spark
   const bar: Record<string, string> = { brand: 'bg-brand', ok: 'bg-ok', warn: 'bg-warn', bad: 'bg-bad', info: 'bg-info', vis: 'bg-vis' }
   const stroke: Record<string, string> = { brand: '#6366f1', ok: '#16a34a', warn: '#d97706', bad: '#dc2626', info: '#2563eb', vis: '#9333ea' }
   return (
-    <motion.div whileHover={{ y: -2 }} onClick={onClick} className={cx('group relative overflow-hidden rounded-xl border border-line bg-surface px-3 py-2.5 shadow-card transition-shadow hover:shadow-pop', onClick && 'cursor-pointer')}>
+    <motion.div whileHover={onClick ? { y: -2 } : undefined} onClick={onClick} className={cx('group relative overflow-hidden rounded-xl border border-line bg-surface px-3 py-2.5 shadow-card transition-shadow', onClick && 'cursor-pointer hover:shadow-pop')}>
       <span className={cx('absolute left-0 top-2.5 h-[calc(100%-20px)] w-[3px] rounded-r', bar[tone])} />
       <div className="flex items-center gap-2.5">
         {icon && <span className={cx('flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-gradient-to-br', tile[tone])}>{icon}</span>}
