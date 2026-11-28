@@ -3,7 +3,8 @@ import type { User, Notification } from '@/types'
 export const visibleTo = (n: Notification, u: User | null) => {
   if (!u) return false
   if (n.userId) return n.userId === u.id
-  if (n.officeId) { const host = db().officeEmployees.find((h) => h.id === u.refId); if (host) return host.officeId === n.officeId }
+  if (n.officeId && !n.roles.includes('OWNER')) { const host = db().officeEmployees.find((h) => h.id === u.refId); if (host) return host.officeId === n.officeId }
+  if (u.role === 'OWNER') return !!n.officeId && db().offices.some((o) => o.id === n.officeId && o.ownerName === u.refId) && n.roles.includes('OWNER')
   return n.roles.includes(u.role)
 }
 export const markRead = (id: string) => db().patch('notifications', id, { read: true })

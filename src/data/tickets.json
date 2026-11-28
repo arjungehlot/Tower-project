@@ -370,7 +370,7 @@
    },
    {
     "at": "2026-11-25T07:43:11.044Z",
-    "label": "Office confirmed resolution — ticket closed"
+    "label": "Office confirmed resolution \u2014 ticket closed"
    }
   ]
  },
@@ -427,7 +427,7 @@
    },
    {
     "at": "2026-11-25T10:13:11.044Z",
-    "label": "Office confirmed resolution — ticket closed"
+    "label": "Office confirmed resolution \u2014 ticket closed"
    }
   ]
  },
@@ -484,7 +484,7 @@
    },
    {
     "at": "2026-11-25T05:59:11.044Z",
-    "label": "Office confirmed resolution — ticket closed"
+    "label": "Office confirmed resolution \u2014 ticket closed"
    }
   ]
  },
@@ -854,7 +854,7 @@
    },
    {
     "at": "2026-11-20T07:56:11.044Z",
-    "label": "Office confirmed resolution — ticket closed"
+    "label": "Office confirmed resolution \u2014 ticket closed"
    }
   ]
  },
@@ -911,7 +911,7 @@
    },
    {
     "at": "2026-11-23T23:11:11.044Z",
-    "label": "Office confirmed resolution — ticket closed"
+    "label": "Office confirmed resolution \u2014 ticket closed"
    }
   ]
  },
@@ -968,7 +968,7 @@
    },
    {
     "at": "2026-11-17T09:18:11.044Z",
-    "label": "Office confirmed resolution — ticket closed"
+    "label": "Office confirmed resolution \u2014 ticket closed"
    }
   ]
  },
@@ -1338,7 +1338,7 @@
    },
    {
     "at": "2026-11-21T22:53:11.044Z",
-    "label": "Office confirmed resolution — ticket closed"
+    "label": "Office confirmed resolution \u2014 ticket closed"
    }
   ]
  },
@@ -1395,7 +1395,7 @@
    },
    {
     "at": "2026-11-23T07:04:11.044Z",
-    "label": "Office confirmed resolution — ticket closed"
+    "label": "Office confirmed resolution \u2014 ticket closed"
    }
   ]
  },
@@ -1452,7 +1452,7 @@
    },
    {
     "at": "2026-11-22T17:53:11.044Z",
-    "label": "Office confirmed resolution — ticket closed"
+    "label": "Office confirmed resolution \u2014 ticket closed"
    }
   ]
  },
@@ -1713,6 +1713,60 @@
    {
     "at": "2026-11-21T08:04:11.044Z",
     "label": "Work in progress"
+   }
+  ]
+ },
+ {
+  "id": "tkt-pend-1",
+  "code": "TK-2001",
+  "subject": "Conference room AC not cooling",
+  "description": "AC in the main conference room is not cooling since morning.",
+  "category": "HVAC",
+  "priority": "HIGH",
+  "status": "PENDING_OWNER",
+  "towerId": "tw-a",
+  "floorId": "fl-ta-1",
+  "officeId": "of-ta-103",
+  "reporterId": "oe-002",
+  "assignedEmployeeId": "",
+  "preferredVisit": "Anytime today",
+  "attachments": [],
+  "createdAt": "2026-11-27T09:06:49.365695Z",
+  "dueAt": "2026-11-29T12:06:49.365714Z",
+  "rating": null,
+  "taskId": "",
+  "comments": [],
+  "timeline": [
+   {
+    "at": "2026-11-27T09:06:49.365731Z",
+    "label": "Raised by Nisha Yadav \u2014 awaiting owner approval"
+   }
+  ]
+ },
+ {
+  "id": "tkt-pend-2",
+  "code": "TK-2002",
+  "subject": "Replace broken door lock",
+  "description": "Pantry door lock is jammed and needs replacement.",
+  "category": "Civil",
+  "priority": "MEDIUM",
+  "status": "PENDING_OWNER",
+  "towerId": "tw-a",
+  "floorId": "fl-ta-1",
+  "officeId": "of-ta-103",
+  "reporterId": "oe-002",
+  "assignedEmployeeId": "",
+  "preferredVisit": "Anytime today",
+  "attachments": [],
+  "createdAt": "2026-11-27T06:06:49.365763Z",
+  "dueAt": "2026-11-29T12:06:49.365766Z",
+  "rating": null,
+  "taskId": "",
+  "comments": [],
+  "timeline": [
+   {
+    "at": "2026-11-27T06:06:49.365768Z",
+    "label": "Raised by Nisha Yadav \u2014 awaiting owner approval"
    }
   ]
  }

@@ -8,7 +8,7 @@ import { HOME } from '@/utils/permissions'
 import type { Role } from '@/types'
 import { ShieldCheck, Building2, ClipboardList, UserCog, HardHat, Eye, EyeOff, Mail, Lock, UserCheck, Ticket, Users, ArrowRight } from 'lucide-react'
 
-const DEMO: { role: Role; label: string; icon: React.ReactNode }[] = [{ role: 'ADMIN', label: 'Admin', icon: <Building2 size={15} /> }, { role: 'SUPERVISOR', label: 'Supervisor', icon: <UserCog size={15} /> }, { role: 'SECURITY_GUARD', label: 'Guard', icon: <ShieldCheck size={15} /> }, { role: 'OFFICE_ADMIN', label: 'Office User', icon: <ClipboardList size={15} /> }, { role: 'STAFF', label: 'Staff', icon: <HardHat size={15} /> }]
+const DEMO: { role: Role; label: string; icon: React.ReactNode }[] = [{ role: 'ADMIN', label: 'Admin', icon: <Building2 size={15} /> }, { role: 'SUPERVISOR', label: 'Supervisor', icon: <UserCog size={15} /> }, { role: 'SECURITY_GUARD', label: 'Guard', icon: <ShieldCheck size={15} /> }, { role: 'OFFICE_ADMIN', label: 'Office User', icon: <ClipboardList size={15} /> }, { role: 'OWNER', label: 'Owner', icon: <Building2 size={15} /> }, { role: 'STAFF', label: 'Staff', icon: <HardHat size={15} /> }]
 
 /** Animated tower illustration: windows twinkle at staggered delays. */
 function TowerArt() {

@@ -20,7 +20,6 @@ export default function Offices() {
       { key: 't', header: 'Tower / Floor', sort: (o) => o.towerId + o.floorId, render: (o) => `${L.tower(o.towerId)?.code} · F${L.floor(o.floorId)?.number}` },
       { key: 'c', header: 'Company', sort: (o) => L.tenant(o.tenantId)?.name ?? '', render: (o) => L.tenant(o.tenantId)?.name ?? <span className="text-faint">—</span> },
       { key: 'a', header: 'Area (sqft)', sort: (o) => o.area, render: (o) => o.area.toLocaleString('en-IN'), hideMobile: true },
-      { key: 'r', header: 'Rent / mo', sort: (o) => o.rent, render: (o) => (o.rent ? currency(o.rent) : '—') },
       { key: 'le', header: 'Lease end', sort: (o) => o.leaseEnd, render: (o) => fmtDate(o.leaseEnd), hideMobile: true },
       { key: 's', header: 'Status', sort: (o) => o.status, render: (o) => <StatusBadge status={o.status} /> }]}
     fields={[{ name: 'number', label: 'Office number', required: true }, { name: 'floorId', label: 'Floor', type: 'select', required: true, options: floors.map((f) => ({ value: f.id, label: `${L.tower(f.towerId)?.name} · Floor ${f.number}` })) },

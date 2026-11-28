@@ -15,7 +15,6 @@ export interface Tower3DProps {
 /* ── geometry (px, world units). x → right, y → down (up is negative), z → towards the viewer ── */
 const W = 340, D = 200, FH = 30, FT = 27, ROOM_H = 24, CORR = 20, CORE_W = 52
 const near = (target: number, cur: number) => target + 360 * Math.round((cur - target) / 360)
-const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms))
 
 function Box({ w, h, d, x = 0, y = 0, z = 0, sy, cls = '', fcls = '', style, top, front, label, onClick, onEnter, onLeave, only }: {
   w: number; h: number; d: number; x?: number; y?: number; z?: number; sy?: number; cls?: string; fcls?: string; style?: CSSProperties
@@ -63,11 +62,6 @@ export function Tower3D({ towers, floors, offices, tenantName, live, onOpenOffic
   const [switching, setSwitching] = useState(false)
   const [roomsOn, setRoomsOn] = useState(false)
   const [size, setSize] = useState({ w: 900, h: 600 })
-  const [bot, setBot] = useState({ x: -W / 2 + 26, y: 0, z: 0, dur: 0, idle: true })
-  const [msg, setMsg] = useState('')
-  const [arrived, setArrived] = useState(false)
-  const [phase, setPhase] = useState<'idle' | 'lift' | 'walk' | 'arrive'>('idle')
-  const [botOn, setBotOn] = useState(false)
   const stageRef = useRef<HTMLDivElement>(null), run = useRef(0), drag = useRef<{ x: number; yaw: number } | null>(null), yawRef = useRef(yaw)
   yawRef.current = yaw
 
@@ -96,27 +90,15 @@ export function Tower3D({ towers, floors, offices, tenantName, live, onOpenOffic
   const changeView = useCallback((next: () => void) => { setSwitching(true); next(); setTimeout(() => setSwitching(false), 1000) }, [])
 
   /* ── navigation ── */
-  const START_X = -W / 2 + CORE_W + 8
-  const reset = () => { setOfficeId(null); setArrived(false); setMsg(''); setPhase('idle'); setBotOn(false) }
+  const reset = () => { setOfficeId(null) }
   const toTower = () => { run.current++; changeView(() => { setView('tower'); reset(); setRoomsOn(false); setTimeout(() => setFloorId(null), 700) }) }
   const toFloor = (id: string) => {
     run.current++
     changeView(() => { setFloorId(id); setView('floor'); reset(); setYaw((y) => near(-6, y)) })
     setRoomsOn(false); setTimeout(() => setRoomsOn(true), 650)
   }
-  const goToOffice = async (id: string, fromFloor = floor, list = rooms) => {
-    const r = list.find((x) => x.o.id === id); if (!r || !fromFloor) return
-    const token = ++run.current, topY = -FT, ok = () => run.current === token
-    setOfficeId(id); setView('office'); setArrived(false); setBotOn(false); setPhase('lift'); setSwitching(true); setTimeout(() => setSwitching(false), 1000)
-    setBot({ x: START_X, y: topY, z: 0, dur: 0, idle: true }); setMsg(`Taking the lift to ${fromFloor.name}…`)
-    await sleep(1300); if (!ok()) return
-    setBotOn(true); setMsg(`Guiding you to Office ${r.o.number}…`); await sleep(500); if (!ok()) return
-    setPhase('walk')
-    const d1 = Math.max(0.3, Math.abs(r.doorX - START_X) / 70); setBot({ x: r.doorX, y: topY, z: 0, dur: d1, idle: false }); await sleep(d1 * 1000 + 120); if (!ok()) return
-    const d2 = Math.max(0.3, Math.abs(r.z * 0.6) / 70); setBot({ x: r.doorX, y: topY, z: r.z * 0.6, dur: d2, idle: false }); await sleep(d2 * 1000 + 150); if (!ok()) return
-    setBot((b) => ({ ...b, dur: 0, idle: true })); setPhase('arrive'); setArrived(true); setMsg(`You have arrived at Office ${r.o.number}`)
-  }
-  const clickRoom = (id: string) => { void goToOffice(id) }
+  const goToOffice = (id: string) => { if (!rooms.some((x) => x.o.id === id)) return; run.current++; setOfficeId(id); setView('office'); setSwitching(true); setTimeout(() => setSwitching(false), 1000) }
+  const clickRoom = (id: string) => goToOffice(id)
   const backToFloor = () => { run.current++; changeView(() => { setView('floor'); reset() }) }
 
   /* ── drag to orbit (tower view) ── */
@@ -134,9 +116,7 @@ export function Tower3D({ towers, floors, offices, tenantName, live, onOpenOffic
   if (view === 'floor') cam = { s: sFloor, rx: -58, ry: ryFixed, fx: 0, fy: topWorldY, fz: 0 }
   let worldTransition: string | undefined
   if (view === 'office' && room) {
-    const follow = phase === 'walk' || phase === 'lift'
-    cam = { s: sFloor * 1.7, rx: -54, ry: ryFixed, fx: follow ? bot.x : room.x, fy: topWorldY, fz: follow ? bot.z : room.z }
-    if (phase === 'walk') worldTransition = `transform ${Math.max(bot.dur, 0.2)}s linear`
+    cam = { s: sFloor * 1.7, rx: -54, ry: ryFixed, fx: room.x, fy: topWorldY, fz: room.z }
   }
   const camStyle = { transform: `scale(${cam.s}) rotateX(${cam.rx}deg) rotateY(${cam.ry}deg)`, '--rx': `${cam.rx}deg`, '--ry': `${cam.ry}deg` } as CSSProperties
   const worldStyle: CSSProperties = { transform: `translate3d(${-cam.fx}px,${-cam.fy}px,${-cam.fz}px)`, transition: worldTransition }
@@ -145,7 +125,6 @@ export function Tower3D({ towers, floors, offices, tenantName, live, onOpenOffic
   const occ = (fid: string) => { const l = offices.filter((o) => o.floorId === fid); return { n: l.length, occ: l.filter((o) => o.tenantId).length } }
   const hov = hoverFloor ? tFloors.find((f) => f.id === hoverFloor) : null
   const selOffice = room?.o
-  const botTf = `translate3d(${bot.x}px,${bot.y}px,${bot.z}px)`
 
   if (!tower) return null
   return (
@@ -179,27 +158,13 @@ export function Tower3D({ towers, floors, offices, tenantName, live, onOpenOffic
                   {/* floor plan (only for the focused floor) */}
                   {focused && <>
                     <Plane w={W - CORE_W - 12} d={CORR * 2} x={CORE_W / 2 + 1} z={0} y={-FT - 0.6} cls="t3-corr" />
-                    <Box w={CORE_W - 4} h={ROOM_H + 8} d={64} x={-W / 2 + CORE_W / 2 + 2} y={-FT} z={0} fcls={`t3-core ${phase === 'lift' ? 'ding' : ''}`} top={<span className="t3-core-t">LIFT</span>} />
+                    <Box w={CORE_W - 4} h={ROOM_H + 8} d={64} x={-W / 2 + CORE_W / 2 + 2} y={-FT} z={0} fcls="t3-core" top={<span className="t3-core-t">LIFT</span>} />
                     {rooms.map((r, k) => {
                       const lv = live.get(r.o.id), sel = r.o.id === officeId, cls = roomCls(r.o, lv)
-                      return <Box key={r.o.id} w={r.w} h={ROOM_H} d={r.d} x={r.x} y={-FT} z={r.z} sy={roomsOn ? 1 : 0.001} cls={`t3-room ${cls} ${sel ? 'sel' : ''} ${view === 'office' && !sel ? 'fade' : ''} ${sel && arrived ? 'pulse' : ''}`}
+                      return <Box key={r.o.id} w={r.w} h={ROOM_H} d={r.d} x={r.x} y={-FT} z={r.z} sy={roomsOn ? 1 : 0.001} cls={`t3-room ${cls} ${sel ? 'sel' : ''} ${view === 'office' && !sel ? 'fade' : ''}`}
                         style={{ transitionDelay: roomsOn ? `${k * 60}ms` : '0ms' }} onClick={() => clickRoom(r.o.id)}
                         label={<><i /><b>{r.o.number}</b></>} />
                     })}
-                    {/* route trail + bot */}
-                    {view === 'office' && room && <>
-                      <Plane w={Math.abs(room.doorX - START_X)} d={4} x={(room.doorX + START_X) / 2} z={0} y={-FT - 1} cls="t3-route" />
-                      <Plane w={4} d={Math.abs(room.z)} x={room.doorX} z={room.z / 2} y={-FT - 1} cls="t3-route v" />
-                    </>}
-                    {view === 'office' && <div className={`t3-bot ${bot.idle ? 'idle' : ''} ${botOn ? 'on' : ''}`} style={{ transform: botTf, transitionDuration: `${bot.dur}s` }}>
-                      <div className="t3-bot-in">
-                        <Plane w={34} d={34} x={0} z={0} y={0} cls="t3-bot-glow" />
-                        <Box w={14} h={14} d={14} fcls="t3-bot-body" />
-                        <Box w={12} h={10} d={12} y={-15} fcls="t3-bot-head" front={<><i className="t3-bot-eye" style={{ position: 'absolute', left: 2, top: 3, width: 3, height: 3 }} /><i className="t3-bot-eye" style={{ position: 'absolute', right: 2, top: 3, width: 3, height: 3 }} /></>} />
-                        <Box w={1.5} h={7} d={1.5} y={-25} fcls="t3-ant" />
-                        <Box w={4} h={4} d={4} y={-32} fcls="t3-beacon" />
-                      </div>
-                    </div>}
                   </>}
                 </div>
               )
@@ -216,28 +181,30 @@ export function Tower3D({ towers, floors, offices, tenantName, live, onOpenOffic
 
         {/* HUD */}
         <div className="t3-hud" style={{ left: 14, top: 14 }}>
-          <span className="t3-chip dark">{view === 'tower' ? (hov ? `${hov.name} · ${occ(hov.id).occ}/${occ(hov.id).n} occupied · click to enter` : `${tower.name} · ${N} floors — drag to rotate, click a floor`) : view === 'floor' ? `${floor?.name} · pick an office to be guided` : `Office ${selOffice?.number}`}</span>
+          <span className="t3-chip dark">{view === 'tower' ? (hov ? `${hov.name} · ${occ(hov.id).occ}/${occ(hov.id).n} occupied · click to enter` : `${tower.name} · ${N} floors — drag to rotate, click a floor`) : view === 'floor' ? `${floor?.name} · click an office for details` : `Office ${selOffice?.number}`}</span>
         </div>
         {view !== 'tower' && <div className="t3-ctrl" style={{ right: 14, top: 14 }}>
           {view === 'office' && <button className="t3-btn" onClick={backToFloor}>← Floor plan</button>}
           <button className="t3-btn" onClick={toTower}>⌂ Whole tower</button>
         </div>}
-        {msg && <div className="t3-hud" style={{ left: '50%', bottom: 18, transform: 'translateX(-50%)' }}><span className="t3-chip">{!arrived && <i className="t3-dot" />}{arrived ? '✓ ' : ''}{msg}</span></div>}
       </div>
 
       {/* side panel */}
       <aside className="t3-panel">
-        <div className="t3-tabs">{towers.map((t) => <button key={t.id} className={`t3-tab ${t.id === tower.id ? 'on' : ''}`} onClick={() => { run.current++; setTowerId(t.id); setView('tower'); setFloorId(null); setOfficeId(null); setArrived(false); setMsg(''); setRoomsOn(false) }}>{t.name}</button>)}</div>
+        <div className="t3-tabs">{towers.map((t) => <button key={t.id} className={`t3-tab ${t.id === tower.id ? 'on' : ''}`} onClick={() => { run.current++; setTowerId(t.id); setView('tower'); setFloorId(null); setOfficeId(null); setRoomsOn(false) }}>{t.name}</button>)}</div>
         <div className="t3-card">
           <div className="t3-crumb"><button onClick={toTower}>{tower.name}</button>{floor && <> › <button onClick={backToFloor}>{floor.name}</button></>}{selOffice && <> › <b>Office {selOffice.number}</b></>}</div>
         </div>
         {view === 'tower' && <div className="t3-card"><div className="t3-h">Floors — click to enter</div>
           <div className="t3-list">{[...tFloors].reverse().map((f) => { const c = occ(f.id); return <button key={f.id} className="t3-row" onClick={() => toFloor(f.id)} onMouseEnter={() => setHoverFloor(f.id)} onMouseLeave={() => setHoverFloor(null)}><span className="n">{f.name}</span><span className="s">{c.occ}/{c.n}</span><span className="t3-bar"><i style={{ width: `${c.n ? (c.occ / c.n) * 100 : 0}%` }} /></span></button> })}</div></div>}
+        {view === 'floor' && floor && (() => { const l = fOffices, occN = l.filter((o) => o.tenantId).length, area = l.reduce((a, o) => a + o.area, 0), rent = l.reduce((a, o) => a + (o.rent || 0), 0), vis = l.reduce((a, o) => a + (live.get(o.id)?.inside ?? 0), 0), pend = l.reduce((a, o) => a + (live.get(o.id)?.pending ?? 0), 0)
+          return <div className="t3-card"><div className="t3-h">{floor.name} · overview</div>
+            <div className="t3-kv"><div><small>Offices</small><span>{l.length}</span></div><div><small>Occupied</small><span>{occN} · {l.length - occN} vacant</span></div><div><small>Total area</small><span>{area.toLocaleString('en-IN')} sqft</span></div><div><small>Visitors inside</small><span>{vis}</span></div><div><small>Waiting</small><span>{pend}</span></div></div></div> })()}
         {view !== 'tower' && <div className="t3-card"><div className="t3-h">{floor?.name} · offices</div>
           <div className="t3-list">{rooms.map((r) => <button key={r.o.id} className={`t3-row ${r.o.id === officeId ? 'on' : ''}`} onClick={() => clickRoom(r.o.id)}><span className="n">{r.o.number}</span><span>{tenantName(r.o.tenantId) ?? '—'}</span><span className="s">{live.get(r.o.id)?.inside ? 'visitor inside' : live.get(r.o.id)?.pending ? 'visitor waiting' : r.o.status}</span></button>)}</div></div>}
         {selOffice && <div className="t3-card"><div className="t3-h">Office {selOffice.number}</div>
-          <div className="t3-kv"><div><small>Tenant</small><span>{tenantName(selOffice.tenantId) ?? 'Vacant'}</span></div><div><small>Status</small><span>{selOffice.status}</span></div><div><small>Area</small><span>{selOffice.area.toLocaleString('en-IN')} sqft</span></div><div><small>Type</small><span>{selOffice.type}</span></div><div><small>Rent / mo</small><span>{selOffice.rent ? `₹${selOffice.rent.toLocaleString('en-IN')}` : '—'}</span></div><div><small>Visitors</small><span>{(live.get(selOffice.id)?.inside ?? 0)} in · {(live.get(selOffice.id)?.pending ?? 0)} waiting</span></div></div>
-          <div className="t3-act"><button onClick={() => void goToOffice(selOffice.id)}>↻ Replay route</button><button className="p" onClick={() => onOpenOffice?.(selOffice.id)}>Open office →</button></div></div>}
+          <div className="t3-kv"><div><small>Tenant</small><span>{tenantName(selOffice.tenantId) ?? 'Vacant'}</span></div><div><small>Status</small><span>{selOffice.status}</span></div><div><small>Area</small><span>{selOffice.area.toLocaleString('en-IN')} sqft</span></div><div><small>Type</small><span>{selOffice.type}</span></div><div><small>Visitors</small><span>{(live.get(selOffice.id)?.inside ?? 0)} in · {(live.get(selOffice.id)?.pending ?? 0)} waiting</span></div></div>
+          <div className="t3-act"><button className="p" onClick={() => onOpenOffice?.(selOffice.id)}>Open office →</button></div></div>}
         <div className="t3-card"><div className="t3-legend">{[['#4ade80', 'Occupied'], ['#cbd5e1', 'Vacant'], ['#fbbf24', 'Visitor waiting'], ['#60a5fa', 'Visitor inside'], ['#f87171', 'Maintenance'], ['#c084fc', 'Reserved']].map(([c, l]) => <span key={l}><i style={{ background: c }} />{l}</span>)}</div></div>
       </aside>
     </div>

@@ -30,7 +30,7 @@ export function Topbar({ openMenu, openSearch }: { openMenu: () => void; openSea
   const isAdm = ['SUPER_ADMIN', 'ADMIN'].includes(me.role)
   const create = [
     { label: me.role.startsWith('OFFICE') ? 'Invite Visitor' : 'Register Visitor', icon: <UserRoundCheck size={14} />, onClick: () => nav('/visitor/register'), hidden: !['SUPER_ADMIN', 'ADMIN', 'OFFICE_ADMIN', 'OFFICE_EMPLOYEE'].includes(me.role) },
-    { label: 'Create Ticket', icon: <Ticket size={14} />, onClick: () => nav(me.role.startsWith('OFFICE') ? '/tickets/mine?new=1' : '/tickets?new=1'), hidden: me.role === 'STAFF' },
+    { label: 'Create Ticket', icon: <Ticket size={14} />, onClick: () => nav(me.role.startsWith('OFFICE') ? '/tickets/mine?new=1' : '/tickets?new=1'), hidden: me.role === 'STAFF' || me.role === 'OWNER' },
     { label: 'Assign Task', icon: <ClipboardList size={14} />, onClick: () => nav('/tasks?new=1'), hidden: !['SUPER_ADMIN', 'ADMIN', 'SUPERVISOR'].includes(me.role) },
     { label: 'Add Office', icon: <DoorOpen size={14} />, onClick: () => nav('/offices?new=1'), hidden: !isAdm },
     { label: 'Add Staff', icon: <Users size={14} />, onClick: () => nav('/staff?new=1'), hidden: !isAdm },

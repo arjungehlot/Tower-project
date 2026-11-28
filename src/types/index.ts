@@ -1,4 +1,4 @@
-export type Role = 'SUPER_ADMIN' | 'ADMIN' | 'SUPERVISOR' | 'SECURITY_GUARD' | 'OFFICE_ADMIN' | 'OFFICE_EMPLOYEE' | 'STAFF'
+export type Role = 'SUPER_ADMIN' | 'ADMIN' | 'SUPERVISOR' | 'SECURITY_GUARD' | 'OFFICE_ADMIN' | 'OFFICE_EMPLOYEE' | 'OWNER' | 'STAFF'
 export interface Building { id: string; name: string; city: string; towerIds: string[]; capacity: number }
 export interface Tower { id: string; name: string; code: string; address: string; floors: number; totalOffices: number; managementContact: string; securityDesk: string; emergencyContact: string }
 export interface Floor { id: string; towerId: string; number: number; name: string }
@@ -13,7 +13,7 @@ export interface TimelineItem { at: string; label: string }
 export type VisitorStatus = 'PENDING' | 'APPROVED' | 'REJECTED' | 'INSIDE' | 'EXITED' | 'INFO_REQUESTED'
 export interface Visitor { id: string; name: string; mobile: string; email: string; photo: string; idType: string; idNumber: string; purpose: string; towerId: string; floorId: string; officeId: string; hostId: string; expectedDuration: string; count: number; status: VisitorStatus; guardId: string; gate: string; requestedAt: string; approvedAt: string; entryAt: string; exitAt: string; remark: string; timeline: TimelineItem[] }
 export type Priority = 'LOW' | 'MEDIUM' | 'HIGH' | 'CRITICAL'
-export type TicketStatus = 'OPEN' | 'ASSIGNED' | 'IN_PROGRESS' | 'WAITING' | 'RESOLVED' | 'CLOSED'
+export type TicketStatus = 'OPEN' | 'ASSIGNED' | 'IN_PROGRESS' | 'WAITING' | 'RESOLVED' | 'CLOSED' | 'PENDING_OWNER' | 'OWNER_REJECTED'
 export interface Comment { id: string; by: string; kind: 'admin' | 'staff' | 'office' | 'internal'; text: string; at: string }
 export interface Ticket { id: string; code: string; subject: string; description: string; category: string; priority: Priority; status: TicketStatus; towerId: string; floorId: string; officeId: string; reporterId: string; assignedEmployeeId: string; preferredVisit: string; attachments: string[]; createdAt: string; dueAt: string; rating: number | null; taskId: string; comments: Comment[]; timeline: TimelineItem[] }
 export type TaskStatus = 'ASSIGNED' | 'ACCEPTED' | 'IN_PROGRESS' | 'ON_HOLD' | 'COMPLETED' | 'REJECTED' | 'CANCELLED'

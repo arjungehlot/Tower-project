@@ -11,12 +11,26 @@ export type NewTicket = Pick<Ticket, 'subject' | 'description' | 'category' | 'p
 export function create(d: NewTicket) {
   const s = db(), u = currentUser()
   const reporter = s.officeEmployees.find((h) => h.id === u?.refId) ?? s.officeEmployees.find((h) => h.officeId === d.officeId)
-  const t: Ticket = { id: uid('tkt'), code: nextCode('TK', s.tickets, 1001), status: 'OPEN', reporterId: reporter?.id ?? '', assignedEmployeeId: '', attachments: [], createdAt: nowIso(), dueAt: new Date(Date.now() + SLA[d.priority] * 3600000).toISOString(), rating: null, taskId: '', comments: [{ id: uid('c'), by: reporter?.name ?? 'Office', kind: 'office', text: d.description, at: nowIso() }], timeline: [{ at: nowIso(), label: 'Ticket raised' }], ...d }
+  const off = s.offices.find((x) => x.id === d.officeId), needsOwner = !!u && u.role.startsWith('OFFICE') && !!off?.ownerName && s.users.some((x) => x.role === 'OWNER' && x.refId === off.ownerName)
+  const t: Ticket = { id: uid('tkt'), code: nextCode('TK', s.tickets, 1001), status: needsOwner ? 'PENDING_OWNER' : 'OPEN', reporterId: reporter?.id ?? '', assignedEmployeeId: '', attachments: [], createdAt: nowIso(), dueAt: new Date(Date.now() + SLA[d.priority] * 3600000).toISOString(), rating: null, taskId: '', comments: [{ id: uid('c'), by: reporter?.name ?? 'Office', kind: 'office', text: d.description, at: nowIso() }], timeline: [{ at: nowIso(), label: needsOwner ? `Raised by ${reporter?.name ?? 'Office'} — awaiting owner approval` : 'Ticket raised' }], ...d }
   s.add('tickets', t)
-  const o = s.offices.find((x) => x.id === d.officeId)
-  notify({ category: 'Ticket', title: 'New ticket raised', body: `${t.code}: ${d.subject} (Office ${o?.number}) — ${d.priority}`, link: `/tickets/${t.id}`, roles: ['ADMIN', 'SUPER_ADMIN', 'SUPERVISOR'] })
+  if (needsOwner) notify({ category: 'Ticket', title: 'Ticket needs your approval', body: `${t.code}: ${d.subject} (Office ${off?.number}) — ${d.priority}`, link: `/tickets/${t.id}`, roles: ['OWNER'], officeId: d.officeId })
+  else notify({ category: 'Ticket', title: 'New ticket raised', body: `${t.code}: ${d.subject} (Office ${off?.number}) — ${d.priority}`, link: `/tickets/${t.id}`, roles: ['ADMIN', 'SUPER_ADMIN', 'SUPERVISOR'] })
   auditLog(`raised ticket ${t.code}`, 'Tickets', t.code); s.toast('Ticket created successfully.')
   return t
+}
+export function ownerApprove(id: string) {
+  const t = get(id), u = currentUser(), s = db(), o = s.offices.find((x) => x.id === t.officeId)
+  s.patch('tickets', id, { status: 'OPEN', timeline: [...t.timeline, { at: nowIso(), label: `Approved by owner ${u?.name ?? ''} — sent to admin` }] })
+  notify({ category: 'Ticket', title: 'Owner-approved ticket', body: `${t.code}: ${t.subject} (Office ${o?.number}) — ${t.priority}`, link: `/tickets/${t.id}`, roles: ['ADMIN', 'SUPER_ADMIN', 'SUPERVISOR'] })
+  notify({ category: 'Ticket', title: 'Ticket approved by owner', body: `${t.code} was approved and sent to the service desk.`, link: `/tickets/${t.id}`, roles: ['OFFICE_ADMIN', 'OFFICE_EMPLOYEE'], officeId: t.officeId })
+  auditLog(`owner approved ticket ${t.code}`, 'Tickets', t.code); s.toast('Ticket approved and sent to admin.')
+}
+export function ownerReject(id: string, reason?: string) {
+  const t = get(id), u = currentUser(), s = db()
+  s.patch('tickets', id, { status: 'OWNER_REJECTED', timeline: [...t.timeline, { at: nowIso(), label: `Declined by owner ${u?.name ?? ''}${reason ? ` — ${reason}` : ''}` }] })
+  notify({ category: 'Ticket', title: 'Ticket declined by owner', body: `${t.code}: ${t.subject}${reason ? ` — ${reason}` : ''}`, link: `/tickets/${t.id}`, roles: ['OFFICE_ADMIN', 'OFFICE_EMPLOYEE'], officeId: t.officeId })
+  auditLog(`owner declined ticket ${t.code}`, 'Tickets', t.code); s.toast('Ticket declined.', 'info')
 }
 export function assign(id: string, empId: string) {
   const t = get(id), s = db(), emp = s.employees.find((e) => e.id === empId)!

@@ -63,6 +63,15 @@
   "phone": "9725867564"
  },
  {
+  "id": "u-owner",
+  "name": "Suresh Rao",
+  "email": "owner@towerflow.in",
+  "password": "demo123",
+  "role": "OWNER",
+  "refId": "Rao Holdings",
+  "phone": "9810000009"
+ },
+ {
   "id": "u-staff",
   "name": "Amit Sharma",
   "email": "staff@towerflow.in",

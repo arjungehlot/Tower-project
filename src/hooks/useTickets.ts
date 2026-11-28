@@ -1,7 +1,9 @@
 import { useMemo } from 'react'
 import { useDb } from '@/store/db'
+import { useMe } from './useMe'
 export function useTickets() {
-  const all = useDb((s) => s.tickets), tf = useDb((s) => s.towerFilter)
+  const raw = useDb((s) => s.tickets), tf = useDb((s) => s.towerFilter), role = useMe().me?.role, gated = !!role && ['SUPER_ADMIN', 'ADMIN', 'SUPERVISOR', 'STAFF', 'SECURITY_GUARD'].includes(role)
+  const all = useMemo(() => (gated ? raw.filter((t) => t.status !== 'PENDING_OWNER' && t.status !== 'OWNER_REJECTED') : raw), [raw, gated])
   return useMemo(() => {
     const tickets = tf === 'all' ? all : all.filter((t) => t.towerId === tf)
     const n = (s: string) => tickets.filter((t) => t.status === s).length

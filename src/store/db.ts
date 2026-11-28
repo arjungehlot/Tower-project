@@ -43,6 +43,12 @@ function loadDb(): Db {
     if (stored) db[k] = stored
     else { db[k] = k === 'settings' ? SEED[k] : shift(SEED[k], delta!); storage.set(k, db[k]) }
   }
+  // Back-fill records introduced after a browser already stored its copy of the seed (Office Owner demo data).
+  const ADDED: Record<string, string[]> = { users: ['u-owner'], tickets: ['tkt-pend-1', 'tkt-pend-2'] }
+  for (const [k, ids] of Object.entries(ADDED)) {
+    const cur = db[k] as { id: string }[], miss = (SEED[k as Coll] as unknown as { id: string }[]).filter((x) => ids.includes(x.id) && !cur.some((c) => c.id === x.id))
+    if (miss.length) { db[k] = [...cur, ...shift(miss, delta!)]; storage.set(k, db[k]) }
+  }
   return db as unknown as Db
 }
 

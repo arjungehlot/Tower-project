@@ -11,7 +11,8 @@ export const PERMISSIONS: Record<Role, Partial<Record<Module, Action[]>>> = {
   SECURITY_GUARD: { visitors: A('view', 'create', 'exit', 'update') },
   OFFICE_ADMIN: { visitors: A('view', 'create', 'approve', 'reject'), tickets: A('view', 'create', 'close'), offices: A('view') },
   OFFICE_EMPLOYEE: { visitors: A('view', 'create', 'approve', 'reject'), tickets: A('view', 'create') },
+  OWNER: { tickets: A('view', 'approve', 'reject'), offices: A('view') },
   STAFF: { tasks: A('view', 'update'), tickets: A('view') },
 }
 export const can = (role: Role | undefined, m: Module, a: Action) => !!role && !!PERMISSIONS[role]?.[m]?.includes(a)
-export const HOME: Record<Role, string> = { SUPER_ADMIN: '/dashboard', ADMIN: '/dashboard', SUPERVISOR: '/dashboard', SECURITY_GUARD: '/guard', OFFICE_ADMIN: '/office', OFFICE_EMPLOYEE: '/office', STAFF: '/my-work' }
+export const HOME: Record<Role, string> = { SUPER_ADMIN: '/dashboard', ADMIN: '/dashboard', SUPERVISOR: '/dashboard', SECURITY_GUARD: '/guard', OFFICE_ADMIN: '/office', OFFICE_EMPLOYEE: '/office', OWNER: '/owner', STAFF: '/my-work' }

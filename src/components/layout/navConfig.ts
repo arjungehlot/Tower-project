@@ -2,13 +2,14 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import { LayoutDashboard, Building2, Layers, DoorOpen, Building, FileText, UserRoundCheck, ScanLine, Radio, History, Users, UserCog, ClipboardList, MapPinned, Star, Ticket, TicketCheck, UserPlus, BarChart3, Bell, MessageCircle, Mail, FileBarChart, Shield, Settings, ScrollText, Siren, Wrench, CalendarClock, Files, ShieldCheck, Activity, Boxes, type LucideIcon } from 'lucide-react'
 import type { Role } from '@/types'
-const ADM: Role[] = ['SUPER_ADMIN', 'ADMIN'], SUP: Role[] = ['SUPERVISOR'], OFF: Role[] = ['OFFICE_ADMIN', 'OFFICE_EMPLOYEE'], STF: Role[] = ['STAFF'], GRD: Role[] = ['SECURITY_GUARD']
+const ADM: Role[] = ['SUPER_ADMIN', 'ADMIN'], SUP: Role[] = ['SUPERVISOR'], OFF: Role[] = ['OFFICE_ADMIN', 'OFFICE_EMPLOYEE'], OWN: Role[] = ['OWNER'], STF: Role[] = ['STAFF'], GRD: Role[] = ['SECURITY_GUARD']
 export interface NavItem { label: string; to: string; icon: LucideIcon; roles: Role[]; end?: boolean }
 export interface NavSection { title: string; items: NavItem[] }
 export const NAV: NavSection[] = [
   { title: 'Overview', items: [
     { label: 'Dashboard', to: '/dashboard', icon: LayoutDashboard, roles: [...ADM, ...SUP] },
     { label: 'Office Dashboard', to: '/office', icon: LayoutDashboard, roles: OFF },
+    { label: 'Owner Dashboard', to: '/owner', icon: LayoutDashboard, roles: OWN },
     { label: 'My Work', to: '/my-work', icon: ClipboardList, roles: STF },
   ] },
   { title: 'Building', items: [
@@ -37,11 +38,11 @@ export const NAV: NavSection[] = [
   ] },
   { title: 'Service Desk', items: [
     { label: 'Tickets', to: '/tickets', icon: Ticket, roles: [...ADM, ...SUP], end: true },
-    { label: 'My Tickets', to: '/tickets/mine', icon: TicketCheck, roles: OFF },
+    { label: 'My Tickets', to: '/tickets/mine', icon: TicketCheck, roles: [...OFF, ...OWN] },
     { label: 'Ticket Analytics', to: '/tickets/analytics', icon: BarChart3, roles: [...ADM, ...SUP] },
   ] },
   { title: 'Communication', items: [
-    { label: 'Notifications', to: '/notifications', icon: Bell, roles: [...ADM, ...SUP, ...OFF, ...STF] },
+    { label: 'Notifications', to: '/notifications', icon: Bell, roles: [...ADM, ...SUP, ...OFF, ...OWN, ...STF] },
     { label: 'WhatsApp', to: '/whatsapp', icon: MessageCircle, roles: ADM },
     { label: 'Email Logs', to: '/emails', icon: Mail, roles: ADM },
   ] },

@@ -16,14 +16,14 @@ export function BuildingViz() {
     <Card title="Live building status" action={<MapLegend />} className="xl:h-full">
       <div>
       <Tabs value={t.id} onChange={setTw} tabs={towers.map((x) => ({ id: x.id, label: x.name }))} />
-      <div className="mt-2.5 max-h-[372px] space-y-1 overflow-y-auto pr-1">
+      <div className="mt-2 max-h-[372px] space-y-[3px] overflow-y-auto pr-1">
         {fl.map((f, i) => (
           <motion.div key={f.id} initial={{ opacity: 0, x: -8 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: i * 0.03 }} className="flex items-center gap-2">
             <button onClick={() => nav(`/floors/${f.id}`)} className="w-14 shrink-0 rounded-md bg-subtle px-1.5 py-0.5 text-left text-xxs font-medium text-muted hover:bg-brand-soft hover:text-brand" aria-label={`Open floor ${f.number}`}>Floor {f.number}</button>
             <div className="grid flex-1 grid-cols-6 gap-1">
               {offices.filter((o) => o.floorId === f.id).sort((a, b) => a.number.localeCompare(b.number)).map((o) => (
                 <button key={o.id} onClick={() => nav(`/offices/${o.id}`)} title={`Office ${o.number} — ${o.status}`} aria-label={`Office ${o.number}, ${o.status}`}
-                  className={cx('rounded border px-1 py-0.5 text-[10px] font-medium tabular-nums transition-transform hover:scale-105', officeTone(o, live.get(o.id)), (live.get(o.id)?.pending ?? 0) > 0 && !live.get(o.id)?.inside && 'animate-pulse')}>{o.number}</button>
+                  className={cx('rounded border px-1 py-px text-[10px] leading-4 font-medium tabular-nums transition-transform hover:scale-105', officeTone(o, live.get(o.id)), (live.get(o.id)?.pending ?? 0) > 0 && !live.get(o.id)?.inside && 'animate-pulse')}>{o.number}</button>
               ))}
             </div>
           </motion.div>

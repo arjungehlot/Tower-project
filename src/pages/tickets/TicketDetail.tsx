@@ -3,6 +3,7 @@ import { Link, useParams } from 'react-router-dom'
 import { ArrowLeft, Send, Paperclip, RotateCcw, CheckCircle2, User, DoorOpen, UserCog, CalendarPlus, Timer, Clock, ClipboardList } from 'lucide-react'
 import { Avatar, Badge, Button, Card, Input, Modal, PageHeader, Select, StatusBadge, Stars, Timeline } from '@/components/ui'
 import { TaskActions } from '@/components/business/TaskActions'
+import { OwnerTicketActions } from '@/components/business/OwnerTicketActions'
 import { StaffCard } from '@/components/business/StaffCard'
 import { useDb } from '@/store/db'
 import { useLookups } from '@/hooks/useLookups'
@@ -17,16 +18,16 @@ import type { Comment } from '@/types'
 const KIND: Record<string, string> = { admin: 'Admin', staff: 'Staff', office: 'Office', internal: 'Internal note' }
 export default function TicketDetail() {
   const { id } = useParams(), L = useLookups(), { me, can } = useMe(), t = useDb((s) => s.tickets.find((x) => x.id === id)), task = useDb((s) => s.tasks.find((x) => x.id === t?.taskId))
-  const [msg, setMsg] = useState(''), [kind, setKind] = useState<Comment['kind']>(me?.role.startsWith('OFFICE') ? 'office' : me?.role === 'STAFF' ? 'staff' : 'admin'), [rate, setRate] = useState(false), [stars, setStars] = useState(5)
+  const [msg, setMsg] = useState(''), [kind, setKind] = useState<Comment['kind']>(me?.role.startsWith('OFFICE') || me?.role === 'OWNER' ? 'office' : me?.role === 'STAFF' ? 'staff' : 'admin'), [rate, setRate] = useState(false), [stars, setStars] = useState(5)
   if (!t) return <p className="p-6 text-muted">Ticket not found.</p>
-  const reporter = L.host(t.reporterId), emp = L.employee(t.assignedEmployeeId), isOffice = !!me?.role.startsWith('OFFICE'), canAssign = can('tickets', 'assign') && ['OPEN'].includes(t.status)
+  const reporter = L.host(t.reporterId), emp = L.employee(t.assignedEmployeeId), isOwner = me?.role === 'OWNER', isOffice = !!me?.role.startsWith('OFFICE') || isOwner, canAssign = can('tickets', 'assign') && ['OPEN'].includes(t.status)
   const recs = canAssign ? recommend(TICKET_TO_STAFF[t.category] ?? 'Maintenance', L.tower(t.towerId)?.name, t.category) : []
   const comments = t.comments.filter((c) => c.kind !== 'internal' || !isOffice), overdue = !['RESOLVED', 'CLOSED'].includes(t.status) && new Date(t.dueAt) < new Date()
   const send = () => { if (msg.trim()) { ts.addComment(t.id, msg.trim(), kind); setMsg('') } }
   return <>
     <PageHeader back={<Link to={isOffice ? '/tickets/mine' : '/tickets'} className="mb-1 inline-flex items-center gap-1 text-xs text-muted hover:text-ink"><ArrowLeft size={12} />Tickets</Link>}
       title={<span className="flex flex-wrap items-center gap-2"><span className="text-muted">#{t.code}</span>{t.subject}<StatusBadge status={t.priority} /><StatusBadge status={t.status} />{overdue && <Badge tone="red" dot>Overdue</Badge>}</span>} subtitle={`${t.category} · ${L.location(t.towerId, t.floorId, t.officeId)}`}
-      actions={<>{(isOffice || can('tickets', 'close')) && t.status === 'RESOLVED' && <><Button variant="success" icon={<CheckCircle2 size={14} />} onClick={() => setRate(true)}>Confirm resolution</Button><Button icon={<RotateCcw size={14} />} onClick={() => ts.reopen(t.id)}>Reopen</Button></>}
+      actions={<>{isOwner && <OwnerTicketActions t={t} />}{((isOffice && !isOwner) || can('tickets', 'close')) && t.status === 'RESOLVED' && <><Button variant="success" icon={<CheckCircle2 size={14} />} onClick={() => setRate(true)}>Confirm resolution</Button><Button icon={<RotateCcw size={14} />} onClick={() => ts.reopen(t.id)}>Reopen</Button></>}
         {can('tickets', 'update') && !['CLOSED'].includes(t.status) && t.status !== 'OPEN' && <Select aria-label="Status" className="w-36" value={t.status} onChange={(e) => ts.setStatus(t.id, e.target.value as never)} options={['ASSIGNED', 'IN_PROGRESS', 'WAITING', 'RESOLVED']} />}</>} />
     <div className="grid gap-3 lg:grid-cols-3">
       <div className="space-y-3 lg:col-span-2">
