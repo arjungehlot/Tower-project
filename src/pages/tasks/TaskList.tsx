@@ -17,10 +17,10 @@ const when = (d: string) => { const ms = new Date(d).getTime() - Date.now(), m =
 const OPEN = ['ASSIGNED', 'ACCEPTED', 'IN_PROGRESS', 'ON_HOLD']
 
 export default function TaskList() {
-  const nav = useNavigate(), L = useLookups(), { me, can } = useMe(), { tasks, stats } = useTasks(), [params, setParams] = useSearchParams()
+  const nav = useNavigate(), L = useLookups(), { me, can, empId } = useMe(), { tasks, stats } = useTasks(), [params, setParams] = useSearchParams()
   const [open, setOpen] = useState(false), [tab, setTab] = useState('all'), [f, setF] = useState({ category: '', priority: '', emp: '' })
   useEffect(() => { if (params.get('new')) { setOpen(true); setParams({}, { replace: true }) } }, [params]) // eslint-disable-line
-  const mine = me?.role === 'STAFF' ? tasks.filter((t) => t.assignedEmployeeId === me.refId) : tasks
+  const mine = me?.role === 'STAFF' ? tasks.filter((t) => t.assignedEmployeeId === empId) : tasks
   const groups: Record<string, (s: string) => boolean> = { all: () => true, active: (s) => ['ASSIGNED', 'ACCEPTED', 'IN_PROGRESS', 'ON_HOLD'].includes(s), done: (s) => s === 'COMPLETED', closed: (s) => ['REJECTED', 'CANCELLED'].includes(s) }
   const rows = mine.filter((t) => groups[tab](t.status) && (!f.category || t.category === f.category) && (!f.priority || t.priority === f.priority) && (!f.emp || t.assignedEmployeeId === f.emp)).sort((a, b) => b.createdAt.localeCompare(a.createdAt))
   const emps = [...new Set(mine.map((t) => t.assignedEmployeeId).filter(Boolean))].map((id) => ({ value: id, label: L.employee(id)?.name ?? id }))

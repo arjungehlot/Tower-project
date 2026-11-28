@@ -9,8 +9,8 @@ import type { Task } from '@/types'
 
 /** Workflow buttons. Staff act on their own tasks; admins/supervisors can act on behalf of staff while demo mode is on. */
 export function TaskActions({ t, size = 'sm' }: { t: Task; size?: 'xs' | 'sm' | 'md' }) {
-  const { me, can } = useMe(), demo = useDb((s) => s.demoMode), [rate, setRate] = useState<Task | null>(null)
-  const staffAct = (me?.role === 'STAFF' && me.refId === t.assignedEmployeeId) || (demo && can('tasks', 'update') && me?.role !== 'STAFF')
+  const { me, can, empId } = useMe(), demo = useDb((s) => s.demoMode), [rate, setRate] = useState<Task | null>(null)
+  const staffAct = (me?.role === 'STAFF' && empId === t.assignedEmployeeId) || (demo && can('tasks', 'update') && me?.role !== 'STAFF')
   const mgr = can('tasks', 'assign')
   const b: React.ReactNode[] = []
   if (staffAct) {

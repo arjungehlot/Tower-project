@@ -6,7 +6,7 @@ const MAP: Record<string, Tone> = {
   APPROVED: 'green', AVAILABLE: 'green', Occupied: 'green', Active: 'green', COMPLETED: 'green', RESOLVED: 'green', CLOSED: 'green', DELIVERED: 'green', READ: 'green', Operational: 'green', Connected: 'green', VERIFIED: 'green', Upcoming: 'blue',
   PENDING: 'orange', ASSIGNED: 'orange', ON_HOLD: 'orange', WAITING: 'orange', ON_BREAK: 'orange', Reserved: 'orange', 'Needs Service': 'orange', SENT: 'orange', INFO_REQUESTED: 'purple', HIGH: 'orange', MEDIUM: 'blue', Overdue: 'red', 'Expiring soon': 'orange',
   REJECTED: 'red', CRITICAL: 'red', FAILED: 'red', ABSENT: 'red', CANCELLED: 'red', 'Under Repair': 'red', 'Under Maintenance': 'red',
-  PENDING_OWNER: 'orange', OWNER_REJECTED: 'red', INSIDE: 'blue', IN_PROGRESS: 'blue', ACCEPTED: 'blue', BUSY: 'blue', OPEN: 'blue',
+  INSIDE: 'blue', IN_PROGRESS: 'blue', ACCEPTED: 'blue', BUSY: 'blue', OPEN: 'blue',
   EXITED: 'gray', Vacant: 'gray', OFF_DUTY: 'gray', Inactive: 'gray', LOW: 'gray', Expired: 'red',
 }
 export const toneOf = (s: string): Tone => MAP[s] ?? 'gray'

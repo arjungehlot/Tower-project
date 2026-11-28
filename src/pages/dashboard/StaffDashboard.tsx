@@ -16,7 +16,7 @@ const PR: Record<string, { c: string; l: string; bars: number }> = { CRITICAL: {
 const left = (d: string) => { const ms = new Date(d).getTime() - Date.now(), a = Math.abs(ms), m = Math.round(a / 60000), t = m < 60 ? `${m}m` : m < 1440 ? `${Math.round(m / 60)}h` : `${Math.round(m / 1440)}d`; return ms < 0 ? `Overdue by ${t}` : `Due in ${t}` }
 
 export default function StaffDashboard() {
-  const nav = useNavigate(), { me } = useMe(), L = useLookups(), tasks = useDb((s) => s.tasks), patch = useDb((s) => s.patch), e = L.employee(me?.refId)
+  const nav = useNavigate(), { empId } = useMe(), L = useLookups(), tasks = useDb((s) => s.tasks), patch = useDb((s) => s.patch), e = L.employee(empId)
   if (!e) return <EmptyState title="No staff profile linked" />
   const m = staffMetrics(e.id, tasks)
   return <>

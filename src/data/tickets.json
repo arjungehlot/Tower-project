@@ -1723,7 +1723,7 @@
   "description": "AC in the main conference room is not cooling since morning.",
   "category": "HVAC",
   "priority": "HIGH",
-  "status": "PENDING_OWNER",
+  "status": "OPEN",
   "towerId": "tw-a",
   "floorId": "fl-ta-1",
   "officeId": "of-ta-103",
@@ -1731,15 +1731,15 @@
   "assignedEmployeeId": "",
   "preferredVisit": "Anytime today",
   "attachments": [],
-  "createdAt": "2026-11-27T09:06:49.365695Z",
+  "createdAt": "2026-11-25T06:44:11.000Z",
   "dueAt": "2026-11-29T12:06:49.365714Z",
   "rating": null,
   "taskId": "",
   "comments": [],
   "timeline": [
    {
-    "at": "2026-11-27T09:06:49.365731Z",
-    "label": "Raised by Nisha Yadav \u2014 awaiting owner approval"
+    "at": "2026-11-25T06:44:11.000Z",
+    "label": "Ticket raised"
    }
   ]
  },
@@ -1750,7 +1750,7 @@
   "description": "Pantry door lock is jammed and needs replacement.",
   "category": "Civil",
   "priority": "MEDIUM",
-  "status": "PENDING_OWNER",
+  "status": "OPEN",
   "towerId": "tw-a",
   "floorId": "fl-ta-1",
   "officeId": "of-ta-103",
@@ -1758,15 +1758,15 @@
   "assignedEmployeeId": "",
   "preferredVisit": "Anytime today",
   "attachments": [],
-  "createdAt": "2026-11-27T06:06:49.365763Z",
+  "createdAt": "2026-11-25T06:14:11.000Z",
   "dueAt": "2026-11-29T12:06:49.365766Z",
   "rating": null,
   "taskId": "",
   "comments": [],
   "timeline": [
    {
-    "at": "2026-11-27T06:06:49.365768Z",
-    "label": "Raised by Nisha Yadav \u2014 awaiting owner approval"
+    "at": "2026-11-25T06:14:11.000Z",
+    "label": "Ticket raised"
    }
   ]
  }

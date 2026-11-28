@@ -1,4 +1,7 @@
-import { NavLink } from 'react-router-dom'
+import { useEffect } from 'react'
+import { NavLink, useLocation } from 'react-router-dom'
+import { useNavBadges } from '@/hooks/useNavBadges'
+import { markSeen } from '@/store/seen'
 import { PanelLeftClose, PanelLeftOpen, X } from 'lucide-react'
 import { navFor } from './navConfig'
 import { Logo } from './Logo'
@@ -8,6 +11,8 @@ import { cx } from '@/utils/helpers'
 
 export function Sidebar({ collapsed, setCollapsed, mobileOpen, closeMobile }: { collapsed: boolean; setCollapsed: (b: boolean) => void; mobileOpen: boolean; closeMobile: () => void }) {
   const { me } = useMe()
+  const badges = useNavBadges(), { pathname } = useLocation()
+  useEffect(() => { if (pathname !== '/notifications') markSeen(pathname) }, [pathname, badges[pathname]])
   if (!me) return null
   const sections = navFor(me.role)
   const body = (compact: boolean) => (
@@ -25,7 +30,10 @@ export function Sidebar({ collapsed, setCollapsed, mobileOpen, closeMobile }: { 
               const link = (
                 <NavLink key={i.to} to={i.to} end={i.end ?? false} onClick={closeMobile}
                   className={({ isActive }) => cx('group relative flex items-center gap-2.5 rounded-lg px-2.5 py-[5px] text-[12.5px] font-medium transition-all', compact && 'justify-center px-0', isActive ? 'bg-gradient-to-r from-brand-soft to-transparent font-semibold text-brand before:absolute before:-left-2 before:top-1.5 before:h-[calc(100%-12px)] before:w-[3px] before:rounded-r before:bg-brand' : 'text-muted hover:bg-subtle hover:text-ink')}>
-                  <i.icon size={15} className="shrink-0" />{!compact && <span className="truncate">{i.label}</span>}
+                  <i.icon size={15} className="shrink-0" />{!compact && <span className="flex-1 truncate">{i.label}</span>}
+                  {!!badges[i.to] && (compact
+                    ? <span className="absolute right-1 top-0.5 h-2 w-2 rounded-full bg-bad ring-2 ring-surface" />
+                    : <span className="ml-auto min-w-[20px] rounded-full bg-bad px-1.5 py-px text-center text-[10.5px] font-semibold leading-[16px] text-white shadow-sm">{badges[i.to] > 99 ? '99+' : badges[i.to]}</span>)}
                 </NavLink>
               )
               return compact ? <Tooltip key={i.to} text={i.label}>{link}</Tooltip> : link

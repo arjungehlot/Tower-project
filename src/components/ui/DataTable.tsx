@@ -13,9 +13,11 @@ interface Props<T> {
   searchText?: (r: T) => string; filters?: ReactNode; toolbar?: ReactNode; pageSize?: number
   selectable?: boolean; bulk?: (ids: string[], clear: () => void) => ReactNode
   empty?: { title: string; text?: string; action?: string; onAction?: () => void }; exportName?: string; defaultSort?: { key: string; dir: 'asc' | 'desc' }
+  /** Show the NEW tag after the first column's content instead of before it. */
+  newTagEnd?: boolean
 }
 /** Compact table: sticky header, search, sort, pagination, bulk select, and card layout on mobile. */
-export function DataTable<T>({ columns, rows, rowKey, onRowClick, searchText, filters, toolbar, pageSize: pageSizeProp, selectable, bulk, empty, exportName, defaultSort }: Props<T>) {
+export function DataTable<T>({ columns, rows, rowKey, onRowClick, searchText, filters, toolbar, pageSize: pageSizeProp, selectable, bulk, empty, exportName, defaultSort, newTagEnd }: Props<T>) {
   const fresh = useRecent((s) => s.ids)
   const fill = pageSizeProp === undefined, pageSize = pageSizeProp ?? 20
   const [q, setQ] = useState(''), [page, setPage] = useState(0), [sort, setSort] = useState(defaultSort ?? null as { key: string; dir: 'asc' | 'desc' } | null), [sel, setSel] = useState<Set<string>>(new Set())
@@ -56,7 +58,7 @@ export function DataTable<T>({ columns, rows, rowKey, onRowClick, searchText, fi
                 {slice.map((r) => (
                   <tr key={rowKey(r)} onClick={() => onRowClick?.(r)} className={cx('group transition-colors hover:bg-brand-soft/60', isNew(fresh, rowKey(r)) ? 'bg-info/[0.07]' : 'even:bg-subtle/25', onRowClick && 'cursor-pointer')}>
                     {selectable && <td className="border-b border-line/60 px-2.5 py-1" onClick={(e) => e.stopPropagation()}><input type="checkbox" aria-label="Select row" checked={sel.has(rowKey(r))} onChange={() => flip(rowKey(r))} /></td>}
-                    {columns.map((c, ci) => <td key={c.key} className={cx('border-b border-line/60 px-2.5 py-1 align-middle text-[12.5px] font-normal first:font-medium group-hover:border-line', c.sticky && 'sticky left-0 z-[5] bg-surface shadow-[1px_0_0_0_rgb(0_0_0/0.06)] group-hover:bg-brand-soft', c.className)}>{ci === 0 && isNew(fresh, rowKey(r)) ? <div className="flex items-center gap-2"><NewTag />{c.render ? c.render(r) : (r as Record<string, ReactNode>)[c.key]}</div> : c.render ? c.render(r) : (r as Record<string, ReactNode>)[c.key]}</td>)}
+                    {columns.map((c, ci) => <td key={c.key} className={cx('border-b border-line/60 px-2.5 py-1 align-middle text-[12.5px] font-normal first:font-medium group-hover:border-line', c.sticky && 'sticky left-0 z-[5] bg-surface shadow-[1px_0_0_0_rgb(0_0_0/0.06)] group-hover:bg-brand-soft', c.className)}>{ci === 0 && isNew(fresh, rowKey(r)) ? <div className="flex items-center gap-2">{!newTagEnd && <NewTag />}{c.render ? c.render(r) : (r as Record<string, ReactNode>)[c.key]}{newTagEnd && <NewTag />}</div> : c.render ? c.render(r) : (r as Record<string, ReactNode>)[c.key]}</td>)}
                   </tr>
                 ))}
               </tbody>

@@ -1,9 +1,8 @@
 import { useState, type ReactNode } from 'react'
 import { Link, useParams } from 'react-router-dom'
-import { ArrowLeft, Send, Paperclip, RotateCcw, CheckCircle2, User, DoorOpen, UserCog, CalendarPlus, Timer, Clock, ClipboardList } from 'lucide-react'
-import { Avatar, Badge, Button, Card, Input, Modal, PageHeader, Select, StatusBadge, Stars, Timeline } from '@/components/ui'
+import { ArrowLeft, Ticket, Tag, MapPin, Send, Paperclip, RotateCcw, CheckCircle2, User, DoorOpen, UserCog, CalendarPlus, Timer, Clock, ClipboardList } from 'lucide-react'
+import { Avatar, Badge, Button, Card, Input, Modal, Select, StatusBadge, Stars, Timeline } from '@/components/ui'
 import { TaskActions } from '@/components/business/TaskActions'
-import { OwnerTicketActions } from '@/components/business/OwnerTicketActions'
 import { StaffCard } from '@/components/business/StaffCard'
 import { useDb } from '@/store/db'
 import { useLookups } from '@/hooks/useLookups'
@@ -25,10 +24,24 @@ export default function TicketDetail() {
   const comments = t.comments.filter((c) => c.kind !== 'internal' || !isOffice), overdue = !['RESOLVED', 'CLOSED'].includes(t.status) && new Date(t.dueAt) < new Date()
   const send = () => { if (msg.trim()) { ts.addComment(t.id, msg.trim(), kind); setMsg('') } }
   return <>
-    <PageHeader back={<Link to={isOffice ? '/tickets/mine' : '/tickets'} className="mb-1 inline-flex items-center gap-1 text-xs text-muted hover:text-ink"><ArrowLeft size={12} />Tickets</Link>}
-      title={<span className="flex flex-wrap items-center gap-2"><span className="text-muted">#{t.code}</span>{t.subject}<StatusBadge status={t.priority} /><StatusBadge status={t.status} />{overdue && <Badge tone="red" dot>Overdue</Badge>}</span>} subtitle={`${t.category} · ${L.location(t.towerId, t.floorId, t.officeId)}`}
-      actions={<>{isOwner && <OwnerTicketActions t={t} />}{((isOffice && !isOwner) || can('tickets', 'close')) && t.status === 'RESOLVED' && <><Button variant="success" icon={<CheckCircle2 size={14} />} onClick={() => setRate(true)}>Confirm resolution</Button><Button icon={<RotateCcw size={14} />} onClick={() => ts.reopen(t.id)}>Reopen</Button></>}
-        {can('tickets', 'update') && !['CLOSED'].includes(t.status) && t.status !== 'OPEN' && <Select aria-label="Status" className="w-36" value={t.status} onChange={(e) => ts.setStatus(t.id, e.target.value as never)} options={['ASSIGNED', 'IN_PROGRESS', 'WAITING', 'RESOLVED']} />}</>} />
+    <Link to={isOffice ? '/tickets/mine' : '/tickets'} className="mb-2 inline-flex items-center gap-1 text-xs text-muted hover:text-ink"><ArrowLeft size={12} />Tickets</Link>
+    <div className="mb-3 flex flex-wrap items-center justify-between gap-3 overflow-hidden rounded-2xl border border-line bg-gradient-to-r from-brand-soft via-brand-soft/40 to-surface px-4 py-3 shadow-card">
+      <div className="flex min-w-0 items-center gap-3">
+        <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-surface text-brand shadow-card"><Ticket size={22} /></span>
+        <div className="min-w-0">
+          <div className="flex flex-wrap items-center gap-2"><span className="rounded-md bg-surface px-1.5 py-0.5 text-[11px] font-semibold tracking-wide text-muted ring-1 ring-line">{t.code}</span><StatusBadge status={t.priority} /><StatusBadge status={t.status} />{overdue && <span className="rounded-md bg-bad/10 px-2 py-0.5 text-[11px] font-medium text-bad">Overdue</span>}</div>
+          <h1 className="mt-1 truncate text-lg font-bold leading-tight tracking-tight">{t.subject}</h1>
+          <div className="mt-1 flex flex-wrap items-center gap-x-4 gap-y-0.5 text-[11.5px] text-muted">
+            <span className="inline-flex items-center gap-1"><Tag size={12} />{t.category}</span>
+            <span className="inline-flex items-center gap-1"><MapPin size={12} />{L.location(t.towerId, t.floorId, t.officeId)}</span>
+            {reporter && <span className="inline-flex items-center gap-1"><User size={12} />{reporter.name}</span>}
+            <span className="inline-flex items-center gap-1"><Clock size={12} />{fmtDateTime(t.createdAt)}</span>
+          </div>
+        </div>
+      </div>
+      <div className="flex flex-wrap items-center gap-2"><>{((isOffice && !isOwner) || can('tickets', 'close')) && t.status === 'RESOLVED' && <><Button variant="success" icon={<CheckCircle2 size={14} />} onClick={() => setRate(true)}>Confirm resolution</Button><Button icon={<RotateCcw size={14} />} onClick={() => ts.reopen(t.id)}>Reopen</Button></>}
+        {can('tickets', 'update') && !['CLOSED'].includes(t.status) && t.status !== 'OPEN' && <Select aria-label="Status" className="w-36" value={t.status} onChange={(e) => ts.setStatus(t.id, e.target.value as never)} options={['ASSIGNED', 'IN_PROGRESS', 'WAITING', 'RESOLVED']} />}</></div>
+    </div>
     <div className="grid gap-3 lg:grid-cols-3">
       <div className="space-y-3 lg:col-span-2">
         <Card title="Details" action={overdue ? <Badge tone="red" dot>SLA breached</Badge> : <span className="text-xxs text-muted">Due {fmtDateTime(t.dueAt)}</span>}>
@@ -51,7 +64,7 @@ export default function TicketDetail() {
         {t.status === 'CLOSED' && <Card title="Resolution"><p className="text-xs">Closed after office confirmation.</p>{t.rating && <p className="mt-1 flex items-center gap-2 text-xs">Office rating: <Stars value={t.rating} size={13} /></p>}</Card>}
         <Card title="Conversation" action={<span className="rounded-full bg-subtle px-2 py-0.5 text-xxs font-semibold text-muted">{comments.length}</span>}>
           <div className="max-h-64 space-y-2 overflow-y-auto pr-1">{comments.map((c) => <div key={c.id} className={cx('flex gap-2', c.kind === 'office' && 'flex-row-reverse')}><Avatar name={c.by} size={24} /><div className={cx('max-w-[80%] rounded-2xl px-3 py-1.5', c.kind === 'internal' ? 'border border-dashed border-warn bg-warn/10' : c.kind === 'office' ? 'rounded-tr-sm bg-brand-soft' : 'rounded-tl-sm bg-subtle')}><p className="text-[10.5px] text-muted"><b className="text-ink">{c.by}</b> · {KIND[c.kind]} · {fmtTime(c.at)}</p><p className="text-xs">{c.text}</p></div></div>)}</div>
-          <div className="mt-2.5 flex gap-2 border-t pt-2.5">{!isOffice && me?.role !== 'STAFF' && <Select aria-label="Comment type" className="w-32" value={kind} onChange={(e) => setKind(e.target.value as Comment['kind'])} options={[{ value: 'admin', label: 'Comment' }, { value: 'internal', label: 'Internal note' }]} />}<Input value={msg} onChange={(e) => setMsg(e.target.value)} onKeyDown={(e) => e.key === 'Enter' && send()} placeholder="Write a message…" aria-label="Message" /><Button variant="primary" onClick={send} aria-label="Send"><Send size={14} /></Button></div></Card>
+          {!isOwner && <div className="mt-2.5 flex gap-2 border-t pt-2.5">{!isOffice && me?.role !== 'STAFF' && <Select aria-label="Comment type" className="w-32" value={kind} onChange={(e) => setKind(e.target.value as Comment['kind'])} options={[{ value: 'admin', label: 'Comment' }, { value: 'internal', label: 'Internal note' }]} />}<Input value={msg} onChange={(e) => setMsg(e.target.value)} onKeyDown={(e) => e.key === 'Enter' && send()} placeholder="Write a message…" aria-label="Message" /><Button variant="primary" onClick={send} aria-label="Send"><Send size={14} /></Button></div>}</Card>
       </div>
       <div className="relative h-[340px] lg:h-auto lg:min-h-[300px]"><Card className="absolute inset-0" pad={false} title="Timeline" action={<span className="text-xxs text-muted">{t.timeline.length} events</span>}>
         <div className="relative h-full"><div className="absolute inset-0 overflow-y-auto p-3 pl-4"><Timeline items={t.timeline} /></div></div></Card></div>

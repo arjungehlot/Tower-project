@@ -1,6 +1,7 @@
 import { Outlet, Link, useNavigate } from 'react-router-dom'
 import { LogOut, Moon, Sun, Siren } from 'lucide-react'
 import { Logo } from '@/components/layout/Logo'
+import { ApprovedVisitorPrompt } from '@/components/business/ApprovedVisitorPrompt'
 import { DemoPanel } from '@/components/layout/DemoPanel'
 import { Avatar, ErrorBoundary } from '@/components/ui'
 import { useDb } from '@/store/db'
@@ -21,6 +22,7 @@ export default function GuardLayout() {
         </div>
       </header>
       <main className="mx-auto w-full max-w-[1700px] flex-1 p-3 md:p-5"><ErrorBoundary><Outlet /></ErrorBoundary></main>
+      <ApprovedVisitorPrompt />
       <DemoPanel />
     </div>
   )

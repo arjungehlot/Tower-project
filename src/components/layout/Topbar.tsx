@@ -1,7 +1,8 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { Link, useLocation, useNavigate } from 'react-router-dom'
-import { Bell, Building2, ChevronRight, Menu, Moon, Plus, Search, Sun, LogOut, User, UserRoundCheck, Ticket, ShieldAlert, CheckCheck, Settings2, BellOff, CreditCard, ClipboardList, DoorOpen, Users, Building } from 'lucide-react'
+import { UserCog, Bell, Building2, ChevronRight, Menu, Moon, Plus, Search, Sun, LogOut, User, UserRoundCheck, Ticket, ShieldAlert, CheckCheck, Settings2, BellOff, CreditCard, ClipboardList, DoorOpen, Users, Building } from 'lucide-react'
 import { useDb } from '@/store/db'
+import { useViewAs, setViewAs, setViewOffice } from '@/store/viewAs'
 import { useMe } from '@/hooks/useMe'
 import { visibleTo, markRead, markAllRead } from '@/services/notificationService'
 import { Avatar, Dropdown, Badge } from '@/components/ui'
@@ -11,6 +12,25 @@ import { ago } from '@/utils/dateUtils'
 const NOTI: Record<string, { icon: JSX.Element; tone: string }> = {
   Visitor: { icon: <UserRoundCheck size={15} />, tone: 'bg-info/15 text-info' }, Ticket: { icon: <Ticket size={15} />, tone: 'bg-warn/15 text-warn' }, Task: { icon: <ClipboardList size={15} />, tone: 'bg-ok/15 text-ok' },
   Security: { icon: <ShieldAlert size={15} />, tone: 'bg-bad/15 text-bad' }, Payment: { icon: <CreditCard size={15} />, tone: 'bg-vis/15 text-vis' }, System: { icon: <Settings2 size={15} />, tone: 'bg-subtle text-muted' },
+}
+function StaffSwitcher() {
+  const staff = useDb((s) => s.employees).filter((e) => e.role === 'staff'), { empId, me } = useMe(), cur = useViewAs((s) => s.staffId) || me?.refId || ''
+  return <label className="relative" title="View any staff member's dashboard (demo, until backend login is ready)">
+    <UserCog size={13} className="pointer-events-none absolute left-2.5 top-1/2 -translate-y-1/2 text-brand" />
+    <select aria-label="View as staff" value={empId || cur} onChange={(e) => setViewAs(e.target.value)} className="input !h-7 !w-40 sm:!w-48 rounded-full !pl-7 text-[11.5px] font-medium">
+      {staff.map((e) => <option key={e.id} value={e.id}>{e.name} · {e.category}</option>)}
+    </select>
+  </label>
+}
+function OfficeSwitcher() {
+  const offices = useDb((s) => s.offices), hosts = useDb((s) => s.officeEmployees), tenants = useDb((s) => s.tenants), towers = useDb((s) => s.towers), { officeId } = useMe()
+  const list = offices.filter((o) => hosts.some((h) => h.officeId === o.id))
+  return <label className="relative" title="Open any office's workspace (demo, until backend login is ready)">
+    <DoorOpen size={13} className="pointer-events-none absolute left-2.5 top-1/2 -translate-y-1/2 text-brand" />
+    <select aria-label="View as office" value={officeId} onChange={(e) => setViewOffice(e.target.value)} className="input !h-7 !w-44 rounded-full !pl-7 text-[11.5px] font-medium sm:!w-56">
+      {list.map((o) => <option key={o.id} value={o.id}>{towers.find((t) => t.id === o.towerId)?.name.replace('Tower ', 'T-') ?? ''} · {o.number} · {tenants.find((t) => t.id === o.tenantId)?.name ?? 'Vacant'}</option>)}
+    </select>
+  </label>
 }
 const LABELS: Record<string, string> = { dashboard: 'Dashboard', visitors: 'Visitors', visitor: 'Visitors', register: 'Register', live: 'Live', tickets: 'Tickets', tasks: 'Tasks', staff: 'Staff', offices: 'Offices', tenants: 'Tenants', towers: 'Towers', floors: 'Floors', notifications: 'Notifications', reports: 'Reports', analytics: 'Analytics', settings: 'Settings', 'audit-logs': 'Audit Logs', users: 'Users', roles: 'Permissions', whatsapp: 'WhatsApp', emails: 'Email Logs', office: 'Office', 'my-work': 'My Work', profile: 'Profile', leases: 'Leases', assets: 'Assets', maintenance: 'Maintenance', documents: 'Documents', emergency: 'Emergency', ratings: 'Ratings', supervisors: 'Supervisors', tracking: 'Tracking', history: 'History', gate: 'Gate Entries', availability: 'Availability', mine: 'My Tickets' }
 export function Topbar({ openMenu, openSearch }: { openMenu: () => void; openSearch: () => void }) {
@@ -48,6 +68,8 @@ export function Topbar({ openMenu, openSearch }: { openMenu: () => void; openSea
       <button onClick={openSearch} className="group mx-auto flex h-7 w-full max-w-sm items-center gap-2 rounded-full border border-line bg-subtle/70 px-3 text-[11.5px] text-muted transition-all hover:border-brand/40 hover:bg-surface hover:shadow-card lg:mx-0 lg:ml-auto" aria-label="Open search">
         <Search size={14} className="text-faint group-hover:text-brand" /><span className="flex-1 text-left">Search visitors, offices, tickets…</span><kbd className="hidden rounded border bg-surface px-1.5 py-px text-[10px] font-medium sm:block">Ctrl K</kbd>
       </button>
+      {me.role === 'STAFF' && <StaffSwitcher />}
+      {me.role.startsWith('OFFICE') && <OfficeSwitcher />}
       {isAdm && towers.length > 1 && <label className="relative hidden md:block"><Building2 size={13} className="pointer-events-none absolute left-2.5 top-1/2 -translate-y-1/2 text-brand" /><select aria-label="Select tower" value={towerFilter} onChange={(e) => setTowerFilter(e.target.value)} className="input !h-7 !w-32 rounded-full !pl-7 text-[11.5px] font-medium"><option value="all">All towers</option>{towers.map((t) => <option key={t.id} value={t.id}>{t.name}</option>)}</select></label>}
       {create.some((c) => !c.hidden) && <Dropdown trigger={<button className="inline-flex h-7 items-center gap-1 rounded-full bg-gradient-to-b from-brand to-brand-strong px-3 text-xs font-semibold text-white shadow-sm shadow-brand/30 hover:brightness-110 dark:text-slate-900"><Plus size={14} /><span className="hidden sm:inline">Create</span></button>} items={create} />}
       <div className="relative" ref={bellRef}>

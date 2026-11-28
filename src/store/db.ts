@@ -49,6 +49,17 @@ function loadDb(): Db {
     const cur = db[k] as { id: string }[], miss = (SEED[k as Coll] as unknown as { id: string }[]).filter((x) => ids.includes(x.id) && !cur.some((c) => c.id === x.id))
     if (miss.length) { db[k] = [...cur, ...shift(miss, delta!)]; storage.set(k, db[k]) }
   }
+  // Owner approval step was removed: anything still waiting on an owner goes straight to the service desk.
+  const tk = db.tickets as { status: string }[]
+  if (tk.some((t) => t.status === 'PENDING_OWNER' || t.status === 'OWNER_REJECTED')) { db.tickets = tk.map((t) => (t.status === 'PENDING_OWNER' || t.status === 'OWNER_REJECTED' ? { ...t, status: 'OPEN' } : t)); storage.set('tickets', db.tickets) }
+  // Tickets closed (with a star rating) before office ratings were copied onto the linked task.
+  type TkR = { status: string; rating: number | null; taskId: string }
+  const tasksR = db.tasks as { id: string; rating: unknown; timeline: { at: string; label: string }[]; verifiedAt: string; verifiedBy: string }[]
+  const fix = new Map((db.tickets as TkR[]).filter((t) => t.status === 'CLOSED' && t.rating && t.taskId).map((t) => [t.taskId, t.rating as number]))
+  if (tasksR.some((t) => !t.rating && fix.has(t.id))) {
+    db.tasks = tasksR.map((t) => { const r = fix.get(t.id); if (t.rating || !r) return t; const at = new Date().toISOString(); return { ...t, rating: { quality: r, speed: r, professionalism: r, cleanliness: r, overall: r, comment: 'Rated by office on ticket confirmation' }, verifiedAt: t.verifiedAt || at, verifiedBy: t.verifiedBy || 'office', timeline: [...t.timeline, { at, label: `Office rated ${r}/5` }] } })
+    storage.set('tasks', db.tasks)
+  }
   return db as unknown as Db
 }
 

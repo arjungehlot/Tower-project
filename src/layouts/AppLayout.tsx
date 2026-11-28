@@ -4,6 +4,7 @@ import { motion } from 'framer-motion'
 import { Sidebar } from '@/components/layout/Sidebar'
 import { Topbar } from '@/components/layout/Topbar'
 import { CommandPalette } from '@/components/layout/CommandPalette'
+import { ResolvedTicketPrompt } from '@/components/business/ResolvedTicketPrompt'
 import { DemoPanel } from '@/components/layout/DemoPanel'
 import { ErrorBoundary, LoadingState } from '@/components/ui'
 import { storage } from '@/services/storageService'
@@ -25,6 +26,7 @@ export default function AppLayout() {
         </main>
       </div>
       <CommandPalette open={palette} onClose={() => setPalette(false)} />
+      <ResolvedTicketPrompt />
       <DemoPanel />
     </div>
   )
